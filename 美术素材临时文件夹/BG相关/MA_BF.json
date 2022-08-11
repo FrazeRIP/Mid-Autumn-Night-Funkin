@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				101,
+				240
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF singUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				100,
+				240
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				143,
+				243
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF singDOWN",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				143,
+				243
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BF NOET DOWN MISS",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				80,
+				252
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BF NOET RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				152,
+				244
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF singLEFT",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				152,
+				244
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BF NOET LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				80,
+				252
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF singRIGHT",
+			"indices": []
+		},
+		{
+			"offsets": [
+				101,
+				240
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BF NOET UP MISS"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				100,
+				239
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BF HEY",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/MA_BF",
+	"position": [
+		-40,
+		330
+	],
+	"healthicon": "ma-bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		85,
+		195,
+		255
+	],
+	"camera_position": [
+		0,
+		-110
+	],
+	"sing_duration": 6.1,
+	"scale": 0.75
+}
