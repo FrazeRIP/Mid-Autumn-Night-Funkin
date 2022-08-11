@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				260,
+				180
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Mom Idle"
+		},
+		{
+			"offsets": [
+				260,
+				161
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Mom Left Pose"
+		},
+		{
+			"offsets": [
+				258,
+				160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Mom Pose Left"
+		},
+		{
+			"offsets": [
+				260,
+				170
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "MOM DOWN POSE"
+		},
+		{
+			"offsets": [
+				254,
+				143
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Mom Up Pose"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pink Ghost",
+	"position": [
+		10,
+		0
+	],
+	"healthicon": "Pink Ghost",
+	"flip_x": false,
+	"healthbar_colors": [
+		155,
+		0,
+		22
+	],
+	"camera_position": [
+		-100,
+		-90
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

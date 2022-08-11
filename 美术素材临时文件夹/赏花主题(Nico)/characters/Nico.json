@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Nico idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				11,
+				-2
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Nico singLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Nico singDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Nico singRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-1
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Nico singUP",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "HEY",
+			"loop": false,
+			"name": "Nico HEY"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Nico",
+	"position": [
+		0,
+		-100
+	],
+	"healthicon": "Nico",
+	"flip_x": false,
+	"healthbar_colors": [
+		251,
+		146,
+		197
+	],
+	"camera_position": [
+		10,
+		180
+	],
+	"sing_duration": 6.1,
+	"scale": 0.7
+}
