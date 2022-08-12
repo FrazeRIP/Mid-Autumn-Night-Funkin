@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SproutGuest4.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SproutGuest40000" x="10" y="10" width="2570" height="385"/>
+	<SubTexture name="SproutGuest40001" x="10" y="415" width="2570" height="385"/>
+	<SubTexture name="SproutGuest40002" x="10" y="820" width="2570" height="385"/>
+	<SubTexture name="SproutGuest40003" x="10" y="1225" width="2570" height="385"/>
+	<SubTexture name="SproutGuest40004" x="10" y="1630" width="2570" height="385"/>
+	<SubTexture name="SproutGuest40005" x="10" y="2035" width="2570" height="385"/>
+	<SubTexture name="SproutGuest40006" x="10" y="2035" width="2570" height="385"/>
+</TextureAtlas>
