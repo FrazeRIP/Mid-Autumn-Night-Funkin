@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="RincyLayer0.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="RincyLayer00000" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00001" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00002" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00003" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00004" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00005" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00006" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00007" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00008" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00009" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00010" x="10" y="3650" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00011" x="10" y="3650" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00012" x="10" y="3650" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00013" x="10" y="3650" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00014" x="10" y="3650" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00015" x="10" y="3650" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00016" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00017" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00018" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00019" x="10" y="1830" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00020" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00021" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00022" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00023" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00024" x="10" y="10" width="3000" height="1800"/>
+	<SubTexture name="RincyLayer00025" x="10" y="10" width="3000" height="1800"/>
+</TextureAtlas>
