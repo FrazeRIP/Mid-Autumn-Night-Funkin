@@ -109,6 +109,28 @@
 			"fps": 24,
 			"name": "BF HEY",
 			"indices": []
+		},
+		{
+			"offsets": [
+				101,
+				400
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "dodge",
+			"loop": false,
+			"name": "BF dodge"
+		},
+		{
+			"offsets": [
+				97,
+				240
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "drunk idle",
+			"loop": false,
+			"name": "BF drunk idle"
 		}
 	],
 	"no_antialiasing": false,
