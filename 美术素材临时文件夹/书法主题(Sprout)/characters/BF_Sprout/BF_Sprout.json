@@ -1,113 +1,135 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				101,
 				240
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "BF singUP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF singUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				100,
 				240
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "BF idle",
-			"indices": []
+			"indices": [],
+			"name": "BF idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				143,
 				243
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "BF singDOWN",
-			"indices": []
+			"indices": [],
+			"name": "BF singDOWN"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				143,
 				243
 			],
+			"loop": true,
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "BF NOET DOWN MISS",
-			"indices": []
+			"indices": [],
+			"name": "BF NOET DOWN MISS"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				80,
 				252
 			],
+			"loop": true,
+			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "BF NOET RIGHT MISS",
-			"indices": []
+			"indices": [],
+			"name": "BF NOET RIGHT MISS"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				152,
 				244
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "BF singLEFT",
-			"indices": []
+			"indices": [],
+			"name": "BF singLEFT"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				152,
 				244
 			],
-			"anim": "singLEFTmiss",
+			"loop": true,
 			"fps": 24,
-			"name": "BF NOET LEFT MISS",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BF NOET LEFT MISS"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				80,
 				252
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "BF singRIGHT",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF singRIGHT"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				101,
 				240
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "BF NOET UP MISS"
+			"fps": 24,
+			"name": "BF NOET UP MISS",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				100,
 				239
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "BF HEY",
+			"anim": "hey",
+			"indices": [],
+			"name": "BF HEY"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				101,
+				400
+			],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "BF dodge",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				97,
+				240
+			],
+			"anim": "drunk idle",
+			"fps": 24,
+			"name": "BF drunk idle",
 			"indices": []
 		}
 	],
