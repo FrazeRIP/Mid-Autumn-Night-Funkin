@@ -97,8 +97,8 @@
 	"no_antialiasing": false,
 	"image": "characters/MA_GF",
 	"position": [
-		-50,
-		-220
+		0,
+		0
 	],
 	"healthicon": "ma-gf",
 	"flip_x": false,
