@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				3,
-				-20
+				0,
+				0
 			],
 			"loop": false,
 			"anim": "sad",
@@ -27,8 +27,8 @@
 		},
 		{
 			"offsets": [
-				3,
-				-20
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
@@ -39,8 +39,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				3,
-				-20
+				0,
+				0
 			],
 			"anim": "danceLeft",
 			"fps": 15,
@@ -69,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				3,
-				-20
+				0,
+				0
 			],
 			"anim": "danceRight",
 			"fps": 15,
@@ -97,8 +97,8 @@
 	"no_antialiasing": false,
 	"image": "characters/MA_GF",
 	"position": [
-		-50,
-		-220
+		0,
+		0
 	],
 	"healthicon": "ma-gf",
 	"flip_x": false,

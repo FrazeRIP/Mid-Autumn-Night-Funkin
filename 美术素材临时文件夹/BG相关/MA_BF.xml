@@ -17,14 +17,14 @@
 	<SubTexture name="BF HEY0012" x="4090" y="10" width="660" height="770"/>
 	<SubTexture name="BF HEY0013" x="4090" y="10" width="660" height="770"/>
 	<SubTexture name="BF HEY0014" x="4090" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET DOWN MISS0000" x="4770" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET DOWN MISS0001" x="4770" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET LEFT MISS0000" x="5450" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET LEFT MISS0001" x="5450" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET RIGHT MISS0000" x="6130" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET RIGHT MISS0001" x="6810" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET UP MISS0000" x="7490" y="10" width="660" height="770"/>
-	<SubTexture name="BF NOET UP MISS0001" x="7490" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE DOWN MISS0000" x="4770" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE DOWN MISS0001" x="4770" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE LEFT MISS0000" x="5450" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE LEFT MISS0001" x="5450" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE RIGHT MISS0000" x="6130" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE RIGHT MISS0001" x="6810" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE UP MISS0000" x="7490" y="10" width="660" height="770"/>
+	<SubTexture name="BF NOTE UP MISS0001" x="7490" y="10" width="660" height="770"/>
 	<SubTexture name="BF dodge0000" x="10" y="800" width="660" height="878" frameX="-29" frameY="-23" frameWidth="689" frameHeight="983"/>
 	<SubTexture name="BF dodge0001" x="10" y="800" width="660" height="878" frameX="-29" frameY="-23" frameWidth="689" frameHeight="983"/>
 	<SubTexture name="BF dodge0002" x="690" y="800" width="660" height="878" frameX="-29" frameY="0" frameWidth="689" frameHeight="983"/>
