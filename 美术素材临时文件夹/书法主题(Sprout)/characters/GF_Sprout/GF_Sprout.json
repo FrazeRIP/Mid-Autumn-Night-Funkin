@@ -1,13 +1,14 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				3,
-				-20
+				0,
+				0
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "sad",
+			"fps": 24,
+			"name": "gf sad",
 			"indices": [
 				0,
 				1,
@@ -22,28 +23,28 @@
 				10,
 				11,
 				12
-			],
-			"name": "gf sad"
+			]
 		},
 		{
-			"loop": false,
 			"offsets": [
-				3,
-				-20
+				0,
+				0
 			],
-			"anim": "cheer",
+			"loop": false,
 			"fps": 24,
-			"name": "GF cheer",
-			"indices": []
+			"anim": "cheer",
+			"indices": [],
+			"name": "GF cheer"
 		},
 		{
-			"offsets": [
-				3,
-				-20
-			],
 			"loop": false,
-			"fps": 15,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "danceLeft",
+			"fps": 15,
+			"name": "GF Dancing Beat",
 			"indices": [
 				30,
 				0,
@@ -63,17 +64,17 @@
 				14,
 				15,
 				16
-			],
-			"name": "GF Dancing Beat"
+			]
 		},
 		{
-			"offsets": [
-				3,
-				-20
-			],
 			"loop": false,
-			"fps": 15,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "danceRight",
+			"fps": 15,
+			"name": "GF Dancing Beat",
 			"indices": [
 				16,
 				17,
@@ -90,15 +91,14 @@
 				28,
 				29,
 				30
-			],
-			"name": "GF Dancing Beat"
+			]
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/GF_Sprout",
 	"position": [
-		-50,
-		-220
+		0,
+		0
 	],
 	"healthicon": "ma-gf",
 	"flip_x": false,

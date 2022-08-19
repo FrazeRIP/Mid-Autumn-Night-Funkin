@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				101,
-				240
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
@@ -13,19 +13,8 @@
 		},
 		{
 			"offsets": [
-				100,
-				240
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "BF idle"
-		},
-		{
-			"offsets": [
-				143,
-				243
+				13,
+				0
 			],
 			"loop": false,
 			"fps": 24,
@@ -35,30 +24,30 @@
 		},
 		{
 			"offsets": [
-				143,
-				243
+				13,
+				0
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "singDOWNmiss",
 			"indices": [],
-			"name": "BF NOET DOWN MISS"
+			"name": "BF NOTE DOWN MISS"
 		},
 		{
 			"offsets": [
-				80,
-				252
+				2,
+				4
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "singRIGHTmiss",
 			"indices": [],
-			"name": "BF NOET RIGHT MISS"
+			"name": "BF NOTE RIGHT MISS"
 		},
 		{
 			"offsets": [
-				152,
-				244
+				27,
+				5
 			],
 			"loop": false,
 			"fps": 24,
@@ -68,19 +57,19 @@
 		},
 		{
 			"offsets": [
-				152,
-				244
+				27,
+				5
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "singLEFTmiss",
 			"indices": [],
-			"name": "BF NOET LEFT MISS"
+			"name": "BF NOTE LEFT MISS"
 		},
 		{
 			"offsets": [
-				80,
-				252
+				2,
+				4
 			],
 			"loop": false,
 			"fps": 24,
@@ -91,18 +80,18 @@
 		{
 			"loop": false,
 			"offsets": [
-				101,
-				240
+				0,
+				0
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
-			"name": "BF NOET UP MISS",
+			"name": "BF NOTE UP MISS",
 			"indices": []
 		},
 		{
 			"offsets": [
-				100,
-				239
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
@@ -113,8 +102,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				101,
-				400
+				0,
+				160
 			],
 			"anim": "dodge",
 			"fps": 24,
@@ -124,20 +113,31 @@
 		{
 			"loop": false,
 			"offsets": [
-				97,
-				240
+				0,
+				0
 			],
 			"anim": "drunk idle",
 			"fps": 24,
 			"name": "BF drunk idle",
 			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "BF idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/BF_Sprout",
 	"position": [
-		-40,
-		330
+		0,
+		0
 	],
 	"healthicon": "ma-bf",
 	"flip_x": true,
@@ -148,7 +148,7 @@
 	],
 	"camera_position": [
 		0,
-		-110
+		150
 	],
 	"sing_duration": 6.1,
 	"scale": 0.75

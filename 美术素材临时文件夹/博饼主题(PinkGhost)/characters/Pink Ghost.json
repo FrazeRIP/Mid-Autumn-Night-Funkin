@@ -2,67 +2,67 @@
 	"animations": [
 		{
 			"offsets": [
-				260,
-				180
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "Mom Idle"
+			"name": "Pink Ghost idle"
 		},
 		{
 			"offsets": [
-				260,
-				161
+				0,
+				-19
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "Mom Left Pose"
+			"name": "Pink Ghost singLEFT"
 		},
 		{
 			"offsets": [
-				258,
-				160
+				-2,
+				-20
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "Mom Pose Left"
+			"name": "Pink Ghost singRIGHT"
 		},
 		{
 			"offsets": [
-				260,
-				170
+				0,
+				-10
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "MOM DOWN POSE"
+			"name": "Pink Ghost singDOWN"
 		},
 		{
 			"offsets": [
-				254,
-				143
+				-6,
+				-37
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "Mom Up Pose"
+			"name": "Pink Ghost singUp"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Pink Ghost",
 	"position": [
-		10,
+		0,
 		0
 	],
-	"healthicon": "Pink Ghost",
+	"healthicon": "pinkghost",
 	"flip_x": false,
 	"healthbar_colors": [
 		155,
