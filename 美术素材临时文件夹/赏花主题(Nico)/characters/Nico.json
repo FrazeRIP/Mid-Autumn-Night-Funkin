@@ -71,7 +71,7 @@
 	"image": "characters/Nico",
 	"position": [
 		0,
-		-100
+		0
 	],
 	"healthicon": "Nico",
 	"flip_x": false,
