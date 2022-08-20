@@ -87,21 +87,21 @@
 	<SubTexture name="Pink Ghost singRIGHT0014" x="5768" y="3848" width="824" height="962"/>
 	<SubTexture name="Pink Ghost singRIGHT0015" x="5768" y="3848" width="824" height="962"/>
 	<SubTexture name="Pink Ghost singRIGHT0016" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0000" x="6592" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0001" x="0" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0002" x="824" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0003" x="1648" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0004" x="2472" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0005" x="3296" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0006" x="4120" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0007" x="4944" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0008" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0009" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0010" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0011" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0012" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0013" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0014" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0015" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUp0016" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0000" x="6592" y="3848" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0001" x="0" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0002" x="824" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0003" x="1648" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0004" x="2472" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0005" x="3296" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0006" x="4120" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0007" x="4944" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0008" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0009" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0010" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0011" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0012" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0013" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0014" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0015" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="Pink Ghost singUP0016" x="5768" y="4810" width="824" height="962"/>
 </TextureAtlas>
