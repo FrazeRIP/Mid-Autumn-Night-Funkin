@@ -1,6 +1,6 @@
 function onCreate()
-	makeLuaSprite('sky', 'stages/moon_cake_betting/PinkGhostLayer0', 0, 0);
-	setScrollFactor('sky', 0.9, 0.9);
+	makeLuaSprite('sky', 'stages/moon_cake_betting/PinkGhostLayer0', -50, 0);
+	setScrollFactor('sky', 0.95, 0.95);
 
 	makeLuaSprite('stage', 'stages/moon_cake_betting/PinkGhostLayer1', 0, 0);
 
