@@ -1,5 +1,5 @@
 function onCreate()
-	makeLuaSprite('sky', 'calligraphy/SproutLayer0', 0, 0);
+	makeLuaSprite('sky', 'stages/calligraphy/SproutLayer0', 0, 0);
 	setScrollFactor('sky', 0.9, 0.9);
 
 	makeAnimatedLuaSprite('bg','stages/calligraphy/SproutLayer1', 10, 436);
@@ -18,7 +18,7 @@ function onCreate()
 	makeAnimatedLuaSprite('guest2','stages/calligraphy/SproutGuest/SproutGuest2', 2063, 970);
 	addAnimationByPrefix('guest2','idle','SproutGuest2',24,false);
 	
-	makeAnimatedLuaSprite('guest3','stages/calligraphy/SproutGuest/SproutGuest3', 86, 1616);
+	makeAnimatedLuaSprite('guest3','stages/calligraphy/SproutGuest/SproutGuest3', 180, 1580);
 	addAnimationByPrefix('guest3','idle','SproutGuest3',24,false);
 
 	addLuaSprite('sky', false);
