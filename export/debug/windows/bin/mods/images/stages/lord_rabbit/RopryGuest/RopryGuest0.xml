@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="RopryGuest0.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="RopryGuest00000" x="10" y="10" width="626" height="950"/>
+	<SubTexture name="RopryGuest00001" x="656" y="10" width="626" height="950"/>
+	<SubTexture name="RopryGuest00002" x="1302" y="10" width="626" height="950"/>
+	<SubTexture name="RopryGuest00003" x="1302" y="10" width="626" height="950"/>
+	<SubTexture name="RopryGuest00004" x="1302" y="10" width="626" height="950"/>
+	<SubTexture name="RopryGuest00005" x="10" y="980" width="626" height="950"/>
+	<SubTexture name="RopryGuest00006" x="10" y="980" width="626" height="950"/>
+</TextureAtlas>

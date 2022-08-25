@@ -42,7 +42,7 @@ function onCreate()
 	addLuaSprite('lantern', true);
 	addLuaSprite('light', true);
 	addLuaSprite('curtain', true);
-	addLuaSprite('guest4', false);
+	addLuaSprite('guest4', true);
 end
 
 function onBeatHit()
