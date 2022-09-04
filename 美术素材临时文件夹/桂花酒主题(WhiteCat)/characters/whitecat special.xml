@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="whitecat special.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="whitecat special0000" x="10" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0001" x="10" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0002" x="10" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0003" x="10" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0004" x="10" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0005" x="1081" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0006" x="2152" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0007" x="2152" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0008" x="2152" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0009" x="3223" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0010" x="4294" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0011" x="5365" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0012" x="6436" y="10" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0013" x="10" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0014" x="1081" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0015" x="2152" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0016" x="3223" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0017" x="3223" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0018" x="3223" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0019" x="4294" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0020" x="5365" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0021" x="6436" y="1150" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0022" x="10" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0023" x="1081" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0024" x="2152" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0025" x="3223" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0026" x="4294" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0027" x="4294" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0028" x="5365" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0029" x="6436" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0030" x="6436" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0031" x="6436" y="2290" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0032" x="10" y="3430" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0033" x="10" y="3430" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0034" x="10" y="3430" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0035" x="10" y="3430" width="1051" height="1120"/>
+	<SubTexture name="whitecat special0036" x="10" y="3430" width="1051" height="1120"/>
+</TextureAtlas>
