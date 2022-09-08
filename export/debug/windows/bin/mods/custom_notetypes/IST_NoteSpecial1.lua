@@ -29,8 +29,6 @@ local hurtAmount = '0'
 
 function onCreate()
 	fate = getProperty('deadlyMahjong')
-	debugPrint(fate)
-
 	if fate == 1 then
 	isDeadly = true
 	hurtAmount = '0.5'
