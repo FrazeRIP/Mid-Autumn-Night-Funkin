@@ -1,6 +1,6 @@
 
-local noteName = 'Ropry_NoteSpecial'
-local filePath = 'notes/Ropry/Ropry_NoteSpecial'
+local noteName = 'IST_NoteSpecial2'
+local filePath = 'notes/IST/IST_NoteSpecial2'
 
 ----------------------------
 --Custom splash sht
@@ -22,19 +22,31 @@ local offset3X = -40
 local offset3Y = -60
 
 local noteSplashScale = 1
+local hurtAmount = '0'
 ------------------------------
 
 
 function onCreate()
+
+	fate = getProperty('deadlyMahjong')
+	if fate == 2 then
+	isDeadly = true
+	hurtAmount = '0.5'
+	end
+
+
 	--Iterate over all notes
 	for i = 0, getProperty('unspawnNotes.length')-1 do
 		--Check if the note is an Instakill Note
 		if getPropertyFromGroup('unspawnNotes', i, 'noteType') == noteName then
 			setPropertyFromGroup('unspawnNotes', i, 'texture', filePath); --Change texture
 			setPropertyFromGroup('unspawnNotes', i, 'hitHealth', '0'); --Default value is: 0.023, health gained on hit
-			setPropertyFromGroup('unspawnNotes', i, 'missHealth', '0'); --Default value is: 0.0475, health lost on miss
-			setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
-			
+			setPropertyFromGroup('unspawnNotes', i, 'missHealth', hurtAmount); --Default value is: 0.0475, health lost on miss
+			setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', isDeadly);
+
+			if getPropertyFromGroup('unspawnNotes', i, 'mustPress') then --Doesn't let Dad/Opponent notes get ignored
+				setPropertyFromGroup('unspawnNotes', i, 'ignoreNote', true); --Miss has no penalties
+			end
 		end
 	end
 	--debugPrint('Script started!')
@@ -48,13 +60,17 @@ end
 
 function goodNoteHit(id, noteData, noteType, isSustainNote)
 	if noteType == noteName then
-		
+
 	end
 end
 
 function noteMiss(id, noteData, noteType, isSustainNote)
 	if noteType == noteName then
+	
+		if isDeadly then
 			cameraShake('camGame', .01, .35)
+		end
+
 	end
 end
 

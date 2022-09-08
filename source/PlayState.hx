@@ -24,6 +24,7 @@ import flixel.addons.transition.FlxTransitionableState;
 import flixel.graphics.atlas.FlxAtlas;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.math.FlxRandom;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
@@ -308,9 +309,23 @@ class PlayState extends MusicBeatState
 
 	var precacheList:Map<String, String> = new Map<String, String>();
 
+	//--------------------------------------------------------------------------------------------------
+	//IST
+	public var deadlyMahjong:Int = 0;
+
+
+
+
+	//--------------------------------------------------------------------------------------------------
+
 	override public function create()
 	{
+
+		var random = new FlxRandom();
+
 		Paths.clearStoredMemory();
+
+		deadlyMahjong = random.int(0,2);
 
 		// for lua
 		instance = this;
