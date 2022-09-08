@@ -70,8 +70,8 @@
 	"no_antialiasing": false,
 	"image": "characters/sprout",
 	"position": [
-		0,
-		0
+		-660,
+		-90
 	],
 	"healthicon": "sprout",
 	"flip_x": false,
@@ -81,9 +81,9 @@
 		137
 	],
 	"camera_position": [
-		530,
-		100
+		370,
+		200
 	],
 	"sing_duration": 4,
-	"scale": 0.8
+	"scale": 0.6
 }

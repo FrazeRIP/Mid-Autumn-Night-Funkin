@@ -60,18 +60,18 @@
 				-1,
 				0
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "HEY",
-			"loop": false,
+			"indices": [],
 			"name": "Nico HEY"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Nico",
 	"position": [
-		0,
-		0
+		-140,
+		-150
 	],
 	"healthicon": "Nico",
 	"flip_x": false,
@@ -81,9 +81,9 @@
 		197
 	],
 	"camera_position": [
-		10,
-		180
+		110,
+		140
 	],
 	"sing_duration": 6.1,
-	"scale": 0.7
+	"scale": 0.6
 }
