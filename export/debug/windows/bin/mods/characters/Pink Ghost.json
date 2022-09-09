@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "Pink Ghost idle"
+			"fps": 24,
+			"name": "Pink Ghost idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-19
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Pink Ghost singLEFT"
+			"fps": 24,
+			"name": "Pink Ghost singLEFT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				-20
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Pink Ghost singRIGHT"
+			"fps": 24,
+			"name": "Pink Ghost singRIGHT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-10
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Pink Ghost singDOWN"
+			"fps": 24,
+			"name": "Pink Ghost singDOWN",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-6,
 				-37
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Pink Ghost singUP"
+			"fps": 24,
+			"name": "Pink Ghost singUP",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -65,9 +65,9 @@
 	"healthicon": "pinkghost",
 	"flip_x": false,
 	"healthbar_colors": [
-		155,
-		0,
-		22
+		81,
+		111,
+		104
 	],
 	"camera_position": [
 		90,

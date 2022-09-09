@@ -19,3 +19,15 @@ function onBeatHit()
 	-- triggered 4 times per section
 	objectPlayAnimation('guest0','idle',true);
 end
+
+
+function onCreatePost( ... )
+	doTweenX('gfScaleX', 'gf.scale', .65, 0.0001)
+	doTweenY('gfScaley', 'gf.scale', .65, 0.0001)
+
+	doTweenX('dadScaleX', 'dad.scale', 1, 0.0001)
+	doTweenY('dadScaley', 'dad.scale', 1, 0.0001)
+
+	doTweenX('bfScaleX', 'boyfriend.scale', .8, 0.0001)
+	doTweenY('bfScaley', 'boyfriend.scale', .8, 0.0001)
+end
