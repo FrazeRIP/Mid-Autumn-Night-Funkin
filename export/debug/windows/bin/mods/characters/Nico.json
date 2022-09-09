@@ -1,77 +1,77 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Nico idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Nico idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				11,
+				15,
 				-2
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Nico singLEFT",
-			"indices": []
+			"indices": [],
+			"name": "Nico singLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				0
+				-6
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Nico singDOWN",
-			"indices": []
+			"indices": [],
+			"name": "Nico singDOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				0,
+				-5,
 				0
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Nico singRIGHT",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Nico singRIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-7,
 				-1
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Nico singUP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Nico singUP"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-1,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "HEY",
-			"loop": false,
-			"name": "Nico HEY"
+			"fps": 24,
+			"name": "Nico HEY",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Nico",
 	"position": [
-		0,
-		0
+		-140,
+		-150
 	],
 	"healthicon": "Nico",
 	"flip_x": false,
@@ -81,9 +81,9 @@
 		197
 	],
 	"camera_position": [
-		10,
-		180
+		110,
+		140
 	],
 	"sing_duration": 6.1,
-	"scale": 0.7
+	"scale": 0.6
 }

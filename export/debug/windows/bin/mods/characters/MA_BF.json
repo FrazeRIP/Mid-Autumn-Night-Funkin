@@ -126,18 +126,18 @@
 				0,
 				0
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
-			"loop": false,
+			"indices": [],
 			"name": "BF idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MA_BF",
 	"position": [
-		0,
-		0
+		-110,
+		50
 	],
 	"healthicon": "ma-bf",
 	"flip_x": true,
@@ -147,9 +147,9 @@
 		255
 	],
 	"camera_position": [
-		0,
+		130,
 		150
 	],
 	"sing_duration": 6.1,
-	"scale": 0.75
+	"scale": 0.65
 }

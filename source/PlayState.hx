@@ -24,6 +24,7 @@ import flixel.addons.transition.FlxTransitionableState;
 import flixel.graphics.atlas.FlxAtlas;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.math.FlxRandom;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
@@ -171,6 +172,7 @@ class PlayState extends MusicBeatState
 	public var health:Float = 1;
 	public var combo:Int = 0;
 
+	private var healthBarBG2:AttachedSprite;
 	private var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
@@ -308,9 +310,23 @@ class PlayState extends MusicBeatState
 
 	var precacheList:Map<String, String> = new Map<String, String>();
 
+	//--------------------------------------------------------------------------------------------------
+	//IST
+	public var deadlyMahjong:Int = 0;
+
+
+
+
+	//--------------------------------------------------------------------------------------------------
+
 	override public function create()
 	{
+
+		var random = new FlxRandom();
+
 		Paths.clearStoredMemory();
+
+		deadlyMahjong = random.int(0,2);
 
 		// for lua
 		instance = this;
@@ -1149,6 +1165,17 @@ class PlayState extends MusicBeatState
 		FlxG.fixedTimestep = false;
 		moveCameraSection();
 
+		healthBarBG2 = new AttachedSprite('healthBar2');
+		healthBarBG2.y = FlxG.height * 0.9052;
+		healthBarBG2.screenCenter(X);
+		healthBarBG2.scrollFactor.set();
+		healthBarBG2.visible = !ClientPrefs.hideHud;
+		healthBarBG2.xAdd = -4;
+		healthBarBG2.yAdd = -4;
+		add(healthBarBG2);
+		if(ClientPrefs.downScroll) healthBarBG2.y = 0.0948 * FlxG.height;
+
+
 		healthBarBG = new AttachedSprite('healthBar');
 		healthBarBG.y = FlxG.height * 0.89;
 		healthBarBG.screenCenter(X);
@@ -1203,6 +1230,7 @@ class PlayState extends MusicBeatState
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
+		healthBarBG2.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
@@ -4522,6 +4550,7 @@ class PlayState extends MusicBeatState
 
 	function opponentNoteHit(note:Note):Void
 	{
+		
 		if (Paths.formatToSongPath(SONG.song) != 'tutorial')
 			camZooming = true;
 
@@ -4564,6 +4593,7 @@ class PlayState extends MusicBeatState
 
 		callOnLuas('opponentNoteHit', [notes.members.indexOf(note), Math.abs(note.noteData), note.noteType, note.isSustainNote]);
 
+		spawnNoteSplashOnNote(note);
 		if (!note.isSustainNote)
 		{
 			note.kill();
@@ -4585,7 +4615,7 @@ class PlayState extends MusicBeatState
 
 			if(note.hitCausesMiss) {
 				noteMiss(note);
-				if(!note.noteSplashDisabled && !note.isSustainNote) {
+				if(!note.noteSplashDisabled) {
 					spawnNoteSplashOnNote(note);
 				}
 
@@ -4682,9 +4712,17 @@ class PlayState extends MusicBeatState
 
 	public function spawnNoteSplashOnNote(note:Note) {
 		if(ClientPrefs.noteSplashes && note != null) {
-			var strum:StrumNote = playerStrums.members[note.noteData];
-			if(strum != null) {
-				spawnNoteSplash(strum.x, strum.y, note.noteData, note);
+
+			if(note.hitByOpponent){
+				var strum:StrumNote = opponentStrums.members[note.noteData];
+				if(strum != null) {
+					spawnNoteSplash(strum.x, strum.y, note.noteData, note);
+				}
+			}else{
+				var strum:StrumNote = playerStrums.members[note.noteData];
+				if(strum != null) {
+					spawnNoteSplash(strum.x, strum.y, note.noteData, note);
+				}
 			}
 		}
 	}
