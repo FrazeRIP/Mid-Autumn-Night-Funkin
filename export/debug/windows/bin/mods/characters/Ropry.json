@@ -70,8 +70,8 @@
 	"no_antialiasing": false,
 	"image": "characters/Ropry",
 	"position": [
-		0,
-		0
+		-250,
+		-170
 	],
 	"healthicon": "ropry",
 	"flip_x": false,
@@ -81,9 +81,9 @@
 		137
 	],
 	"camera_position": [
-		280,
-		100
+		210,
+		200
 	],
 	"sing_duration": 6,
-	"scale": 0.7
+	"scale": 0.6
 }
