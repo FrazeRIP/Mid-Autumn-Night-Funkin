@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
-				0,
+				31,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "RincyA singLEFT"
+			"fps": 24,
+			"name": "RincyA singLEFT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
-				0
+				5
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "RincyA singUP"
+			"fps": 24,
+			"name": "RincyA singUP",
+			"indices": []
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-22,
+				-1
+			],
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "RincyA singRIGHT"
+			"fps": 24,
+			"name": "RincyA singRIGHT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
-				0
+				-4
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "RincyA singDOWN"
+			"fps": 24,
+			"name": "RincyA singDOWN",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "RincyA idle"
+			"fps": 24,
+			"name": "RincyA idle",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
