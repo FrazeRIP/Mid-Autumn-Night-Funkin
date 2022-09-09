@@ -32,36 +32,36 @@
 	<SubTexture name="RincyA singDOWN0012" x="10" y="3448" width="758" height="1146"/>
 	<SubTexture name="RincyA singDOWN0013" x="10" y="3448" width="758" height="1146"/>
 	<SubTexture name="RincyA singDOWN0014" x="10" y="3448" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0000" x="768" y="3448" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0001" x="1526" y="3448" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0002" x="2284" y="3448" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0003" x="3042" y="3448" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0004" x="10" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0005" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0006" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0007" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0008" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0009" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0010" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0011" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0012" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0013" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singLEFT0014" x="768" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0000" x="1526" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0001" x="2284" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0002" x="3042" y="4594" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0003" x="10" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0004" x="768" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0005" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0006" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0007" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0008" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0009" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0010" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0011" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0012" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0013" x="1526" y="5740" width="758" height="1146"/>
-	<SubTexture name="RincyA singRIGHT0014" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0000" x="768" y="3448" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0001" x="1526" y="3448" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0002" x="2284" y="3448" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0003" x="3042" y="3448" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0004" x="10" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0005" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0006" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0007" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0008" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0009" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0010" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0011" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0012" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0013" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singRIGHT0014" x="768" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0000" x="1526" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0001" x="2284" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0002" x="3042" y="4594" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0003" x="10" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0004" x="768" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0005" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0006" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0007" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0008" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0009" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0010" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0011" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0012" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0013" x="1526" y="5740" width="758" height="1146"/>
+	<SubTexture name="RincyA singLEFT0014" x="1526" y="5740" width="758" height="1146"/>
 	<SubTexture name="RincyA singUP0000" x="2284" y="5740" width="758" height="1146"/>
 	<SubTexture name="RincyA singUP0001" x="3042" y="5740" width="758" height="1146"/>
 	<SubTexture name="RincyA singUP0002" x="10" y="6886" width="758" height="1146"/>
