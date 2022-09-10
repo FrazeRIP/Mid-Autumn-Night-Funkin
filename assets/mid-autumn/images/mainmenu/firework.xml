@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="firework.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Firework0000" x="10" y="10" width="300" height="281"/>
+	<SubTexture name="Firework0001" x="330" y="10" width="300" height="281"/>
+	<SubTexture name="Firework0002" x="650" y="10" width="300" height="281"/>
+	<SubTexture name="Firework0003" x="10" y="311" width="300" height="281"/>
+	<SubTexture name="Firework0004" x="330" y="311" width="300" height="281"/>
+	<SubTexture name="Firework0005" x="650" y="311" width="300" height="281"/>
+	<SubTexture name="Firework0006" x="10" y="612" width="300" height="281"/>
+	<SubTexture name="Firework0007" x="330" y="612" width="300" height="281"/>
+	<SubTexture name="Firework0008" x="650" y="612" width="300" height="281"/>
+	<SubTexture name="Firework0009" x="10" y="913" width="300" height="281"/>
+	<SubTexture name="Firework0010" x="330" y="913" width="300" height="281"/>
+	<SubTexture name="Firework0011" x="650" y="913" width="300" height="281"/>
+	<SubTexture name="Firework0012" x="10" y="1214" width="300" height="281"/>
+	<SubTexture name="Firework0013" x="330" y="1214" width="300" height="281"/>
+	<SubTexture name="Firework0014" x="650" y="1214" width="300" height="281"/>
+	<SubTexture name="Firework0015" x="10" y="1515" width="300" height="281"/>
+	<SubTexture name="Firework0016" x="330" y="1515" width="300" height="281"/>
+	<SubTexture name="Firework0017" x="650" y="1515" width="300" height="281"/>
+	<SubTexture name="Firework0018" x="650" y="1515" width="300" height="281"/>
+</TextureAtlas>
