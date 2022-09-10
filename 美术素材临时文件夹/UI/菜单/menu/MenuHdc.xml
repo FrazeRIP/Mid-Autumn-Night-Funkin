@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MenuHdc.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MenuHdc0000" x="10" y="10" width="148" height="383"/>
+	<SubTexture name="MenuHdcSelected0000" x="178" y="10" width="176" height="457"/>
+</TextureAtlas>
