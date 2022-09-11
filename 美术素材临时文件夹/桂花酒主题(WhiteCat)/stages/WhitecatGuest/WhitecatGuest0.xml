@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="WhitecatGuest0.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="WhitecatGuest00000" x="10" y="10" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00001" x="323" y="10" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00002" x="636" y="10" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00003" x="10" y="410" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00004" x="323" y="410" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00005" x="636" y="410" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00006" x="636" y="410" width="293" height="380"/>
+	<SubTexture name="WhitecatGuest00007" x="636" y="410" width="293" height="380"/>
+</TextureAtlas>
