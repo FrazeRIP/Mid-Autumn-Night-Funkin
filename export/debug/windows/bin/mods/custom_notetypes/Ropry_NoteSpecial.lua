@@ -55,6 +55,7 @@ end
 function noteMiss(id, noteData, noteType, isSustainNote)
 	if noteType == noteName then
 			cameraShake('camGame', .01, .35)
+			setProperty('health',0.01)
 	end
 end
 
