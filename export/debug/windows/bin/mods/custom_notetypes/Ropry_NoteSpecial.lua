@@ -48,7 +48,8 @@ end
 
 function goodNoteHit(id, noteData, noteType, isSustainNote)
 	if noteType == noteName then
-		
+		triggerEvent("Play Animation", 'hey', 'bf')
+		setProperty("dad.heyTimer",3)
 	end
 end
 
