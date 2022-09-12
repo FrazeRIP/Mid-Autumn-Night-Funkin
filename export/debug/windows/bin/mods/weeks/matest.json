@@ -1,0 +1,41 @@
+{
+	"songs": [
+    [
+      "tuerye",
+      "ropry",
+      [
+        146,
+        113,
+        253
+      ]
+    ],
+    [
+      "sprout",
+      "sprout",
+      [
+        146,
+        113,
+        253
+      ]
+    ]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "test",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
