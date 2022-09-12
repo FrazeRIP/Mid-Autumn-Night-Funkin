@@ -1,70 +1,81 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Ropry idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Ropry idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-9,
 				23
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "Ropry singDOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Ropry singDOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-27,
 				16
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Ropry singRIGHT",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Ropry singRIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-19,
 				6
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Ropry singUP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Ropry singUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				21
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "Ropry singLEFT",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Ropry singLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				2,
 				3
 			],
-			"anim": "HEY",
+			"loop": false,
 			"fps": 24,
-			"name": "Ropry HEY",
-			"indices": []
+			"anim": "HEY",
+			"indices": [],
+			"name": "Ropry HEY"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "Ropry HEY"
 		}
 	],
 	"no_antialiasing": false,
