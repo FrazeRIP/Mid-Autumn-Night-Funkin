@@ -27,8 +27,8 @@
 				13,
 				0
 			],
-			"loop": true,
-			"fps": 24,
+			"loop": false,
+			"fps": 2,
 			"anim": "singDOWNmiss",
 			"indices": [],
 			"name": "BF NOTE DOWN MISS"
@@ -38,8 +38,8 @@
 				2,
 				4
 			],
-			"loop": true,
-			"fps": 24,
+			"loop": false,
+			"fps": 2,
 			"anim": "singRIGHTmiss",
 			"indices": [],
 			"name": "BF NOTE RIGHT MISS"
@@ -60,8 +60,8 @@
 				27,
 				5
 			],
-			"loop": true,
-			"fps": 24,
+			"loop": false,
+			"fps": 2,
 			"anim": "singLEFTmiss",
 			"indices": [],
 			"name": "BF NOTE LEFT MISS"
@@ -84,7 +84,7 @@
 				0
 			],
 			"anim": "singUPmiss",
-			"fps": 24,
+			"fps": 2,
 			"name": "BF NOTE UP MISS",
 			"indices": []
 		},
