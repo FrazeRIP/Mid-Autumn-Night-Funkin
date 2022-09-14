@@ -30,7 +30,8 @@ using StringTools;
 class OptionsState extends MusicBeatState
 {
 	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
-	private var grpOptions:FlxTypedGroup<Alphabet>;
+	var optionsCN:Array<String> = ['箭头颜色', '控制', '连击位置与延迟调整', '图像', '视听效果', '游玩效果'];
+	private var grpOptions:FlxTypedGroup<OptionText>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
 
@@ -67,14 +68,16 @@ class OptionsState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
-		grpOptions = new FlxTypedGroup<Alphabet>();
+		grpOptions = new FlxTypedGroup<OptionText>();
 		add(grpOptions);
 
 		for (i in 0...options.length)
 		{
-			var optionText:Alphabet = new Alphabet(0, 0, options[i], true, false);
-			optionText.screenCenter();
-			optionText.y += (100 * (i - (options.length / 2))) + 50;
+			var optionText:OptionText = new OptionText(0, 0, 700, optionsCN[i], 70);
+			optionText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 70, FlxColor.BLACK, CENTER,OUTLINE,FlxColor.WHITE);
+			optionText.fieldWidth = 70 * (optionsCN[i].length + 1);
+			optionText.screenCenter(X);
+			optionText.y += (100 * (i - (options.length / 2))) + 400;
 			grpOptions.add(optionText);
 		}
 
@@ -131,11 +134,26 @@ class OptionsState extends MusicBeatState
 			if (item.targetY == 0) {
 				item.alpha = 1;
 				selectorLeft.x = item.x - 63;
-				selectorLeft.y = item.y;
+				selectorLeft.y = item.y + 10;
 				selectorRight.x = item.x + item.width + 15;
-				selectorRight.y = item.y;
+				selectorRight.y = item.y + 10;
 			}
 		}
 		FlxG.sound.play(Paths.sound('scrollMenu'));
+	}
+}
+
+class OptionText extends FlxText
+{
+	public var targetY:Float = 0;
+
+	public function new(x:Float, y:Float, width:Int, rawtext:String, size:Int)
+	{	
+		super(x, y, width,rawtext,size);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
 	}
 }

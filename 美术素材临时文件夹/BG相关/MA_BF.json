@@ -27,8 +27,8 @@
 				13,
 				0
 			],
-			"loop": true,
-			"fps": 24,
+			"loop": false,
+			"fps": 2,
 			"anim": "singDOWNmiss",
 			"indices": [],
 			"name": "BF NOTE DOWN MISS"
@@ -38,8 +38,8 @@
 				2,
 				4
 			],
-			"loop": true,
-			"fps": 24,
+			"loop": false,
+			"fps": 2,
 			"anim": "singRIGHTmiss",
 			"indices": [],
 			"name": "BF NOTE RIGHT MISS"
@@ -60,8 +60,8 @@
 				27,
 				5
 			],
-			"loop": true,
-			"fps": 24,
+			"loop": false,
+			"fps": 2,
 			"anim": "singLEFTmiss",
 			"indices": [],
 			"name": "BF NOTE LEFT MISS"
@@ -84,7 +84,7 @@
 				0
 			],
 			"anim": "singUPmiss",
-			"fps": 24,
+			"fps": 2,
 			"name": "BF NOTE UP MISS",
 			"indices": []
 		},
@@ -126,18 +126,18 @@
 				0,
 				0
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
-			"loop": false,
+			"indices": [],
 			"name": "BF idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MA_BF",
 	"position": [
-		0,
-		0
+		-110,
+		50
 	],
 	"healthicon": "ma-bf",
 	"flip_x": true,
@@ -147,9 +147,9 @@
 		255
 	],
 	"camera_position": [
-		0,
+		130,
 		150
 	],
 	"sing_duration": 6.1,
-	"scale": 0.75
+	"scale": 0.65
 }

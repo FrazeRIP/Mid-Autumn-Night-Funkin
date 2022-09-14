@@ -33,9 +33,9 @@ class BaseOptionsMenu extends MusicBeatSubstate
 	private var curSelected:Int = 0;
 	private var optionsArray:Array<Option>;
 
-	private var grpOptions:FlxTypedGroup<Alphabet>;
+	private var grpOptions:FlxTypedGroup<OptionItem>;
 	private var checkboxGroup:FlxTypedGroup<CheckboxThingie>;
-	private var grpTexts:FlxTypedGroup<AttachedText>;
+	private var grpTexts:FlxTypedGroup<AttachedValueText>;
 
 	private var boyfriend:Character = null;
 	private var descBox:FlxSprite;
@@ -62,10 +62,10 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		add(bg);
 
 		// avoids lagspikes while scrolling through menus!
-		grpOptions = new FlxTypedGroup<Alphabet>();
+		grpOptions = new FlxTypedGroup<OptionItem>();
 		add(grpOptions);
 
-		grpTexts = new FlxTypedGroup<AttachedText>();
+		grpTexts = new FlxTypedGroup<AttachedValueText>();
 		add(grpTexts);
 
 		checkboxGroup = new FlxTypedGroup<CheckboxThingie>();
@@ -75,22 +75,25 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		descBox.alpha = 0.6;
 		add(descBox);
 
-		var titleText:Alphabet = new Alphabet(0, 0, title, true, false, 0, 0.6);
-		titleText.x += 60;
-		titleText.y += 40;
+		var titleText:FlxText = new FlxText(0, 0, 700, title, 70);
+		titleText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 70, FlxColor.BLACK, LEFT,OUTLINE,FlxColor.WHITE);
+		titleText.fieldWidth = 70 * (title.length + 1);
+		titleText.x += 40;
+		titleText.y += 20;
 		titleText.alpha = 0.4;
 		add(titleText);
 
 		descText = new FlxText(50, 600, 1180, "", 32);
-		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		descText.setFormat(Paths.font("HYWenHei-65W.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		descText.scrollFactor.set();
 		descText.borderSize = 2.4;
 		add(descText);
 
 		for (i in 0...optionsArray.length)
 		{
-			var optionText:Alphabet = new Alphabet(0, 70 * i, optionsArray[i].name, false, false);
-			optionText.isMenuItem = true;
+			var optionText:OptionItem = new OptionItem(0, 70 * i, 700, optionsArray[i].name, 70);
+			optionText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 70, FlxColor.BLACK, LEFT, OUTLINE, FlxColor.WHITE);
+			optionText.fieldWidth = 70 * (optionsArray[i].name.length + 1);
 			optionText.x += 300;
 			/*optionText.forceX = 300;
 			optionText.yMult = 90;*/
@@ -101,13 +104,24 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			if(optionsArray[i].type == 'bool') {
 				var checkbox:CheckboxThingie = new CheckboxThingie(optionText.x - 105, optionText.y, optionsArray[i].getValue() == true);
 				checkbox.sprTracker = optionText;
+				checkbox.offsetY = -30;
 				checkbox.ID = i;
 				checkboxGroup.add(checkbox);
 			} else {
 				optionText.x -= 80;
 				optionText.xAdd -= 80;
-				var valueText:AttachedText = new AttachedText('' + optionsArray[i].getValue(), optionText.width + 80);
+				var valueText:AttachedValueText = new AttachedValueText(0, 0, 700, optionsArray[i].getValue(), 66);
+				if (optionsArray[i].type == 'string')
+					valueText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 66, FlxColor.BLACK, LEFT);
+				else
+				{
+					valueText.setFormat(Paths.font("HKKLTW9.TTF"), 66, FlxColor.BLACK, LEFT);
+					valueText.offsetY = 10;
+				}
+					
+				valueText.fieldWidth = 66 * (valueText.text.length + 1);
 				valueText.sprTracker = optionText;
+				valueText.offsetX = optionText.fieldWidth - 20;
 				valueText.copyAlpha = true;
 				valueText.ID = i;
 				grpTexts.add(valueText);
@@ -315,7 +329,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			}
 		}
 
-		descBox.setPosition(descText.x - 10, descText.y - 10);
+		descBox.setPosition(descText.x - 10, descText.y - 15);
 		descBox.setGraphicSize(Std.int(descText.width + 20), Std.int(descText.height + 25));
 		descBox.updateHitbox();
 

@@ -31,54 +31,54 @@ class VisualsUISubState extends BaseOptionsMenu
 {
 	public function new()
 	{
-		title = 'Visuals and UI';
+		title = '视听效果';
 		rpcTitle = 'Visuals & UI Settings Menu'; //for Discord Rich Presence
 
-		var option:Option = new Option('Note Splashes',
-			"If unchecked, hitting \"Sick!\" notes won't show particles.",
+		var option:Option = new Option('粒子溅射',
+			"未选中时，“Sick!”判定的音符将不会出现粒子溅射效果。",
 			'noteSplashes',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Hide HUD',
-			'If checked, hides most HUD elements.',
+		var option:Option = new Option('隐藏HUD',
+			'选中时，将会隐藏大部分HUD元素。',
 			'hideHud',
 			'bool',
 			false);
 		addOption(option);
 		
-		var option:Option = new Option('Time Bar:',
-			"What should the Time Bar display?",
+		var option:Option = new Option('时间条:',
+			"时间条显示何种内容？",
 			'timeBarType',
 			'string',
 			'Time Left',
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
 
-		var option:Option = new Option('Flashing Lights',
-			"Uncheck this if you're sensitive to flashing lights!",
+		var option:Option = new Option('闪光特效',
+			"如果你对闪光特效敏感请不要选中此项！",
 			'flashing',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Camera Zooms',
-			"If unchecked, the camera won't zoom in on a beat hit.",
+		var option:Option = new Option('镜头伸缩',
+			"未选中时，镜头将不会随着节拍伸缩。",
 			'camZooms',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Score Text Zoom on Hit',
-			"If unchecked, disables the Score text zooming\neverytime you hit a note.",
+		var option:Option = new Option('分数信息更新特效',
+			"未选中时，每次你命中音符，\n分数信息将不再出现伸缩特效。",
 			'scoreZoom',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Health Bar Transparency',
-			'How much transparent should the health bar and icons be.',
+		var option:Option = new Option('血量条透明度',
+			'调整血量条及小头像的透明度。',
 			'healthBarAlpha',
 			'percent',
 			1);
@@ -90,8 +90,8 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		
 		#if !mobile
-		var option:Option = new Option('FPS Counter',
-			'If unchecked, hides FPS Counter.',
+		var option:Option = new Option('FPS计数器',
+			'未选中时，将会隐藏FPS计数器。',
 			'showFPS',
 			'bool',
 			true);
@@ -99,8 +99,8 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.onChange = onChangeFPSCounter;
 		#end
 		
-		var option:Option = new Option('Pause Screen Song:',
-			"What song do you prefer for the Pause Screen?",
+		var option:Option = new Option('暂停界面歌曲:',
+			"你希望在暂停界面听到哪首歌？",
 			'pauseMusic',
 			'string',
 			'Tea Time',
