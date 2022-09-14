@@ -149,8 +149,8 @@ class NoteOffsetState extends MusicBeatState
 		beatText.visible = false;
 		add(beatText);
 		
-		timeTxt = new FlxText(0, 600, FlxG.width, "", 32);
-		timeTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		timeTxt = new FlxText(0, 600, FlxG.width, "", 28);
+		timeTxt.setFormat(Paths.font("HYWenHei-65W.ttf"), 28, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		timeTxt.scrollFactor.set();
 		timeTxt.borderSize = 2;
 		timeTxt.visible = false;
@@ -186,8 +186,8 @@ class NoteOffsetState extends MusicBeatState
 		blackBox.cameras = [camHUD];
 		add(blackBox);
 
-		changeModeText = new FlxText(0, 4, FlxG.width, "", 32);
-		changeModeText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER);
+		changeModeText = new FlxText(0, 0, FlxG.width, "", 30);
+		changeModeText.setFormat(Paths.font("HYWenHei-65W.ttf"), 30, FlxColor.WHITE, CENTER);
 		changeModeText.scrollFactor.set();
 		changeModeText.cameras = [camHUD];
 		add(changeModeText);
@@ -421,7 +421,7 @@ class NoteOffsetState extends MusicBeatState
 		for (i in 0...4)
 		{
 			var text:FlxText = new FlxText(10, 48 + (i * 30), 0, '', 24);
-			text.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			text.setFormat(Paths.font("HYWenHei-65W.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			text.scrollFactor.set();
 			text.borderSize = 2;
 			dumbTexts.add(text);
@@ -440,9 +440,9 @@ class NoteOffsetState extends MusicBeatState
 		{
 			switch(i)
 			{
-				case 0: dumbTexts.members[i].text = 'Rating Offset:';
+				case 0: dumbTexts.members[i].text = '判定位置偏移值：';
 				case 1: dumbTexts.members[i].text = '[' + ClientPrefs.comboOffset[0] + ', ' + ClientPrefs.comboOffset[1] + ']';
-				case 2: dumbTexts.members[i].text = 'Numbers Offset:';
+				case 2: dumbTexts.members[i].text = '连击数位置偏移值：';
 				case 3: dumbTexts.members[i].text = '[' + ClientPrefs.comboOffset[2] + ', ' + ClientPrefs.comboOffset[3] + ']';
 			}
 		}
@@ -451,7 +451,7 @@ class NoteOffsetState extends MusicBeatState
 	function updateNoteDelay()
 	{
 		ClientPrefs.noteOffset = Math.round(barPercent);
-		timeTxt.text = 'Current offset: ' + Math.floor(barPercent) + ' ms';
+		timeTxt.text = '当前偏移值：' + Math.floor(barPercent) + ' ms';
 	}
 
 	function updateMode()
@@ -466,9 +466,9 @@ class NoteOffsetState extends MusicBeatState
 		beatText.visible = !onComboMenu;
 
 		if(onComboMenu)
-			changeModeText.text = '< Combo Offset (Press Accept to Switch) >';
+			changeModeText.text = '< 连击显示位置调整（按确认键切换）>';
 		else
-			changeModeText.text = '< Note/Beat Delay (Press Accept to Switch) >';
+			changeModeText.text = '< 音符/节拍偏移值调整（按确认键切换）>';
 
 		changeModeText.text = changeModeText.text.toUpperCase();
 		FlxG.mouse.visible = onComboMenu;
