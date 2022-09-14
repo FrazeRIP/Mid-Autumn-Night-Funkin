@@ -39,7 +39,7 @@ class NotesSubState extends MusicBeatSubstate
 	var nextAccept:Int = 5;
 
 	var blackBG:FlxSprite;
-	var hsbText:Alphabet;
+	var hsbText:FlxText;
 
 	var posX = 230;
 	public function new() {
@@ -84,8 +84,9 @@ class NotesSubState extends MusicBeatSubstate
 			shaderArray.push(newShader);
 		}
 
-		hsbText = new Alphabet(0, 0, "Hue    Saturation  Brightness", false, false, 0, 0.65);
-		hsbText.x = posX + 240;
+		hsbText = new FlxText(0, 0, 720, "色调         饱和度        亮度", 34);
+		hsbText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 34, FlxColor.BLACK, LEFT);
+		hsbText.x = posX + 230;
 		add(hsbText);
 
 		changeSelection();
@@ -211,7 +212,7 @@ class NotesSubState extends MusicBeatSubstate
 			if (curSelected == i) {
 				item.alpha = 1;
 				item.scale.set(1, 1);
-				hsbText.y = item.y - 70;
+				hsbText.y = item.y + 10;
 				blackBG.y = item.y - 20;
 			}
 		}

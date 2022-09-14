@@ -31,54 +31,54 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 {
 	public function new()
 	{
-		title = 'Gameplay Settings';
+		title = '游玩效果设置';
 		rpcTitle = 'Gameplay Settings Menu'; //for Discord Rich Presence
 
-		var option:Option = new Option('Controller Mode',
-			'Check this if you want to play with\na controller instead of using your Keyboard.',
+		var option:Option = new Option('控制器模式',
+			'如果想使用手柄而不是键盘游玩游戏，请选中该项。',
 			'controllerMode',
 			'bool',
 			false);
 		addOption(option);
 
 		//I'd suggest using "Downscroll" as an example for making your own option since it is the simplest here
-		var option:Option = new Option('Downscroll', //Name
-			'If checked, notes go Down instead of Up, simple enough.', //Description
+		var option:Option = new Option('下落式', //Name
+			'选中时，游戏模式由上升式切换为下落式。', //Description
 			'downScroll', //Save data variable name
 			'bool', //Variable type
 			false); //Default value
 		addOption(option);
 
-		var option:Option = new Option('Middlescroll',
-			'If checked, your notes get centered.',
+		var option:Option = new Option('音符居中',
+			'选中时，音符将会居中显示。',
 			'middleScroll',
 			'bool',
 			false);
 		addOption(option);
 
-		var option:Option = new Option('Opponent Notes',
-			'If unchecked, opponent notes get hidden.',
+		var option:Option = new Option('对手音符',
+			'未选中时，对手的音符将会被隐藏。',
 			'opponentStrums',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Ghost Tapping',
-			"If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.",
+		var option:Option = new Option('允许空按',
+			"选中时，当轨道上没有可击打音符，\n按下对应方向键不会导致miss。",
 			'ghostTapping',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Disable Reset Button',
-			"If checked, pressing Reset won't do anything.",
+		var option:Option = new Option('屏蔽重开键',
+			"选中时，重开键会被屏蔽，避免误触。",
 			'noReset',
 			'bool',
 			false);
 		addOption(option);
 
-		var option:Option = new Option('Hitsound Volume',
-			'Funny notes does \"Tick!\" when you hit them."',
+		var option:Option = new Option('打击音效',
+			'命中音符时会发出“嗒!”的音效。',
 			'hitsoundVolume',
 			'percent',
 			0);
@@ -90,8 +90,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.decimals = 1;
 		option.onChange = onChangeHitsoundVolume;
 
-		var option:Option = new Option('Rating Offset',
-			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',
+		var option:Option = new Option('判定延迟',
+			'调整“Sick!”判定的延迟值，\n数值越高代表完美命中的时机越往后。',
 			'ratingOffset',
 			'int',
 			0);
@@ -101,8 +101,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 30;
 		addOption(option);
 
-		var option:Option = new Option('Sick! Hit Window',
-			'Changes the amount of time you have\nfor hitting a "Sick!" in milliseconds.',
+		var option:Option = new Option('完美判定区间',
+			'以毫秒为单位调整“Sick!”判定的前后可误差范围。',
 			'sickWindow',
 			'int',
 			45);
@@ -112,8 +112,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 45;
 		addOption(option);
 
-		var option:Option = new Option('Good Hit Window',
-			'Changes the amount of time you have\nfor hitting a "Good" in milliseconds.',
+		var option:Option = new Option('良好判定区间',
+			'以毫秒为单位调整“Good”判定的前后可误差范围。',
 			'goodWindow',
 			'int',
 			90);
@@ -123,8 +123,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 90;
 		addOption(option);
 
-		var option:Option = new Option('Bad Hit Window',
-			'Changes the amount of time you have\nfor hitting a "Bad" in milliseconds.',
+		var option:Option = new Option('差判定区间',
+			'以毫秒为单位调整“Bad”判定的前后可误差范围。',
 			'badWindow',
 			'int',
 			135);
@@ -134,8 +134,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 135;
 		addOption(option);
 
-		var option:Option = new Option('Safe Frames',
-			'Changes how many frames you have for\nhitting a note earlier or late.',
+		var option:Option = new Option('安全帧',
+			'调整安全帧范围，在安全帧之外按下按键，\n将会被判定为按得过早或过晚。',
 			'safeFrames',
 			'float',
 			10);
