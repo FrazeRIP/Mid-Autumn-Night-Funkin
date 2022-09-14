@@ -27,42 +27,43 @@ import Controls;
 
 using StringTools;
 
-class ControlsSubState extends MusicBeatSubstate {
+class ControlsSubState extends MusicBeatSubstate 
+{
 	private static var curSelected:Int = -1;
 	private static var curAlt:Bool = false;
 
-	private static var defaultKey:String = 'Reset to Default Keys';
+	private static var defaultKey:String = '恢复至默认设置';
 	private var bindLength:Int = 0;
 
 	var optionShit:Array<Dynamic> = [
-		['NOTES'],
-		['Left', 'note_left'],
-		['Down', 'note_down'],
-		['Up', 'note_up'],
-		['Right', 'note_right'],
+		['音符'],
+		['左', 'note_left'],
+		['下', 'note_down'],
+		['上', 'note_up'],
+		['右', 'note_right'],
 		[''],
 		['UI'],
-		['Left', 'ui_left'],
-		['Down', 'ui_down'],
-		['Up', 'ui_up'],
-		['Right', 'ui_right'],
+		['左', 'ui_left'],
+		['下', 'ui_down'],
+		['上', 'ui_up'],
+		['右', 'ui_right'],
 		[''],
-		['Reset', 'reset'],
-		['Accept', 'accept'],
-		['Back', 'back'],
-		['Pause', 'pause'],
+		['重开', 'reset'],
+		['确认', 'accept'],
+		['返回', 'back'],
+		['暂停', 'pause'],
 		[''],
-		['VOLUME'],
-		['Mute', 'volume_mute'],
-		['Up', 'volume_up'],
-		['Down', 'volume_down'],
+		['音量'],
+		['静音', 'volume_mute'],
+		['增大', 'volume_up'],
+		['减小', 'volume_down'],
 		[''],
-		['DEBUG'],
-		['Key 1', 'debug_1'],
-		['Key 2', 'debug_2']
+		['调试'],
+		['调试键1', 'debug_1'],
+		['调试键2', 'debug_2']
 	];
 
-	private var grpOptions:FlxTypedGroup<Alphabet>;
+	private var grpOptions:FlxTypedGroup<OptionItem>;
 	private var grpInputs:Array<AttachedText> = [];
 	private var grpInputsAlt:Array<AttachedText> = [];
 	var rebindingKey:Bool = false;
@@ -77,7 +78,7 @@ class ControlsSubState extends MusicBeatSubstate {
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
-		grpOptions = new FlxTypedGroup<Alphabet>();
+		grpOptions = new FlxTypedGroup<OptionItem>();
 		add(grpOptions);
 
 		optionShit.push(['']);
@@ -90,8 +91,9 @@ class ControlsSubState extends MusicBeatSubstate {
 				isCentered = true;
 			}
 
-			var optionText:Alphabet = new Alphabet(0, (10 * i), optionShit[i][0], (!isCentered || isDefaultKey), false);
-			optionText.isMenuItem = true;
+			var optionText:OptionItem = new OptionItem(0, (10 * i), 700, optionShit[i][0], 70);
+			optionText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 70, FlxColor.BLACK, CENTER, OUTLINE, FlxColor.WHITE);
+			optionText.fieldWidth = 70 * (optionShit[i][0].length + 1);
 			if(isCentered) {
 				optionText.screenCenter(X);
 				optionText.forceX = optionText.x;
@@ -272,7 +274,7 @@ class ControlsSubState extends MusicBeatSubstate {
 		return optionShit[num].length < 2 && optionShit[num][0] != defaultKey;
 	}
 
-	private function addBindTexts(optionText:Alphabet, num:Int) {
+	private function addBindTexts(optionText:OptionItem, num:Int) {
 		var keys:Array<Dynamic> = ClientPrefs.keyBinds.get(optionShit[num][1]);
 		var text1 = new AttachedText(InputFormatter.getKeyName(keys[0]), 400, -55);
 		text1.setPosition(optionText.x + 400, optionText.y - 55);

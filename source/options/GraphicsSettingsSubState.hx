@@ -33,19 +33,19 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 {
 	public function new()
 	{
-		title = 'Graphics';
+		title = '图像';
 		rpcTitle = 'Graphics Settings Menu'; //for Discord Rich Presence
 
 		//I'd suggest using "Low Quality" as an example for making your own option since it is the simplest here
-		var option:Option = new Option('Low Quality', //Name
-			'If checked, disables some background details,\ndecreases loading times and improves performance.', //Description
+		var option:Option = new Option('低画质', //Name
+			'选中时，部分背景细节将会被隐藏，\n能够在一定程度上减少加载时间，改善游戏表现。', //Description
 			'lowQuality', //Save data variable name
 			'bool', //Variable type
 			false); //Default value
 		addOption(option);
 
-		var option:Option = new Option('Anti-Aliasing',
-			'If unchecked, disables anti-aliasing, increases performance\nat the cost of sharper visuals.',
+		var option:Option = new Option('抗锯齿',
+			'未选中时，将会关闭抗锯齿效果，\n能够在一定程度上提升流畅度，但图像边缘会出现锯齿。',
 			'globalAntialiasing',
 			'bool',
 			true);
@@ -53,16 +53,16 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 		option.onChange = onChangeAntiAliasing; //Changing onChange is only needed if you want to make a special interaction after it changes the value
 		addOption(option);
 
-		var option:Option = new Option('Shaders', //Name
-			'If unchecked, disables shaders.\nIt\'s used for some visual effects, and also CPU intensive for weaker PCs.', //Description
+		var option:Option = new Option('着色器', //Name
+			'未选中时，将会关闭着色器。着色器用于实现一些特殊的视觉效果，\n如果你的电脑CPU性能较弱，推荐关闭着色器。', //Description
 			'shaders', //Save data variable name
 			'bool', //Variable type
 			true); //Default value
 		addOption(option);
 
 		#if !html5 //Apparently other framerates isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
-		var option:Option = new Option('Framerate',
-			"Pretty self explanatory, isn't it?",
+		var option:Option = new Option('帧率',
+			"顾名思义，不用多解释了吧？",
 			'framerate',
 			'int',
 			60);
