@@ -34,9 +34,9 @@ class MainMenuState extends MusicBeatState
 
 	var menuItems:FlxTypedGroup<MainMenuItem>;
 	private var camGame:FlxCamera;
-	private var camOther:FlxCamera;
+	private var camFirewrok:FlxCamera;
 	private var camAchievement:FlxCamera;
-	private var camHUD:FlxCamera;
+	public var camFront:FlxCamera;
 	
 	var optionShit:Array<String> = [
 		'story_mode',
@@ -50,11 +50,12 @@ class MainMenuState extends MusicBeatState
 
 	var desText:FlxText;
 
-	var camFollow:FlxObject;
-	var camFollowPos:FlxObject;
+//	var camFollow:FlxObject;
+//	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
 
 	var blurEff:Array<BitmapFilter> = [];
+	public static var firstStart:Bool = true;
 
 	override function create()
 	{
@@ -69,24 +70,25 @@ class MainMenuState extends MusicBeatState
 		#end
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
 
-		blurEff[0] = new BlurFilter(6,6,openfl.filters.BitmapFilterQuality.LOW);
+		blurEff[0] = new BlurFilter(6, 6, openfl.filters.BitmapFilterQuality.LOW);
 
 		camGame = new FlxCamera();
-		camOther = new FlxCamera();
-		camOther.bgColor.alpha = 0;
-		camHUD = new FlxCamera();
-		camHUD.bgColor.alpha = 0;
+		camFirewrok = new FlxCamera();
+		camFirewrok.bgColor.alpha = 0;
+		camFront = new FlxCamera();
+		camFront.bgColor.alpha = 0;
 		camAchievement = new FlxCamera();
 		camAchievement.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
-		FlxG.cameras.add(camOther, false);
-		FlxG.cameras.add(camHUD, false);
+		FlxG.cameras.add(camFirewrok, false);
+		FlxG.cameras.add(camFront, false);
 		FlxG.cameras.add(camAchievement, false);
 
-		camOther.setFilters(blurEff);
+		camFirewrok.setFilters(blurEff);
 
 		FlxG.cameras.setDefaultDrawTarget(camGame, true);
+		CustomFadeTransition.nextCamera = camFront;
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
@@ -118,7 +120,7 @@ class MainMenuState extends MusicBeatState
 		frame.updateHitbox();
 		frame.screenCenter(X);
 		frame.antialiasing = ClientPrefs.globalAntialiasing;
-		frame.cameras = [camHUD];
+		frame.cameras = [camFront];
 		add(frame);
 
 		var bar:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mainmenu/description_bar','mid-autumn'));
@@ -126,19 +128,19 @@ class MainMenuState extends MusicBeatState
 		bar.updateHitbox();
 		bar.screenCenter(X);
 		bar.antialiasing = ClientPrefs.globalAntialiasing;
-		bar.cameras = [camHUD];
+		bar.cameras = [camFront];
 		add(bar);
 
 		desText = new FlxText(0, FlxG.height - 70, 720, " ", 46);
 		desText.setFormat(Paths.font("ZhengDaoCuShuTi.ttf"), 46, FlxColor.WHITE, CENTER);
 		desText.screenCenter(X);
-		desText.cameras = [camHUD];
+		desText.cameras = [camFront];
 		add(desText);
 
-		camFollow = new FlxObject(0, 0, 1, 1);
-		camFollowPos = new FlxObject(0, 0, 1, 1);
-		add(camFollow);
-		add(camFollowPos);
+		// camFollow = new FlxObject(0, 0, 1, 1);
+		// camFollowPos = new FlxObject(0, 0, 1, 1);
+		// add(camFollow);
+		// add(camFollowPos);
 
 		menuItems = new FlxTypedGroup<MainMenuItem>();
 		add(menuItems);
@@ -150,8 +152,7 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 563;
-			var menuItem:MainMenuItem = new MainMenuItem((i * 160)  + offset, 0, optionShit[i]);
+			var menuItem:MainMenuItem = new MainMenuItem(FlxG.width * 1.2, 0, optionShit[i]);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.animation.play('idle');
@@ -162,14 +163,30 @@ class MainMenuState extends MusicBeatState
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			menuItem.cameras = [camHUD];
+			menuItem.cameras = [camFront];
 			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 			menuItem.updateHitbox();
+
+			if (firstStart)
+			{
+				FlxTween.tween(menuItem,{x: 563 + (i * 160) + (i > 0 ? 80 : 0) },0.8 + (i * 0.25) ,{ease: FlxEase.sineInOut, onComplete: function(flxTween:FlxTween) 
+				{ 
+					menuItem.finishedFunnyMove = true; 
+				}});
+			}
+			else
+			{
+				menuItem.x = 563 + (i * 160) + (i > 0 ? 80 : 0);
+				menuItem.finishedFunnyMove = true;			
+			}			
 		}
 
-		FlxG.camera.follow(camFollowPos, null, 1);
-
+		firstStart = false;
 		changeItem();
+
+		// FlxG.camera.follow(camFollowPos, null, 1);
+
+		// changeItem();
 
 		#if ACHIEVEMENTS_ALLOWED
 		Achievements.loadAchievements();
@@ -206,8 +223,8 @@ class MainMenuState extends MusicBeatState
 			if(FreeplayState.vocals != null) FreeplayState.vocals.volume += 0.5 * elapsed;
 		}
 
-		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
-		camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
+		// var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
+		// camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
 
 		if (!selectedSomethin)
 		{
@@ -232,6 +249,8 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
+				CustomFadeTransition.nextCamera = camFront;
+
 				if (optionShit[curSelected] == 'donate')
 				{
 					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
@@ -285,6 +304,7 @@ class MainMenuState extends MusicBeatState
 			else if (FlxG.keys.anyJustPressed(debugKeys))
 			{
 				selectedSomethin = true;
+				CustomFadeTransition.nextCamera = camFront;
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
 			#end
@@ -329,7 +349,7 @@ class MainMenuState extends MusicBeatState
 			{
 				spr.animation.play('selected');
 				
-				camFollow.setPosition(spr.getGraphicMidpoint().x + curSelected * 80, spr.getGraphicMidpoint().y);
+				// camFollow.setPosition(spr.getGraphicMidpoint().x + curSelected * 80, spr.getGraphicMidpoint().y);
 				spr.centerOffsets();
 
 				switch (spr.ID)
@@ -356,9 +376,9 @@ class MainMenuState extends MusicBeatState
 		firework.animation.addByPrefix('idle', "Firework", 24, false);
 		firework.setGraphicSize(Std.int(firework.width * 0.67));
 		firework.updateHitbox();
-		firework.cameras = [camOther];
-		add(firework);
+		firework.cameras = [camFirewrok];
 		firework.color = fireworkColor[FlxG.random.int(0,fireworkColor.length - 1)];
+		add(firework);
 		firework.animation.play('idle',true);
 
 		new FlxTimer().start(0.8, function(tmr:FlxTimer)
@@ -372,6 +392,7 @@ class MainMenuItem extends FlxSprite
 {
 	public var targetX:Float = 0;
 	var offsets:Int = 0;
+	public var finishedFunnyMove:Bool = false;
 
 	public function new(x:Float, y:Float, optionName:String = '')
 	{
@@ -389,13 +410,16 @@ class MainMenuItem extends FlxSprite
 	{
 		super.update(elapsed);
 
-		if (targetX > 0)
-			offsets = 80;
-		else if (targetX < 0)
-			offsets = -80;
-		else
-			offsets = 0;
-
-		x = FlxMath.lerp(x, 563 + (targetX * 160) + offsets, CoolUtil.boundTo(elapsed * 10.2, 0, 1));
+		if (finishedFunnyMove)
+		{
+			if (targetX > 0)
+				offsets = 80;
+			else if (targetX < 0)
+				offsets = -80;
+			else
+				offsets = 0;
+	
+			x = FlxMath.lerp(x, 563 + (targetX * 160) + offsets, CoolUtil.boundTo(elapsed * 10.2, 0, 1));
+		}	
 	}
 }
