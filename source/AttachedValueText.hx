@@ -32,6 +32,10 @@ class AttachedValueText extends FlxText
 				displayText = '歌曲名称';
 			case 'Disabled':
 				displayText = '不显示';
+			case 'multiplicative':
+				displayText = '默认谱速乘倍率';
+			case 'constant':
+				displayText = '谱面速度实值';
 			default:
 				displayText = rawtext;
 		}
@@ -57,6 +61,10 @@ class AttachedValueText extends FlxText
 				displayText = '歌曲名称';
 			case 'Disabled':
 				displayText = '不显示';
+			case 'multiplicative':
+				displayText = '默认谱速乘倍率';
+			case 'constant':
+				displayText = '谱面速度实值';
 			default:
 				displayText = newText;
 		}
