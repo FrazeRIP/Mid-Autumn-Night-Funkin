@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pink Ghost idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-19
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pink Ghost singLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-20
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pink Ghost singRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-10
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pink Ghost singDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				-37
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pink Ghost singUP",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pink Ghost",
+	"position": [
+		-200,
+		-100
+	],
+	"healthicon": "pinkghost",
+	"flip_x": false,
+	"healthbar_colors": [
+		81,
+		111,
+		104
+	],
+	"camera_position": [
+		90,
+		110
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}

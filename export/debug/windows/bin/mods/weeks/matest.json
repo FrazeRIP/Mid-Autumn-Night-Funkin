@@ -1,5 +1,5 @@
 {
-	"songs": [
+  "songs": [
     [
       "tuerye",
       "ropry",
@@ -17,25 +17,34 @@
         113,
         253
       ]
+    ],
+    [
+      "hua_qian_yue_xia",
+      "nico",
+      [
+        146,
+        113,
+        253
+      ]
     ]
-	],
-	"hiddenUntilUnlocked": false,
-	"hideFreeplay": false,
-	"weekBackground": "stage",
-	"difficulties": "",
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
-	"storyName": "test",
-	"weekName": "Custom Week",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": true,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+  ],
+  "hiddenUntilUnlocked": false,
+  "hideFreeplay": false,
+  "weekBackground": "stage",
+  "difficulties": "",
+  "weekCharacters": [
+    "dad",
+    "bf",
+    "gf"
+  ],
+  "storyName": "test",
+  "weekName": "Custom Week",
+  "freeplayColor": [
+    146,
+    113,
+    253
+  ],
+  "hideStoryMode": true,
+  "weekBefore": "tutorial",
+  "startUnlocked": true
 }
