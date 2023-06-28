@@ -1,7 +1,16 @@
 {
   "songs": [
     [
-      "tuerye",
+      "hua_deng_chu_shang",
+      "paola",
+      [
+        146,
+        113,
+        253
+      ]
+    ],
+    [
+      "jin_zun_zhi_li",
       "ropry",
       [
         146,
@@ -10,7 +19,7 @@
       ]
     ],
     [
-      "sprout",
+      "yi_zai_bi_xian",
       "sprout",
       [
         146,
@@ -26,12 +35,21 @@
         113,
         253
       ]
+    ],
+    [
+      "qi_yun_ding_dang",
+      "pinkghost",
+      [
+        146,
+        113,
+        253
+      ]
     ]
-  ],
+  ], 
   "hiddenUntilUnlocked": false,
   "hideFreeplay": false,
   "weekBackground": "stage",
-  "difficulties": "",
+  "difficulties": "normal",
   "weekCharacters": [
     "dad",
     "bf",
