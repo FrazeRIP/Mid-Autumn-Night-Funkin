@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				7
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "Paola singLEFT",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Paola singLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-7,
 				6
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "Paola singDOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Paola singDOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Paola idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Paola idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				2
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Paola singUP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Paola singUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				2,
 				3
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Paola singRIGHT",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Paola singRIGHT"
 		}
 	],
 	"no_antialiasing": false,
@@ -70,8 +70,8 @@
 		27
 	],
 	"camera_position": [
-		180,
-		230
+		160,
+		300
 	],
 	"sing_duration": 7,
 	"scale": 0.6
