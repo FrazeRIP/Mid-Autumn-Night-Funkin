@@ -1,0 +1,354 @@
+{
+  "song": {
+    "player1": "MA_BF",
+    "events": [],
+    "gfVersion": "MA_GF",
+    "notes": [
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": false
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "sectionNotes": [],
+        "lengthInSteps": 16,
+        "mustHitSection": true
+      },
+      {
+        "gfSection": false,
+        "altAnim": false,
+        "typeOfSection": 0,
+        "sectionNotes": [],
+        "bpm": 180,
+        "sectionBeats": 4,
+        "changeBPM": false,
+        "mustHitSection": true
+      }
+    ],
+    "player2": "whitecat",
+    "player3": null,
+    "song": "zhuo_jiu_feng_qing",
+    "stage": "pin_jiu_ge",
+    "splashSkin": "notes/WhiteCat/WhiteCat_NoteSplashes",
+    "arrowSkin": "notes/WhiteCat/WhiteCat_NoteAssets",
+    "needsVoices": true,
+    "validScore": true,
+    "bpm": 180,
+    "speed": 1.5
+  }
+}
