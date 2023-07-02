@@ -1,0 +1,89 @@
+{
+  "animations": [
+    {
+      "loop": false,
+      "offsets": [
+        1,
+        0
+      ],
+      "anim": "idle",
+      "fps": 24,
+      "name": "Heidi IDLE",
+      "indices": []
+    },
+    {
+      "loop": false,
+      "offsets": [
+        4,
+        1
+      ],
+      "anim": "singUP",
+      "fps": 24,
+      "name": "Heidi UP NOTE",
+      "indices": []
+    },
+    {
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "anim": "singRIGHT",
+      "fps": 24,
+      "name": "Heidi RIGHT NOTE",
+      "indices": []
+    },
+    {
+      "loop": false,
+      "offsets": [
+        4,
+        0
+      ],
+      "anim": "singDOWN",
+      "fps": 24,
+      "name": "Heidi DOWN NOTE",
+      "indices": []
+    },
+    {
+      "loop": false,
+      "offsets": [
+        2,
+        0
+      ],
+      "anim": "singLEFT",
+      "fps": 24,
+      "name": "Heidi LETF NOTE",
+      "indices": []
+    },
+    {
+      "offsets": [
+        -2,
+        -1
+      ],
+      "indices": [],
+      "fps": 24,
+      "anim": "hey",
+      "loop": false,
+      "name": "Heidi HEY"
+    }
+  ],
+  "no_antialiasing": true,
+  "image": "characters/MA_Heidi_PIXEL",
+  "position": [
+    150,
+    360
+  ],
+  "healthicon": "Heidi",
+  "flip_x": false,
+  "healthbar_colors": [
+    80,
+    90,
+    175
+  ],
+  "camera_position": [
+    -240,
+    -330
+  ],
+  "sing_duration": 4,
+  "scale": 6
+}

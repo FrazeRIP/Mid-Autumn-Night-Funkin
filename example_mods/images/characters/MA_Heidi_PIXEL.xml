@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MA_Heidi_PIXEL.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Heidi DOWN NOTE0000" x="10" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0001" x="10" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0002" x="160" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0003" x="160" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0004" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0005" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0006" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0007" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0008" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0009" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0010" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0011" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0012" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0013" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi DOWN NOTE0014" x="310" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0000" x="460" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0001" x="460" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0002" x="460" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0003" x="460" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0004" x="610" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0005" x="610" y="10" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0006" x="10" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0007" x="10" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0008" x="160" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0009" x="160" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0010" x="310" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0011" x="310" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0012" x="460" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0013" x="460" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0014" x="610" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0015" x="610" y="155" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0016" x="10" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0017" x="10" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0018" x="160" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0019" x="160" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0020" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0021" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0022" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0023" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0024" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0025" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0026" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0027" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0028" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0029" x="310" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0030" x="460" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0031" x="460" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0032" x="610" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0033" x="610" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0034" x="10" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0035" x="10" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0036" x="160" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0037" x="160" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0038" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0039" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0040" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0041" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0042" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0043" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi HEY0044" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0000" x="460" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0001" x="460" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0002" x="610" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0003" x="610" y="300" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0004" x="10" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0005" x="10" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0006" x="160" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0007" x="160" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0008" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0009" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0010" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0011" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0012" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0013" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi IDLE0014" x="310" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0000" x="460" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0001" x="460" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0002" x="610" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0003" x="610" y="445" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0004" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0005" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0006" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0007" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0008" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0009" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0010" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0011" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0012" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0013" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi LETF NOTE0014" x="10" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0000" x="160" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0001" x="160" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0002" x="310" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0003" x="310" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0004" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0005" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0006" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0007" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0008" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0009" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0010" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0011" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0012" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0013" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi RIGHT NOTE0014" x="460" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0000" x="610" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0001" x="610" y="590" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0002" x="10" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0003" x="10" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0004" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0005" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0006" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0007" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0008" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0009" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0010" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0011" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0012" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0013" x="160" y="735" width="140" height="135"/>
+	<SubTexture name="Heidi UP NOTE0014" x="160" y="735" width="140" height="135"/>
+</TextureAtlas>

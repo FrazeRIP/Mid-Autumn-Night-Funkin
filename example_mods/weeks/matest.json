@@ -10,6 +10,15 @@
       ]
     ],
     [
+      "qing_xi_yin_yue",
+      "heidi",
+      [
+        146,
+        113,
+        253
+      ]
+    ],
+    [
       "jin_zun_zhi_li",
       "ropry",
       [
@@ -54,7 +63,8 @@
         253
       ]
     ]
-  ], 
+  ],
+  "qing_xi_yin_yue": null,
   "hiddenUntilUnlocked": false,
   "hideFreeplay": false,
   "weekBackground": "stage",
