@@ -63,6 +63,7 @@ import Conductor.Rating;
 
 //Other shit
 import flixel.addons.display.FlxBackdrop; 
+import flixel.util.FlxAxes;
 
 //----------------------------------------------------------------
 
@@ -5305,10 +5306,12 @@ class PlayState extends MusicBeatState
 
 	//Custom Shit
 	function createBackdrop(tag:String,path:String,scrollFactor:Float,velocityX:Float,velocityY:Float):FlxBackdrop{
-		var bgBackDrop = new FlxBackdrop(Paths.image('mainmenu/square'), FlxAxes.XY, 0, 0);
+		var backdrop = new FlxBackdrop(Paths.image('mainmenu/square'));
 		backdrop.scrollFactor.set(scrollFactor, scrollFactor);
 		backdrop.velocity.set(velocityX, velocityY);
-		bgBackDrop.camera = camGame;
-		add(bgBackDrop);
+		backdrop.camera = camGame;
+		add(backdrop);
+		//modchartSprites.set(tag, backdrop);
+		return backdrop;
 	}	
 }
