@@ -61,6 +61,13 @@ import FunkinLua;
 import DialogueBoxPsych;
 import Conductor.Rating;
 
+//Other shit
+import flixel.addons.display.FlxBackdrop; 
+
+//----------------------------------------------------------------
+
+
+
 #if !flash 
 import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
@@ -313,8 +320,6 @@ class PlayState extends MusicBeatState
 	//--------------------------------------------------------------------------------------------------
 	//IST
 	public var deadlyMahjong:Int = 0;
-
-
 
 
 	//--------------------------------------------------------------------------------------------------
@@ -5286,4 +5291,24 @@ class PlayState extends MusicBeatState
 
 	var curLight:Int = -1;
 	var curLightEvent:Int = -1;
+
+
+
+
+
+
+
+
+
+
+
+
+	//Custom Shit
+	function createBackdrop(tag:String,path:String,scrollFactor:Float,velocityX:Float,velocityY:Float):FlxBackdrop{
+		var bgBackDrop = new FlxBackdrop(Paths.image('mainmenu/square'), FlxAxes.XY, 0, 0);
+		backdrop.scrollFactor.set(scrollFactor, scrollFactor);
+		backdrop.velocity.set(velocityX, velocityY);
+		bgBackDrop.camera = camGame;
+		add(bgBackDrop);
+	}	
 }
