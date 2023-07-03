@@ -215,6 +215,7 @@ class PlayState extends MusicBeatState
 	public var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
+	public var camExtraGame:FlxCamera;
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
@@ -324,7 +325,8 @@ class PlayState extends MusicBeatState
 
 
 	//--------------------------------------------------------------------------------------------------
-
+	public var backdropList:Array<FlxBackdrop> = new Array<FlxBackdrop>();
+	//--------------------------------------------------------------------------------------------------
 	override public function create()
 	{
 
@@ -394,12 +396,16 @@ class PlayState extends MusicBeatState
 
 		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
+		camExtraGame = new FlxCamera();
 		camHUD = new FlxCamera();
 		camOther = new FlxCamera();
+		
+		camExtraGame.bgColor.alpha = 0;
 		camHUD.bgColor.alpha = 0;
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
+		FlxG.cameras.add(camExtraGame, false);
 		FlxG.cameras.add(camHUD, false);
 		FlxG.cameras.add(camOther, false);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
@@ -5300,21 +5306,16 @@ class PlayState extends MusicBeatState
 
 
 
-
-
-
-
-
-
-
 	//Custom Shit
-	function createBackdrop(tag:String,path:String,scrollFactor:Float,velocityX:Float,velocityY:Float):FlxBackdrop{
-		var backdrop = new FlxBackdrop(Paths.image('mainmenu/square'));
+	public function createBackdrop(path:String,scrollFactor:Float,velocityX:Float):FlxBackdrop{
+		var backdrop = new FlxBackdrop(Paths.image(path));
+		backdrop.x = 1;
+		backdrop.y = 0;
 		backdrop.scrollFactor.set(scrollFactor, scrollFactor);
-		backdrop.velocity.set(velocityX, velocityY);
+		backdrop.velocity.set(velocityX, 0);
 		backdrop.camera = camGame;
 		add(backdrop);
-		//modchartSprites.set(tag, backdrop);
+		backdropList.push(backdrop);
 		return backdrop;
-	}	
+	}
 }

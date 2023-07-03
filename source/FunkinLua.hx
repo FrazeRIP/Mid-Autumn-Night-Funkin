@@ -2699,6 +2699,11 @@ class FunkinLua {
 			return list;
 		});
 
+		Lua_helper.add_callback(lua, "makeBackdrop", function(path:String,scrollFactor:Float,velocityX:Float) {
+			PlayState.instance.createBackdrop(path,scrollFactor,velocityX);
+			return null;
+		});
+
 		call('onCreate', []);
 		#end
 	}
@@ -3026,6 +3031,7 @@ class FunkinLua {
 		switch(cam.toLowerCase()) {
 			case 'camhud' | 'hud': return PlayState.instance.camHUD;
 			case 'camother' | 'other': return PlayState.instance.camOther;
+			case 'camextra' | 'camextragame': return PlayState.instance.camExtraGame;
 		}
 		return PlayState.instance.camGame;
 	}
