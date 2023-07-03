@@ -70,8 +70,8 @@
   "no_antialiasing": true,
   "image": "characters/MA_Heidi_PIXEL",
   "position": [
-    150,
-    360
+    0,
+    0
   ],
   "healthicon": "Heidi",
   "flip_x": false,
@@ -81,8 +81,8 @@
     175
   ],
   "camera_position": [
-    -240,
-    -330
+    -0,
+    -0
   ],
   "sing_duration": 4,
   "scale": 6

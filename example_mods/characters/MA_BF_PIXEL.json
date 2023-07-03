@@ -103,8 +103,8 @@
 	"no_antialiasing": true,
 	"image": "characters/MA_BF_PIXEL",
 	"position": [
-		-110,
-		350
+		-0,
+		0
 	],
 	"healthicon": "bf-pixel",
 	"flip_x": true,
@@ -114,8 +114,8 @@
 		246
 	],
 	"camera_position": [
-		50,
-		-70
+		0,
+		-0
 	],
 	"sing_duration": 4,
 	"scale": 6

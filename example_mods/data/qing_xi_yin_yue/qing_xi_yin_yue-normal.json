@@ -362,11 +362,11 @@
 		"gfVersion": "MA_GF_PIXEL",
 		"events": [],
 		"player3": null,
-		"splashSkin": "notes/Heidi/Heidi_NoteSplashes",
 		"song": "qing_xi_yin_yue",
+		"splashSkin": "notes/Heidi/Heidi_NoteSplashes",
+		"arrowSkin": "notes/Heidi/Heidi_NoteAssets",
 		"validScore": true,
 		"needsVoices": true,
-		"arrowSkin": "notes/Heidi/Heidi_NoteAssets",
 		"stage": "ying_he_xi",
 		"speed": 1.5,
 		"bpm": 180
