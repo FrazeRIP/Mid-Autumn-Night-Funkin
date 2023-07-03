@@ -1221,7 +1221,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "全自动模式", 32);
+		botplayTxt = new FlxText(390, timeBarBG.y + 55, FlxG.width - 800, "全自动模式", 32);
 		botplayTxt.setFormat(Paths.font("HYWenHei-65W.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;

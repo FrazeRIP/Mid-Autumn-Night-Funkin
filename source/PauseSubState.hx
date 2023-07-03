@@ -78,21 +78,56 @@ class PauseSubState extends MusicBeatSubstate
 		add(bg);
 
 		var levelInfo:FlxText = new FlxText(20, 15, 0, "", 32);
-		levelInfo.text += PlayState.SONG.song;
+		switch(PlayState.SONG.song.toLowerCase())
+		{
+			case 'hua_deng_chu_shang':
+				levelInfo.text += '华灯初上';
+			case 'jin_zun_zhi_li':
+				levelInfo.text += '金樽之礼';
+			case 'yi_zai_bi_xian':
+				levelInfo.text += '意在笔先';
+			case 'hua_qian_yue_xia':
+				levelInfo.text += '花前月下';
+			case 'qi_yun_ding_dang':
+				levelInfo.text += '棋韵叮当';
+			case 'qing_xi_yin_yue':
+				levelInfo.text += '清溪吟月';
+			case 'zhuo_jiu_feng_qing':
+				levelInfo.text += '酌酒风清';
+			case 'xin_qi_chao_ting':
+				levelInfo.text += '信起潮听';
+			case 'zhan_yan_zhou_tong':
+				levelInfo.text += '绽焰昼同';
+
+			default:
+				levelInfo.text += '未知曲目';
+		}
+		
 		levelInfo.scrollFactor.set();
 		levelInfo.setFormat(Paths.font("HYWenHei-65W.ttf"), 32);
 		levelInfo.updateHitbox();
 		add(levelInfo);
 
 		var levelDifficulty:FlxText = new FlxText(20, 15 + 36, 0, "", 32);
-		levelDifficulty.text += CoolUtil.difficultyString();
+		switch(CoolUtil.difficultyString())
+		{
+			case 'EASY':
+				levelDifficulty.text += '简单';
+			case 'NORMAL':
+				levelDifficulty.text += '普通';
+			case 'HARD':
+				levelDifficulty.text += '困难';
+			default:
+				levelDifficulty.text += '未知难度';
+		}
+		
 		levelDifficulty.scrollFactor.set();
 		levelDifficulty.setFormat(Paths.font('HYWenHei-65W.ttf'), 32);
 		levelDifficulty.updateHitbox();
 		add(levelDifficulty);
 
 		var blueballedTxt:FlxText = new FlxText(20, 15 + 72, 0, "", 32);
-		blueballedTxt.text = "Blueballed: " + PlayState.deathCounter;
+		blueballedTxt.text = "卒：" + PlayState.deathCounter;
 		blueballedTxt.scrollFactor.set();
 		blueballedTxt.setFormat(Paths.font('HYWenHei-65W.ttf'), 32);
 		blueballedTxt.updateHitbox();
