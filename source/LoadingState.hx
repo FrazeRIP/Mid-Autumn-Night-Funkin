@@ -8,6 +8,9 @@ import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.util.FlxTimer;
 import flixel.math.FlxMath;
+import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
+import flixel.addons.transition.FlxTransitionableState;
 
 import openfl.utils.Assets;
 import lime.utils.Assets as LimeAssets;
@@ -40,24 +43,62 @@ class LoadingState extends MusicBeatState
 		this.directory = directory;
 	}
 
-	var funkay:FlxSprite;
-	var loadBar:FlxSprite;
+	var left:FlxSprite;
+	var right:FlxSprite;
+	var rabbit:FlxSprite;
+//	var loadBar:FlxSprite;
 	override function create()
 	{
-		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffcaff4d);
-		add(bg);
-		funkay = new FlxSprite(0, 0).loadGraphic(Paths.getPath('images/funkay.png', IMAGE));
-		funkay.setGraphicSize(0, FlxG.height);
-		funkay.updateHitbox();
-		funkay.antialiasing = ClientPrefs.globalAntialiasing;
-		add(funkay);
-		funkay.scrollFactor.set();
-		funkay.screenCenter();
+	//	var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xff000000);
+	//	add(bg);
 
-		loadBar = new FlxSprite(0, FlxG.height - 20).makeGraphic(FlxG.width, 10, 0xffff16d2);
-		loadBar.screenCenter(X);
-		loadBar.antialiasing = ClientPrefs.globalAntialiasing;
-		add(loadBar);
+		FlxTransitionableState.skipNextTransIn = true;
+
+		left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+		left.setGraphicSize(Std.int(left.width * 2 / 3));
+		left.updateHitbox();
+	//	left.x = -640;
+		left.antialiasing = ClientPrefs.globalAntialiasing;
+		add(left);
+		left.scrollFactor.set();
+
+		right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+		right.setGraphicSize(Std.int(right.width * 2 / 3));
+		right.updateHitbox();
+	//	right.x = 1280;
+		right.x = 640;
+		right.antialiasing = ClientPrefs.globalAntialiasing;
+		add(right);
+		right.scrollFactor.set();
+
+		rabbit = new FlxSprite(0, 0);
+		rabbit.frames = Paths.getSparrowAtlas('loadingmenu/Loading','mid-autumn');
+		rabbit.animation.addByPrefix('idle', "Loading", 24, true);
+		rabbit.setGraphicSize(Std.int(rabbit.width / 3));
+		rabbit.updateHitbox();
+		rabbit.x = 1026;
+		rabbit.y = 453;
+		rabbit.antialiasing = ClientPrefs.globalAntialiasing;
+	//	rabbit.alpha = 0;
+		add(rabbit);
+		rabbit.animation.play('idle',true);	
+		rabbit.scrollFactor.set();
+
+		// FlxTween.linearMotion(left, -640, 0, 0, 0, 0.8, true, {
+		// 	ease: FlxEase.quadOut
+		// });
+
+		// FlxTween.linearMotion(right, 1280, 0, 640, 0, 0.8, true, {
+		// 	ease: FlxEase.quadOut,onComplete: function(twn:FlxTween)
+		// 	{FlxTween.tween(rabbit, {alpha: 1}, 0.3);
+		// 		rabbit.animation.play('idle',true);		
+		// 	}
+		// });
+
+		// loadBar = new FlxSprite(0, FlxG.height - 20).makeGraphic(FlxG.width, 10, 0xffff16d2);
+		// loadBar.screenCenter(X);
+		// loadBar.antialiasing = ClientPrefs.globalAntialiasing;
+		// add(loadBar);
 		
 		initSongsManifest().onComplete
 		(
@@ -76,7 +117,7 @@ class LoadingState extends MusicBeatState
 				}
 
 				var fadeTime = 0.5;
-				FlxG.camera.fade(FlxG.camera.bgColor, fadeTime, true);
+			//	FlxG.camera.fade(FlxG.camera.bgColor, fadeTime, true);
 				new FlxTimer().start(fadeTime + MIN_TIME, function(_) introComplete());
 			}
 		);
@@ -113,18 +154,18 @@ class LoadingState extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
-		funkay.setGraphicSize(Std.int(0.88 * FlxG.width + 0.9 * (funkay.width - 0.88 * FlxG.width)));
-		funkay.updateHitbox();
-		if(controls.ACCEPT)
-		{
-			funkay.setGraphicSize(Std.int(funkay.width + 60));
-			funkay.updateHitbox();
-		}
+		// funkay.setGraphicSize(Std.int(0.88 * FlxG.width + 0.9 * (funkay.width - 0.88 * FlxG.width)));
+		// funkay.updateHitbox();
+		// if(controls.ACCEPT)
+		// {
+		// 	funkay.setGraphicSize(Std.int(funkay.width + 60));
+		// 	funkay.updateHitbox();
+		// }
 
-		if(callbacks != null) {
-			targetShit = FlxMath.remapToRange(callbacks.numRemaining / callbacks.length, 1, 0, 0, 1);
-			loadBar.scale.x += 0.5 * (targetShit - loadBar.scale.x);
-		}
+		// if(callbacks != null) {
+		// 	targetShit = FlxMath.remapToRange(callbacks.numRemaining / callbacks.length, 1, 0, 0, 1);
+		// 	loadBar.scale.x += 0.5 * (targetShit - loadBar.scale.x);
+		// }
 	}
 	
 	function onLoad()
@@ -161,7 +202,7 @@ class LoadingState extends MusicBeatState
 		Paths.setCurrentLevel(directory);
 		trace('Setting asset folder to ' + directory);
 
-		#if NO_PRELOAD_ALL
+		
 		var loaded:Bool = false;
 		if (PlayState.SONG != null) {
 			loaded = isSoundLoaded(getSongPath()) && (!PlayState.SONG.needsVoices || isSoundLoaded(getVocalPath())) && isLibraryLoaded("shared") && isLibraryLoaded(directory);
@@ -169,14 +210,14 @@ class LoadingState extends MusicBeatState
 		
 		if (!loaded)
 			return new LoadingState(target, stopMusic, directory);
-		#end
+		
 		if (stopMusic && FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 		
 		return target;
 	}
 	
-	#if NO_PRELOAD_ALL
+	
 	static function isSoundLoaded(path:String):Bool
 	{
 		return Assets.cache.hasSound(path);
@@ -186,7 +227,7 @@ class LoadingState extends MusicBeatState
 	{
 		return Assets.getLibrary(library) != null;
 	}
-	#end
+	
 	
 	override function destroy()
 	{

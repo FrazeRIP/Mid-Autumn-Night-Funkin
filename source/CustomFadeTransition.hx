@@ -57,6 +57,7 @@ class CustomFadeTransition extends MusicBeatSubstate {
 					}
 				},
 			ease: FlxEase.linear});
+
 		}
 
 		if(nextCamera != null) {

@@ -16,6 +16,8 @@ import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
 import lime.utils.Assets;
 import flixel.system.FlxSound;
+import flixel.util.FlxTimer;
+import flixel.tweens.FlxEase;
 import openfl.utils.Assets as OpenFlAssets;
 import WeekData;
 #if MODS_ALLOWED
@@ -357,10 +359,10 @@ class FreeplayState extends MusicBeatState
 				#end
 			}
 		}
-
 		else if (accepted)
 		{
 			persistentUpdate = false;
+
 			var songLowercase:String = Paths.formatToSongPath(songs[curSelected].songName);
 			var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
 			/*#if MODS_ALLOWED
@@ -383,10 +385,21 @@ class FreeplayState extends MusicBeatState
 				colorTween.cancel();
 			}
 			
-			if (FlxG.keys.pressed.SHIFT){
+			if (FlxG.keys.pressed.SHIFT)
+			{
 				LoadingState.loadAndSwitchState(new ChartingState());
-			}else{
-				LoadingState.loadAndSwitchState(new PlayState());
+			}
+			else
+			{
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
+
+				startLoading();
+
+				new FlxTimer().start(1.22, function(tmr:FlxTimer)
+				{
+					LoadingState.loadAndSwitchState(new PlayState());
+				});		
 			}
 
 			FlxG.sound.music.volume = 0;
@@ -537,6 +550,33 @@ class FreeplayState extends MusicBeatState
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
+	}
+
+	function startLoading()
+	{
+		var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+		left.setGraphicSize(Std.int(left.width * 2 / 3));
+		left.updateHitbox();
+		left.x = -640;
+		left.antialiasing = ClientPrefs.globalAntialiasing;
+		add(left);
+		left.scrollFactor.set();
+
+		var right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+		right.setGraphicSize(Std.int(right.width * 2 / 3));
+		right.updateHitbox();
+		right.x = 1280;
+		right.antialiasing = ClientPrefs.globalAntialiasing;
+		add(right);
+		right.scrollFactor.set();
+
+		FlxTween.linearMotion(left, -640, 0, 0, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+		});
+
+		FlxTween.linearMotion(right, 1280, 0, 640, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+			});
 	}
 }
 
