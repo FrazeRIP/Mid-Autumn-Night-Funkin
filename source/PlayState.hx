@@ -1171,7 +1171,7 @@ class PlayState extends MusicBeatState
 		FlxG.fixedTimestep = false;
 		moveCameraSection();
 		if(curStage == 'ying_he_xi'){
-		healthBarBG2 = new AttachedSprite('healthBar3');
+			healthBarBG2 = new AttachedSprite('healthBar3');
 		}else{
 			healthBarBG2 = new AttachedSprite('healthBar2');
 		}
