@@ -135,6 +135,7 @@ class PlayState extends MusicBeatState
 	public var songSpeedType:String = "multiplicative";
 	public var noteKillOffset:Float = 350;
 
+	public var bgGroup:FlxSpriteGroup;
 	public var boyfriendGroup:FlxSpriteGroup;
 	public var dadGroup:FlxSpriteGroup;
 	public var gfGroup:FlxSpriteGroup;
@@ -215,7 +216,6 @@ class PlayState extends MusicBeatState
 	public var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
-	public var camExtraGame:FlxCamera;
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
@@ -280,7 +280,7 @@ class PlayState extends MusicBeatState
 	public var defaultCamZoom:Float = 1.05;
 
 	// how big to stretch the pixel art assets
-	public static var daPixelZoom:Float = 6;
+	public static var daPixelZoom:Float = 2;
 	private var singAnimations:Array<String> = ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT'];
 
 	public var inCutscene:Bool = false;
@@ -396,16 +396,13 @@ class PlayState extends MusicBeatState
 
 		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
-		camExtraGame = new FlxCamera();
 		camHUD = new FlxCamera();
 		camOther = new FlxCamera();
 		
-		camExtraGame.bgColor.alpha = 0;
 		camHUD.bgColor.alpha = 0;
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
-		FlxG.cameras.add(camExtraGame, false);
 		FlxG.cameras.add(camHUD, false);
 		FlxG.cameras.add(camOther, false);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
@@ -512,6 +509,7 @@ class PlayState extends MusicBeatState
 		if(girlfriendCameraOffset == null)
 			girlfriendCameraOffset = [0, 0];
 
+		bgGroup = new FlxSpriteGroup(0, 0);
 		boyfriendGroup = new FlxSpriteGroup(BF_X, BF_Y);
 		dadGroup = new FlxSpriteGroup(DAD_X, DAD_Y);
 		gfGroup = new FlxSpriteGroup(GF_X, GF_Y);
@@ -851,6 +849,8 @@ class PlayState extends MusicBeatState
 		if(isPixelStage) {
 			introSoundsSuffix = '-pixel';
 		}
+		
+		add(bgGroup);
 
 		add(gfGroup); //Needed for blammed lights
 
@@ -977,6 +977,34 @@ class PlayState extends MusicBeatState
 					}
 				}
 			}
+		}
+		
+		if(curStage == 'ying_he_xi'){
+
+			var bg:ModchartSprite = new ModchartSprite(0, 0);
+			bg.loadGraphic(Paths.image('stages/ying_he_xi/BG'));
+			bg.antialiasing = ClientPrefs.globalAntialiasing;
+			bg.active = true;
+			bgGroup.add(bg);
+			modchartSprites.set("BG", bg);
+			
+			var bgl:ModchartSprite = new ModchartSprite(0, 0);
+			bgl.loadGraphic(Paths.image('stages/ying_he_xi/BG_Light'));
+			bgl.antialiasing = ClientPrefs.globalAntialiasing;
+			modchartSprites.set("BGLight", bgl);
+			bgGroup.add(bgl);
+			bgl.active = true;
+
+			for (i in 1...8) {
+				var guest:ModchartSprite = new ModchartSprite(0, 0);
+				guest.loadGraphic(Paths.image('stages/ying_he_xi/Guest/'+i));
+				guest.antialiasing = false;
+				guest.active = true;
+				bgGroup.add(guest);
+				modchartSprites.set("Guest"+i, guest);
+			}
+
+			createBackdrop('stages/ying_he_xi/layer',1,-30);
 		}
 
 		dad = new Character(0, 0, SONG.player2);
@@ -4183,8 +4211,10 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
-			rating.setGraphicSize(Std.int(rating.width * daPixelZoom * 0.85));
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * daPixelZoom * 0.85));
+			//rating.setGraphicSize(Std.int(rating.width * daPixelZoom * 0.85));
+			//comboSpr.setGraphicSize(Std.int(comboSpr.width * daPixelZoom * 0.85));
+			rating.setGraphicSize(Std.int(rating.width * 6 * 0.85));
+			comboSpr.setGraphicSize(Std.int(comboSpr.width * 3.5 * 0.85));
 		}
 
 		comboSpr.updateHitbox();
@@ -5308,13 +5338,11 @@ class PlayState extends MusicBeatState
 
 	//Custom Shit
 	public function createBackdrop(path:String,scrollFactor:Float,velocityX:Float):FlxBackdrop{
-		var backdrop = new FlxBackdrop(Paths.image(path));
-		backdrop.x = 1;
-		backdrop.y = 0;
-		backdrop.scrollFactor.set(scrollFactor, scrollFactor);
+		var backdrop = new FlxBackdrop(Paths.image(path),0x01,0,0);
+		backdrop.scrollFactor.set(1, 1);
 		backdrop.velocity.set(velocityX, 0);
 		backdrop.camera = camGame;
-		add(backdrop);
+		bgGroup.add(backdrop);
 		backdropList.push(backdrop);
 		return backdrop;
 	}

@@ -125,7 +125,7 @@ class StrumNote extends FlxSprite
 		switch (Math.abs(noteData) % 4)
 		{
 			case 0:
-				animation.addByPrefix('static', 'arrowLEFT');
+				animation.addByPrefix('static', 'arrowLEFT',12,true);
 				animation.addByPrefix('pressed', 'left press', 24, false);
 				animation.addByPrefix('confirm', 'left confirm', 24, false);
 			case 1:
