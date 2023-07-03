@@ -280,7 +280,7 @@ class PlayState extends MusicBeatState
 	public var defaultCamZoom:Float = 1.05;
 
 	// how big to stretch the pixel art assets
-	public static var daPixelZoom:Float = 2;
+	public static var daPixelZoom:Float = 6;
 	private var singAnimations:Array<String> = ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT'];
 
 	public var inCutscene:Bool = false;
@@ -4211,10 +4211,10 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
+			rating.setGraphicSize(Std.int(rating.width * 5 * 0.85));
+			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.55));
 			//rating.setGraphicSize(Std.int(rating.width * daPixelZoom * 0.85));
 			//comboSpr.setGraphicSize(Std.int(comboSpr.width * daPixelZoom * 0.85));
-			rating.setGraphicSize(Std.int(rating.width * 6 * 0.85));
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * 3.5 * 0.85));
 		}
 
 		comboSpr.updateHitbox();
@@ -4253,7 +4253,7 @@ class PlayState extends MusicBeatState
 			}
 			else
 			{
-				numScore.setGraphicSize(Std.int(numScore.width * daPixelZoom));
+				numScore.setGraphicSize(Std.int(numScore.width * 2.5));
 			}
 			numScore.updateHitbox();
 
