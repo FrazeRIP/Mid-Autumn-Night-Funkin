@@ -242,6 +242,8 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.BACK)
 			{
+				CustomFadeTransition.nextCamera = camFront;
+				
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new TitleState());

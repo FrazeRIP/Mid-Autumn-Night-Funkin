@@ -18,3 +18,4 @@ export/*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+bin - 快捷方式.lnk
