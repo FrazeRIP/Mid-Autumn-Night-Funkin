@@ -325,7 +325,11 @@ class PlayState extends MusicBeatState
 
 
 	//--------------------------------------------------------------------------------------------------
+	//Heidi
 	public var backdropList:Array<FlxBackdrop> = new Array<FlxBackdrop>();
+	public var guestList:Array<ModchartSprite> = new Array<ModchartSprite>();
+	public var isGuestAppear:Bool = false;
+	public var guestYOffset:Float = 0;
 	//--------------------------------------------------------------------------------------------------
 	override public function create()
 	{
@@ -1002,9 +1006,10 @@ class PlayState extends MusicBeatState
 				guest.active = true;
 				bgGroup.add(guest);
 				modchartSprites.set("Guest"+i, guest);
+				guestList.push(guest);
 			}
 
-			createBackdrop('stages/ying_he_xi/layer',1,-30);
+			createBackdrop('stages/ying_he_xi/layer',1,20);
 		}
 
 		dad = new Character(0, 0, SONG.player2);
@@ -2912,6 +2917,10 @@ class PlayState extends MusicBeatState
 		}*/
 		callOnLuas('onUpdate', [elapsed]);
 
+		if(isGuestAppear){
+			guestOnBridge();
+		}
+
 		switch (curStage)
 		{
 			case 'tank':
@@ -4621,7 +4630,11 @@ class PlayState extends MusicBeatState
 
 			if(char != null)
 			{
-				char.playAnim(animToPlay, true);
+				if(note.isSustainNote && char.animation.getByName(animToPlay + '-loop') != null){
+					char.playAnim(animToPlay + '-loop');
+				}else{
+					char.playAnim(animToPlay, true);
+				}
 				char.holdTimer = 0;
 			}
 		}
@@ -5337,6 +5350,9 @@ class PlayState extends MusicBeatState
 
 
 	//Custom Shit
+
+	//----------------------------------------------------------------
+	//backdrop
 	public function createBackdrop(path:String,scrollFactor:Float,velocityX:Float):FlxBackdrop{
 		var backdrop = new FlxBackdrop(Paths.image(path),0x01,0,0);
 		backdrop.scrollFactor.set(1, 1);
@@ -5345,5 +5361,16 @@ class PlayState extends MusicBeatState
 		bgGroup.add(backdrop);
 		backdropList.push(backdrop);
 		return backdrop;
+	}
+
+	public function guestOnBridge(){
+		if(guestList.length<=0){return;}
+		var guest = guestList[FlxG.random.int(0, guestList.length-1)];
+		guestList.remove(guest);
+		guest.velocity.x = 20;
+		guest.y += guestYOffset;
+
+		isGuestAppear = false;
+		guestYOffset = 0;
 	}
 }
