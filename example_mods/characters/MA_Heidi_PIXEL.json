@@ -25,6 +25,17 @@
     {
       "loop": false,
       "offsets": [
+        4,
+        1
+      ],
+      "anim": "singUP-loop",
+      "fps": 24,
+      "name": "Heidi UP NOTE",
+      "indices": [ 14 ]
+    },
+    {
+      "loop": false,
+      "offsets": [
         0,
         0
       ],
@@ -32,6 +43,17 @@
       "fps": 24,
       "name": "Heidi RIGHT NOTE",
       "indices": []
+    },
+    {
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "anim": "singRIGHT-loop",
+      "fps": 24,
+      "name": "Heidi RIGHT NOTE",
+      "indices": [ 14 ]
     },
     {
       "loop": false,
@@ -47,6 +69,17 @@
     {
       "loop": false,
       "offsets": [
+        4,
+        0
+      ],
+      "anim": "singDOWN-loop",
+      "fps": 24,
+      "name": "Heidi DOWN NOTE",
+      "indices": [14]
+    },
+    {
+      "loop": false,
+      "offsets": [
         2,
         0
       ],
@@ -54,6 +87,17 @@
       "fps": 24,
       "name": "Heidi LETF NOTE",
       "indices": []
+    },
+    {
+      "loop": false,
+      "offsets": [
+        2,
+        0
+      ],
+      "anim": "singLEFT-loop",
+      "fps": 24,
+      "name": "Heidi LETF NOTE",
+      "indices": [14]
     },
     {
       "offsets": [

@@ -2704,6 +2704,11 @@ class FunkinLua {
 			return null;
 		});
 
+		Lua_helper.add_callback(lua, "guestOnBridge", function() {
+			PlayState.instance.guestOnBridge();
+			return null;
+		});
+
 		call('onCreate', []);
 		#end
 	}
