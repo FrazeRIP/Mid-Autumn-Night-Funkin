@@ -1,107 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="Pink Ghost.png">
-	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Pink Ghost singDOWN0000" x="0" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0001" x="824" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0002" x="1648" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0003" x="2472" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0004" x="3296" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0005" x="4120" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0006" x="4944" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0007" x="5768" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0008" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0009" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0010" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0011" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0012" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0013" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0014" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0015" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0016" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singDOWN0017" x="6592" y="0" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0000" x="0" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0001" x="824" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0002" x="1648" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0003" x="2472" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0004" x="3296" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0005" x="4120" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0006" x="4944" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0007" x="5768" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0008" x="6592" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0009" x="0" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0010" x="824" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0011" x="1648" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0012" x="2472" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0013" x="3296" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0014" x="4120" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0015" x="4944" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0016" x="5768" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0017" x="4944" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0018" x="4120" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0019" x="3296" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0020" x="2472" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0021" x="1648" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0022" x="824" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0023" x="0" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0024" x="6592" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0025" x="5768" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0026" x="4944" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0027" x="4120" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0028" x="3296" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0029" x="2472" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0030" x="1648" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost idle0031" x="824" y="962" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0000" x="6592" y="1924" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0001" x="0" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0002" x="824" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0003" x="1648" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0004" x="2472" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0005" x="3296" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0006" x="4120" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0007" x="4944" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0008" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0009" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0010" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0011" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0012" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0013" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0014" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0015" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0016" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singLEFT0017" x="5768" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0000" x="6592" y="2886" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0001" x="0" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0002" x="824" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0003" x="1648" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0004" x="2472" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0005" x="3296" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0006" x="4120" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0007" x="4944" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0008" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0009" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0010" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0011" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0012" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0013" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0014" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0015" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singRIGHT0016" x="5768" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0000" x="6592" y="3848" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0001" x="0" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0002" x="824" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0003" x="1648" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0004" x="2472" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0005" x="3296" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0006" x="4120" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0007" x="4944" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0008" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0009" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0010" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0011" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0012" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0013" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0014" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0015" x="5768" y="4810" width="824" height="962"/>
-	<SubTexture name="Pink Ghost singUP0016" x="5768" y="4810" width="824" height="962"/>
+	<SubTexture name="ghost down0000" x="3" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0001" x="830" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0002" x="1657" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0003" x="2484" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0004" x="3311" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0005" x="4138" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0006" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0007" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0008" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0009" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0010" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0011" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0012" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0013" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost down0014" x="4965" y="3" width="824" height="962"/>
+	<SubTexture name="ghost idle0000" x="5792" y="3" width="824" height="962"/>
+	<SubTexture name="ghost idle0001" x="6619" y="3" width="824" height="962"/>
+	<SubTexture name="ghost idle0002" x="3" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0003" x="830" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0004" x="1657" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0005" x="2484" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0006" x="3311" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0007" x="4138" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0008" x="4965" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0009" x="5792" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0010" x="6619" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0011" x="3" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0012" x="830" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0013" x="1657" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0014" x="2484" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0015" x="2484" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0016" x="1657" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0017" x="830" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0018" x="3" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost idle0019" x="6619" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0020" x="5792" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0021" x="4965" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0022" x="4138" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0023" x="3311" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0024" x="2484" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0025" x="1657" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0026" x="830" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0027" x="3" y="968" width="824" height="962"/>
+	<SubTexture name="ghost idle0028" x="6619" y="3" width="824" height="962"/>
+	<SubTexture name="ghost idle0029" x="5792" y="3" width="824" height="962"/>
+	<SubTexture name="ghost left0000" x="3311" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost left0001" x="4138" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost left0002" x="4965" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost left0003" x="5792" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost left0004" x="6619" y="1933" width="824" height="962"/>
+	<SubTexture name="ghost left0005" x="3" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0006" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0007" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0008" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0009" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0010" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0011" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0012" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0013" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost left0014" x="830" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0000" x="1657" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0001" x="2484" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0002" x="3311" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0003" x="4138" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0004" x="4965" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0005" x="5792" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0006" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0007" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0008" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0009" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0010" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0011" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0012" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0013" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost right0014" x="6619" y="2898" width="824" height="962"/>
+	<SubTexture name="ghost up0000" x="3" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0001" x="830" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0002" x="1657" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0003" x="2484" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0004" x="3311" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0005" x="4138" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0006" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0007" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0008" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0009" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0010" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0011" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0012" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0013" x="4965" y="3863" width="824" height="962"/>
+	<SubTexture name="ghost up0014" x="4965" y="3863" width="824" height="962"/>
 </TextureAtlas>
