@@ -1,78 +1,78 @@
 {
-	"animations": [
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "idle",
-			"fps": 24,
-			"name": "Pink Ghost idle",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				-19
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Pink Ghost singLEFT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-2,
-				-20
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Pink Ghost singRIGHT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				-10
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Pink Ghost singDOWN",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-6,
-				-37
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "Pink Ghost singUP",
-			"indices": []
-		}
-	],
-	"no_antialiasing": false,
-	"image": "characters/Pink Ghost",
-	"position": [
-		-200,
-		-100
-	],
-	"healthicon": "pinkghost",
-	"flip_x": false,
-	"healthbar_colors": [
-		81,
-		111,
-		104
-	],
-	"camera_position": [
-		90,
-		110
-	],
-	"sing_duration": 4,
-	"scale": 0.7
+  "animations": [
+    {
+      "offsets": [
+        70,
+        170
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "idle",
+      "indices": [],
+      "name": "ghost idle"
+    },
+    {
+      "offsets": [
+        101,
+        190
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singLEFT",
+      "indices": [],
+      "name": "ghost left"
+    },
+    {
+      "offsets": [
+        90,
+        167
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singDOWN",
+      "indices": [],
+      "name": "ghost down"
+    },
+    {
+      "offsets": [
+        78,
+        160
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singUP",
+      "indices": [],
+      "name": "ghost up"
+    },
+    {
+      "offsets": [
+        71,
+        137
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singRIGHT",
+      "indices": [],
+      "name": "ghost right"
+    }
+  ],
+  "no_antialiasing": true,
+  "image": "characters/Pink Ghost",
+  "position": [
+    0,
+    0
+  ],
+  "healthicon": "pinkghost",
+  "flip_x": false,
+  "healthbar_colors": [
+    255,
+    142,
+    195
+  ],
+  "camera_position": [
+    -40,
+    -120
+  ],
+  "sing_duration": 6.1,
+  "scale": 1
 }
