@@ -46,6 +46,7 @@ class ColleMember extends FlxSprite
     public function stopEvnet()
     {
         FlxMouseEventManager.setObjectMouseEnabled(this,false);
+
     }
     public function startEvnet()
     {
@@ -55,7 +56,11 @@ class ColleMember extends FlxSprite
     function onMouseDown(_)
     {
         if(this.unlocked)
+        {
         CollectionState.mouseClicked=true;
+        // if(!CollectionState.tokenLargeState)
+        this.animation.play("NormalSelected");
+        }
     }
    function onMouseOver(_)
     {

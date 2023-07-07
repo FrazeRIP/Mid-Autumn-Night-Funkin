@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="LoadingCN.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="LoadingCN0000" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0001" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0002" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0003" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0004" x="790" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0005" x="790" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0006" x="790" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingCN0007" x="10" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingCN0008" x="10" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingCN0009" x="10" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingCN0010" x="790" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingCN0011" x="790" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingCN0012" x="790" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingCN0013" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0014" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0015" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0016" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0017" x="790" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0018" x="790" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0019" x="790" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingCN0020" x="790" y="1650" width="760" height="800"/>
+</TextureAtlas>

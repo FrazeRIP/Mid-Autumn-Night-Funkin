@@ -86,6 +86,7 @@ class CollectionState extends MusicBeatState
     override function create()
     {
         FlxG.mouse.visible=true;
+        FlxG.mouse.load(Paths.image('UI/Mouse0',"mid-autumn"));
 
         colleCamera = new FlxCamera(35,70,940,530);
         mainCamera=new FlxCamera();
@@ -149,6 +150,9 @@ class CollectionState extends MusicBeatState
         tokenLMesh=new FlxSprite().makeGraphic(1280,720,0x80000000);
         tokenLMesh.alpha=0;
 
+        ribbon.setGraphicSize(1280,720);
+        ribbon.updateHitbox();
+        
         colles=[paolaToken,ropryToken,nicoToken,heidiToken,whitecatToken,rincyToken,isToken,sproutToken,pinkghostToken,unknownToken1,unknownToken2,unknownToken3];
 
         cameraFollowPointer= new FlxObject(0, 0, 350, 300);
@@ -174,11 +178,11 @@ class CollectionState extends MusicBeatState
         tipText = new FlxText(160,650,1220-160,"测试用字体,目前没有任何String导入",24);
         tipText.setFormat("assets/fonts/ZhengDaoCuShuTi.ttf",tipText.size);
         tipText.color=0xFFFFFFFF;
- 
-        if(paolaToken.unlocked)
-        paolaToken.animation.play("NormalSelected");
-        else
-        paolaToken.animation.play("LockSelected");    
+
+        memberX=1;
+        memberY=1;
+        LoadTokenInfo(memberX,memberY);
+        textCache="可以用鼠标操作哦！";
 
         if(mouseControl)
         {
@@ -232,8 +236,7 @@ class CollectionState extends MusicBeatState
         FlxG.watch.addQuick('mouseControl',mouseControl);
         FlxG.watch.addQuick('isTransing',isTransing);
         FlxG.watch.addQuick("tokenLargeState",tokenLargeState);
-        FlxG.watch.addQuick("FlxG.save.data.paolaToken",FlxG.save.data.paolaToken);
-
+        FlxG.watch.addQuick("COLLECTIONS_UNLOCK",SaveData.COLLECTIONS_UNLOCK);
         super.update(elapsed);
     }
 
@@ -269,18 +272,7 @@ class CollectionState extends MusicBeatState
             {
                 DebugAllFalse();
             }
-            if(FlxG.keys.justPressed.ESCAPE)
-                {   
-                    memberX=1;
-                    memberY=1;
-                    textCache="可以用鼠标操作哦！";
-                    tokenLargeName="Paola";
-                    targetToken=paolaToken;
-                    CustomFadeTransition.nextCamera = otherCamera;
-                    SaveTokenLock();
-                    MusicBeatState.switchState(new TitleState());
-                }
-            if(FlxG.keys.justPressed.ENTER&&targetToken.unlocked)
+            if(controls.ACCEPT&&targetToken.unlocked)
             {
                 mouseClicked=true;
             }
@@ -289,6 +281,7 @@ class CollectionState extends MusicBeatState
                     MouseEventDisable();
                     isTransing=true;
                     tokenL.loadGraphic(Paths.image('collectionstate/TokenL/'+tokenLargeName+"TokenL",'mid-autumn'));
+                    LoadTokenInfo(memberX,memberY);
                     FlxTween.tween(tokenLMesh,{alpha:1},0.5);
                     FlxTween.tween(tokenL,{alpha:1},0.5,{onComplete: function(twn:FlxTween){
                         isTransing=false;
@@ -299,7 +292,7 @@ class CollectionState extends MusicBeatState
 
             if(!mouseControl)
             {
-                if(FlxG.keys.justPressed.DOWN&&memberX<=3)
+                if(controls.UI_DOWN_P&&memberX<=3)
                     {
                         keyboardControl=true;
                         memberX++;
@@ -310,7 +303,7 @@ class CollectionState extends MusicBeatState
                             memberX=3;
                             LoadTokenInfo(memberX,memberY);
                     }
-                if(FlxG.keys.justPressed.UP&&memberX>=1)
+                if(controls.UI_UP_P&&memberX>=1)
                     {
                             keyboardControl=true;
                             memberX--;
@@ -321,7 +314,7 @@ class CollectionState extends MusicBeatState
                             memberX=1;
                             LoadTokenInfo(memberX,memberY);
                     }
-                if(FlxG.keys.justPressed.LEFT&&memberY>=1)
+                if(controls.UI_LEFT_P&&memberY>=1)
                     {
                             keyboardControl=true;
                             memberY--;
@@ -332,7 +325,7 @@ class CollectionState extends MusicBeatState
                             memberY=1;
                             LoadTokenInfo(memberX,memberY);
                     }
-                if(FlxG.keys.justPressed.RIGHT&&memberY<=4)
+                if(controls.UI_RIGHT_P&&memberY<=4)
                     {
                             keyboardControl=true;
                             memberY++;
@@ -363,12 +356,20 @@ class CollectionState extends MusicBeatState
                 LoadTokenInfo(memberX,memberY);
                 keyboardControl=false;
             }
+            if(FlxG.mouse.justPressedRight||controls.BACK)
+            {
 
+                tokenLargeName="Paola";
+                // targetToken=paolaToken;
+                CustomFadeTransition.nextCamera = otherCamera;
+                SaveData.SaveCollectionUnlock();
+                MusicBeatState.switchState(new MainMenuState());
+            }
 
     }
     function TokenLUpdate()
     {
-        if(FlxG.keys.justPressed.ESCAPE&&!isTransing)
+        if(controls.BACK&&!isTransing)
         {
             
             isTransing=true;
@@ -392,7 +393,7 @@ class CollectionState extends MusicBeatState
     }
     function LoadTokenInfo(X:Int,Y:Int)
     {
-            ClearTokenSelecte();
+            ClearTokenSelect();
             for(collection in colles)
             {
              if(collection.positionX==X)
@@ -423,7 +424,7 @@ class CollectionState extends MusicBeatState
             
     }
 
-    public function ClearTokenSelecte()
+    public function ClearTokenSelect()
     {
         for(collection in colles)
             {
@@ -456,31 +457,22 @@ class CollectionState extends MusicBeatState
                 }
         }
 
-    public function SaveTokenLock()
-    {
-                FlxG.save.data.paolaToken=paolaToken.unlocked;
-                FlxG.save.data.ropryToken= ropryToken.unlocked;
-                FlxG.save.data.nicoToken= nicoToken.unlocked;
-                FlxG.save.data.heidiToken= heidiToken.unlocked;
-                FlxG.save.data.whitecatToken= whitecatToken.unlocked;
-                FlxG.save.data.rincyToken= rincyToken.unlocked;
-                FlxG.save.data.isToken= isToken.unlocked;
-                FlxG.save.data.sproutToken= sproutToken.unlocked;
-                FlxG.save.data.pinkghostToken= pinkghostToken.unlocked;
-
-
-    }
     public function LoadTokenLock()
     {
-        paolaToken.unlocked=FlxG.save.data.paolaToken;
-        ropryToken.unlocked=FlxG.save.data.ropryToken;
-        nicoToken.unlocked=FlxG.save.data.nicoToken;
-        heidiToken.unlocked=FlxG.save.data.heidiToken;
-        whitecatToken.unlocked=FlxG.save.data.whitecatToken;
-        rincyToken.unlocked=FlxG.save.data.rincyToken;
-        isToken.unlocked=FlxG.save.data.isToken;
-        sproutToken.unlocked=FlxG.save.data.sproutToken;
-        pinkghostToken.unlocked=FlxG.save.data.pinkghostToken;
+        if(!SaveData.PROJECT_IS_FINISH)
+        {
+            for(i in 0...8)
+            {
+                // colles[i].unlocked=SaveData.COLLECTIONS_UNLOCK[i];
+            }
+        }
+        else
+        {
+            for(collection in colles)
+            {
+                collection.unlocked=SaveData.COLLECTIONS_UNLOCK[collection.ID];
+            }
+        }
     }
 
     public function DebugAllTrue()
