@@ -37,6 +37,7 @@ class MainMenuState extends MusicBeatState
 	private var camFirewrok:FlxCamera;
 	private var camAchievement:FlxCamera;
 	public var camFront:FlxCamera;
+
 	
 	var optionShit:Array<String> = [
 		'story_mode',
@@ -170,7 +171,7 @@ class MainMenuState extends MusicBeatState
 			if (firstStart)
 			{
 				FlxTween.tween(menuItem,{x: 563 + (i * 160) + (i > 0 ? 80 : 0) },0.8 + (i * 0.25) ,{ease: FlxEase.sineInOut, onComplete: function(flxTween:FlxTween) 
-				{ 
+				{
 					menuItem.finishedFunnyMove = true; 
 				}});
 			}
@@ -242,8 +243,6 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.BACK)
 			{
-				CustomFadeTransition.nextCamera = camFront;
-				
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new TitleState());
@@ -291,7 +290,7 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new ModsMenuState());
 									#end
 									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
+										MusicBeatState.switchState(new CollectionState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
@@ -424,4 +423,16 @@ class MainMenuItem extends FlxSprite
 			x = FlxMath.lerp(x, 563 + (targetX * 160) + offsets, CoolUtil.boundTo(elapsed * 10.2, 0, 1));
 		}	
 	}
+	function  onMouseDown(_){
+
+	}
+
+	function onMouseOver() {
+		
+	}
+	
+	function onMouseOut() {
+		
+	}
+
 }

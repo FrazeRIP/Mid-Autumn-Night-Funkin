@@ -113,13 +113,17 @@ class TitleState extends MusicBeatState
 			}
 		}
 		#end*/
-
+		SaveData.LoadAll();
 		FlxG.game.focusLostFramerate = 60;
 		FlxG.sound.muteKeys = muteKeys;
 		FlxG.sound.volumeDownKeys = volumeDownKeys;
 		FlxG.sound.volumeUpKeys = volumeUpKeys;
 		FlxG.keys.preventDefaultKeys = [TAB];
 
+		FlxG.mouse.visible=true;
+		var mouseSprite=new FlxSprite().loadGraphic(Paths.image('UI/Mouse0',"mid-autumn"));
+		FlxG.mouse.load(mouseSprite.pixels);
+		
 		PlayerSettings.init();
 
 		curWacky = FlxG.random.getObject(getIntroTextShit());
@@ -197,7 +201,6 @@ class TitleState extends MusicBeatState
 			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
 		}
 
-		FlxG.mouse.visible = false;
 		#if FREEPLAY
 		MusicBeatState.switchState(new FreeplayState());
 		#elseif CHARTING

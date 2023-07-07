@@ -122,6 +122,7 @@ class DialogueEditorState extends MusicBeatState
 	var angryCheckbox:FlxUICheckBox;
 	var speedStepper:FlxUINumericStepper;
 	var soundInputText:FlxUIInputText;
+
 	function addDialogueLineUI() {
 		var tab_group = new FlxUI(null, UI_box);
 		tab_group.name = "Dialogue Line";

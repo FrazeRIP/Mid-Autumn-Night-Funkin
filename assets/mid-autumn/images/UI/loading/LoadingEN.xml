@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="LoadingEN.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="LoadingEN0000" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0001" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0002" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0003" x="10" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0004" x="790" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0005" x="790" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0006" x="790" y="10" width="760" height="800"/>
+	<SubTexture name="LoadingEN0007" x="10" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingEN0008" x="10" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingEN0009" x="10" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingEN0010" x="790" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingEN0011" x="790" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingEN0012" x="790" y="830" width="760" height="800"/>
+	<SubTexture name="LoadingEN0013" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0014" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0015" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0016" x="10" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0017" x="790" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0018" x="790" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0019" x="790" y="1650" width="760" height="800"/>
+	<SubTexture name="LoadingEN0020" x="790" y="1650" width="760" height="800"/>
+</TextureAtlas>
