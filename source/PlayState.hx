@@ -325,7 +325,7 @@ class PlayState extends MusicBeatState
 	//--------------------------------------------------------------------------------------------------
 	//Dialogue
 	public static var isLockDialogue:Bool = false;
-
+	public static var isFirstDialogue:Bool = false;
 	//--------------------------------------------------------------------------------------------------
 
 	//--------------------------------------------------------------------------------------------------
@@ -2402,12 +2402,21 @@ class PlayState extends MusicBeatState
 
 	function startNextDialogue() {
 		dialogueCount++;
-		callOnLuas('onNextDialogue', [dialogueCount]);
+		if(isFirstDialogue){
+			callOnLuas('onNextDialogue', [dialogueCount]);
+		}else{
+			callOnLuas('onNextDialogueAfter', [dialogueCount]);
+		}
 	}
 
 	function skipDialogue() {
-		callOnLuas('onSkipDialogue', [dialogueCount]);
+		if(isFirstDialogue){
+		callOnLuas('onSkipDialogue', [dialogueCount]);}
+		else{
+			callOnLuas('onSkipDialogueAfter', [dialogueCount]);
+		}
 	}
+
 
 	var previousFrameTime:Int = 0;
 	var lastReportedPlayheadPosition:Int = 0;
