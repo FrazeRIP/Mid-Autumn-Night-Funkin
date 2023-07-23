@@ -44,6 +44,7 @@ import Type.ValueType;
 import Controls;
 import DialogueBoxPsych;
 
+import MP4ModSprite;
 #if hscript
 import hscript.Parser;
 import hscript.Interp;
@@ -1672,6 +1673,85 @@ class FunkinLua {
 			PlayState.instance.modchartSprites.set(tag, leSprite);
 			leSprite.active = true;
 		});
+
+//---------------------------
+//Video
+		Lua_helper.add_callback(lua, "makeLuaVideoSprite", function(tag:String,filename:String, x:Float, y:Float) {
+			trace("Video sprite lua start loading "+filename);
+			tag = tag.replace('.', '');
+			resetSpriteTag(tag);
+			var leSprite:MP4ModSprite = new MP4ModSprite(filename,x, y);
+			leSprite.antialiasing = ClientPrefs.globalAntialiasing;
+			PlayState.instance.modchartSprites.set(tag, leSprite);
+			var sprite = cast(leSprite,MP4ModSprite); 
+			PlayState.instance.videoSprites.set(tag,sprite);
+			leSprite.active = true;
+			trace("Video sprite lua loaded successfully");
+		});
+
+		Lua_helper.add_callback(lua, "setideoSprite", function(tag:String, filename:String) {
+			if(PlayState.instance.modchartSprites.exists(tag)) {
+				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
+				var sprite = cast(shit,MP4ModSprite); 
+				sprite.setupVideoAuto(filename);
+			}else{
+				trace("Video sprite not found "+tag);
+			}
+		});
+
+		Lua_helper.add_callback(lua, "PlayVideoSprite", function(tag:String) {
+			if(PlayState.instance.modchartSprites.exists(tag)) {
+				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
+				var sprite = cast(shit,MP4ModSprite); 
+				sprite.video.play();
+			}else{
+				trace("Video sprite not found "+tag);
+			}
+		});
+
+		Lua_helper.add_callback(lua, "StopVideoSprite", function(tag:String) {
+			if(PlayState.instance.modchartSprites.exists(tag)) {
+				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
+				var sprite = cast(shit,MP4ModSprite); 
+				sprite.video.stop();
+			}else{
+				trace("Video sprite not found "+tag);
+			}
+		});
+
+		Lua_helper.add_callback(lua, "PauseVideoSprite", function(tag:String) {
+			if(PlayState.instance.modchartSprites.exists(tag)) {
+				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
+				var sprite = cast(shit,MP4ModSprite); 
+				sprite.video.pause();
+			}else{
+				trace("Video sprite not found "+tag);
+			}
+		});
+		
+		Lua_helper.add_callback(lua, "ResumeVideoSprite", function(tag:String) {
+			if(PlayState.instance.modchartSprites.exists(tag)) {
+				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
+				var sprite = cast(shit,MP4ModSprite); 
+				sprite.video.resume();
+			}else{
+				trace("Video sprite not found "+tag);
+			}
+		});
+
+		Lua_helper.add_callback(lua, "SeekVideoSprite", function(tag:String,time:Float) {
+			if(PlayState.instance.modchartSprites.exists(tag)) {
+				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
+				var sprite = cast(shit,MP4ModSprite); 
+				sprite.video.seek(time);
+			}else{
+				trace("Video sprite not found "+tag);
+			}
+		});
+
+//---------------------------
+
+
 		Lua_helper.add_callback(lua, "makeAnimatedLuaSprite", function(tag:String, image:String, x:Float, y:Float, ?spriteType:String = "sparrow") {
 			tag = tag.replace('.', '');
 			resetSpriteTag(tag);
@@ -1859,6 +1939,7 @@ class FunkinLua {
 				}
 			}
 		});
+
 		Lua_helper.add_callback(lua, "setGraphicSize", function(obj:String, x:Int, y:Int = 0, updateHitbox:Bool = true) {
 			if(PlayState.instance.getLuaObject(obj)!=null) {
 				var shit:FlxSprite = PlayState.instance.getLuaObject(obj);
@@ -3200,7 +3281,7 @@ class FunkinLua {
 	}
 }
 
-class ModchartSprite extends FlxSprite
+ class ModchartSprite extends FlxSprite
 {
 	public var wasAdded:Bool = false;
 	public var animOffsets:Map<String, Array<Float>> = new Map<String, Array<Float>>();

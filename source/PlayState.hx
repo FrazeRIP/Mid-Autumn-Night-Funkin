@@ -82,6 +82,7 @@ import sys.io.File;
 #if VIDEOS_ALLOWED
 import vlc.MP4Handler;
 #end
+import MP4ModSprite;
 
 using StringTools;
 
@@ -104,6 +105,7 @@ class PlayState extends MusicBeatState
 	];
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
 	public var modchartSprites:Map<String, ModchartSprite> = new Map<String, ModchartSprite>();
+	public var videoSprites:Map<String, MP4ModSprite> = new Map<String, MP4ModSprite>();
 	public var modchartTimers:Map<String, FlxTimer> = new Map<String, FlxTimer>();
 	public var modchartSounds:Map<String, FlxSound> = new Map<String, FlxSound>();
 	public var modchartTexts:Map<String, ModchartText> = new Map<String, ModchartText>();
@@ -2864,6 +2866,12 @@ class PlayState extends MusicBeatState
 				timer.active = true;
 			}
 			paused = false;
+
+			for(spr in videoSprites)
+				{
+					spr.resume();
+				};
+
 			callOnLuas('onResume', []);
 
 			#if desktop
@@ -3101,9 +3109,16 @@ class PlayState extends MusicBeatState
 		if (controls.PAUSE && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', [], false);
+
+			for(spr in videoSprites)
+				{
+					spr.pause();
+				};
+
 			if(ret != FunkinLua.Function_Stop) {
 				openPauseMenu();
 			}
+
 		}
 
 		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
