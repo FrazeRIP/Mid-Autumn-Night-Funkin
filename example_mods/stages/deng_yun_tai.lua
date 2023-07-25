@@ -52,12 +52,10 @@ end
 
 
 function onCreatePost( ... )
-	doTweenX('gfScaleX', 'gf.scale', .65, 0.0001)
-	doTweenY('gfScaley', 'gf.scale', .65, 0.0001)
-
-	doTweenX('dadScaleX', 'dad.scale', 1, 0.0001)
-	doTweenY('dadScaley', 'dad.scale', 1, 0.0001)
-
-	doTweenX('bfScaleX', 'boyfriend.scale', .8, 0.0001)
-	doTweenY('bfScaley', 'boyfriend.scale', .8, 0.0001)
+	doTweenX('paolaSX', 'dad.scale', .9, .00001)
+	doTweenY('paolaSY', 'dad.scale', .9, .00001)
+	doTweenX('bfSX', 'boyfriend.scale', 1, .00001)
+	doTweenY('bfSY', 'boyfriend.scale', 1,.00001)
+	doTweenX('gfSX', 'gf.scale', .7, .00001)
+	doTweenY('gfSY', 'gf.scale', .7, .00001)
 end
