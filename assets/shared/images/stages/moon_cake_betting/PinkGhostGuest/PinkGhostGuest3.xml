@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="PinkGhostGuest3.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="backdrop70000" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70001" x="345" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70002" x="687" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70003" x="1029" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70004" x="1371" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70005" x="687" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70006" x="3" y="861" width="339" height="855"/>
+	<SubTexture name="backdrop70007" x="345" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70008" x="345" y="861" width="339" height="855"/>
+	<SubTexture name="backdrop70009" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70010" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70011" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70012" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70013" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70014" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70015" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70016" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70017" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70018" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70019" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70020" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70021" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70022" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70023" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70024" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70025" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70026" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70027" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70028" x="3" y="3" width="339" height="855"/>
+	<SubTexture name="backdrop70029" x="3" y="3" width="339" height="855"/>
+</TextureAtlas>

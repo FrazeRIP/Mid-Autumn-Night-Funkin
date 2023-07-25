@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="PinkGhostGuest1.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="backdrop50000" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50001" x="0" y="518" width="2700" height="518"/>
+	<SubTexture name="backdrop50002" x="0" y="1036" width="2700" height="518"/>
+	<SubTexture name="backdrop50003" x="0" y="1554" width="2700" height="518"/>
+	<SubTexture name="backdrop50004" x="0" y="2072" width="2700" height="518"/>
+	<SubTexture name="backdrop50005" x="0" y="1036" width="2700" height="518"/>
+	<SubTexture name="backdrop50006" x="0" y="2590" width="2700" height="518"/>
+	<SubTexture name="backdrop50007" x="0" y="518" width="2700" height="518"/>
+	<SubTexture name="backdrop50008" x="0" y="3108" width="2700" height="518"/>
+	<SubTexture name="backdrop50009" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50010" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50011" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50012" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50013" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50014" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50015" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50016" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50017" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50018" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50019" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50020" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50021" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50022" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50023" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50024" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50025" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50026" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50027" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50028" x="0" y="0" width="2700" height="518"/>
+	<SubTexture name="backdrop50029" x="0" y="0" width="2700" height="518"/>
+</TextureAtlas>

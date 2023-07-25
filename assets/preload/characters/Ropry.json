@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Ropry idle"
+		},
+		{
+			"offsets": [
+				-9,
+				23
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Ropry singDOWN"
+		},
+		{
+			"offsets": [
+				-27,
+				16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Ropry singRIGHT"
+		},
+		{
+			"offsets": [
+				-19,
+				6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Ropry singUP"
+		},
+		{
+			"offsets": [
+				3,
+				21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Ropry singLEFT"
+		},
+		{
+			"offsets": [
+				2,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "HEY",
+			"indices": [],
+			"name": "Ropry HEY"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "Ropry HEY"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Ropry",
+	"position": [
+		-250,
+		-170
+	],
+	"healthicon": "ropry",
+	"flip_x": false,
+	"healthbar_colors": [
+		216,
+		100,
+		137
+	],
+	"camera_position": [
+		210,
+		200
+	],
+	"sing_duration": 6,
+	"scale": 0.6
+}

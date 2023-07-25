@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				31,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "RincyA singLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				5
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "RincyA singUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-22,
+				-1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RincyA singRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-4
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "RincyA singDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "RincyA idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/RincyA",
+	"position": [
+		-210,
+		-180
+	],
+	"healthicon": "RincyA",
+	"flip_x": false,
+	"healthbar_colors": [
+		118,
+		120,
+		255
+	],
+	"camera_position": [
+		240,
+		280
+	],
+	"sing_duration": 6.1,
+	"scale": 0.55
+}

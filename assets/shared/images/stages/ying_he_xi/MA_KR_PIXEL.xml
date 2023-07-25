@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MA_KR_PIXEL.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BoatKR IDLE0000" x="10" y="10" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0001" x="10" y="10" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0002" x="477" y="10" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0003" x="477" y="10" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0004" x="10" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0005" x="10" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0006" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0007" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0008" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0009" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0010" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0011" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0012" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0013" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR IDLE0014" x="477" y="201" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0000" x="10" y="392" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0001" x="10" y="392" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0002" x="477" y="392" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0003" x="477" y="392" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0004" x="10" y="583" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0005" x="10" y="583" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0006" x="477" y="583" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0007" x="477" y="583" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0008" x="10" y="774" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0009" x="10" y="774" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0010" x="477" y="774" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0011" x="477" y="774" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0012" x="10" y="965" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0013" x="10" y="965" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0014" x="477" y="965" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0015" x="477" y="965" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0016" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0017" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0018" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0019" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0020" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0021" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0022" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0023" x="10" y="1156" width="457" height="181"/>
+	<SubTexture name="BoatKR Rowing0024" x="10" y="1156" width="457" height="181"/>
+</TextureAtlas>
