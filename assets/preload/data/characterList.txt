@@ -1,2 +1,2 @@
-MA-BF
-MA-GF
+MA_BF
+MA_GF
