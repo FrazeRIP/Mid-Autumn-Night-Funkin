@@ -30,7 +30,10 @@ import flixel.math.FlxMath;
 import flixel.util.FlxSave;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.system.FlxAssets.FlxShader;
-
+import haxe.crypto.Aes;
+import haxe.crypto.mode.Mode;
+import haxe.crypto.padding.Padding;
+import haxe.io.Bytes;
 #if !flash
 import flixel.addons.display.FlxRuntimeShader;
 #end
@@ -84,7 +87,27 @@ class FunkinLua {
 
 		//LuaL.dostring(lua, CLENSE);
 		try{
-			var result:Dynamic = LuaL.dofile(lua, script);
+
+			var aes : Aes = new Aes();
+   
+			var key = Bytes.ofHex("603DEB1015CA71BE2B73AEF0857D77811F352C073B6108D72D9810A30914DFF4");
+			var text = File.getBytes(script);
+			var iv:Bytes = Bytes.ofHex("4F021DB243BC633D7178183A9FA071E8");
+			
+			aes.init(key,iv);
+   
+			// Encrypt
+			//var data = aes.encrypt(Mode.CTR,text,Padding.NoPadding);
+			//trace("Encrypted text: "+ data.toHex());
+			File.saveBytes('crypto/'+script,text);
+			// Decrypt
+			var data = aes.decrypt(Mode.CTR,text,Padding.NoPadding);
+			trace("Decrypted text: "+ data);
+
+			
+			//var result:Dynamic = Convert.toLua(lua,data);
+			var result:Dynamic = LuaL.dostring(lua, data.toString());
+			//var result:Dynamic = LuaL.dofile(lua, script);
 			var resultStr:String = Lua.tostring(lua, result);
 			if(resultStr != null && result != 0) {
 				trace('Error on lua script! ' + resultStr);
