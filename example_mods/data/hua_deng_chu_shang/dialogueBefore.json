@@ -1,0 +1,28 @@
+{
+	"dialogue": [
+    {
+      "expression": "I",
+      "text": "好的，第一名再次登场！（叉腰）",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+		{
+			"expression": "talk",
+			"text": "Oh my Sa'tan!\\nThere are acutal people live in here!",
+			"boxState": "normal",
+			"portrait": "GF_Dialogue",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "talk",
+			"text": "......",
+			"boxState": "normal",
+			"portrait": "BF_Dialogue",
+			"speed": 0.05,
+			"sound": ""
+		}
+	]
+}

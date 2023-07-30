@@ -95,8 +95,6 @@ function onTweenCompleted( tag )
 end
 
 function preloadAssets( ... )
-
-
 	makeLuaSprite('cg1-1', 'cg1-1', -100, -100);
 	setScrollFactor('cg1-1', 0, 0);
 	scaleObject('cg1-1', 1.2, 1.2);
