@@ -1,61 +1,50 @@
-local allowCountdown = false
+local allowEnd = false
 local sprites = {}
 
-function onStartCountdown()
-	-- Block the first countdown and start a timer of 0.8 seconds to play the dialogue
-	if not allowCountdown and isStoryMode and not seenCutscene then
-	--if not allowCountdown and not seenCutscene then
+function onEndSong()
+	if not allowEnd and isStoryMode then
+	--if not allowEnd then
 		setProperty('inCutscene', true);
-		runTimer('startDialogue', 0.8);
-		allowCountdown = true;
+		setProperty('isFirstDialogue',false)
+		setProperty('dialogueCount',0)
+
 		
-
-	setProperty('isFirstDialogue',true)
-	return Function_Stop;
-	end
-
-	return Function_Continue;
-end
-
-function onTimerCompleted(tag, loops, loopsLeft)
-
-	if tag == 'startDialogue' then -- Timer completed, play dialogue
-	
 		loadBlack()
+		doTweenAlpha("dialogueBackA3","camDialogueBack",1,.2,'cubeOut')
 		doTweenAlpha("camHUDA","camHUD",0,.2,'cubeOut')
-		startDialogue('dialogueBefore', 'breakfast');
+		doTweenAlpha("dialogueA3","camDialogue",1,.2,'cubeOut')
+		startDialogue('dialogueAfter', 'breakfast');
 		preloadAssets()
+		allowEnd = true
+		return Function_Stop;
 	end
+	return Function_Continue;
 end
 
 ----------------------------------------------------------------------
 function preloadAssets()
-	addCG("CG1",folderName.."CG1")
+	addCG("CG2",folderName.."CG2")
 end
 
-function onNextDialogue(count)
+function onNextDialogueAfter(count)
 	if count == 3 then
 		setProperty('isLockDialogue',true)
 		doTweenAlpha("dialogueBackA2","camDialogueBack",0 , .1,'cubeOut')
-		doTweenAlpha("CG1A", "CG1",1, 1,'cubeOut')
+		doTweenAlpha("CG2A", "CG2",1, 1,'cubeOut')
 	end
 
 	if count == 4 then
 		doTweenAlpha("dialogueBackA2","camDialogueBack",1 , .1,'cubeOut')
-		doTweenAlpha("CG1A", "CG1",0, 1,'cubeOut')
+		doTweenAlpha("CG2A", "CG2",0, 1,'cubeOut')
 	end
-end
-
-function onSkipDialogue(count)
 end
 
 
 function onTweenCompleted( tag )
-	if tag == 'CG1A' then
+	if tag == 'CG2A' then
 		setProperty('isLockDialogue',false)
 	end
 end
-
 
 function onDialogueFinished()
 	doTweenAlpha("dialogueBackA3","camDialogueBack",0,.2,'cubeOut')
@@ -65,23 +54,13 @@ function onDialogueFinished()
 	for key,value in pairs(sprites) do 
 		removeLuaSprite(value)
 		end
-		
-	removeLuaSprite('black')
+
 end
+
 
 
 --Setting---------------------------------------------------------
 folderName  = "Paola/"
-
-
-function loadBlack()
-	makeLuaSprite('black', '', 0, 0);
-	makeGraphic('black', 1280, 720, '000000')
-	setScrollFactor('black', 0, 0);
-	setObjectCamera('black','camDialogueBack')
-	addLuaSprite('black', true);
-	doTweenAlpha("blackA", 'black', 0.3,0.0001)
-end
 
 function addCG( tag, filename )
 	makeLuaSprite(tag, 'cgs/'..filename, 0, 0);
@@ -93,4 +72,11 @@ function addCG( tag, filename )
 	doTweenAlpha(tag.."A", tag, 0,0.0001)
 end
 
-
+function loadBlack()
+	makeLuaSprite('black', '', 0, 0);
+	makeGraphic('black', 1280, 720, '000000')
+	setScrollFactor('black', 0, 0);
+	setObjectCamera('black','camDialogueBack')
+	addLuaSprite('black', true);
+	doTweenAlpha("blackA", 'black', 0.3,0.0001)
+end

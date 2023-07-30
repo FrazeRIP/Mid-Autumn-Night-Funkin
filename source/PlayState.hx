@@ -326,8 +326,8 @@ class PlayState extends MusicBeatState
 
 	//--------------------------------------------------------------------------------------------------
 	//Dialogue
-	public static var isLockDialogue:Bool = false;
-	public static var isFirstDialogue:Bool = false;
+	public var isLockDialogue:Bool = false;
+	public var isFirstDialogue:Bool = false;
 	
 	public static var dialogueX:Float = 200;
 	public static var dialogueY:Float = 480;
@@ -1732,7 +1732,7 @@ class PlayState extends MusicBeatState
 			}
 			psychDialogue.nextDialogueThing = startNextDialogue;
 			psychDialogue.skipDialogueThing = skipDialogue;
-			psychDialogue.camera = camDialogue;
+			psychDialogue.camera = camDialogueBack;
 			add(psychDialogue);
 		} else {
 			FlxG.log.warn('Your dialogue file is badly formatted!');

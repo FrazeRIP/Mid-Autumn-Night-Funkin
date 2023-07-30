@@ -1,8 +1,8 @@
 {
   "dialogue": [
     {
-      "expression": "I",
-      "text": "好的，第一名再次登场！",
+      "expression": "D",
+      "text": "好耶！完美的演唱！~",
       "boxState": "normal",
       "portrait": "Paola_Dialogue",
       "speed": 0.05,
@@ -10,17 +10,17 @@
     },
     {
       "expression": "talk",
-      "text": "Beep！",
+      "text": "Yeah!",
       "boxState": "normal",
       "portrait": "BF_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "F",
-      "text": "看来准备好了呢！那么，阁下请听题——",
+      "expression": "talk",
+      "text": "嗯嗯，真是一场精彩的演出呢~",
       "boxState": "normal",
-      "portrait": "Paola_Dialogue",
+      "portrait": "GF_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
@@ -33,120 +33,8 @@
       "sound": ""
     },
     {
-      "expression": "talk",
-      "text": "嗯…慢着？这位第一名小姐？",
-      "boxState": "normal",
-      "portrait": "GF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "K",
-      "text": "…？",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "从刚刚开始我就有一个小问题，可以提出来吗？",
-      "boxState": "normal",
-      "portrait": "GF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "D",
-      "text": "没问题！这位同学请讲！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "哈…",
-      "boxState": "normal",
-      "portrait": "GF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "嗯……请问，我们还是第一次参加这种形式的猜谜活动，\n我们要面对的是什么样的谜题呢？",
-      "boxState": "normal",
-      "portrait": "GF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
       "expression": "B",
-      "text": "说到猜谜的话，那当然是字谜啦！\n我最喜欢的猜谜类型就是字谜哦！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "（思考）字谜?(Beep?)",
-      "boxState": "normal",
-      "portrait": "GF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "C",
-      "text": "就是通过谜面来猜字的谜语！谜底是一个字的那种~",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "G",
-      "text": "嘛，其实和一些英文谜语很相似，\n都是通过拆解、分析、拼合等方式猜出谜底！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "H",
-      "text": "只不过你们猜谜时的元素是单词中的字母，\n这边的字谜元素是汉字的笔画和偏旁部首~",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "（思考）听起来有些复杂呢……(Beep bo……)",
-      "boxState": "normal",
-      "portrait": "GF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "B",
-      "text": "但是真的非常有趣！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "G",
-      "text": "喔对了，虽然在很多人的印象中，灯会只在元宵一类的节日举办，但其实很多传统节日都有“玩灯”的民俗，部分地区在中秋也会举办大型的灯会哦！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "D",
-      "text": "当然，猜谜也是有非常悠久历史的娱乐活动！\n现在的灯谜活动，这种将猜谜和灯会结合起来的娱乐形式最早可以追溯到南宋时期呢！",
+      "text": "好一阵子没有这样对唱过啦，好开心！",
       "boxState": "normal",
       "portrait": "Paola_Dialogue",
       "speed": 0.05,
@@ -154,15 +42,7 @@
     },
     {
       "expression": "E",
-      "text": "…啊，不小心又扯远了！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "F",
-      "text": "回归正题！\n我现在就出一道简单的字谜，你们来猜猜看吧！",
+      "text": "…啊！太兴奋了，差点忘了字谜的事！",
       "boxState": "normal",
       "portrait": "Paola_Dialogue",
       "speed": 0.05,
@@ -170,55 +50,15 @@
     },
     {
       "expression": "talk",
-      "text": "Bepp bap！",
-      "boxState": "normal",
-      "portrait": "BF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "D",
-      "text": "好，听好啦！谜面是——",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "F",
-      "text": "【两边对歌乐陶陶】，打一个字！",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "…Bap？",
-      "boxState": "normal",
-      "portrait": "BF_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "talk",
-      "text": "两边…对歌……？",
+      "text": "（居然差点忘了吗…！）",
       "boxState": "normal",
       "portrait": "GF_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "C",
-      "text": "很符合现在的场景，不是吗？",
-      "boxState": "normal",
-      "portrait": "Paola_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "B",
-      "text": "开动脑筋吧，很简单哦！",
+      "expression": "I",
+      "text": "好，那现在就请给出你们的答案吧！",
       "boxState": "normal",
       "portrait": "Paola_Dialogue",
       "speed": 0.05,
@@ -226,7 +66,7 @@
     },
     {
       "expression": "talk",
-      "text": "Hmmm……（bf&gf一起）",
+      "text": "唔……经过刚才的思考，我觉得谜底是——",
       "boxState": "normal",
       "portrait": "GF_Dialogue",
       "speed": 0.05,
@@ -234,7 +74,159 @@
     },
     {
       "expression": "H",
-      "text": "给你们一首歌的时间思考哦。",
+      "text": "——等一下！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "?(Bf&gf)",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "Empty",
+      "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（悄悄话…）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "回答——正确！恭喜！！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep bop Bap！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "耶！我果然没猜错，就像你说的一样，通过分析谜面的含义，对谜面里的文字进行拆解和拼接，就能得出答案！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "没错！这就是所谓的【拆字法】！\n你已经掌握猜灯谜的基础方法之一了！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "哦？只是“之一”吗？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "嘛，除此之外还有根据文字的含义进行联想的【会意法】！\n这种字谜就更加考验对汉字的理解了哦！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（bf&gf若有所思）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "好！时间也差不多啦，两位可以在场外准备的字谜卡上，圈出你们刚刚猜到的谜底，可以领取一份小奖品哟！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "喔，还有奖品？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "J",
+      "text": "本人亲手制作的呢~",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "好哦，那我们之后再见！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep Bap！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "一会见！祝你们中秋愉快！~",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "L",
+      "text": "没错，这只是最简单的拆字灯谜哟~",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "那么，你也猜到了吗？｡•ᴗ-)~",
       "boxState": "normal",
       "portrait": "Paola_Dialogue",
       "speed": 0.05,

@@ -3117,6 +3117,8 @@ class FunkinLua {
 		switch(cam.toLowerCase()) {
 			case 'camhud' | 'hud': return PlayState.instance.camHUD;
 			case 'camother' | 'other': return PlayState.instance.camOther;
+			case 'camdialogue': return PlayState.instance.camDialogue;
+			case 'camdialogueback' : return PlayState.instance.camDialogueBack;
 		}
 		return PlayState.instance.camGame;
 	}
