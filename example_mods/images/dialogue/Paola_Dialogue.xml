@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Paola_Dialogue.png">
+<SubTexture name="A0000" x="2196" y="0" width="769" height="747" frameX="-90" frameY="-49" frameWidth="1008" frameHeight="796" />
+<SubTexture name="B0000" x="0" y="1586" width="799" height="747" frameX="-90" frameY="-49" frameWidth="1008" frameHeight="796" />
+<SubTexture name="C0000" x="799" y="1586" width="799" height="747" frameX="-90" frameY="-49" frameWidth="1008" frameHeight="796" />
+<SubTexture name="D0000" x="698" y="0" width="793" height="790" frameX="0" frameY="-6" frameWidth="1008" frameHeight="796" />
+<SubTexture name="E0000" x="2196" y="747" width="733" height="747" frameX="-42" frameY="-49" frameWidth="1008" frameHeight="796" />
+<SubTexture name="F0000" x="0" y="0" width="698" height="796" frameX="-310" frameY="0" frameWidth="1008" frameHeight="796" />
+<SubTexture name="G0000" x="1598" y="1586" width="717" height="747" frameX="-217" frameY="-49" frameWidth="1008" frameHeight="796" />
+<SubTexture name="H0000" x="2965" y="0" width="717" height="747" frameX="-217" frameY="-49" frameWidth="1008" frameHeight="796" />
+<SubTexture name="I0000" x="1491" y="0" width="705" height="790" frameX="-43" frameY="-6" frameWidth="1008" frameHeight="796" />
+<SubTexture name="J0000" x="0" y="796" width="705" height="790" frameX="-43" frameY="-6" frameWidth="1008" frameHeight="796" />
+<SubTexture name="K0000" x="705" y="796" width="650" height="773" frameX="-89" frameY="-23" frameWidth="1008" frameHeight="796" />
+<SubTexture name="L0000" x="1355" y="796" width="650" height="773" frameX="-89" frameY="-23" frameWidth="1008" frameHeight="796" />
+</TextureAtlas>

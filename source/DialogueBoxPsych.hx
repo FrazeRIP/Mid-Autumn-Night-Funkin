@@ -197,6 +197,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var dialogue:FlxTypeText;
 	var dialogueList:DialogueFile = null;
 
+	public var isFinished:Bool = false;
 	public var finishThing:Void->Void;
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
@@ -258,7 +259,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		add(box);
 		box.camera = PlayState.instance.camDialogue;
 
-		daText = initializeText(0 , 0,200, 20, 'test');
+		daText = initializeText(PlayState.dialogueX,PlayState.dialogueY,PlayState.dialogueWidth, PlayState.dialogueFontSize, 'test');
 		add(daText);
 		daText.camera = PlayState.instance.camDialogue;
 
@@ -368,6 +369,10 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				// If the current dialogue is finished and it's the last dialogue
 				else if (currentText >= dialogueList.dialogue.length)
 				{
+					if(!isFinished){
+					isFinished = true;
+					PlayState.instance.callOnLuas('onDialogueFinished', []);
+					}
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length)
 					{

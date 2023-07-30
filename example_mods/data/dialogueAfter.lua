@@ -66,6 +66,11 @@ function onTweenCompleted( tag )
 end
 
 
+function onDialogueFinished()
+
+end
+
+
 function preloadAssets( ... )
 	makeLuaSprite('cg2-3', 'cg2-3', 0, 0);
 	setScrollFactor('cg2-3', 0, 0);
@@ -80,7 +85,3 @@ function preloadAssets( ... )
 	doTweenAlpha('DF', 'DarkSolidD',1,.2 ,'cubeOut')
 end
 
-
-function onDialogueFinished()
-
-end

@@ -328,6 +328,11 @@ class PlayState extends MusicBeatState
 	//Dialogue
 	public static var isLockDialogue:Bool = false;
 	public static var isFirstDialogue:Bool = false;
+	
+	public static var dialogueX:Float = 200;
+	public static var dialogueY:Float = 480;
+	public static var dialogueWidth:Int = 880;
+	public static var dialogueFontSize:Int = 28;
 	//--------------------------------------------------------------------------------------------------
 
 	//--------------------------------------------------------------------------------------------------
@@ -411,20 +416,22 @@ class PlayState extends MusicBeatState
 
 		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
+
 		camDialogueBack = new FlxCamera();
 		camDialogue = new FlxCamera();
 		camHUD = new FlxCamera();
 		camOther = new FlxCamera();
+		
 		camDialogue.bgColor.alpha = 0;
 		camDialogueBack.bgColor.alpha = 0;
-		
 		camHUD.bgColor.alpha = 0;
+
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
+		FlxG.cameras.add(camHUD, false);
 		FlxG.cameras.add(camDialogueBack, false);
 		FlxG.cameras.add(camDialogue, false);
-		FlxG.cameras.add(camHUD, false);
 		FlxG.cameras.add(camOther, false);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
 
@@ -3212,6 +3219,8 @@ class PlayState extends MusicBeatState
 		{
 			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125 * camZoomingDecay), 0, 1));
 			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125 * camZoomingDecay), 0, 1));
+			camDialogue.zoom = FlxMath.lerp(1, camHUD.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125 * camZoomingDecay), 0, 1));
+			camDialogueBack.zoom = FlxMath.lerp(1, camHUD.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125 * camZoomingDecay), 0, 1));
 		}
 
 		FlxG.watch.addQuick("secShit", curSection);
