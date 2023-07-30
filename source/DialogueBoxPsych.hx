@@ -234,8 +234,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.scrollFactor.set();
 		bgFade.visible = true;
 		bgFade.alpha = 0;
-		add(bgFade);
-		bgFade.camera = PlayState.instance.camDialogue;
+		//add(bgFade);
+		bgFade.camera = PlayState.instance.camDialogueBack;
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -257,11 +257,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
-		box.camera = PlayState.instance.camDialogue;
+		box.camera = PlayState.instance.camDialogueBack;
 
 		daText = initializeText(PlayState.dialogueX,PlayState.dialogueY,PlayState.dialogueWidth, PlayState.dialogueFontSize, 'test');
 		add(daText);
-		daText.camera = PlayState.instance.camDialogue;
+		daText.camera = PlayState.instance.camDialogueBack;
 
 		startNextDialog();
 	}
@@ -302,7 +302,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			char.scrollFactor.set();
 			char.alpha = 0.00001;
 			add(char);
-			char.camera = PlayState.instance.camDialogue;
+			char.camera = PlayState.instance.camDialogueBack;
 
 			var saveY:Bool = false;
 			switch (char.jsonFile.dialogue_pos)
@@ -353,7 +353,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				bgFade.alpha = 0.5;
 
 			// If accept pressed
-			if (!PlayState.isLockDialogue && PlayerSettings.player1.controls.ACCEPT)
+			if (!PlayState.instance.isLockDialogue && PlayerSettings.player1.controls.ACCEPT)
 			{
 				// If the current dialogue still going
 				if (!finishedText)
@@ -593,7 +593,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 
 		var character:Int = 0;
-		box.visible = true;
+		if(animName == "Empty"){
+			box.visible = false;
+		}else{
+			box.visible = true;
+		}
 		for (i in 0...arrayCharacters.length)
 		{
 			if (arrayCharacters[i].curCharacter == curDialogue.portrait)
