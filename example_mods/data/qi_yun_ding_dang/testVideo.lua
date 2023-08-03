@@ -1,10 +1,10 @@
 
 function onCreatePost( ... )
-	makeLuaVideoSprite("U0-ending","U0-ending",0,0)
-	debugPrint("Done")
-	addLuaSprite("U0-ending",true)
-	setObjectCamera("U0-ending","camHuD")
-	setBlendMode("U0-ending","MULTIPLY")
+	--makeLuaVideoSprite("U0-ending","U0-ending",0,0)
+	--debugPrint("Done")
+	--addLuaSprite("U0-ending",true)
+	--setObjectCamera("U0-ending","camHuD")
+	--setBlendMode("U0-ending","MULTIPLY")
 end
 
 
