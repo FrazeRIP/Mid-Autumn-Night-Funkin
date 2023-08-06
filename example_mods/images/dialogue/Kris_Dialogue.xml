@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Kris_Dialogue.png">
+<SubTexture name="A0000" x="0" y="0" width="3342" height="3536" frameX="-1155" frameY="-1328" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="B0000" x="3342" y="0" width="3342" height="3536" frameX="-1155" frameY="-1328" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="C0000" x="6684" y="0" width="3535" height="3536" frameX="-1155" frameY="-1328" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="D0000" x="10219" y="3460" width="2648" height="2909" frameX="-856" frameY="-1417" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="E0000" x="0" y="3536" width="3361" height="3536" frameX="-1155" frameY="-1328" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="F0000" x="6722" y="3536" width="2648" height="2909" frameX="-856" frameY="-1417" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="G0000" x="10219" y="0" width="3836" height="3460" frameX="-854" frameY="-1404" frameWidth="5315" frameHeight="5315" />
+<SubTexture name="H0000" x="3361" y="3536" width="3361" height="3536" frameX="-1155" frameY="-1328" frameWidth="5315" frameHeight="5315" />
+</TextureAtlas>

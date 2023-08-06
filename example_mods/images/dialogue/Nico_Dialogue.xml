@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Nico_Dialogue.png">
+<SubTexture name="Nico_Dialogue A0000" x="0" y="1354" width="582" height="1265" frameX="-101" frameY="-44" frameWidth="772" frameHeight="1354" />
+<SubTexture name="Nico_Dialogue B0000" x="582" y="1354" width="582" height="1265" frameX="-54" frameY="-13" frameWidth="665" frameHeight="1303" />
+<SubTexture name="Nico_Dialogue C0000" x="626" y="0" width="579" height="1303" frameX="-43" frameY="0" frameWidth="665" frameHeight="1303" />
+<SubTexture name="Nico_Dialogue D0000" x="1205" y="0" width="603" height="1303" frameX="-31" frameY="0" frameWidth="665" frameHeight="1303" />
+<SubTexture name="Nico_Dialogue E0000" x="0" y="0" width="626" height="1354" frameX="-73" frameY="0" frameWidth="772" frameHeight="1354" />
+<SubTexture name="Nico_Dialogue F0000" x="1808" y="0" width="603" height="1303" frameX="-31" frameY="0" frameWidth="665" frameHeight="1303" />
+<SubTexture name="Nico_Dialogue G0000" x="2411" y="0" width="579" height="1303" frameX="-43" frameY="0" frameWidth="665" frameHeight="1303" />
+</TextureAtlas>

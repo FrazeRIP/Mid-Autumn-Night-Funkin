@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="IS.png">
+<SubTexture name="IS singDOWN0000" x="3553" y="1493" width="410" height="744" frameX="-212" frameY="-124" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singDOWN0001" x="3138" y="0" width="415" height="747" frameX="-213" frameY="-121" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singDOWN0002" x="2419" y="2315" width="424" height="753" frameX="-214" frameY="-115" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singDOWN0003" x="1179" y="2315" width="430" height="758" frameX="-214" frameY="-109" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singDOWN0004" x="749" y="2315" width="430" height="760" frameX="-215" frameY="-107" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0000" x="2016" y="2315" width="403" height="755" frameX="-125" frameY="-110" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0001" x="1609" y="2315" width="407" height="756" frameX="-120" frameY="-109" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0002" x="342" y="2315" width="407" height="761" frameX="-118" frameY="-104" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0003" x="1245" y="1548" width="394" height="765" frameX="-127" frameY="-99" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0004" x="710" y="777" width="380" height="770" frameX="-138" frameY="-94" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0005" x="1393" y="0" width="374" height="772" frameX="-144" frameY="-92" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0006" x="0" y="777" width="373" height="771" frameX="-144" frameY="-93" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0007" x="1090" y="777" width="373" height="769" frameX="-144" frameY="-95" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0008" x="1767" y="0" width="373" height="769" frameX="-144" frameY="-95" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS idle0009" x="1767" y="769" width="373" height="769" frameX="-144" frameY="-95" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singLEFT0000" x="3356" y="3078" width="581" height="709" frameX="-126" frameY="-147" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singLEFT0001" x="2792" y="3078" width="564" height="712" frameX="-124" frameY="-144" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singLEFT0002" x="2240" y="3078" width="552" height="718" frameX="-115" frameY="-138" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singLEFT0003" x="1675" y="3078" width="565" height="725" frameX="-104" frameY="-131" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singLEFT0004" x="1098" y="3078" width="577" height="727" frameX="-97" frameY="-129" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singRIGHT0000" x="551" y="3078" width="547" height="737" frameX="-120" frameY="-121" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singRIGHT0001" x="0" y="3078" width="551" height="738" frameX="-115" frameY="-120" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singRIGHT0002" x="3553" y="2237" width="554" height="742" frameX="-108" frameY="-116" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singRIGHT0003" x="3553" y="747" width="559" height="746" frameX="-100" frameY="-112" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singRIGHT0004" x="3553" y="0" width="559" height="747" frameX="-98" frameY="-111" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10000" x="0" y="0" width="364" height="777" frameX="-146" frameY="-87" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10001" x="1025" y="0" width="368" height="773" frameX="-144" frameY="-91" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10002" x="0" y="1548" width="441" height="767" frameX="-140" frameY="-98" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10003" x="1639" y="1548" width="462" height="764" frameX="-139" frameY="-101" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10004" x="2101" y="1548" width="462" height="764" frameX="-139" frameY="-101" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10005" x="2677" y="0" width="461" height="764" frameX="-139" frameY="-101" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10006" x="2677" y="764" width="460" height="764" frameX="-139" frameY="-101" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10007" x="2677" y="1528" width="459" height="764" frameX="-139" frameY="-100" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10008" x="441" y="1548" width="462" height="766" frameX="-139" frameY="-98" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10009" x="2140" y="769" width="523" height="768" frameX="-140" frameY="-96" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS special10010" x="2140" y="0" width="537" height="769" frameX="-141" frameY="-95" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singUP0000" x="364" y="0" width="329" height="777" frameX="-244" frameY="-79" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singUP0001" x="693" y="0" width="332" height="775" frameX="-242" frameY="-81" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singUP0002" x="373" y="777" width="337" height="771" frameX="-238" frameY="-85" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singUP0003" x="903" y="1548" width="342" height="766" frameX="-233" frameY="-90" frameWidth="800" frameHeight="900" />
+<SubTexture name="IS singUP0004" x="0" y="2315" width="342" height="763" frameX="-232" frameY="-93" frameWidth="800" frameHeight="900" />
+</TextureAtlas>

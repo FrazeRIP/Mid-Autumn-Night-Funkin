@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="PG_Dialogue.png">
+<SubTexture name="A0000" x="0" y="0" width="546" height="1526" frameX="-176" frameY="-72" frameWidth="923" frameHeight="1603" />
+</TextureAtlas>
