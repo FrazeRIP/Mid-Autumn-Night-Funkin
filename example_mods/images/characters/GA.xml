@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="GA.png">
+<SubTexture name="GA singDOWN0000" x="0" y="2862" width="366" height="648" frameX="-14" frameY="-110" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singDOWN0001" x="3101" y="1984" width="373" height="653" frameX="-11" frameY="-105" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singDOWN0002" x="3101" y="668" width="382" height="658" frameX="-9" frameY="-100" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singDOWN0003" x="3101" y="1326" width="387" height="658" frameX="-13" frameY="-100" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singDOWN0004" x="2639" y="2176" width="385" height="650" frameX="-19" frameY="-108" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0000" x="2650" y="689" width="289" height="686" frameX="-124" frameY="-82" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0001" x="2336" y="698" width="285" height="690" frameX="-125" frameY="-78" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0002" x="1333" y="1471" width="277" height="699" frameX="-126" frameY="-69" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0003" x="1880special" y="706" width="258" height="704" frameX="-139" frameY="-64" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0004" x="1244" y="760" width="253" height="707" frameX="-144" frameY="-61" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0005" x="471" y="1471" width="272" height="703" frameX="-133" frameY="-65" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0006" x="1042" y="1471" width="291" height="700" frameX="-118" frameY="-68" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0007" x="743" y="1471" width="299" height="702" frameX="-112" frameY="-66" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0008" x="1497" y="760" width="304" height="706" frameX="-110" frameY="-62" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA idle0009" x="938" y="760" width="306" height="708" frameX="-109" frameY="-60" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singLEFT0000" x="1880" y="0" width="456" height="706" frameX="-95" frameY="-51" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singLEFT0001" x="0" y="1471" width="471" height="705" frameX="-92" frameY="-52" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singLEFT0002" x="1610" y="1471" width="465" height="698" frameX="-90" frameY="-59" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singLEFT0003" x="2650" y="0" width="451" height="689" frameX="-91" frameY="-68" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singLEFT0004" x="941" y="2176" width="435" height="678" frameX="-99" frameY="-79" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singRIGHT0000" x="3101" y="0" width="464" height="668" frameX="-147" frameY="-89" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singRIGHT0001" x="2182" y="2176" width="457" height="670" frameX="-155" frameY="-87" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singRIGHT0002" x="1376" y="2176" width="465" height="675" frameX="-154" frameY="-82" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singRIGHT0003" x="474" y="2176" width="467" height="683" frameX="-163" frameY="-74" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singRIGHT0004" x="0" y="2176" width="474" height="686" frameX="-167" frameY="-71" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA aSpecial0000" x="3565" y="420" width="724" height="416" frameX="-48" frameY="-445" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA aSpecial0001" x="3565" y="0" width="738" height="420" frameX="-49" frameY="-443" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA aSpecial0002" x="3565" y="836" width="723" height="416" frameX="-49" frameY="-445" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA aSpecial0003" x="2349" y="2862" width="732" height="422" frameX="-59" frameY="-441" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA aSpecial0004" x="1638" y="2862" width="711" height="447" frameX="-120" frameY="-416" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA aSpecial0005" x="983" y="2862" width="655" height="473" frameX="-234" frameY="-390" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA aSpecial0006" x="366" y="2862" width="617" height="494" frameX="-363" frameY="-367" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA bSpecial0000" x="1841" y="2176" width="341" height="671" frameX="-609" frameY="-189" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA bSpecial0001" x="2650" y="1375" width="330" height="679" frameX="-614" frameY="-181" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA bSpecial0002" x="2336" y="0" width="314" height="698" frameX="-625" frameY="-162" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA bSpecial0003" x="0" y="760" width="316" height="711" frameX="-623" frameY="-149" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA bSpecial0004" x="316" y="760" width="313" height="710" frameX="-620" frameY="-150" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA bSpecial0005" x="629" y="760" width="309" height="709" frameX="-619" frameY="-151" frameWidth="1000" frameHeight="900" />
+<SubTexture name="GA singUP0000" x="0" y="0" width="355" height="760" frameX="-131" frameY="-9" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singUP0001" x="355" y="0" width="361" height="758" frameX="-131" frameY="-11" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singUP0002" x="716" y="0" width="371" height="752" frameX="-137" frameY="-17" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singUP0003" x="1087" y="0" width="387" height="744" frameX="-140" frameY="-25" frameWidth="650" frameHeight="770" />
+<SubTexture name="GA singUP0004" x="1474" y="0" width="406" height="740" frameX="-141" frameY="-29" frameWidth="650" frameHeight="770" />
+</TextureAtlas>
