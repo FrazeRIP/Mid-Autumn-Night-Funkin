@@ -82,6 +82,11 @@ function onCreate()
     addAnimationByPrefix(name_of_character, 'singDOWN', down_xml_name, 24, false);
     addAnimationByPrefix(name_of_character, 'singUP', up_xml_name, 24, false);
     addAnimationByPrefix(name_of_character, 'singRIGHT', right_xml_name, 24, false);
+    
+    addAnimationByIndices(name_of_character, 'singLEFT-loop', left_xml_name,'0,1', 24);
+    addAnimationByIndices(name_of_character, 'singDOWN-loop', down_xml_name,'0,1', 24);
+    addAnimationByIndices(name_of_character, 'singUP-loop', up_xml_name,'0,1', 24);
+    addAnimationByIndices(name_of_character, 'singRIGHT-loop', right_xml_name,'0,1', 24);
 
     setPropertyLuaSprite(name_of_character, 'flipX', flipX);
     setPropertyLuaSprite(name_of_character, 'alpha', not invisible);
@@ -108,6 +113,7 @@ function onEvent(name, value1, value2)
 end
 
 local singAnims = {"singLEFT", "singDOWN", "singUP", "singRIGHT"};
+local singAnimsLoop = {"singLEFT-loop", "singDOWN-loop", "singUP-loop", "singRIGHT-loop"};
 local singOffsets = {leftOffsets, downOffsets, upOffsets, rightOffsets};
 local altAnims = {"singLEFT-alt", "singDOWN-alt", "singUP-alt", "singRIGHT-alt"};
 local altOffsets = {leftAltOffsets, downAltOffsets, upAltOffsets, rightAltOffsets};
@@ -122,7 +128,11 @@ function opponentNoteHit(id, direction, noteType, isSustainNote)
     if not playableCharacter then
         if noteType == charNote or noteType == charNote2 then
             doIdle = false;
-            objectPlayAnimation(name_of_character, singAnims[direction + 1], true);
+            if isSustainNote then
+                objectPlayAnimation(name_of_character, singAnimsLoop[direction + 1], true);
+            else
+                objectPlayAnimation(name_of_character, singAnims[direction + 1], true);
+            end
             setProperty(name_of_character .. '.offset.x', singOffsets[direction + 1][1]);
             setProperty(name_of_character .. '.offset.y', singOffsets[direction + 1][2]);
         elseif noteType == altCharNote or noteType == altCharNote2 then

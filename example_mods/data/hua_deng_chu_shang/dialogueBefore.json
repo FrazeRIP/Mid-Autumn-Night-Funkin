@@ -25,14 +25,6 @@
       "sound": ""
     },
     {
-      "expression": "Empty",
-      "text": "",
-      "boxState": "normal",
-      "portrait": "Empty",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
       "expression": "talk",
       "text": "嗯…慢着？这位第一名小姐？",
       "boxState": "normal",

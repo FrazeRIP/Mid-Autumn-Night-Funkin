@@ -1,0 +1,102 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-120,
+		-450
+	],
+	"scale": 0.5,
+	"animations": [
+		{
+			"anim": "A",
+			"loop_offsets": [
+				-1,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				0
+			],
+			"loop_name": "A",
+			"idle_name": "A"
+		},
+		{
+			"anim": "B",
+			"loop_offsets": [
+				-17,
+				-11
+			],
+			"idle_offsets": [
+				-17,
+				-11
+			],
+			"loop_name": "B",
+			"idle_name": "B"
+		},
+		{
+			"anim": "C",
+			"loop_offsets": [
+				-18,
+				-11
+			],
+			"idle_offsets": [
+				-18,
+				-11
+			],
+			"loop_name": "C",
+			"idle_name": "C"
+		},
+		{
+			"anim": "D",
+			"loop_offsets": [
+				-20,
+				-10
+			],
+			"idle_offsets": [
+				-20,
+				-10
+			],
+			"loop_name": "D",
+			"idle_name": "D"
+		},
+		{
+			"anim": "E",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "E",
+			"idle_name": "E"
+		},
+		{
+			"anim": "F",
+			"loop_offsets": [
+				-18,
+				-5
+			],
+			"idle_offsets": [
+				-18,
+				-5
+			],
+			"loop_name": "F",
+			"idle_name": "F"
+		},
+		{
+			"anim": "G",
+			"loop_offsets": [
+				-16,
+				-7
+			],
+			"idle_offsets": [
+				-16,
+				-7
+			],
+			"loop_name": "G",
+			"idle_name": "G"
+		}
+	],
+	"image": "Nico_Dialogue"
+}

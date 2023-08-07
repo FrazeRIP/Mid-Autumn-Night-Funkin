@@ -18,7 +18,6 @@ function onStartCountdown()
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
-
 	if tag == 'startDialogue' then -- Timer completed, play dialogue
 	
 		loadBlack()
@@ -29,7 +28,11 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 ----------------------------------------------------------------------
+--Setting---------------------------------------------------------
+folderName  = "Paola/"
+
 function preloadAssets()
+	--addCG("CG1",folderName.."CG1")
 end
 
 function onNextDialogue(count)
@@ -40,6 +43,9 @@ end
 
 
 function onTweenCompleted( tag )
+	--if tag == 'CG1A' then
+	--	setProperty('isLockDialogue',false)
+	--end
 end
 
 
@@ -54,11 +60,6 @@ function onDialogueFinished()
 		
 	removeLuaSprite('black')
 end
-
-
---Setting---------------------------------------------------------
-folderName  = "Paola/"
-
 
 function loadBlack()
 	makeLuaSprite('black', '', 0, 0);

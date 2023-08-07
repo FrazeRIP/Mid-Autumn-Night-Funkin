@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "zhan_yan_zhou_tong",
+      "kris",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "08-yu_long_mei",
+  "weekName": "09-dan_qiu",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

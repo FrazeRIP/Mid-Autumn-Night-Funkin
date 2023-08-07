@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "hua_hao_yue_yuan",
+      "kurono",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "05-pin_jiu_ge",
+  "weekName": "06-fu_rong_dian",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

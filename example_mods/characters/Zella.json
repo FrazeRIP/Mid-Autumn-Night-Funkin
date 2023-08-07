@@ -1,61 +1,105 @@
 {
-	"animations": [
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "Zella idle"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "Zella singDOWN"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Zella singRIGHT"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "Zella singUP"
-		},
-		{
-			"offsets": [
-				2,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "Zella singLEFT"
-		}
-	],
+  "animations": [
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "idle",
+      "indices": [],
+      "name": "Zella idle"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singDOWN",
+      "indices": [],
+      "name": "Zella singDOWN"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singRIGHT",
+      "indices": [],
+      "name": "Zella singRIGHT"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singUP",
+      "indices": [],
+      "name": "Zella singUP"
+    },
+    {
+      "offsets": [
+        2,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singLEFT",
+      "indices": [],
+      "name": "Zella singLEFT"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singDOWN-loop",
+      "indices": [ 0, 1 ],
+      "name": "Zella singDOWN"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singRIGHT-loop",
+      "indices": [ 0, 1 ],
+      "name": "Zella singRIGHT"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singUP-loop",
+      "indices": [ 0, 1 ],
+      "name": "Zella singUP"
+    },
+    {
+      "offsets": [
+        2,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singLEFT-loop",
+      "indices": [0,1],
+      "name": "Zella singLEFT"
+    }
+  ],
 	"no_antialiasing": false,
 	"image": "characters/Zella",
 	"position": [

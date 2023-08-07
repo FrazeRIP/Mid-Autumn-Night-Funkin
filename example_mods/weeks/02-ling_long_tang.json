@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "jin_zun_zhi_li",
+      "ropry",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "01-deng_yun_tai",
+  "weekName": "02-ling_long_tang",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

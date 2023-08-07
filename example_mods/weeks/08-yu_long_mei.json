@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "xin_qi_chao_ting",
+      "sarah",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "07-guan_yue_ta",
+  "weekName": "08-yu_long_mei",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

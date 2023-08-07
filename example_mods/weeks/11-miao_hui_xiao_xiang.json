@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "yi_zai_bi_xian",
+      "sprout",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "10-song_ling_ke_zhan",
+  "weekName": "11-miao_hui_xiao_xiang",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

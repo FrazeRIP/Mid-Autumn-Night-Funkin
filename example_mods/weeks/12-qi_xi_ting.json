@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "qi_yun_ding_dang",
+      "pinkghost",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "11-miao_hui_xiao_xiang",
+  "weekName": "12-qi_xi_ting",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

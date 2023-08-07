@@ -1,87 +1,73 @@
-allowEnd = false
+local allowEnd = false
+local sprites = {}
 
 function onEndSong()
 	if not allowEnd and isStoryMode then
+	--if not allowEnd then
 		setProperty('inCutscene', true);
 		setProperty('isFirstDialogue',false)
 		setProperty('dialogueCount',0)
 
-		setProperty('skipDialogueEndCallback',true)
-
+		
+		loadBlack()
+		doTweenAlpha("dialogueBackA3","camDialogueBack",1,.2,'cubeOut')
+		doTweenAlpha("camHUDA","camHUD",0,.2,'cubeOut')
+		doTweenAlpha("dialogueA3","camDialogue",1,.2,'cubeOut')
+		startDialogue('dialogueAfter', 'breakfast');
 		preloadAssets()
-		startDialogue('dialogue2-2CN', 'dialog4');
 		allowEnd = true
-
 		return Function_Stop;
 	end
 	return Function_Continue;
 end
 
+----------------------------------------------------------------------
+--Setting---------------------------------------------------------
+folderName  = "Paola/"
+function preloadAssets()
+	--addCG("CG2",folderName.."CG2")
+end
 
 function onNextDialogueAfter(count)
-	
-	if count == 24 then
-	playSound('Thunder2',1)
-	cameraShake('camDialog', .0035, .5)	
-	cameraShake('camDialogBack', .0035, .5)	
-	end
-	
-	if count == 25 then
-	playMusic('dialog3',1,true)
-	end
-
-	if count == 40 then
-	setProperty('isLockDialogue',true)
-	doTweenAlpha("dialogueA","camDialog",0,.1,'cubeOut')
-	doTweenAlpha('cg2-3AC', 'cg2-3', 1, 2,'cubeOut')
-	end
-
-	if count == 41 then
-	doTweenAlpha("dialogueA","camDialog",1,.2,'cubeOut')
-	end
-
-	if count == 45 then
-	playSound('Thunder2',1)
-	cameraShake('camDialog', .0035, .5)	
-	cameraShake('camDialogBack', .0035, .5)	
-	end
-
-	if count == 54 then
-	doTweenAlpha('cg2-3A', 'cg2-3', 0, 1,'cubeOut')
-	playMusic('dialog4',1,true)
-	end
-
-	if count == 59 then
-	playSound('laugh',1)
-	end
 
 end
 
 
 function onTweenCompleted( tag )
-	if tag == 'cg2-3AC' then
-	setProperty('isLockDialogue',false)
-	end
-
+	--if tag == 'CG2A' then
+	--	setProperty('isLockDialogue',false)
+	--end
 end
-
 
 function onDialogueFinished()
+	doTweenAlpha("dialogueBackA3","camDialogueBack",0,.2,'cubeOut')
+	doTweenAlpha("dialogueA3","camDialogue",0,.2,'cubeOut')
+	doTweenAlpha("camHUDA","camHUD",1,.2,'cubeOut')
+
+	for key,value in pairs(sprites) do 
+		removeLuaSprite(value)
+		end
 
 end
 
 
-function preloadAssets( ... )
-	makeLuaSprite('cg2-3', 'cg2-3', 0, 0);
-	setScrollFactor('cg2-3', 0, 0);
-	--scaleObject('cg2-3', 1.2, 1.2);
-	setObjectCamera('cg2-3','camDialogBack')
-	addLuaSprite('cg2-3', true);
-	doTweenAlpha('cg2-3A', 'cg2-3', 0, 0.001)
-	
-	doTweenAlpha('bg2A', 'bg2', 1, 0.2,'cubeOut')
-	doTweenAlpha("dialogueBackA3","camDialogBack",1,.2,'cubeOut')
-	doTweenAlpha("dialogueA3","camDialog",1,.2,'cubeOut')
-	doTweenAlpha('DF', 'DarkSolidD',1,.2 ,'cubeOut')
+
+
+function addCG( tag, filename )
+	makeLuaSprite(tag, 'cgs/'..filename, 0, 0);
+	setObjectCamera(tag,'camDialogue')
+	setScrollFactor(tag, 1, 1)
+	addLuaSprite(tag, true);
+	scaleObject(tag,1,1)
+	table.insert(sprites, tag)
+	doTweenAlpha(tag.."A", tag, 0,0.0001)
 end
 
+function loadBlack()
+	makeLuaSprite('black', '', 0, 0);
+	makeGraphic('black', 1280, 720, '000000')
+	setScrollFactor('black', 0, 0);
+	setObjectCamera('black','camDialogueBack')
+	addLuaSprite('black', true);
+	doTweenAlpha("blackA", 'black', 0.3,0.0001)
+end

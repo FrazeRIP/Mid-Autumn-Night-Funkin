@@ -22,14 +22,21 @@ function onEndSong()
 end
 
 ----------------------------------------------------------------------
+--Setting---------------------------------------------------------
+folderName  = "Nico/"
 function preloadAssets()
+	--addCG("CG2",folderName.."CG2")
 end
 
 function onNextDialogueAfter(count)
+
 end
 
 
 function onTweenCompleted( tag )
+	--if tag == 'CG2A' then
+	--	setProperty('isLockDialogue',false)
+	--end
 end
 
 function onDialogueFinished()
@@ -45,8 +52,6 @@ end
 
 
 
---Setting---------------------------------------------------------
-folderName  = "Paola/"
 
 function addCG( tag, filename )
 	makeLuaSprite(tag, 'cgs/'..filename, 0, 0);

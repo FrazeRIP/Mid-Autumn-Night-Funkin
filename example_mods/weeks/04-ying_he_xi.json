@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "qing_xi_yin_yue",
+      "heidi",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "03-hua_fang",
+  "weekName": "04-ying_he_xi",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}
