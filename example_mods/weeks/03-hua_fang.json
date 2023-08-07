@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "hua_qian_yue_xia",
+      "nico",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "02-ling_long_tang",
+  "weekName": "03-hua_fang",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

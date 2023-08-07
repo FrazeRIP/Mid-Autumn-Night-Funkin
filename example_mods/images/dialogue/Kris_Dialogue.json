@@ -1,0 +1,115 @@
+{
+	"position": [
+		-140,
+		-230
+	],
+	"dialogue_pos": "left",
+	"scale": 0.5,
+	"image": "Kris_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "A",
+			"idle_name": "A",
+			"loop_name": "A"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "B",
+			"idle_name": "B",
+			"loop_name": "B"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "C",
+			"idle_name": "C",
+			"loop_name": "C"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "D",
+			"idle_name": "D",
+			"loop_name": "D"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "E",
+			"idle_name": "E",
+			"loop_name": "E"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "F",
+			"idle_name": "F",
+			"loop_name": "F"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "G",
+			"idle_name": "G",
+			"loop_name": "G"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "H",
+			"idle_name": "H",
+			"loop_name": "H"
+		}
+	]
+}

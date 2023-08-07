@@ -23,27 +23,13 @@ end
 
 ----------------------------------------------------------------------
 function preloadAssets()
-	addCG("CG2",folderName.."CG2")
 end
 
 function onNextDialogueAfter(count)
-	if count == 3 then
-		setProperty('isLockDialogue',true)
-		doTweenAlpha("dialogueBackA2","camDialogueBack",0 , .1,'cubeOut')
-		doTweenAlpha("CG2A", "CG2",1, 1,'cubeOut')
-	end
-
-	if count == 4 then
-		doTweenAlpha("dialogueBackA2","camDialogueBack",1 , .1,'cubeOut')
-		doTweenAlpha("CG2A", "CG2",0, 1,'cubeOut')
-	end
 end
 
 
 function onTweenCompleted( tag )
-	if tag == 'CG2A' then
-		setProperty('isLockDialogue',false)
-	end
 end
 
 function onDialogueFinished()

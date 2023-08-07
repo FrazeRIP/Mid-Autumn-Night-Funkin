@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "yue_luo_xing_shen",
+      "gf",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "12-qi_xi_ting",
+  "weekName": "13-yue_fu_dao",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

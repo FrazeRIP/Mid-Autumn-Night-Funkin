@@ -1,0 +1,24 @@
+{
+	"position": [
+		-190,
+		-590
+	],
+	"dialogue_pos": "left",
+	"scale": 0.5,
+	"image": "PG_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "A",
+			"idle_name": "A",
+			"loop_name": "A"
+		}
+	]
+}

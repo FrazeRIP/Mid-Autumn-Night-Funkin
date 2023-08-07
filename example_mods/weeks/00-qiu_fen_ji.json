@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "jiao_yue_dang_kong",
+      "gf",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "",
+  "weekName": "00-qiu_fen_ji",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

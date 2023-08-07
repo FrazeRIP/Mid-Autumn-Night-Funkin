@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "ru_yuan_xing_ke",
+      "IS",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "09-dan_qiu",
+  "weekName": "10-song_ling_ke_zhan",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "ji_yue_tan_ming",
+      "RincyA",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "06-fu_rong_dian",
+  "weekName": "07-guan_yue_ta",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

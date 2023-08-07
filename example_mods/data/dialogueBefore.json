@@ -1,508 +1,236 @@
 {
-	"dialogue": [
-		{
-			"expression": "up",
-			"text": "*Deep breath",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": "dialog2"
-		},
-		{
-			"expression": "creepy",
-			"text": "Oh my Sa'tan!\\nThere are acutal people live in here!",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "dark",
-			"text": "......",
-			"boxState": "normal",
-			"portrait": "Limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "scare-shut",
-			"text": "Beep......?",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "lol-mad",
-			"text": "Hello......?",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "dark",
-			"text": "*Breath...",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "angry-talk",
-			"text": "Do you speak English you fre.....",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "wish",
-			"text": "Holla!",
-			"boxState": "angry",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "scare-normal",
-			"text": "?!?!!??!?!",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "creepy",
-			"text": "Why you yelling all of a sudden?!!\\nWe can hear you!",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "Greetings, visitors!\\nI am Limulady, chamberian of da castle.",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "Please, call me Limu if yah like.\\",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "up",
-			"text": "Beep!",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "oneeye-normal",
-			"text": "You sounds like you came from the last century.\\nBut at least you are being nice.",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "smile-normal",
-			"text": "Anyway, we are just......",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "wish",
-			"text": "Nay needeth to explain...\\nMaster's castle is open to everybody!",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "Please,\\n\\Feel as comfortable as at home!",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "up",
-			"text": "Beep bo ski be ba be!",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "worry-shut",
-			"text": "Dude this place is so broken...\\nHow can it be comfortable...",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "normal",
-			"text": ".......",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "wish",
-			"text": "It's been so longeth since da lasteth vistor!\\nLimu would like to give yah both a tour!",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "up",
-			"text": "Beep!",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "oneeye-normal",
-			"text": "Hurry up then.\\nWe still got some *business* to do.",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "normal",
-			"text": "Da castle is giant, easy to get lost.\\nPlease, follow Limu closely.",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": "dialog2"
-		},
-		{
-			"expression": "talk",
-			"text": "",
-			"boxState": "normal",
-			"portrait": "empty",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "question",
-			"text": "Oh, da blue hair one,\\nWhat is yah name?",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "talk",
-			"text": "Beep?\\nBeep boo.",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "question",
-			"text": "......?",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "smile-normal",
-			"text": "His name is Boyfriend,\\nAnd I'm Girl...",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "Ah! Boyfriend!\\nSuch a marvelous name!",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "laugh",
-			"text": "You have such a nice...",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "smile-mad",
-			"text": "*Cough\\nI, AM, GIRLFRIEND.",
-			"boxState": "angry",
-			"portrait": "gf-dialog",
-			"speed": 0.15,
-			"sound": ""
-		},
-		{
-			"expression": "confuse",
-			"text": "......",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.03,
-			"sound": ""
-		},
-		{
-			"expression": "scare-shut",
-			"text": "......?",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.03,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "Boyfriend!\\nYour voice is veru pleasenth!",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "laugh",
-			"text": "Limu have never met a person \\nWho can sing as good as you.",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "LOL.",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "smile-normal",
-			"text": "Of course!\\nHe's the best rapper in town.",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
+  "dialogue": [
     {
-      "expression": "smile-normal",
-      "text": "Btw don't ever think about putting your little hand on him. We are coupl...",
+      "expression": "I",
+      "text": "好的，第一名再次登场！",
       "boxState": "normal",
-      "portrait": "gf-dialog",
+      "portrait": "Paola_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
-		{
-			"expression": "normal",
-			"text": "I have been alone in da castle...\\nFor so long...",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.025,
-			"sound": ""
-		},
-		{
-			"expression": "wish",
-			"text": "Today Limu sings with others,\\nJoyous I am indeed!",
-			"boxState": "normal",
-			"portrait": "limu-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "happy",
-			"text": "Beep ba bo beep ba!",
-			"boxState": "normal",
-			"portrait": "bf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "smile-mad",
-			"text": "Hey you....!",
-			"boxState": "normal",
-			"portrait": "gf-dialog",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "normal",
-			"text": "Yes!\\nWe have finally arrived!",
-			"boxState": "normal",
-			"sound": "dialog2",
-			"speed": 0.025,
-			"portrait": "limu-dialog"
-		},
     {
-      "expression": "wish",
-      "text": "Behold,\\nLimu's Master's most remarkable collection!",
+      "expression": "talk",
+      "text": "Beep！",
       "boxState": "normal",
-      "sound": "",
+      "portrait": "BF_Dialogue",
       "speed": 0.05,
-      "portrait": "limu-dialog"
+      "sound": ""
     },
-		{
-			"expression": "talk",
-			"text": "",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "empty"
-		},
-		{
-			"expression": "wow",
-			"text": "WOW",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "bf-dialog"
-		},
-		{
-			"expression": "wow",
-			"text": "WOW",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "gf-dialog"
-		},
-		{
-			"expression": "creepy",
-			"text": "(Damn, those statue shit look so real\\nThat's actually creppy as fuck...)",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "gf-dialog"
-		},
-		{
-			"expression": "lol-mad",
-			"text": "Your master really got some fancy fetish,\\nNot my taste tho.",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "gf-dialog"
-		},
-		{
-			"expression": "taunt",
-			"text": "Ooof-",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "bf-dialog"
-		},
-		{
-			"expression": "angry-normal",
-			"text": "......",
-			"boxState": "normal",
-			"sound": "dialog2",
-			"speed": 0.05,
-			"portrait": "limu-dialog"
-		},
-		{
-			"expression": "talk",
-			"text": "Beep bop ba ski bee babe?",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "bf-dialog"
-		},
-		{
-			"expression": "normal",
-			"text": "Hehehe, no worries...\\nThere are more collections inside da castle.",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "limu-dialog"
-		},
-		{
-			"expression": "worry-normal",
-			"text": "68......69......\\nDamn, those statues are everywhere!",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "gf-dialog"
-		},
-		{
-			"expression": "worry-normal",
-			"text": "Where did your master even get those statues from?",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "gf-dialog"
-		},
-		{
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "limu-dialog",
-			"boxState": "normal",
-			"expression": "normal",
-			"text": "......"
-		},
-		{
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "limu-dialog",
-			"boxState": "normal",
-			"expression": "question",
-			"text": "Well......\\nBoy...firend?"
-		},
-		{
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "bf-dialog",
-			"boxState": "normal",
-			"expression": "normal",
-			"text": "?"
-		},
-		{
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "limu-dialog",
-			"boxState": "normal",
-			"expression": "normal",
-			"text": "Care to sing another song with Limu?"
-		},
-		{
-			"sound": "dialog2",
-			"speed": 0.05,
-			"portrait": "bf-dialog",
-			"boxState": "normal",
-			"expression": "up",
-			"text": "Beep!"
-		},
-		{
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "Limu-dialog",
-			"boxState": "normal",
-			"expression": "wish",
-			"text": "Marvelous!\\nPlease, this way!"
-		},
-		{
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "gf-dialog",
-			"boxState": "normal",
-			"expression": "angry-talk",
-			"text": "Damn bitch wtf?\\nWho hurt yo-"
-		}
-	]
+    {
+      "expression": "F",
+      "text": "看来准备好了呢！那么，阁下请听题——",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "嗯…慢着？这位第一名小姐？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "K",
+      "text": "…？",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "从刚刚开始我就有一个小问题，可以提出来吗？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "没问题！这位同学请讲！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "哈…",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "嗯……请问，我们还是第一次参加这种形式的猜谜活动，\n我们要面对的是什么样的谜题呢？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "说到猜谜的话，那当然是字谜啦！\n我最喜欢的猜谜类型就是字谜哦！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（思考）字谜?(Beep?)",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "就是通过谜面来猜字的谜语！谜底是一个字的那种~",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "嘛，其实和一些英文谜语很相似，\n都是通过拆解、分析、拼合等方式猜出谜底！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "只不过你们猜谜时的元素是单词中的字母，\n这边的字谜元素是汉字的笔画和偏旁部首~",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（思考）听起来有些复杂呢……(Beep bo……)",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "但是真的非常有趣！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "喔对了，虽然在很多人的印象中，灯会只在元宵一类的节日举办，但其实很多传统节日都有“玩灯”的民俗，部分地区在中秋也会举办大型的灯会哦！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "当然，猜谜也是有非常悠久历史的娱乐活动！\n现在的灯谜活动，这种将猜谜和灯会结合起来的娱乐形式最早可以追溯到南宋时期呢！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
+      "text": "…啊，不小心又扯远了！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "回归正题！\n我现在就出一道简单的字谜，你们来猜猜看吧！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bepp bap！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "好，听好啦！谜面是——",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "【两边对歌乐陶陶】，打一个字！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "…Bap？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "两边…对歌……？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "很符合现在的场景，不是吗？",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "开动脑筋吧，很简单哦！",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Hmmm……（bf&gf一起）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "给你们一首歌的时间思考哦。",
+      "boxState": "normal",
+      "portrait": "Paola_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
 }

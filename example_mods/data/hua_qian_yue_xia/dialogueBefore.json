@@ -1,0 +1,347 @@
+{
+  "dialogue": [
+
+
+    {
+      "expression": "talk",
+      "text": "刚才在玲珑堂玩得很开心呢~",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "bop（确实）",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "亲爱的，不过不得不说…/n这里美景确实不错。",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "bop（确实）",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "不过欣赏了这么久…/n我发现了一个问题",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "beep？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "我们 好像 迷 路 了......",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "！！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "呃…虽然这里很漂亮，但还是要赶紧找到出口。",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（赞同的眼神）",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "呃…虽然这里很漂亮，但还是要赶紧找到出口。",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "管理花坊的人肯定知道这里的出口。\n我记得，好像是一名长得像猫的粉色兔子…\n叫什么来着？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "expression": "I",
+      "text": "好的，第一名再次登场！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "看来准备好了呢！那么，阁下请听题——",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "嗯…慢着？这位第一名小姐？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "K",
+      "text": "…？",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "从刚刚开始我就有一个小问题，可以提出来吗？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "没问题！这位同学请讲！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "哈…",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "嗯……请问，我们还是第一次参加这种形式的猜谜活动，\n我们要面对的是什么样的谜题呢？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "说到猜谜的话，那当然是字谜啦！\n我最喜欢的猜谜类型就是字谜哦！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（思考）字谜?(Beep?)",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "就是通过谜面来猜字的谜语！谜底是一个字的那种~",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "嘛，其实和一些英文谜语很相似，\n都是通过拆解、分析、拼合等方式猜出谜底！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "只不过你们猜谜时的元素是单词中的字母，\n这边的字谜元素是汉字的笔画和偏旁部首~",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（思考）听起来有些复杂呢……(Beep bo……)",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "但是真的非常有趣！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "喔对了，虽然在很多人的印象中，灯会只在元宵一类的节日举办，但其实很多传统节日都有“玩灯”的民俗，部分地区在中秋也会举办大型的灯会哦！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "当然，猜谜也是有非常悠久历史的娱乐活动！\n现在的灯谜活动，这种将猜谜和灯会结合起来的娱乐形式最早可以追溯到南宋时期呢！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
+      "text": "…啊，不小心又扯远了！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "回归正题！\n我现在就出一道简单的字谜，你们来猜猜看吧！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bepp bap！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "好，听好啦！谜面是——",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "【两边对歌乐陶陶】，打一个字！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "…Bap？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "两边…对歌……？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "很符合现在的场景，不是吗？",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "开动脑筋吧，很简单哦！",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Hmmm……（bf&gf一起）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "给你们一首歌的时间思考哦。",
+      "boxState": "normal",
+      "portrait": "Nico_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}

@@ -1,72 +1,116 @@
 {
-	"animations": [
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "IS idle"
-		},
-		{
-			"offsets": [
-				19,
-				4
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "IS singDOWN"
-		},
-		{
-			"offsets": [
-				3,
-				-2
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "IS singRIGHT"
-		},
-		{
-			"offsets": [
-				14,
-				-1
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "IS singUP"
-		},
-		{
-			"offsets": [
-				1,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "IS singLEFT"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "special1",
-			"indices": [],
-			"name": "IS special1"
-		}
-	],
+  "animations": [
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "idle",
+      "indices": [],
+      "name": "IS idle"
+    },
+    {
+      "offsets": [
+        19,
+        4
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singDOWN",
+      "indices": [],
+      "name": "IS singDOWN"
+    },
+    {
+      "offsets": [
+        3,
+        -2
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singRIGHT",
+      "indices": [],
+      "name": "IS singRIGHT"
+    },
+    {
+      "offsets": [
+        14,
+        -1
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singUP",
+      "indices": [],
+      "name": "IS singUP"
+    },
+    {
+      "offsets": [
+        1,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singLEFT",
+      "indices": [],
+      "name": "IS singLEFT"
+    },
+    {
+      "offsets": [
+        19,
+        4
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singDOWN-loop",
+      "indices": [ 0, 1 ],
+      "name": "IS singDOWN"
+    },
+    {
+      "offsets": [
+        3,
+        -2
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singRIGHT-loop",
+      "indices": [ 0, 1 ],
+      "name": "IS singRIGHT"
+    },
+    {
+      "offsets": [
+        14,
+        -1
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singUP-loop",
+      "indices": [ 0, 1 ],
+      "name": "IS singUP"
+    },
+    {
+      "offsets": [
+        1,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singLEFT-loop",
+      "indices": [0,1],
+      "name": "IS singLEFT"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "special1",
+      "indices": [],
+      "name": "IS special1"
+    }
+  ],
 	"no_antialiasing": false,
 	"image": "characters/IS",
 	"position": [

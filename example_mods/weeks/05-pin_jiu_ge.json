@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "zhuo_jiu_feng_qing",
+      "whitecat",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "04-ying_he_xi",
+  "weekName": "05-pin_jiu_ge",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}

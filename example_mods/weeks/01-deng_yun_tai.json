@@ -1,0 +1,25 @@
+{
+  "songs": [
+    [
+      "hua_deng_chu_shang",
+      "paola",
+      [ 165, 0, 77 ]
+    ]
+  ],
+
+  "weekCharacters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+
+  "storyName": "",
+  "weekBefore": "00-qiu_fen_ji",
+  "weekName": "01-deng_yun_tai",
+  "startUnlocked": true,
+  "difficulties": "normal",
+
+  "hideStoryMode": false,
+  "hideFreeplay": false
+}
