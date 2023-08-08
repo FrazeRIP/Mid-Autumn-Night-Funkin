@@ -136,11 +136,11 @@ class CollectionState extends MusicBeatState
         ropryToken = new ColleMember(265,20,"Ropry","唯一的一个特殊箭头sick接住并通过歌曲。","应该是手工制作的！用了一个很漂亮的盒子作为包装，似乎隆重了许多.",true,1,2);
         nicoToken = new ColleMember(495,20,"Nico","FullCombo","妮可亲手做的花包，挂着的纸条上写着 「中秋快乐」",true,1,3);
         heidiToken = new ColleMember(725,20,"Heidi","荷花灯特殊箭头一个不漏的接住。","蒂蒂用河边捡的莲子做成的手串，有这莲子的淡淡清香……",true,1,4);
-        whitecatToken = new ColleMember(35,240,"Whitecat","完成机制并通过歌曲。","尘封多年的桂花酒，香气醇厚，从脏脏的陶瓷罐倒进了特制玻璃瓶。",true,2,1);
+        whitecatToken = new ColleMember(35,240,"Whitecat","收集酿酒材料并通过歌曲。","尘封多年的桂花酒，香气醇厚，从脏脏的陶瓷罐倒进了特制玻璃瓶。",true,2,1);
         rincyToken = new ColleMember(265,240,"Rincy","准确率百分之90以上并通过歌曲。","一个捧着圆月的幽灵Rincy钥匙扣。据称是本人自己画来特意定做的。摸起来总是凉凉的。",true,2,2);
         isToken = new ColleMember(495,240,"Is","很乖乖的一次都没按指定箭头，另外两种全按了并通过歌曲。","据说是某人想要出千而制作的，不过本人以做起来太累而放弃了这个想法。",true,2,3);
         sproutToken = new ColleMember(725,240,"Sprout","没有按到所有躲避箭头并通过歌曲。","芽芽亲手画的画，表现了他对你实力的认可。要好好保管！",true,2,4);
-        pinkghostToken = new ColleMember(35,460,"Pinkghost","一次都没按对/没按问号箭头并通过歌曲。","赠予三次博饼里就中了一个一秀的老倒霉蛋。",true,3,1);
+        pinkghostToken = new ColleMember(35,460,"Pinkghost","猜对一次问号箭头并通过歌曲。","赠予三次博饼里就中了一个一秀的老倒霉蛋。",true,3,1);
         unknownToken1= new ColleMember(265,460,"Unknown","敬请期待！","敬请期待！",false,3,2);
         unknownToken2= new ColleMember(495,460,"Unknown","敬请期待！","敬请期待！",false,3,3);
         unknownToken3= new ColleMember(725,460,"Unknown","敬请期待！","敬请期待！",false,3,4);

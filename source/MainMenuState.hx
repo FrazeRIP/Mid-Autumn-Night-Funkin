@@ -318,6 +318,8 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 
+		FlxG.watch.addQuick('FlxG.mouse.visible',FlxG.mouse.visible);
+
 		// menuItems.forEach(function(spr:FlxSprite)
 		// {
 		// 	spr.screenCenter(Y);
@@ -423,16 +425,4 @@ class MainMenuItem extends FlxSprite
 			x = FlxMath.lerp(x, 563 + (targetX * 160) + offsets, CoolUtil.boundTo(elapsed * 10.2, 0, 1));
 		}	
 	}
-	function  onMouseDown(_){
-
-	}
-
-	function onMouseOver() {
-		
-	}
-	
-	function onMouseOut() {
-		
-	}
-
 }
