@@ -12,6 +12,7 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.system.FlxSound;
+import flixel.tweens.FlxTween;
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
@@ -50,6 +51,7 @@ class MasterEditorMenu extends MusicBeatState
 
 		grpTexts = new FlxTypedGroup<Alphabet>();
 		add(grpTexts);
+
 
 		for (i in 0...options.length)
 		{

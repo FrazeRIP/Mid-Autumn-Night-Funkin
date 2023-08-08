@@ -25,6 +25,7 @@ class StoryMenuState extends MusicBeatState
 {
 	public static var weekCompleted:Map<String, Bool> = new Map<String, Bool>();
 
+
 	var scoreText:FlxText;
 
 	private static var lastDifficultyName:String = '';
@@ -33,7 +34,7 @@ class StoryMenuState extends MusicBeatState
 	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
 
-	private static var curWeek:Int = 0;
+	public static var curWeek:Int = 0;
 
 	var txtTracklist:FlxText;
 
@@ -53,6 +54,9 @@ class StoryMenuState extends MusicBeatState
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
+		
+		var mouseSprite=new FlxSprite().loadGraphic(Paths.image('UI/Mouse0',"mid-autumn"));
+		FlxG.mouse.load(mouseSprite.pixels);
 
 		PlayState.isStoryMode = true;
 		WeekData.reloadWeekFiles(true);
@@ -186,6 +190,8 @@ class StoryMenuState extends MusicBeatState
 		changeDifficulty();
 
 		super.create();
+
+		FlxG.mouse.visible=true;
 	}
 
 	override function closeSubState() {
@@ -196,6 +202,9 @@ class StoryMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		FlxG.watch.addQuick('FlxG.mouse.visible',FlxG.mouse.visible);
+		FlxG.watch.addQuick("mouse",FlxG.mouse.cursorContainer);
+
 		// scoreText.setFormat('VCR OSD Mono', 32);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 30, 0, 1)));
 		if(Math.abs(intendedScore - lerpScore) < 10) lerpScore = intendedScore;
@@ -248,6 +257,11 @@ class StoryMenuState extends MusicBeatState
 			{
 				persistentUpdate = false;
 				openSubState(new GameplayChangersSubstate());
+			}
+			if(FlxG.keys.justPressed.F1)
+			{
+				persistentUpdate = false;
+				openSubState(new PuzzleSubState());
 			}
 			else if(controls.RESET)
 			{
