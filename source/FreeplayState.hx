@@ -555,26 +555,26 @@ class FreeplayState extends MusicBeatState
 	function startLoading()
 	{
 		var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
-		left.setGraphicSize(Std.int(left.width * 2 / 3));
+		left.setGraphicSize(Std.int(left.width * 0.67));
 		left.updateHitbox();
-		left.x = -640;
+		left.x = -644;
 		left.antialiasing = ClientPrefs.globalAntialiasing;
-		add(left);
 		left.scrollFactor.set();
 
 		var right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
-		right.setGraphicSize(Std.int(right.width * 2 / 3));
+		right.setGraphicSize(Std.int(right.width * 0.67));
 		right.updateHitbox();
 		right.x = 1280;
 		right.antialiasing = ClientPrefs.globalAntialiasing;
 		add(right);
+		add(left);
 		right.scrollFactor.set();
 
-		FlxTween.linearMotion(left, -640, 0, 0, 0, 1.2, true, {
+		FlxTween.linearMotion(left, -644, 0, 0, 0, 1.2, true, {
 			ease: FlxEase.quadOut
 		});
 
-		FlxTween.linearMotion(right, 1280, 0, 640, 0, 1.2, true, {
+		FlxTween.linearMotion(right, 1280, 0, 638, 0, 1.2, true, {
 			ease: FlxEase.quadOut
 			});
 	}
