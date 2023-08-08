@@ -55,20 +55,20 @@ class LoadingState extends MusicBeatState
 		FlxTransitionableState.skipNextTransIn = true;
 
 		left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
-		left.setGraphicSize(Std.int(left.width * 2 / 3));
+		left.setGraphicSize(Std.int(left.width * 0.67));
 		left.updateHitbox();
 	//	left.x = -640;
-		left.antialiasing = ClientPrefs.globalAntialiasing;
-		add(left);
+		left.antialiasing = ClientPrefs.globalAntialiasing;	
 		left.scrollFactor.set();
 
 		right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
-		right.setGraphicSize(Std.int(right.width * 2 / 3));
+		right.setGraphicSize(Std.int(right.width * 0.67));
 		right.updateHitbox();
 	//	right.x = 1280;
-		right.x = 640;
+		right.x = 638;
 		right.antialiasing = ClientPrefs.globalAntialiasing;
 		add(right);
+		add(left);
 		right.scrollFactor.set();
 
 		rabbit = new FlxSprite(0, 0);
