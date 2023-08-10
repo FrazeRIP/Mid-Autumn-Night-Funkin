@@ -1,0 +1,175 @@
+{
+  "dialogue": [
+
+    {
+      "expression": "D",
+      "text": "哼哼哼…\n中秋不祭月还能叫中秋？",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "K",
+      "text": "就让我来介绍一下祭月的风俗吧！",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "……绝对不是因为我今天刚在学校学完这里！",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "当然！肯定是因为……",
+      "boxState": "normal",
+      "portrait": "N21_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "虽然但是汐汐其实也可以是一种幽灵然后幽灵和祭拜月神什么的大概说不定万一可能就也有那么一点关系所以专业对口所以……",
+      "boxState": "normal",
+      "portrait": "N21_Dialogue",
+      "speed": 0.01,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "……总之很合理！",
+      "boxState": "normal",
+      "portrait": "N21_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "啊……？",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+
+    {
+      "expression": "talk",
+      "text": "……这，这样！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+
+    {
+      "expression": "talk",
+      "text": "......beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "汐汐原来……是专业人员吗！！",
+      "boxState": "normal",
+      "portrait": "Danke_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
+      "text": "啊……？？？\n那个，不是……",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "I",
+      "text": "我，呃呜……\n我会努力把我知道的东西讲好的！",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "汐汐加油！",
+      "boxState": "normal",
+      "portrait": "Danke_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（鼓励的笑）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "I",
+      "text": "总之……\n祭月是古代我国一些地方对“月神”的一种崇拜活动，是中秋节重要的祭礼之一！",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "秋夕祭月源自天象崇拜，祈求助力完成心愿，后逐渐演化为民间的赏月、颂月活动，同时也成为现代人渴望团聚、寄托对生活美好愿望的主要形态！",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "BF&GF：原来如此！（beep da bop！）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "K",
+      "text": "啊，对了，还有我的字谜……！\n出月的话太容易被猜到了！所以我换了一个可爱的字……",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Ba bop bap……",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beepbo！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "I",
+      "text": "准备好了吗！……来吧！",
+      "boxState": "normal",
+      "portrait": "Rincy_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}

@@ -26,6 +26,10 @@ function preloadAssets()
 end
 
 function onNextDialogueAfter(count)
+
+	if count == 25 then
+		doTweenAlpha("blackA", 'black', 1,2,'cubeOut')
+	end
 end
 
 
@@ -35,7 +39,7 @@ end
 function onDialogueFinished()
 	doTweenAlpha("dialogueBackA3","camDialogueBack",0,.2,'cubeOut')
 	doTweenAlpha("dialogueA3","camDialogue",0,.2,'cubeOut')
-	doTweenAlpha("camHUDA","camHUD",1,.2,'cubeOut')
+	doTweenAlpha("camHUDA","camHUD",0,.2,'cubeOut')
 
 	for key,value in pairs(sprites) do 
 		removeLuaSprite(value)

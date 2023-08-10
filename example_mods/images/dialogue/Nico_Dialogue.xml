@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="Nico_Dialogue.png">
-<SubTexture name="A0000" x="0" y="1354" width="582" height="1265" frameX="-101" frameY="-44" frameWidth="772" frameHeight="1354" />
-<SubTexture name="B0000" x="582" y="1354" width="582" height="1265" frameX="-54" frameY="-13" frameWidth="665" frameHeight="1303" />
-<SubTexture name="C0000" x="626" y="0" width="579" height="1303" frameX="-43" frameY="0" frameWidth="665" frameHeight="1303" />
-<SubTexture name="D0000" x="1205" y="0" width="603" height="1303" frameX="-31" frameY="0" frameWidth="665" frameHeight="1303" />
-<SubTexture name="E0000" x="0" y="0" width="626" height="1354" frameX="-73" frameY="0" frameWidth="772" frameHeight="1354" />
-<SubTexture name="F0000" x="1808" y="0" width="603" height="1303" frameX="-31" frameY="0" frameWidth="665" frameHeight="1303" />
-<SubTexture name="G0000" x="2411" y="0" width="579" height="1303" frameX="-43" frameY="0" frameWidth="665" frameHeight="1303" />
+<SubTexture name="A0000" x="0" y="1275" width="582" height="1265" frameX="-62" frameY="-44" frameWidth="696" frameHeight="1354" />
+<SubTexture name="B0000" x="582" y="1275" width="582" height="1265" frameX="-62" frameY="-45" frameWidth="696" frameHeight="1354" />
+<SubTexture name="C0000" x="590" y="0" width="565" height="1271" frameX="-60" frameY="-42" frameWidth="696" frameHeight="1354" />
+<SubTexture name="D0000" x="1155" y="0" width="588" height="1270" frameX="-55" frameY="-42" frameWidth="696" frameHeight="1354" />
+<SubTexture name="E0000" x="2307" y="0" width="586" height="1268" frameX="-60" frameY="-45" frameWidth="696" frameHeight="1354" />
+<SubTexture name="F0000" x="0" y="0" width="590" height="1275" frameX="-56" frameY="-41" frameWidth="696" frameHeight="1354" />
+<SubTexture name="G0000" x="1743" y="0" width="564" height="1270" frameX="-64" frameY="-42" frameWidth="696" frameHeight="1354" />
 </TextureAtlas>

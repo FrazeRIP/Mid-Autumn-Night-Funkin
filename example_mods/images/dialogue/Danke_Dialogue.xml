@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Danke_Dialogue.png">
+<SubTexture name="A0000" x="971" y="0" width="663" height="880" frameX="-73" frameY="-53" frameWidth="971" frameHeight="933" />
+<SubTexture name="B0000" x="1634" y="0" width="663" height="880" frameX="-73" frameY="-53" frameWidth="971" frameHeight="933" />
+<SubTexture name="C0000" x="0" y="933" width="663" height="880" frameX="-73" frameY="-53" frameWidth="971" frameHeight="933" />
+<SubTexture name="D0000" x="0" y="0" width="971" height="933" frameX="0" frameY="0" frameWidth="971" frameHeight="933" />
+</TextureAtlas>

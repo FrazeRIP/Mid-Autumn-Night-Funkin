@@ -1,0 +1,44 @@
+{
+  "dialogue": [
+    {
+      "expression": "G",
+      "text": "好吧，好吧，不算无趣。\n送你这个，逗你的女朋友开心吧。",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "不是炸弹手雷或者是什么暗器，只是一根仙女棒而已，送给你。",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "BG：wowo！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "Empty",
+      "text": " ",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "dialogue": [
+
+    {
+      "expression": "Q",
+      "text": "好耶！一切都好顺利诶！\n而且还是在我用能力干扰……",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "对哦，为什么你刚刚突然就飞起来了而且……",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "U",
+      "text": "！！！不是！那个是——",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "L",
+      "text": "……吊了，威亚。",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "T",
+      "text": "还有，呃…假发！对，都是道具嗯！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "M",
+      "text": "怎，怎么了？",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！！！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "R",
+      "text": "没错！我们特效演出超棒的！！！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "O",
+      "text": "咳咳……",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "Q",
+      "text": "总之，现在就是最后的步骤啦！分西瓜！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "Empty",
+      "text": " ",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "S",
+      "text": "祭月仪式结束后，这些西瓜就会寄存着月神的祝福喔！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "U",
+      "text": "其实本来应该切成莲花形……\n但是我不太会啦……",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "S",
+      "text": "哼哼，现在我们就算是好朋友了！\n等我以后成为最强的反派时候会记得罩着你的~",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "beep bap da！？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "V",
+      "text": "啊……什么时候成功？\n……唔，至少先等我从学校毕业吧？",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "说起学校，汐汐今天是请假来玩的吗？\n因为平时汐汐的学校似乎不会放假的样子……",
+      "boxState": "normal",
+      "portrait": "N21_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "S",
+      "text": "哈？请假？怎——",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "T",
+      "text": "啊对对对！没错！\n我是超乖的学生的！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "……beep？【……你身后好像？】",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "P",
+      "text": "什么，请假和我身后有什么关系……",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "N",
+      "text": "呜啊！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "你知道……",
+      "boxState": "normal",
+      "portrait": "Akia_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "你知道我为了找到你绕了多少个圈子吗……！！！！",
+      "boxState": "normal",
+      "portrait": "Akia_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "L",
+      "text": "对，对不起嘛……",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "M",
+      "text": "啊，你要不要吃块西瓜？",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "诶？这位是汐汐的朋友吗？",
+      "boxState": "normal",
+      "portrait": "Danke_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "没错！\n我是受她老师的委托来找她回去上自xi——",
+      "boxState": "normal",
+      "portrait": "Akia_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "唔唔唔！",
+      "boxState": "normal",
+      "portrait": "Akia_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "R",
+      "text": "什么，祝大家中秋快乐，你想参观一下？\n当然可以啦！……",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "BG：（汗）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "可是，她刚刚好像说的不是……",
+      "boxState": "normal",
+      "portrait": "Danke_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "咳咳……\n可能我们听错了吧？",
+      "boxState": "normal",
+      "portrait": "N21_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "唔！唔！——唔唔唔！",
+      "boxState": "normal",
+      "portrait": "Akia_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "T",
+      "text": "啊哈哈她第一次来玩好像太兴奋了呢总之就是这样我先带我朋友去参观啦哈哈哈不用管我们中秋快乐一会再见！",
+      "boxState": "normal",
+      "portrait": "RincyAlt_Dialogue",
+      "speed": 0.03,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "……中秋快乐！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "那么接下来，我们也去别处转转吧？\n很热闹的样子呢！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}

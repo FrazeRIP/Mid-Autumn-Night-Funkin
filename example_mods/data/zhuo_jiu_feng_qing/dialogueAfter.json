@@ -1,0 +1,92 @@
+{
+  "dialogue": [
+    {
+      "expression": "E",
+      "text": "刚刚的表现嘛...\n及格了喵！",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "BG（开心）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep bop beep beep bap？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "拿去拿去拿去，酒给你们了咪呜。",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "可省着点喝啊！这酒是我酿了很多年的！\n蓝毛小子你可要好好对她！要是她受委屈了我饶不了你喵！",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "阿姨最好了！（簇上来拥抱）",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "（跟着抱)Bep...!",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "好啦好啦，哎哟，你们两个！",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "H",
+      "text": "我先去逛逛啦，免得你妈看见又要闹喵。",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "再见！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep!",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}
