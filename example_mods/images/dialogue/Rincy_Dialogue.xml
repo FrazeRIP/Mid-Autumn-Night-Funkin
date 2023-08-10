@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Rincy_Dialogue.png">
+<SubTexture name="A0000" x="0" y="0" width="644" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="B0000" x="644" y="0" width="558" height="888" frameX="-19" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="C0000" x="1202" y="0" width="584" height="888" frameX="-6" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="D0000" x="0" y="888" width="530" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="E0000" x="530" y="888" width="569" height="888" frameX="0" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="F0000" x="1099" y="888" width="533" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="G0000" x="1786" y="0" width="520" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="H0000" x="1786" y="888" width="506" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="I0000" x="2306" y="0" width="506" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="J0000" x="2306" y="888" width="506" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+<SubTexture name="K0000" x="0" y="1776" width="506" height="888" frameX="-48" frameY="0" frameWidth="692" frameHeight="888" />
+</TextureAtlas>

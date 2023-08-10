@@ -1,0 +1,132 @@
+{
+  "dialogue": [
+    {
+      "expression": "talk",
+      "text": "白酒阿姨！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "GF！我的甜心！\n长成漂亮的大姑娘啦咪呼呼呼~",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "你不是喜欢吃点心吗？\n我托人运了一车过来，还有给你买的……",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "白酒阿姨，给您看看我的男朋友，\n他叫BF，很擅长唱歌而且还很有男人味...",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "男朋友？！早恋是不好的喵？",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "阿姨，我成年了......",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "既然这样......\n小子，看着！",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
+      "text": "这瓶啊，是我亲自酿了很久的桂花酒喵！\n在这中秋之夜，饮桂花酒寓意家庭团圆，甜甜蜜蜜，吉祥昌盛。",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "你同我来上一曲，\n赢了，这酒拿去，祝你们小情侣俩团团圆圆，吉祥如意。",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "但是输了的话...给我有多远滚多远！",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "......",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beeee...\nBeep bop bap！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "小伙子有骨气！唱之前考考你，\n【西湖别后整一截】是哪个字呢喵>:)",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bop......",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "你有一首歌的时间想，喵呼呼呼呼~",
+      "boxState": "normal",
+      "portrait": "WC_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}

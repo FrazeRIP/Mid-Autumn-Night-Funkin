@@ -1,102 +1,102 @@
 {
-	"dialogue_pos": "left",
 	"position": [
-		-120,
+		-60,
 		-450
 	],
+	"dialogue_pos": "left",
 	"scale": 0.5,
+	"image": "Nico_Dialogue",
 	"animations": [
 		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
 			"anim": "A",
-			"loop_offsets": [
-				-1,
-				0
-			],
-			"idle_offsets": [
-				-1,
-				0
-			],
-			"loop_name": "A",
-			"idle_name": "A"
+			"idle_name": "A",
+			"loop_name": "A"
 		},
 		{
+      "idle_offsets": [
+        0,
+        0
+      ],
+      "loop_offsets": [
+        0,
+        0
+      ],
 			"anim": "B",
-			"loop_offsets": [
-				-17,
-				-11
-			],
-			"idle_offsets": [
-				-17,
-				-11
-			],
-			"loop_name": "B",
-			"idle_name": "B"
+			"idle_name": "B",
+			"loop_name": "B"
 		},
 		{
+      "idle_offsets": [
+        0,
+        0
+      ],
+      "loop_offsets": [
+        0,
+        0
+      ],
 			"anim": "C",
-			"loop_offsets": [
-				-18,
-				-11
-			],
-			"idle_offsets": [
-				-18,
-				-11
-			],
-			"loop_name": "C",
-			"idle_name": "C"
+			"idle_name": "C",
+			"loop_name": "C"
 		},
 		{
+      "idle_offsets": [
+        0,
+        0
+      ],
+      "loop_offsets": [
+        0,
+        0
+      ],
 			"anim": "D",
-			"loop_offsets": [
-				-20,
-				-10
-			],
-			"idle_offsets": [
-				-20,
-				-10
-			],
-			"loop_name": "D",
-			"idle_name": "D"
+			"idle_name": "D",
+			"loop_name": "D"
 		},
 		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
 			"anim": "E",
-			"loop_offsets": [
-				0,
-				0
-			],
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "E",
-			"idle_name": "E"
+			"idle_name": "E",
+			"loop_name": "E"
 		},
 		{
+      "idle_offsets": [
+        0,
+        0
+      ],
+      "loop_offsets": [
+        0,
+        0
+      ],
 			"anim": "F",
-			"loop_offsets": [
-				-18,
-				-5
-			],
-			"idle_offsets": [
-				-18,
-				-5
-			],
-			"loop_name": "F",
-			"idle_name": "F"
+			"idle_name": "F",
+			"loop_name": "F"
 		},
 		{
+      "idle_offsets": [
+        0,
+        0
+      ],
+      "loop_offsets": [
+        0,
+        0
+      ],
 			"anim": "G",
-			"loop_offsets": [
-				-16,
-				-7
-			],
-			"idle_offsets": [
-				-16,
-				-7
-			],
-			"loop_name": "G",
-			"idle_name": "G"
+			"idle_name": "G",
+			"loop_name": "G"
 		}
-	],
-	"image": "Nico_Dialogue"
+	]
 }

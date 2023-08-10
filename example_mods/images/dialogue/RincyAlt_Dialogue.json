@@ -1,0 +1,154 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-140,
+		-210
+	],
+	"scale": 0.5,
+	"animations": [
+		{
+			"anim": "L",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "L",
+			"idle_name": "L"
+		},
+		{
+			"anim": "M",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "M",
+			"idle_name": "M"
+		},
+		{
+			"anim": "N",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "N",
+			"idle_name": "N"
+		},
+		{
+			"anim": "O",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "O",
+			"idle_name": "O"
+		},
+		{
+			"anim": "P",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "P",
+			"idle_name": "P"
+		},
+		{
+			"anim": "Q",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "Q",
+			"idle_name": "Q"
+		},
+		{
+			"anim": "R",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "R",
+			"idle_name": "R"
+		},
+		{
+			"anim": "S",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "S",
+			"idle_name": "S"
+		},
+		{
+			"anim": "T",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "T",
+			"idle_name": "T"
+		},
+		{
+			"anim": "U",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "U",
+			"idle_name": "U"
+		},
+		{
+			"anim": "V",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "V",
+			"idle_name": "V"
+		}
+	],
+	"image": "RincyAlt_Dialogue"
+}

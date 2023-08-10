@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		50,
+		-230
+	],
+	"scale": 0.5,
+	"animations": [
+		{
+			"anim": "A",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "A",
+			"idle_name": "A"
+		},
+		{
+			"anim": "B",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "B",
+			"idle_name": "B"
+		},
+		{
+			"anim": "C",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "C",
+			"idle_name": "C"
+		},
+		{
+			"anim": "D",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "D",
+			"idle_name": "D"
+		}
+	],
+	"image": "N21_Dialogue"
+}

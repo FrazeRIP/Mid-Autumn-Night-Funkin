@@ -1,0 +1,172 @@
+{
+  "dialogue": [
+    {
+      "expression": "talk",
+      "text": "亲爱的，你有闻到这附近有什么火药的味道吗？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "我想，是烟火大会快要开始了吗？但好像并不是活动约定的方向...",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep bo skep...！！（看到楼顶上有一个黑影跑走了）",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "诶...等等我！\n我还没把椅子收起来...",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "Empty",
+      "text": "（BF来到了一个顶楼一样宽阔的地方）",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "Empty",
+      "text": " ",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep......",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "B",
+      "text": "蓝毛小子不应该在跟其他人说唱吗，来这里干嘛？",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep......",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "C",
+      "text": "我只是不喜欢无聊的客套聚会聚餐。",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep ba bop bap bep skep bop！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "D",
+      "text": "我在密谋如何在这里安装一颗炸弹，炸死所有人。",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bop ba！？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
+      "text": "好吧，我芝士觉得很无聊出来走走，\n在路上捡到一盒火柴，然后跑到楼顶上找找乐子罢了！",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
+      "text": "不过，现在看来乐子自己找上门来了。\n这样吧！rap battle！或者和我打一架 ，你选一个吧。",
+      "boxState": "normal",
+      "portrait": "Kris_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Rap battle！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+  ]
+}
