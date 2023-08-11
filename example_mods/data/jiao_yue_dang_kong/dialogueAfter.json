@@ -1,32 +1,41 @@
 {
   "dialogue": [
-    {
-      "expression": "G",
-      "text": "好吧，好吧，不算无趣。\n送你这个，逗你的女朋友开心吧。",
-      "boxState": "normal",
-      "portrait": "Kris_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
       "expression": "talk",
-      "text": "？",
+      "text": "Beep！",
       "boxState": "normal",
       "portrait": "BF_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "H",
-      "text": "不是炸弹手雷或者是什么暗器，只是一根烟花而已，送给你。",
+      "expression": "F",
+      "text": "看来准备好了呢！那么，阁下请听题——",
       "boxState": "normal",
-      "portrait": "Kris_Dialogue",
+      "portrait": "Paola_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
       "expression": "talk",
-      "text": "BG：wowo！",
+      "text": "嗯…慢着？这位第一名小姐？",
       "boxState": "normal",
       "portrait": "GF_Dialogue",
       "speed": 0.05,
@@ -34,7 +43,7 @@
     },
     {
       "expression": "Empty",
-      "text": " ",
+      "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
       "boxState": "normal",
       "portrait": "Empty",
       "speed": 0.05,

@@ -1,0 +1,125 @@
+{
+  "dialogue": [
+
+
+    {
+      "expression": "A",
+      "text": "你小子有两把刷子嘛！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "B e e p ？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "诶你总得让我在写之前让我练练手吧？",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bap......",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "好啦好啦，对不起啦！我给你写点正经的祝福…\n（小逼崽子叫你刚才吓我哈哈哈哈哈哈）",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "*在卷轴上画画",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "来！中秋快乐啊小兄弟！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+
+    {
+      "expression": "talk",
+      "text": "谢谢！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //{
+    //  "expression": "talk",
+    //  "text": "Beep！",
+    //  "boxState": "normal",
+    //  "portrait": "BF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢！那么，阁下请听题——",
+    //  "boxState": "normal",
+    //  "portrait": "Sprout_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    //{
+    //  "expression": "talk",
+    //  "text": "嗯…慢着？这位第一名小姐？",
+    //  "boxState": "normal",
+    //  "portrait": "GF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    //{
+    //  "expression": "Empty",
+    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+    //  "boxState": "normal",
+    //  "portrait": "Empty",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //}
+  ]
+}

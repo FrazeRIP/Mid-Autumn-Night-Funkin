@@ -1,0 +1,192 @@
+{
+  "dialogue": [
+
+
+    {
+      "expression": "A",
+      "text": "*沉思",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "*掏笔",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "！！！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "哈喽！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "你为啥吓我？",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "A M O G U S",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "大晚上的你在这种地方做什么？\n刚才好像在一些地方有看到过你...",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "呃我吗？\n今天和大家过得很开心，所以我想画点啥来纪念一下…",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "就偷偷溜过来在这里画了嘿嘿...",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "你这个正在画的...\n是卷轴和毛笔？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "嗯哼！到中秋了写点中秋祝福之类的书法挺有节日气息的呢！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "（虽然别的节日好像也会写书法XD）",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "你这提醒到我了,我到时候也要给大家都写一点呢！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "来唱一首？好呀！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "...嘿我突然有个想法！",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "想来点中秋祝福吗小兄弟？",
+      "boxState": "normal",
+      "portrait": "Sprout_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "？？？？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+
+
+    //{
+    //  "expression": "talk",
+    //  "text": "Beep！",
+    //  "boxState": "normal",
+    //  "portrait": "BF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢！那么，阁下请听题——",
+    //  "boxState": "normal",
+    //  "portrait": "Sprout_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    //{
+    //  "expression": "talk",
+    //  "text": "嗯…慢着？这位第一名小姐？",
+    //  "boxState": "normal",
+    //  "portrait": "GF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    //{
+    //  "expression": "Empty",
+    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+    //  "boxState": "normal",
+    //  "portrait": "Empty",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //}
+  ]
+}

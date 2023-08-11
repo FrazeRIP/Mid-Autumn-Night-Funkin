@@ -1,0 +1,191 @@
+{
+  "dialogue": [
+    {
+      "expression": "A",
+      "text": "你俩！",
+      "boxState": "normal",
+      "portrait": "GA_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "~",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beeeee——！！！！！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "还有老板......\n你居然就这么看着他们胡闹！",
+      "boxState": "normal",
+      "portrait": "GA_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "不要这么认真嘛，难得看见这么有活力的小伙~",
+      "boxState": "normal",
+      "portrait": "ClearCat_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bepbep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "你不也唱得挺开心吗。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "你这家伙！",
+      "boxState": "normal",
+      "portrait": "GA_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "....算了，看在你们两位的面子上，等他们回来再好好教训。",
+      "boxState": "normal",
+      "portrait": "GA_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "几位的关系可真好。",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "一般一般吧，我们都很有同事情的。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "哎，都已经这个点了，再耽搁下去不太礼貌，最后祝各位中秋快乐，玩儿得开心。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "中秋快乐。",
+      "boxState": "normal",
+      "portrait": "Zella_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "中秋快乐......下次再见。",
+      "boxState": "normal",
+      "portrait": "GA_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "GF/BF：bey~",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+
+
+
+
+    ////BF
+    //{
+    //  "expression": "talk",
+    //  "text": "Beep！",
+    //  "boxState": "normal",
+    //  "portrait": "BF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////GF
+    //{
+    //  "expression": "talk",
+    //  "text": "嗯…慢着？这位第一名小姐？",
+    //  "boxState": "normal",
+    //  "portrait": "GF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////IS
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "IS_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////Zella
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "Zella_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////GA
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "GA_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////ClearCat
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "ClearCat_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////CG
+    //{
+    //  "expression": "Empty",
+    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+    //  "boxState": "normal",
+    //  "portrait": "Empty",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //}
+  ]
+}
