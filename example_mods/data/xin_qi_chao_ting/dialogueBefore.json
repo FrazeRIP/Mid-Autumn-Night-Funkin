@@ -1,0 +1,267 @@
+{
+  "dialogue": [
+    {
+      "expression": "talk",
+      "text": "阿嚏！江边好清冷啊...",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "好像这里没有人，要不我们先回...",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "此言差矣！！！",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "BF&GF（吓到）：！！！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "哎呀，这不是萨拉姐吗？\n中秋快乐呀。什么风把你吹到这来了？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "我这不是在等吗。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "等什么，难道是在等我们？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "咳！知前晓后化无穷，吉凶祸福事先通。\n勤诣深究大有用，万般奥妙——在其中啊。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "小帅哥，想不想起上一卦呢？",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "你这真的靠谱吗......",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "放心放心，铁口直断。\n快把生辰八字告诉我吧。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beepbabo！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "计较阴阳卦方开，四柱八梁用心排。\n分枝独从甲子论，结果梳密莫妄猜...",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "哎呀！\n巽上坎下，是为涣卦。恶事离身，患难将消，利涉大川，出入无阻。\n这可是道吉卦啊。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "喂，刚刚那个好像不是八字吧！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "涣卦，风在水上行。推波助澜，四方流溢。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "每逢中秋时节，日月地一线，引力就会致使波涛汹涌，满江沸腾。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "故而，观潮乃是自古以来，每年中秋不可或缺的一项盛事。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "眼看大江东去，青山夕阳如故，只有英雄人物如浪花般，被这逝水淘尽......",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Bep……",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "先别忙着感叹，你说的大浪呢？",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "啊哈，时间卡的刚刚好。我们已经等到了，妹妹你仔细听。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "潮信日夜两番来。今朝八月十五日，恰是此时此刻。\n因从不失信，故谓之潮信。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "Boyfriend准备好了吗？让我们邀涛声共歌一曲吧。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "总感觉又会是一个馊主意......",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+
+
+
+    ////BF
+    //{
+    //  "expression": "talk",
+    //  "text": "Beep！",
+    //  "boxState": "normal",
+    //  "portrait": "BF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////GF
+    //{
+    //  "expression": "talk",
+    //  "text": "嗯…慢着？这位第一名小姐？",
+    //  "boxState": "normal",
+    //  "portrait": "GF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////Sarah
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢！那么，阁下请听题——",
+    //  "boxState": "normal",
+    //  "portrait": "Sarah_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////CG
+    //{
+    //  "expression": "Empty",
+    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+    //  "boxState": "normal",
+    //  "portrait": "Empty",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //}
+  ]
+}

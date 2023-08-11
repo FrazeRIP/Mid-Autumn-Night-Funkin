@@ -1,0 +1,228 @@
+{
+  "dialogue": [
+    {
+      "expression": "A",
+      "text": "哈哈，挺久没有亲自招待过客人了，麻烦大家都静一静。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "......",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "趁小嘎还没发现，我们聊聊吧吧。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "嗯，我看看......",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "逢年过节，聚会当然少不了闲谈万物，咱们一起摆会儿龙门阵如何？",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Be————",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "龙门阵就是闲聊，聊天聊地，自古至今，没什么不能聊的，\n既然此方规则为唱歌，不如唱着聊？",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "？",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "既都摆上龙门阵了，两个人总归不太得劲，我再叫个人来。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "嗯咳，脚蹲麻了。",
+      "boxState": "normal",
+      "portrait": "Zella_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "别抱怨了，回去就请你吃饭。\n咳，那么现在三个人了......\n这位小姐，您想一起聊聊吗？",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "暂否了吧，我更想在一旁看看我家男友。",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "那还真是遗憾，我还挺期待的。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "那么这位先生，准备好了吗？",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "那我们直接开——",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "——你忘了说字迷。",
+      "boxState": "normal",
+      "portrait": "Zella_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "咳，在下还有一副字谜有请阁下猜测。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "“人无信不立”，是什么字？",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "久等，现在开始吧。",
+      "boxState": "normal",
+      "portrait": "IS_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+
+
+    ////BF
+    //{
+    //  "expression": "talk",
+    //  "text": "Beep！",
+    //  "boxState": "normal",
+    //  "portrait": "BF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////GF
+    //{
+    //  "expression": "talk",
+    //  "text": "嗯…慢着？这位第一名小姐？",
+    //  "boxState": "normal",
+    //  "portrait": "GF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////IS
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "IS_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////Zella
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "Zella_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////GA
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢",
+    //  "boxState": "normal",
+    //  "portrait": "GA_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////CG
+    //{
+    //  "expression": "Empty",
+    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+    //  "boxState": "normal",
+    //  "portrait": "Empty",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //}
+  ]
+}

@@ -25,26 +25,26 @@ end
 --Setting---------------------------------------------------------
 folderName  = "Kris/"
 function preloadAssets()
-	addCG("CG2",folderName.."CG2")
+	addCG("CG3",folderName.."CG3")
 end
 
 function onNextDialogueAfter(count)
 	if count == 4 then
 		setProperty('isLockDialogue',true)
 		doTweenAlpha("dialogueBackA3","camDialogueBack",0,.1,'cubeOut')
-		doTweenAlpha("CG2A","CG2",1,2,'cubeOut')
+		doTweenAlpha("CG3A","CG3",1,2,'cubeOut')
 	end
 	
 	if count == 5 then
 		doTweenAlpha("dialogueBackA3","camDialogueBack",1,.1,'cubeOut')
-		doTweenAlpha("CG2A","CG2",0,.5,'cubeOut')
+		doTweenAlpha("CG3A","CG3",0,.5,'cubeOut')
 	end
 
 end
 
 
 function onTweenCompleted( tag )
-	if tag == 'CG2A' then
+	if tag == 'CG3A' then
 		setProperty('isLockDialogue',false)
 	end
 end

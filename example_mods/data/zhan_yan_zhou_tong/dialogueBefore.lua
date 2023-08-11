@@ -33,19 +33,27 @@ folderName  = "Kris/"
 
 function preloadAssets()
 	addCG("CG1",folderName.."CG1")
+	addCG("CG2",folderName.."CG2")
 end
 
 function onNextDialogue(count)
 
-	if count == 5 then
+	if count == 4 then
 		setProperty('isLockDialogue',true)
 		doTweenAlpha("dialogueBackA3","camDialogueBack",0,.1,'cubeOut')
 		doTweenAlpha("CG1A","CG1",1,2,'cubeOut')
 	end
+
+	if count == 5 then
+		setProperty('isLockDialogue',true)
+		doTweenAlpha("dialogueBackA3","camDialogueBack",0,.1,'cubeOut')
+		doTweenAlpha("CG2A","CG2",1,.5,'cubeOut')
+	end
 	
 	if count == 6 then
 		doTweenAlpha("dialogueBackA3","camDialogueBack",1,.1,'cubeOut')
-		doTweenAlpha("CG1A","CG1",0,.5,'cubeOut')
+		doTweenAlpha("CG2A","CG2",0,.5,'cubeOut')
+		doTweenAlpha("CG1AO","CG1",0,.5,'cubeOut')
 	end
 
 end
@@ -56,6 +64,9 @@ end
 
 function onTweenCompleted( tag )
 	if tag == 'CG1A' then
+		setProperty('isLockDialogue',false)
+	end
+	if tag == 'CG2A' then
 		setProperty('isLockDialogue',false)
 	end
 end

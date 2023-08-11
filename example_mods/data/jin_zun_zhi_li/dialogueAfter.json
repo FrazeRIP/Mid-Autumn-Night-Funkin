@@ -1,0 +1,162 @@
+{
+  "dialogue": [
+
+    {
+      "expression": "A",
+      "text": "瞧瞧你们的样子，真的是太——惹人喜欢了！",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "......",
+      "boxState": "normal",
+      "portrait": "Before_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    //BF
+    {
+      "expression": "talk",
+      "text": "Beep...！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "不用这么谦虚，小可爱。",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "作为MadmenSanctuary的店长，我的夸赞从不吝啬！",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "哈哈，这的确是一场收获满满的说唱对决！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "很高兴看见你们的笑容！",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "那么现在，我还剩下最后一个想要传达给你们的东西咯——",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "中秋快乐！ \n愿你们今后平平安安，兔儿爷为你们祛病解难！",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "A",
+      "text": "中秋快乐。",
+      "boxState": "normal",
+      "portrait": "Before_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "中秋快乐！",
+      "boxState": "normal",
+      "portrait": "GF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "Beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ////BF
+    //{
+    //  "expression": "talk",
+    //  "text": "Beep！",
+    //  "boxState": "normal",
+    //  "portrait": "BF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////Ropry
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢！那么，阁下请听题——",
+    //  "boxState": "normal",
+    //  "portrait": "Ropry_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////Before
+    //{
+    //  "expression": "A",
+    //  "text": "看来准备好了呢！那么，阁下请听题——",
+    //  "boxState": "normal",
+    //  "portrait": "Before_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////GF
+    //{
+    //  "expression": "talk",
+    //  "text": "嗯…慢着？这位第一名小姐？",
+    //  "boxState": "normal",
+    //  "portrait": "GF_Dialogue",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //},
+    ////CG
+    //{
+    //  "expression": "Empty",
+    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
+    //  "boxState": "normal",
+    //  "portrait": "Empty",
+    //  "speed": 0.05,
+    //  "sound": ""
+    //}
+  ]
+}
