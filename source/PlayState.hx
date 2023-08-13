@@ -2867,6 +2867,12 @@ class PlayState extends MusicBeatState
 			for (timer in modchartTimers) {
 				timer.active = false;
 			}
+			
+			for(spr in videoSprites)
+				{
+					if(spr.alpha != 0)
+						spr.pause();
+				};
 		}
 
 		super.openSubState(SubState);
@@ -2907,7 +2913,8 @@ class PlayState extends MusicBeatState
 
 			for(spr in videoSprites)
 				{
-					spr.resume();
+					if(spr.alpha != 0)
+						spr.resume();
 				};
 
 			callOnLuas('onResume', []);
@@ -3148,10 +3155,6 @@ class PlayState extends MusicBeatState
 		{
 			var ret:Dynamic = callOnLuas('onPause', [], false);
 
-			for(spr in videoSprites)
-				{
-					spr.pause();
-				};
 
 			if(ret != FunkinLua.Function_Stop) {
 				openPauseMenu();

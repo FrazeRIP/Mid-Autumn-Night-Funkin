@@ -1734,6 +1734,7 @@ class FunkinLua {
 				var shit:ModchartSprite = PlayState.instance.modchartSprites.get(tag);
 				var sprite = cast(shit,MP4ModSprite); 
 				sprite.video.resume();
+				trace("Video sprite resumed "+tag);
 			}else{
 				trace("Video sprite not found "+tag);
 			}

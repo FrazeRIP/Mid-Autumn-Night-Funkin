@@ -16,10 +16,14 @@ class MP4ModSprite extends ModchartSprite
 	public var finishCallback:Void->Void;
 
 	public var video:MP4Handler;
+	
+	public var videoName:String;
 
 	public function new(filename:String, x:Float = 0, y:Float = 0, width:Float = 1280, height:Float = 720, autoScale:Bool = true)
 	{
 		super(x, y);
+
+		videoName = filename;
 
 		video = new MP4Handler(width, height, autoScale);
 		video.alpha = 0;
