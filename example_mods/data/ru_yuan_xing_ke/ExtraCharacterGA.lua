@@ -37,12 +37,12 @@ up_alt_xml_name = 'up alt0'
 right_alt_xml_name = 'right alt0'
 
 -- horizontal and vertical positions
-x_position = 150
-y_position = 120
+x_position = -320
+y_position = 30
 
 -- scales your character (set to 1 by default)
-xScale = .7
-yScale = .7
+xScale = 1
+yScale = 1
 
 -- pretty self-explanitory
 name_of_character_xml = 'GA'
@@ -58,7 +58,7 @@ flipX = false       -- most likely change to 'true' if using a BF sided characte
 useIdle = true      -- Use idle code or Dance code (EG: Skid&Pump, GF)
 invisible = false   -- invisible character (if you want to use the change character event, you need to make the second character invisible first)
 teamplay = false     -- Should character simply sing all notes on their side
-layer = 6           --[[ Usable values:
+layer = 9           --[[ Usable values:
 0 : Behind stage
 1 : Behind all
 2 : In front of GF, behind Opponent and Player
