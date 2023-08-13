@@ -37,12 +37,12 @@ up_alt_xml_name = 'up alt0'
 right_alt_xml_name = 'right alt0'
 
 -- horizontal and vertical positions
-x_position = -380
-y_position = 30
+x_position = -670
+y_position = -200
 
 -- scales your character (set to 1 by default)
-xScale = .7
-yScale = .7
+xScale = 1
+yScale = 1
 
 -- pretty self-explanitory
 name_of_character_xml = 'Zella'
