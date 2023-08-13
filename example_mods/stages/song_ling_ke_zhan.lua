@@ -18,17 +18,23 @@ function onCreate()
 	scaleObject('Layer3', ScaleOffset, ScaleOffset);
 	setScrollFactor('Layer3', 1.5, 1.5);
 
-	makeAnimatedLuaSprite('guest0','stages/song_ling_ke_zhan/Guest/Guest0', -1700 , -500 )
-	scaleObject('guest0', ScaleOffset, ScaleOffset);
+	makeAnimatedLuaSprite('guest0','stages/song_ling_ke_zhan/Guest/Guest0', -1700 , -320 )
+	scaleObject('guest0', ScaleOffset -.15, ScaleOffset -.15);
 	addAnimationByPrefix('guest0','idle','Guest0',24,false);
 	
-	makeAnimatedLuaSprite('guest1','stages/song_ling_ke_zhan/Guest/Guest1', 50 ,  -500 )
-	scaleObject('guest1', ScaleOffset, ScaleOffset);
+	makeAnimatedLuaSprite('guest3','stages/song_ling_ke_zhan/Guest/Guest3',  700 ,  -200  )
+	scaleObject('guest3', ScaleOffset-.15, ScaleOffset-.15);
+	addAnimationByPrefix('guest3','idle','Guest3',24,false);
+	
+	makeAnimatedLuaSprite('guest1','stages/song_ling_ke_zhan/Guest/Guest1', 50 ,  -450 )
+	scaleObject('guest1', ScaleOffset -.15, ScaleOffset -.15);
 	addAnimationByPrefix('guest1','idle','Guest1',24,false);
 	
+
 	makeAnimatedLuaSprite('guest2','stages/song_ling_ke_zhan/Guest/Guest2',  -800 ,  -400   )
-	scaleObject('guest2', ScaleOffset, ScaleOffset);
+	scaleObject('guest2', ScaleOffset-.1, ScaleOffset-.1);
 	addAnimationByPrefix('guest2','idle','Guest2',24,false);
+
 
 	addLuaSprite('Layer0', false);
 
@@ -37,7 +43,9 @@ function onCreate()
 	addLuaSprite('Layer1', false);
 
 	addLuaSprite('guest1', false);
+
 	addLuaSprite('guest0', false);
+	addLuaSprite('guest3', false);
 
 	addLuaSprite('Layer2', false);
 	addLuaSprite('Layer3', false);
@@ -49,6 +57,7 @@ function onBeatHit()
 	objectPlayAnimation('guest0','idle',true);
 	objectPlayAnimation('guest1','idle',true);
 	objectPlayAnimation('guest2','idle',true);
+	objectPlayAnimation('guest3','idle',true);
 	end
 end
 
