@@ -58,7 +58,7 @@ flipX = false       -- most likely change to 'true' if using a BF sided characte
 useIdle = true      -- Use idle code or Dance code (EG: Skid&Pump, GF)
 invisible = false   -- invisible character (if you want to use the change character event, you need to make the second character invisible first)
 teamplay = false     -- Should character simply sing all notes on their side
-layer = 9           --[[ Usable values:
+layer = 10           --[[ Usable values:
 0 : Behind stage
 1 : Behind all
 2 : In front of GF, behind Opponent and Player

@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="Guest0.png">
-<SubTexture name="Guest00000" x="0" y="6075" width="3729" height="1211" frameX="-55" frameY="-43" frameWidth="3800" frameHeight="1280" />
-<SubTexture name="Guest00001" x="0" y="4863" width="3725" height="1212" frameX="-55" frameY="-42" frameWidth="3800" frameHeight="1280" />
-<SubTexture name="Guest00002" x="0" y="3648" width="3720" height="1215" frameX="-55" frameY="-39" frameWidth="3800" frameHeight="1280" />
-<SubTexture name="Guest00003" x="0" y="0" width="3717" height="1216" frameX="-55" frameY="-38" frameWidth="3800" frameHeight="1280" />
-<SubTexture name="Guest00004" x="3717" y="0" width="3720" height="1216" frameX="-55" frameY="-37" frameWidth="3800" frameHeight="1280" />
-<SubTexture name="Guest00005" x="0" y="1216" width="3726" height="1216" frameX="-55" frameY="-38" frameWidth="3800" frameHeight="1280" />
-<SubTexture name="Guest00006" x="0" y="2432" width="3733" height="1216" frameX="-55" frameY="-38" frameWidth="3800" frameHeight="1280" />
+<SubTexture name="Guest00000" x="1234" y="2404" width="1244" height="1197" frameX="-51" frameY="-24" frameWidth="1350" frameHeight="1250" />
+<SubTexture name="Guest00001" x="0" y="2404" width="1234" height="1198" frameX="-51" frameY="-23" frameWidth="1350" frameHeight="1250" />
+<SubTexture name="Guest00002" x="2427" y="1202" width="1216" height="1200" frameX="-51" frameY="-21" frameWidth="1350" frameHeight="1250" />
+<SubTexture name="Guest00003" x="0" y="0" width="1211" height="1202" frameX="-51" frameY="-19" frameWidth="1350" frameHeight="1250" />
+<SubTexture name="Guest00004" x="1211" y="0" width="1216" height="1202" frameX="-51" frameY="-19" frameWidth="1350" frameHeight="1250" />
+<SubTexture name="Guest00005" x="0" y="1202" width="1230" height="1202" frameX="-51" frameY="-19" frameWidth="1350" frameHeight="1250" />
+<SubTexture name="Guest00006" x="2427" y="0" width="1238" height="1202" frameX="-51" frameY="-19" frameWidth="1350" frameHeight="1250" />
 </TextureAtlas>
