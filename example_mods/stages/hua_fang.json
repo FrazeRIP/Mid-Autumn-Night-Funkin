@@ -7,7 +7,7 @@
   "girlfriend": [ 0, 200 ],
   "opponent": [ -300, 340 ],
 
-  "camera_boyfriend": [ 30, 0 ],
+  "camera_boyfriend": [ 30, -50 ],
   "camera_opponent": [ 100, 120 ],
   "camera_girlfriend": [ 0, -222 ]
 }

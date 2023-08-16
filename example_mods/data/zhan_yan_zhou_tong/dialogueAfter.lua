@@ -31,12 +31,12 @@ end
 function onNextDialogueAfter(count)
 	if count == 4 then
 		setProperty('isLockDialogue',true)
-		doTweenAlpha("dialogueBackA3","camDialogueBack",0,.1,'cubeOut')
+		doTweenAlpha("dialogueA3","camDialogue",0,.1,'cubeOut')
 		doTweenAlpha("CG3A","CG3",1,2,'cubeOut')
 	end
 	
 	if count == 5 then
-		doTweenAlpha("dialogueBackA3","camDialogueBack",1,.1,'cubeOut')
+		--doTweenAlpha("dialogueA3","camDialogue",1,.1,'cubeOut')
 		doTweenAlpha("CG3A","CG3",0,.5,'cubeOut')
 	end
 
@@ -65,7 +65,7 @@ end
 
 function addCG( tag, filename )
 	makeLuaSprite(tag, 'cgs/'..filename, 0, 0);
-	setObjectCamera(tag,'camDialogue')
+	setObjectCamera(tag,'camDialogueBack')
 	setScrollFactor(tag, 1, 1)
 	addLuaSprite(tag, true);
 	scaleObject(tag,1,1)
