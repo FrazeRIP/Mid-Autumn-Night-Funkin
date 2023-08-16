@@ -31,11 +31,11 @@ function onCreate()
 	makeLuaSprite('light', 'stages/flower/NicoLayer6', xOffset+0, yOffset+0);
 	scaleObject('light', scale, scale);
 
-	makeAnimatedLuaSprite('guest0','stages/flower/NicoGuest/NicoGuest0', -750, 150);
+	makeAnimatedLuaSprite('guest0','stages/flower/NicoGuest/NicoGuest0', -700, 300);
 	addAnimationByPrefix('guest0','idle','NicoGuest0',24,false);
 	scaleObject('guest0', scale, scale);
 
-	makeAnimatedLuaSprite('guest1','stages/flower/NicoGuest/NicoGuest1', 500, 150);
+	makeAnimatedLuaSprite('guest1','stages/flower/NicoGuest/NicoGuest1', 550, 300);
 	addAnimationByPrefix('guest1','idle','NicoGuest1',24,false);
 	scaleObject('guest1', scale, scale);
 
@@ -45,7 +45,7 @@ function onCreate()
 	makeLuaSprite('branch', 'stages/flower/NicoLayer8',xOffset+0, yOffset+0);
 	scaleObject('branch', scale, scale);
 
-	makeAnimatedLuaSprite('guest2','stages/flower/NicoGuest/NicoGuest2', -750, 900);
+	makeAnimatedLuaSprite('guest2','stages/flower/NicoGuest/NicoGuest2', -750, 850);
 	addAnimationByPrefix('guest2','idle','NicoGuest2',24,false);
 	scaleObject('guest2', scale, scale);
 	

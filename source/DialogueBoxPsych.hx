@@ -235,7 +235,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.visible = true;
 		bgFade.alpha = 0;
 		//add(bgFade);
-		bgFade.camera = PlayState.instance.camDialogueBack;
+		bgFade.camera = PlayState.instance.camDialogue;
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -257,11 +257,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
-		box.camera = PlayState.instance.camDialogueBack;
+		box.camera = PlayState.instance.camDialogue;
 
 		daText = initializeText(PlayState.dialogueX,PlayState.dialogueY,PlayState.dialogueWidth, PlayState.dialogueFontSize, 'test');
 		add(daText);
-		daText.camera = PlayState.instance.camDialogueBack;
+		daText.camera = PlayState.instance.camDialogue;
 
 		startNextDialog();
 	}
@@ -302,7 +302,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			char.scrollFactor.set();
 			char.alpha = 0.00001;
 			add(char);
-			char.camera = PlayState.instance.camDialogueBack;
+			char.camera = PlayState.instance.camDialogue;
 
 			var saveY:Bool = false;
 			switch (char.jsonFile.dialogue_pos)

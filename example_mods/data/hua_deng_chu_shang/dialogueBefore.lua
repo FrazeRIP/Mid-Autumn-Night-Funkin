@@ -71,7 +71,7 @@ end
 
 function addCG( tag, filename )
 	makeLuaSprite(tag, 'cgs/'..filename, 0, 0);
-	setObjectCamera(tag,'camDialogue')
+	setObjectCamera(tag,'camDialogueBack')
 	setScrollFactor(tag, 1, 1)
 	addLuaSprite(tag, true);
 	scaleObject(tag,1,1)

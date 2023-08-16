@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="NicoGuest0.png">
-	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="NicoGuest00000" x="10" y="10" width="792" height="1012"/>
-	<SubTexture name="NicoGuest00001" x="822" y="10" width="792" height="1012"/>
-	<SubTexture name="NicoGuest00002" x="10" y="1042" width="792" height="1012"/>
-	<SubTexture name="NicoGuest00003" x="822" y="1042" width="792" height="1012"/>
-	<SubTexture name="NicoGuest00004" x="10" y="2074" width="792" height="1012"/>
-	<SubTexture name="NicoGuest00005" x="822" y="2074" width="792" height="1012"/>
-	<SubTexture name="NicoGuest00006" x="822" y="2074" width="792" height="1012"/>
+	<SubTexture name="NicoGuest00000" x="0" y="0" width="625" height="721"/>
+	<SubTexture name="NicoGuest00001" x="0" y="721" width="625" height="721"/>
+	<SubTexture name="NicoGuest00002" x="625" y="0" width="625" height="721"/>
+	<SubTexture name="NicoGuest00003" x="1250" y="0" width="625" height="721"/>
+	<SubTexture name="NicoGuest00004" x="625" y="721" width="625" height="721"/>
+	<SubTexture name="NicoGuest00005" x="625" y="721" width="625" height="721"/>
 </TextureAtlas>
