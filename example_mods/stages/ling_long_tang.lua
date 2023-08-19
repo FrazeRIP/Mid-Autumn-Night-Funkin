@@ -44,8 +44,9 @@ function onCreate()
 	makeLuaSprite('curtain', 'stages/lord_rabbit/RopryLayer6', xOffset+ 0, yOffset+0);
 	scaleObject('curtain', scale, scale);
 
-	makeAnimatedLuaSprite('guest4','stages/lord_rabbit/RopryGuest/RopryGuest4',  xOffset-15, yOffset+770);
+	makeAnimatedLuaSprite('guest4','stages/lord_rabbit/RopryGuest/RopryGuest4',  xOffset-200, yOffset+720);
 	addAnimationByPrefix('guest4','idle','Ropry_Guest4',24,false);
+	setScrollFactor('guest4', 1.4, 0.1);
 	scaleObject('guest4', scale, scale);
 
 	addLuaSprite('sky', false);
@@ -64,18 +65,26 @@ end
 
 function onBeatHit()
 	-- triggered 4 times per section
+	if curBeat % 2 == 0 then
+
 	objectPlayAnimation('guest0','idle',true);
 	objectPlayAnimation('guest1','idle',true);
 	objectPlayAnimation('guest2','idle',true);
 	objectPlayAnimation('guest3','idle',true);
 	objectPlayAnimation('guest4','idle',true);
+
+	end
 end
 
 
 function onCreatePost( ... )
-	doTweenX('gfScaleX', 'gf.scale', .53, 0.0001)
-	doTweenY('gfScaley', 'gf.scale', .53, 0.0001)
+	doTweenX('gfScaleX', 'gf.scale', .42, 0.0001)
+	doTweenY('gfScaley', 'gf.scale', .42, 0.0001)
 
 	doTweenX('dadScaleX', 'dad.scale', .6, 0.0001)
 	doTweenY('dadScaley', 'dad.scale', .6, 0.0001)
+
+	
+	doTweenX('bfScaleX', 'boyfriend.scale', .5, 0.0001)
+	doTweenY('bfScaley', 'boyfriend.scale', .5, 0.0001)
 end
