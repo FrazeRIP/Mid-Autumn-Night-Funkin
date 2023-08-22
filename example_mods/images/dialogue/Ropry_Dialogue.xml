@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Ropry_Dialogue.png">
+<SubTexture name="A0000" x="0" y="0" width="721" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="B0000" x="721" y="0" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="C0000" x="1443" y="0" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="D0000" x="0" y="723" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="E0000" x="722" y="723" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="F0000" x="2165" y="0" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="G0000" x="2165" y="723" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="H0000" x="0" y="1446" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="I0000" x="722" y="1446" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="J0000" x="1444" y="1446" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="L0000" x="2887" y="0" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="M0000" x="2887" y="723" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="N0000" x="2887" y="1446" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="O0000" x="0" y="2169" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+<SubTexture name="P0000" x="722" y="2169" width="722" height="723" frameX="-11" frameY="-13" frameWidth="736" frameHeight="736" />
+</TextureAtlas>

@@ -24,7 +24,8 @@ local appliedMoveForce = { -- `table` which has the applied `moviesOffset` force
 	{-moviesOffset.x, 0},
 	{0, moviesOffset.y},
 	{0, -moviesOffset.y},
-	{moviesOffset.x, 0}
+	{moviesOffset.x, 0},
+	{0,0}
 }
 
 -- Checks if a variable is `nil`.
@@ -108,26 +109,32 @@ function opponentNoteHit(membersIndex, noteData, noteType, isSustainNote)
 	end
 end
 function noteMiss(membersIndex, noteData, noteType, isSustainNote)
-	if mustHitSection and not lowQuality and whosActive.play and not getProperty('isCameraOnForcedPos') then
-		moveCameraSection(noteType)
-		setProperty('camFollowPos.x', getProperty('camFollow.x'))
-		setProperty('camFollowPos.y', getProperty('camFollow.y'))
+	if mustHitSection then
+		moveCamNoteDir(true, noteData, noteType, isSustainNote)
 	end
-	if velocity.active and mustHitSection then
-		setProperty('cameraSpeed', velocity.defSpeed)
-		camSpeedChecks.updateDefSpeed = true
-	end
+	--if mustHitSection and not lowQuality and whosActive.play and not getProperty('isCameraOnForcedPos') then
+	--	moveCameraSection(noteType)
+	--	setProperty('camFollowPos.x', getProperty('camFollow.x'))
+	--	setProperty('camFollowPos.y', getProperty('camFollow.y'))
+	--end
+	--if velocity.active and mustHitSection then
+	--	setProperty('cameraSpeed', velocity.defSpeed)
+	--	camSpeedChecks.updateDefSpeed = true
+	--end
 end
 function noteMissPress(direction)
-	if mustHitSection and not lowQuality and whosActive.play and not getProperty('isCameraOnForcedPos') then
-		moveCameraSection('')
-		setProperty('camFollowPos.x', getProperty('camFollow.x'))
-		setProperty('camFollowPos.y', getProperty('camFollow.y'))
-	end
-	if velocity.active then
-		setProperty('cameraSpeed', velocity.defSpeed)
-		camSpeedChecks.updateDefSpeed = true
-	end
+	--if mustHitSection then
+	--	moveCamNoteDir(true, noteData, noteType, isSustainNote)
+	--end
+	--if mustHitSection and not lowQuality and whosActive.play and not getProperty('isCameraOnForcedPos') then
+	--	moveCameraSection('')
+	--	setProperty('camFollowPos.x', getProperty('camFollow.x'))
+	--	setProperty('camFollowPos.y', getProperty('camFollow.y'))
+	--end
+	--if velocity.active then
+	--	setProperty('cameraSpeed', velocity.defSpeed)
+	--	camSpeedChecks.updateDefSpeed = true
+	--end
 end
 
 function onEvent(name, value1, value2)

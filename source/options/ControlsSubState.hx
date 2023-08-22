@@ -41,6 +41,7 @@ class ControlsSubState extends MusicBeatSubstate
 		['下', 'note_down'],
 		['上', 'note_up'],
 		['右', 'note_right'],
+		//['中心', 'note_center'],
 		[''],
 		['UI'],
 		['左', 'ui_left'],

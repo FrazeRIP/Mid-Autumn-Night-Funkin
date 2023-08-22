@@ -11,8 +11,8 @@ function onEndSong()
 		
 		loadBlack()
 		doTweenAlpha("dialogueBackA3","camDialogueBack",1,.2,'cubeOut')
-		doTweenAlpha("camHUDA","camHUD",0,.2,'cubeOut')
 		doTweenAlpha("dialogueA3","camDialogue",1,.2,'cubeOut')
+		doTweenAlpha("camHUDA","camHUD",0,.2,'cubeOut')
 		startDialogue('dialogueAfter', 'breakfast');
 		preloadAssets()
 		allowEnd = true
@@ -23,7 +23,7 @@ end
 
 ----------------------------------------------------------------------
 --Setting---------------------------------------------------------
-folderName  = "Kris/"
+folderName  = "Ropry/"
 function preloadAssets()
 	--addCG("CG3",folderName.."CG3")
 end

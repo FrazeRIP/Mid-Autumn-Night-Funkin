@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Before_Dialogue.png">
+<SubTexture name="A0000" x="2472" y="0" width="618" height="889" frameX="0" frameY="-11" frameWidth="720" frameHeight="900" />
+<SubTexture name="B0000" x="2472" y="889" width="618" height="889" frameX="0" frameY="-11" frameWidth="720" frameHeight="900" />
+<SubTexture name="C0000" x="0" y="0" width="618" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+<SubTexture name="D0000" x="618" y="0" width="618" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+<SubTexture name="E0000" x="1236" y="0" width="618" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+<SubTexture name="F0000" x="0" y="890" width="645" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+<SubTexture name="G0000" x="645" y="890" width="618" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+<SubTexture name="H0000" x="1854" y="0" width="618" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+<SubTexture name="I0000" x="1854" y="890" width="618" height="890" frameX="0" frameY="-10" frameWidth="720" frameHeight="900" />
+</TextureAtlas>

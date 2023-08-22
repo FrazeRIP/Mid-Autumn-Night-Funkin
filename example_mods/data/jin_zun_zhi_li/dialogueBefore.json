@@ -10,7 +10,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "B",
       "text": "欸？那是……",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -18,7 +18,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "BFGF！好久不见了！\n朋友们，最近过得如何？",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -42,8 +42,16 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "还不错，不需要过多担心！晚上好！",
+      "expression": "F",
+      "text": "还不错，不需要过多担心！",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "晚上好！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
       "speed": 0.05,
@@ -66,7 +74,15 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "H",
+      "text": "……",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "I",
       "text": "……哈哈，不用担心啦，他不会伤人的。",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -74,7 +90,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "......",
       "boxState": "normal",
       "portrait": "Before_Dialogue",
@@ -82,7 +98,15 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "D",
+      "text": "......",
+      "boxState": "normal",
+      "portrait": "Before_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
       "text": "没什么，晚上好。",
       "boxState": "normal",
       "portrait": "Before_Dialogue",
@@ -114,7 +138,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "但不管是以前还是现在，我都很喜欢它们！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -130,7 +154,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "D",
       "text": "瞧你说的，那我们赶快进入正题——",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -138,7 +162,15 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "Empty",
+      "text": "",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
       "text": " “团圆佳节日家家，笑语中庭荐果瓜。”\n“药窃羿妻偏称寡，金涂狡兔竟呼爷。”",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -146,7 +178,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "J",
       "text": "“秋风月窟营天上，凉夜蟾光映水涯。”\n“惯与儿童为戏具，印泥糊纸又搏沙。”",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -154,7 +186,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "L",
       "text": "如果你们听过嫦娥的故事，也应该会知道她怀中的玉兔吧？",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -178,15 +210,23 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "不错！\n不过呢，我想介绍的，是我童年时候爱不释手的一样小玩具！",
+      "expression": "G",
+      "text": "不错！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "L",
+      "text": "不过呢，我想介绍的，是我童年时候爱不释手的一样小玩具！",
+      "boxState": "normal",
+      "portrait": "Ropry_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "F",
       "text": "准确地说，是兔儿爷。",
       "boxState": "normal",
       "portrait": "Before_Dialogue",
@@ -210,7 +250,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "M",
       "text": "没错！兔儿爷就是玉兔本尊。",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -218,7 +258,15 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "Empty",
+      "text": "",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "L",
       "text": "传说，曾经的京城闹过一场骇人听闻的瘟疫，无药可医。\n可嫦娥无法离开天宫，就派下她的玉兔来到人间。",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -226,7 +274,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "F",
       "text": "玉兔降至人间，因是女儿身，就去借来金盔金甲，挨家挨户将能够治愈病痛的药品送到家家户户。可惜，等她送完药，便累倒在了寺庙山门外的旗杆下。",
       "boxState": "normal",
       "portrait": "Before_Dialogue",
@@ -242,7 +290,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "N",
       "text": "是的！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -250,7 +298,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "G",
       "text": "顺带一提，关于兔儿爷，人们还有两样习俗：“送”与“请”。",
       "boxState": "normal",
       "portrait": "Before_Dialogue",
@@ -258,7 +306,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "没错！至于流程嘛——",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -266,7 +314,15 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "Empty",
+      "text": "",
+      "boxState": "normal",
+      "portrait": "Empty",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "M",
       "text": "家家户户都会将上一年买来的兔儿爷砸碎扔掉，送这只收集全家人的病灾于一身的她回到天宫。",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -274,7 +330,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "F",
       "text": "再去上街买回来一个新的兔儿爷，保佑一家人来年平平安安。",
       "boxState": "normal",
       "portrait": "Before_Dialogue",
@@ -282,7 +338,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "G",
       "text": "喔，我真庆幸能有你这样的朋友，GF。\n你的思想总是和我合拍。还有Before！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -298,7 +354,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "J",
       "text": "那么，作为考验，我也讲个小字谜如何？\n也算是留下点悬念。",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -306,7 +362,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "O",
       "text": "另外，我也为你们准备了份小礼物，就作为回答正确的小奖励好啦！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -322,7 +378,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "N",
       "text": "“日晚归去星独现”。\n应该不算太简单吧！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -338,7 +394,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "P",
       "text": "哈哈哈哈，我可不会现在公布答案喔？\n在下面的时间里想想答案怎样！—",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -354,7 +410,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "G",
       "text": "好啦，看来这个小可爱也等不及了不是吗？\n那就让我们赶快开始这场激动人心的小节目！\n也算是作为“送兔儿爷”的仪式好啦~",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
@@ -370,72 +426,12 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "P",
       "text": "好啦好啦，别担心，只是唱唱小曲儿，没什么大不了的啦！",
       "boxState": "normal",
       "portrait": "Ropry_Dialogue",
       "speed": 0.05,
       "sound": ""
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ////BF
-    //{
-    //  "expression": "talk",
-    //  "text": "Beep！",
-    //  "boxState": "normal",
-    //  "portrait": "BF_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////Ropry
-    //{
-    //  "expression": "A",
-    //  "text": "看来准备好了呢！那么，阁下请听题——",
-    //  "boxState": "normal",
-    //  "portrait": "Ropry_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////Before
-    //{
-    //  "expression": "A",
-    //  "text": "看来准备好了呢！那么，阁下请听题——",
-    //  "boxState": "normal",
-    //  "portrait": "Before_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////GF
-    //{
-    //  "expression": "talk",
-    //  "text": "嗯…慢着？这位第一名小姐？",
-    //  "boxState": "normal",
-    //  "portrait": "GF_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////CG
-    //{
-    //  "expression": "Empty",
-    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
-    //  "boxState": "normal",
-    //  "portrait": "Empty",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //}
   ]
 }
