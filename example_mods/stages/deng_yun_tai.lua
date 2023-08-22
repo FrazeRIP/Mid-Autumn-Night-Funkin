@@ -15,9 +15,9 @@ function onCreate()
 	scaleObject('PaolaLayer2', ScaleOffset, ScaleOffset);
 	makeLuaSprite('PaolaLayer3', 'stages/deng_yun_tai/PaolaLayer3',0 +Xoffset, 0 + Yoffset)
 	scaleObject('PaolaLayer3', ScaleOffset, ScaleOffset);
-	makeLuaSprite('PaolaLayer4', 'stages/deng_yun_tai/PaolaLayer4', 0 +Xoffset, 0 + Yoffset)
+	makeLuaSprite('PaolaLayer4', 'stages/deng_yun_tai/PaolaLayer4', 0 +Xoffset, 200 + Yoffset)
 	scaleObject('PaolaLayer4', ScaleOffset, ScaleOffset);
-	makeLuaSprite('PaolaLayer5', 'stages/deng_yun_tai/PaolaLayer5',0 +Xoffset, 0 + Yoffset)
+	makeLuaSprite('PaolaLayer5', 'stages/deng_yun_tai/PaolaLayer5',0 +Xoffset, 200 + Yoffset)
 	scaleObject('PaolaLayer5', ScaleOffset, ScaleOffset);
 
 	makeAnimatedLuaSprite('guest0','stages/deng_yun_tai/Guest/PaolaGuest0', -1150 , -100 )
@@ -56,6 +56,6 @@ function onCreatePost( ... )
 	doTweenY('paolaSY', 'dad.scale', .9, .00001)
 	doTweenX('bfSX', 'boyfriend.scale', 1, .00001)
 	doTweenY('bfSY', 'boyfriend.scale', 1,.00001)
-	doTweenX('gfSX', 'gf.scale', .7, .00001)
-	doTweenY('gfSY', 'gf.scale', .7, .00001)
+	doTweenX('gfSX', 'gf.scale', .75, .00001)
+	doTweenY('gfSY', 'gf.scale', .75, .00001)
 end

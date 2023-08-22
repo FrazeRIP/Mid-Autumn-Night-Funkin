@@ -29,7 +29,7 @@ end
 
 ----------------------------------------------------------------------
 --Setting---------------------------------------------------------
-folderName  = "Kris/"
+folderName  = "Ropry/"
 
 function preloadAssets()
 	--addCG("CG1",folderName.."CG1")

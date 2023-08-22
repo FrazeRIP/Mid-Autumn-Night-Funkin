@@ -44,9 +44,9 @@ function onCreate()
 	makeLuaSprite('curtain', 'stages/lord_rabbit/RopryLayer6', xOffset+ 0, yOffset+0);
 	scaleObject('curtain', scale, scale);
 
-	makeAnimatedLuaSprite('guest4','stages/lord_rabbit/RopryGuest/RopryGuest4',  xOffset-200, yOffset+720);
+	makeAnimatedLuaSprite('guest4','stages/lord_rabbit/RopryGuest/RopryGuest4',  xOffset-100, yOffset+620);
 	addAnimationByPrefix('guest4','idle','Ropry_Guest4',24,false);
-	setScrollFactor('guest4', 1.4, 0.1);
+	setScrollFactor('guest4', 1.2, 0.1);
 	scaleObject('guest4', scale, scale);
 
 	addLuaSprite('sky', false);
