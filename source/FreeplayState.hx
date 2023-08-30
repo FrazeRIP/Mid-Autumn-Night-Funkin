@@ -54,8 +54,11 @@ class FreeplayState extends MusicBeatState
 
 	override function create()
 	{
-		// Paths.clearStoredMemory();
-		// Paths.clearUnusedMemory();
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
+		var mouseSprite=new FlxSprite().loadGraphic(Paths.image('UI/Mouse0',"mid-autumn"));
+		FlxG.mouse.load(mouseSprite.pixels);
 		
 		persistentUpdate = true;
 		PlayState.isStoryMode = false;
