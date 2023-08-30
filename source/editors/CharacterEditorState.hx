@@ -81,6 +81,9 @@ class CharacterEditorState extends MusicBeatState
 	override function create()
 	{
 		//FlxG.sound.playMusic(Paths.music('breakfast'), 0.5);
+		
+		var mouseSprite=new FlxSprite().loadGraphic(Paths.image('UI/Mouse0',"mid-autumn"));
+		FlxG.mouse.load(mouseSprite.pixels);
 
 		camEditor = new FlxCamera();
 		camHUD = new FlxCamera();

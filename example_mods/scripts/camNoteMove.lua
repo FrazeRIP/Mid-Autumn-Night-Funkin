@@ -1,6 +1,6 @@
 -- Original script by TPOSEJANK, changed a ton by 💜 Rodney, An Imaginative Person 💙! lol
 
-local moviesOffset = {x = 20, y = 20} -- x and y movement force
+local moviesOffset = {x = 30, y = 30} -- x and y movement force
 local whosActive = {oppo = true, play = true} -- who has de cool movesment
 local ifCamLocked = { -- cool cam lock stuff
 	oppo = {active = false, x = 0, y = 0},

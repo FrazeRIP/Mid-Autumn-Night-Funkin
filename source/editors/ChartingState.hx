@@ -201,6 +201,9 @@ class ChartingState extends MusicBeatState
 	public var mouseQuant:Bool = false;
 	override function create()
 	{
+		var mouseSprite=new FlxSprite().loadGraphic(Paths.image('UI/Mouse0',"mid-autumn"));
+		FlxG.mouse.load(mouseSprite.pixels);
+
 		if (PlayState.SONG != null)
 			_song = PlayState.SONG;
 		else
