@@ -1,0 +1,7 @@
+Value 1: Character
+Value 2: Main Offset, Stage Offset
+
+Main options are 'dad', 'gf' and 'boyfriend'.
+
+Offset being stage camera offset.
+Selections are 'opponent', 'girlfriend' and 'boyfriend'.

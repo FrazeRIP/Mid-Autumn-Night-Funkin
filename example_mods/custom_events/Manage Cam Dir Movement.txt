@@ -1,0 +1,5 @@
+Value 1: Character, Note type
+Value 2: Main Offset, Stage Offset
+
+Offset stuff is basically what
+you'd do in "Camera Set Target".

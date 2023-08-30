@@ -9,5 +9,5 @@
 
 	"camera_boyfriend":[-100,  -310],
 	"camera_opponent":[300, -410],
-	"camera_girlfriend": [ 0, 0 ]
+	"camera_girlfriend": [ 0, -600 ]
 }

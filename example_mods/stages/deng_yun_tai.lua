@@ -5,16 +5,23 @@ local ScaleOffset = 1.45
 
 	
 function onCreate()
-	makeLuaSprite('PaolaLayer0', 'stages/deng_yun_tai/PaolaLayer0', -50 +Xoffset, 0 + Yoffset)
-	setScrollFactor('PaolaLayer0', 0.95, 0.95);
+	makeLuaSprite('PaolaLayer0', 'stages/deng_yun_tai/PaolaLayer0', 50 +Xoffset, 200 + Yoffset)
+	setScrollFactor('PaolaLayer0', 1, 0.5);
 	scaleObject('PaolaLayer0', ScaleOffset, ScaleOffset);
 
-	makeLuaSprite('PaolaLayer1', 'stages/deng_yun_tai/PaolaLayer1', 0 +Xoffset, 0 + Yoffset)
+	makeLuaSprite('PaolaLayer1', 'stages/deng_yun_tai/PaolaLayer1', 0 +Xoffset, 125 + Yoffset)
 	scaleObject('PaolaLayer1', ScaleOffset, ScaleOffset);
-	makeLuaSprite('PaolaLayer2', 'stages/deng_yun_tai/PaolaLayer2',0 +Xoffset, 0 + Yoffset)
+	setScrollFactor('PaolaLayer1',1, 0.7);
+
+
+	makeLuaSprite('PaolaLayer2', 'stages/deng_yun_tai/PaolaLayer2',0 +Xoffset, 50 + Yoffset)
 	scaleObject('PaolaLayer2', ScaleOffset, ScaleOffset);
+	setScrollFactor('PaolaLayer2',1, 0.8);
+
 	makeLuaSprite('PaolaLayer3', 'stages/deng_yun_tai/PaolaLayer3',0 +Xoffset, 0 + Yoffset)
 	scaleObject('PaolaLayer3', ScaleOffset, ScaleOffset);
+	setScrollFactor('PaolaLayer2', 1, 0.9);
+
 	makeLuaSprite('PaolaLayer4', 'stages/deng_yun_tai/PaolaLayer4', 0 +Xoffset, 200 + Yoffset)
 	scaleObject('PaolaLayer4', ScaleOffset, ScaleOffset);
 	makeLuaSprite('PaolaLayer5', 'stages/deng_yun_tai/PaolaLayer5',0 +Xoffset, 200 + Yoffset)
