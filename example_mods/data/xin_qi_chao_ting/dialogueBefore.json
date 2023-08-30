@@ -25,7 +25,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "B",
       "text": "此言差矣！！！",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
@@ -49,7 +49,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "我这不是在等吗。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
@@ -66,14 +66,22 @@
     },
     {
       "expression": "A",
-      "text": "咳！知前晓后化无穷，吉凶祸福事先通。\n勤诣深究大有用，万般奥妙——在其中啊。",
+      "text": "嘻嘻，要想知道这个嘛......",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "D",
+      "text": "知前晓后化无穷，吉凶祸福事先通。\n勤诣深究大有用，万般奥妙——在其中啊。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "E",
       "text": "小帅哥，想不想起上一卦呢？",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
@@ -97,8 +105,8 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "放心放心，铁口直断。\n快把生辰八字告诉我吧。",
+      "expression": "F",
+      "text": "放心放心，铁口直断，童叟无欺。\n快把你的生辰八字告诉我吧。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
@@ -113,7 +121,7 @@
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "计较阴阳卦方开，四柱八梁用心排。\n分枝独从甲子论，结果梳密莫妄猜...",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
@@ -121,10 +129,26 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "哎呀！\n巽上坎下，是为涣卦。恶事离身，患难将消，利涉大川，出入无阻。\n这可是道吉卦啊。",
+      "expression": "G",
+      "text": "哎呀！\n巽上坎下，是为涣卦。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "G",
+      "text": "恶事离身，患难将消，利涉大川，出入无阻。\n这可是道吉卦啊。",
+      "boxState": "normal",
+      "portrait": "Sarah_Dialogue",
+      "speed": 0.05,
+      "sound": ""
+    },
+    {
+      "expression": "talk",
+      "text": "……beep！",
+      "boxState": "normal",
+      "portrait": "BF_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
@@ -137,15 +161,15 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "涣卦，风在水上行。推波助澜，四方流溢。",
+      "expression": "I",
+      "text": "涣卦，风在水上行。\n推波助澜，四方流溢。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "D",
       "text": "每逢中秋时节，日月地一线，引力就会致使波涛汹涌，满江沸腾。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
@@ -161,8 +185,8 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "眼看大江东去，青山夕阳如故，只有英雄人物如浪花般，被这逝水淘尽......",
+      "expression": "H",
+      "text": "眼看大江东去，青山依旧，只有英雄豪杰如浪沫般转瞬即逝......",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
@@ -185,8 +209,8 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "啊哈，时间卡的刚刚好。我们已经等到了，妹妹你仔细听。",
+      "expression": "D",
+      "text": "啊哈，时间卡的刚刚好。\n我们已经等到了，妹妹你仔细听。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
@@ -194,15 +218,15 @@
     },
     {
       "expression": "A",
-      "text": "潮信日夜两番来。今朝八月十五日，恰是此时此刻。\n因从不失信，故谓之潮信。",
+      "text": "潮信日夜两番如期而至。\n因从不失信，故谓之潮信。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "Boyfriend准备好了吗？让我们邀涛声共歌一曲吧。",
+      "expression": "E",
+      "text": "准备好了吗小帅哥？\n让我们邀涛声共歌一曲吧。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
@@ -224,44 +248,5 @@
       "speed": 0.05,
       "sound": ""
     }
-
-
-
-    ////BF
-    //{
-    //  "expression": "talk",
-    //  "text": "Beep！",
-    //  "boxState": "normal",
-    //  "portrait": "BF_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////GF
-    //{
-    //  "expression": "talk",
-    //  "text": "嗯…慢着？这位第一名小姐？",
-    //  "boxState": "normal",
-    //  "portrait": "GF_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////Sarah
-    //{
-    //  "expression": "A",
-    //  "text": "看来准备好了呢！那么，阁下请听题——",
-    //  "boxState": "normal",
-    //  "portrait": "Sarah_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////CG
-    //{
-    //  "expression": "Empty",
-    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
-    //  "boxState": "normal",
-    //  "portrait": "Empty",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //}
   ]
 }

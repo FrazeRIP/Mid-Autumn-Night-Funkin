@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Sarah_Dialogue.png">
+<SubTexture name="A0000" x="0" y="0" width="563" height="889" frameX="-346" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="B0000" x="563" y="0" width="745" height="889" frameX="-299" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="C0000" x="1308" y="0" width="675" height="889" frameX="-299" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="I0000" x="0" y="889" width="808" height="889" frameX="-299" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="D0000" x="808" y="889" width="675" height="889" frameX="-299" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="E0000" x="1983" y="0" width="817" height="889" frameX="-299" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="F0000" x="1126" y="1778" width="966" height="879" frameX="-128" frameY="-255" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="G0000" x="1983" y="889" width="563" height="889" frameX="-346" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="J0000" x="0" y="1778" width="563" height="889" frameX="-346" frameY="-250" frameWidth="1259" frameHeight="1139" />
+<SubTexture name="H0000" x="563" y="1778" width="563" height="889" frameX="-346" frameY="-250" frameWidth="1259" frameHeight="1139" />
+</TextureAtlas>

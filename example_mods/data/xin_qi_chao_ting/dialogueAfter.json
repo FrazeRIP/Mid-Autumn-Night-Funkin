@@ -2,31 +2,31 @@
   "dialogue": [
 
     {
-      "expression": "A",
-      "text": "江山如画，一时多少豪杰；人生如梦，一尊还酹江月......",
+      "expression": "J",
+      "text": "江山如画，一时多少豪杰，\n人生如梦，一尊还酹江月。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "在滚滚不息的玉龙水前，圆缺循环的皎洁月下，辉煌也好，落魄也罢，都是荒唐一场。",
+      "expression": "J",
+      "text": "在滚滚不息的玉龙水前，圆缺循环的皎洁月下，\n辉煌也好，落魄也罢，都是荒唐一场。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "就连今日之我们，最终也不过笑谈中罢了。",
+      "expression": "H",
+      "text": "就连今日之我们，最终也不过成为历史长河中的一粒黄沙......",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     },
     {
-      "expression": "A",
+      "expression": "C",
       "text": "哎呀抱歉，唱的太忘情了，二位还好吗？",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
@@ -51,7 +51,7 @@
     },
     {
       "expression": "A",
-      "text": "让我来搭把手吧。",
+      "text": "哈！还是让我来搭把手吧。",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
@@ -82,16 +82,8 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "诶~先别急着走嘛！",
-      "boxState": "normal",
-      "portrait": "Sarah_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "A",
-      "text": "我观帅哥你有道金光从天灵盖喷出来，年纪轻轻就有一身文人风骨，是万年难得一遇的天才啊！",
+      "expression": "E",
+      "text": "诶呀小帅哥~\n我刚刚发现你有道金光从天灵盖喷出来，\n是百年难得一遇的练武奇才啊！n不如...",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
@@ -106,30 +98,6 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "要是有朝一日打通任督二脉，你必定能一飞冲天，成为诗王之王。",
-      "boxState": "normal",
-      "portrait": "Sarah_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "A",
-      "text": "到时候，什么诗仙诗圣诗佛诗鬼，全都不在你的话下。",
-      "boxState": "normal",
-      "portrait": "Sarah_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
-      "expression": "A",
-      "text": "这本《疏狂录》里有我记下的古今千百事，对积累素材大有裨益。\n我看与你有缘，不如...",
-      "boxState": "normal",
-      "portrait": "Sarah_Dialogue",
-      "speed": 0.05,
-      "sound": ""
-    },
-    {
       "expression": "talk",
       "text": "嗯？",
       "boxState": "normal",
@@ -138,51 +106,12 @@
       "sound": ""
     },
     {
-      "expression": "A",
-      "text": "咳！就当作补偿刚刚让你站在江边唱歌，免费赠于你好了。\n二位中秋快乐，一路慢走！",
+      "expression": "C",
+      "text": "咳！祝二位中秋快乐，一路慢走！",
       "boxState": "normal",
       "portrait": "Sarah_Dialogue",
       "speed": 0.05,
       "sound": ""
     }
-
-
-
-    ////BF
-    //{
-    //  "expression": "talk",
-    //  "text": "Beep！",
-    //  "boxState": "normal",
-    //  "portrait": "BF_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////GF
-    //{
-    //  "expression": "talk",
-    //  "text": "嗯…慢着？这位第一名小姐？",
-    //  "boxState": "normal",
-    //  "portrait": "GF_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////Sarah
-    //{
-    //  "expression": "A",
-    //  "text": "看来准备好了呢！那么，阁下请听题——",
-    //  "boxState": "normal",
-    //  "portrait": "Sarah_Dialogue",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //},
-    ////CG
-    //{
-    //  "expression": "Empty",
-    //  "text": "（Paola跳到两人身前，示意GF偷偷告诉她谜底）",
-    //  "boxState": "normal",
-    //  "portrait": "Empty",
-    //  "speed": 0.05,
-    //  "sound": ""
-    //}
   ]
 }
