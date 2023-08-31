@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="WeekIcon.png">
+<SubTexture name="dan_qiu0000" x="1358" y="384" width="144" height="70" frameX="-275" frameY="-172" frameWidth="696" frameHeight="432" />
+<SubTexture name="deng_yun_tai0000" x="0" y="1108" width="584" height="284" frameX="-63" frameY="-107" frameWidth="696" frameHeight="432" />
+<SubTexture name="fu_rong_dian0000" x="1342" y="308" width="221" height="74" frameX="-245" frameY="-170" frameWidth="696" frameHeight="432" />
+<SubTexture name="guan_yue_ta0000" x="771" y="0" width="363" height="381" frameX="-168" frameY="-9" frameWidth="696" frameHeight="432" />
+<SubTexture name="hua_fang0000" x="1134" y="0" width="548" height="308" frameX="-76" frameY="-83" frameWidth="696" frameHeight="432" />
+<SubTexture name="ling_long_tang0000" x="0" y="765" width="459" height="343" frameX="-112" frameY="-52" frameWidth="696" frameHeight="432" />
+<SubTexture name="miao_hui_xiao_xiang0000" x="485" y="397" width="379" height="361" frameX="-180" frameY="-58" frameWidth="696" frameHeight="432" />
+<SubTexture name="pin_jiu_ge0000" x="0" y="397" width="485" height="368" frameX="-111" frameY="-43" frameWidth="696" frameHeight="432" />
+<SubTexture name="qi_xi_ting0000" x="459" y="765" width="664" height="322" frameX="-22" frameY="-75" frameWidth="696" frameHeight="432" />
+<SubTexture name="qiu_fen_ji0000" x="1134" y="384" width="224" height="71" frameX="-224" frameY="-172" frameWidth="696" frameHeight="432" />
+<SubTexture name="song_ling_ke_zhan0000" x="0" y="0" width="418" height="397" frameX="-161" frameY="-34" frameWidth="696" frameHeight="432" />
+<SubTexture name="ying_he_xi0000" x="418" y="0" width="353" height="388" frameX="-161" frameY="-22" frameWidth="696" frameHeight="432" />
+<SubTexture name="yu_long_mei0000" x="1134" y="455" width="216" height="70" frameX="-238" frameY="-171" frameWidth="696" frameHeight="432" />
+<SubTexture name="yue_fu_dao0000" x="1134" y="308" width="208" height="76" frameX="-249" frameY="-169" frameWidth="696" frameHeight="432" />
+</TextureAtlas>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="OX.png">
+<SubTexture name="OX O0000" x="0" y="0" width="51" height="51" frameX="0" frameY="0" frameWidth="51" frameHeight="51" />
+<SubTexture name="OX X0000" x="51" y="0" width="51" height="49" frameX="0" frameY="0" frameWidth="51" frameHeight="49" />
+</TextureAtlas>
