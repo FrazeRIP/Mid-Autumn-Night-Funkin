@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="Ropry_Guest4.png">
+<TextureAtlas imagePath="RopryGuest4.png">
 	<!-- Created with Adobe Animate version 22.0.2.168 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Ropry_Guest40000" x="0" y="0" width="3000" height="801"/>
-	<SubTexture name="Ropry_Guest40001" x="0" y="801" width="3000" height="801"/>
-	<SubTexture name="Ropry_Guest40002" x="0" y="1602" width="3000" height="801"/>
-	<SubTexture name="Ropry_Guest40003" x="0" y="2403" width="3000" height="801"/>
-	<SubTexture name="Ropry_Guest40004" x="0" y="3204" width="3000" height="801"/>
-	<SubTexture name="Ropry_Guest40005" x="0" y="3204" width="3000" height="801"/>
-	<SubTexture name="Ropry_Guest40006" x="0" y="3204" width="3000" height="801"/>
+	<SubTexture name="Ropry_Guest40000" x="0" y="0" width="3000" height="900"/>
+	<SubTexture name="Ropry_Guest40001" x="3000" y="0" width="3000" height="900"/>
+	<SubTexture name="Ropry_Guest40002" x="0" y="900" width="3000" height="900"/>
+	<SubTexture name="Ropry_Guest40003" x="3000" y="900" width="3000" height="900"/>
+	<SubTexture name="Ropry_Guest40004" x="0" y="1800" width="3000" height="900"/>
+	<SubTexture name="Ropry_Guest40005" x="0" y="1800" width="3000" height="900"/>
+	<SubTexture name="Ropry_Guest40006" x="0" y="1800" width="3000" height="900"/>
 </TextureAtlas>
