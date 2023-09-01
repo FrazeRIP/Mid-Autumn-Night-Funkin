@@ -24,6 +24,7 @@ import flixel.util.FlxTimer;
 import flixel.math.FlxRandom;
 import openfl.filters.BitmapFilter;
 import openfl.filters.BlurFilter;
+import openfl.filters.GlowFilter;
 
 using StringTools;
 
@@ -37,7 +38,13 @@ class MainMenuState extends MusicBeatState
 	private var camFirewrok:FlxCamera;
 	private var camAchievement:FlxCamera;
 	public var camFront:FlxCamera;
+	public var camGlow:FlxCamera;
 
+	public var glow:GlowFilter;
+
+	public var glowTween:FlxTween;
+
+	public var enterCooldown:Float = 0;
 	
 	var optionShit:Array<String> = [
 		'StoryMode',
@@ -78,18 +85,21 @@ class MainMenuState extends MusicBeatState
 		camFirewrok.bgColor.alpha = 0;
 		camFront = new FlxCamera();
 		camFront.bgColor.alpha = 0;
+		camGlow = new FlxCamera();
+		camGlow.bgColor.alpha = 0;
 		camAchievement = new FlxCamera();
 		camAchievement.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camFirewrok, false);
 		FlxG.cameras.add(camFront, false);
+		FlxG.cameras.add(camGlow, false);
 		FlxG.cameras.add(camAchievement, false);
 
 		camFirewrok.setFilters(blurEff);
 
 		FlxG.cameras.setDefaultDrawTarget(camGame, true);
-		CustomFadeTransition.nextCamera = camFront;
+		CustomFadeTransition.nextCamera = camAchievement;
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
@@ -163,8 +173,8 @@ class MainMenuState extends MusicBeatState
 			add(menuItem.enterShadow);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			menuItem.cameras = [camFront];
-			menuItem.enterShadow.cameras=[camFront];
+			menuItem.cameras = [camGlow];
+			menuItem.enterShadow.cameras=[camAchievement];
 			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 			menuItem.updateHitbox();
 
@@ -231,6 +241,10 @@ class MainMenuState extends MusicBeatState
 		}
 		#end
 
+		//---------------------------------
+		glow = new GlowFilter(0xFFFDF473, 1, 32,32,2,2);
+		camGlow.setFilters([glow]);
+		glowTween = FlxTween.tween(glow,{blurX:4,blurY:4},4,{type: PINGPONG});
 		super.create();
 	}
 
@@ -247,6 +261,8 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		enterCooldown += elapsed;
+
 		if (FlxG.sound.music.volume < 0.8)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -256,7 +272,7 @@ class MainMenuState extends MusicBeatState
 		// var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
 		// camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
 
-		if (!selectedSomethin)
+		if (!selectedSomethin && enterCooldown>1)
 		{
 			if (controls.UI_LEFT_P)
 			{
@@ -279,7 +295,7 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				CustomFadeTransition.nextCamera = camFront;
+				CustomFadeTransition.nextCamera = camAchievement;
 
 				if (optionShit[curSelected] == 'donate')
 				{
@@ -289,6 +305,9 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
+
+					glowTween.cancel();
+					FlxTween.tween(glow,{blurX:32,blurY:32},.25,{type: ONESHOT});
 
 					menuItems.forEach(function(spr:MainMenuItem)
 					{
@@ -306,10 +325,9 @@ class MainMenuState extends MusicBeatState
 						else
 						{
 							spr.MainMenuItemEnter();
-							enterTimer.start(1.5, function(tmr:FlxTimer)
+							enterTimer.start(1, function(tmr:FlxTimer)
 								{
 									var daChoice:String = optionShit[curSelected];
-		
 										switch (daChoice)
 										{
 											case 'StoryMode':
@@ -379,6 +397,7 @@ class MainMenuState extends MusicBeatState
 			item.y=120;
 			item.selectedTween.active=false;
 			root++;
+			item.camera = camFront;
 		}
 
 		menuItems.forEach(function(spr:MainMenuItem)
@@ -394,6 +413,7 @@ class MainMenuState extends MusicBeatState
 				FlxTween.tween(spr,{alpha:1},0.3 ,{ease: FlxEase.sineInOut});
 
 				spr.selectedTween.start();
+				spr.camera = camGlow;
 
 				switch (spr.ID)
 				{
@@ -464,10 +484,13 @@ class MainMenuItem extends FlxSprite
 		selectedTween.active=false;
 		enterShadow.setPosition(300,50);
 		enterShadow.updateHitbox();
-		enterTween=FlxTween.tween(enterShadow.scale,{x:1.2,y:1.2},1,{type: ONESHOT,ease: FlxEase.expoInOut,onComplete: function (flxTween:FlxTween) {
-			FlxTween.tween(enterShadow,{alpha:0},0.5);
-			trace('Enter'+enterShadow.getPosition()+this.getPosition());
-		}});
+		enterTween=FlxTween.tween(enterShadow.scale,{x:1.2,y:1.2},.75,{type: ONESHOT,ease: FlxEase.cubeOut
+			//,onComplete: function (flxTween:FlxTween) {
+			//FlxTween.tween(enterShadow,{alpha:0},0.5);
+			//trace('Enter'+enterShadow.getPosition()+this.getPosition());
+			//		}
+			});
+		FlxTween.tween(enterShadow,{alpha:0},0.75,{type: ONESHOT,ease: FlxEase.smoothStepOut});
 		enterTween.start();
 	}
 
