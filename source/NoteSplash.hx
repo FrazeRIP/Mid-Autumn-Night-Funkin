@@ -47,6 +47,10 @@ class NoteSplash extends FlxSprite
 		if(animation.curAnim != null)animation.curAnim.frameRate = 24 + FlxG.random.int(-2, 2);
 	}
 
+	public function setOffset(x:Float, y:Float) {
+		offset.set(x, y);
+	}
+
 	function loadAnims(skin:String) {
 		frames = Paths.getSparrowAtlas(skin);
 		for (i in 1...3) {
