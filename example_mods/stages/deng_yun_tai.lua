@@ -7,6 +7,8 @@ local secPerBeat
 
 local shineAmount = .3
 
+local okay = false
+
 local lightSprites = {}
 	
 function onCreate()
@@ -57,6 +59,11 @@ function onCreate()
 	makeAnimatedLuaSprite('guest2','stages/deng_yun_tai/Guest/PaolaGuest2',  1100 ,  -100   )
 	scaleObject('guest2', ScaleOffset, ScaleOffset);
 	addAnimationByPrefix('guest2','idle','PaolaGuest2',24,false);
+	
+	makeLuaSprite('halfWhiteFrame', 'common/halfWhiteFrame', 0, 0);
+	setObjectCamera('halfWhiteFrame','camHUD')
+	doTweenColor('halfWhiteFrameC','halfWhiteFrame','FFE0B4',.00001)
+	doTweenAlpha("halfWhiteFrameOK","halfWhiteFrame",0,0.00001,'cubeOut')
 
 	addLuaSprite('PaolaLayer0', false);
 	addLuaSprite('Shine', false);
@@ -86,7 +93,8 @@ function onCreate()
 	generateLightSprite('light8',-174,-350,1.5,.9)
 	generateLightSprite('light9',-174,-525,1.5,.9)
 	generateLightSprite('light10',241,-525,1.5,.9)
-
+	
+	addLuaSprite('halfWhiteFrame', false);
 end
 
 
@@ -117,6 +125,7 @@ function onBeatHit()
 
 	if curBeat == 88 then
 		shineAmount = 1
+		okay = true
 	end
 	
 	if curBeat == 188 then
@@ -131,7 +140,12 @@ function onBeatHit()
 		for key,value in pairs(lightSprites) do 
 			doTweenAlpha(value..'A1', value, shineAmount ,secPerBeat*2,'smoothStepIn')
 		end
+		
+		if okay then
+			doTweenAlpha("halfWhiteFrameA1","halfWhiteFrame",0.8,secPerBeat*2,'smoothStepIn')
+		end
 	end
+
 end
 
 function onCountdownStarted( ... )
@@ -162,6 +176,10 @@ function onTweenCompleted( tag )
 		for key,value in pairs(lightSprites) do 
 			doTweenAlpha(value..'A2', value, 0 ,secPerBeat*2,'smoothStepIn')
 		end
+	end
+
+	if tag == 'halfWhiteFrameA1' then
+		doTweenAlpha("halfWhiteFrameA2","halfWhiteFrame",0.3,secPerBeat*2,'smoothStepIn')
 	end
 	
 	if tag == 'flashA1' then

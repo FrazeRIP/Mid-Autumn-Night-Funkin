@@ -2786,6 +2786,21 @@ class FunkinLua {
 			return null;
 		});
 
+		Lua_helper.add_callback(lua, "makePexParticle", function(name:String,x:Float,y:Float,size:Float,camera:String){
+			PlayState.instance.createPexParticle(name,x,y,size,cameraFromString(camera));
+			return null;
+		});
+		
+		Lua_helper.add_callback(lua, "playParticle", function(name:String,explode:Bool = true, frequency:Float = 0.1, quantity:Int = 0){
+			PlayState.instance.playParticle(name,explode,frequency,quantity);
+			return null;
+		});
+
+		Lua_helper.add_callback(lua, "stopParticle", function(name:String){
+			PlayState.instance.stopParticle(name);
+			return null;
+		});
+
 		Lua_helper.add_callback(lua, "guestOnBridge", function() {
 			PlayState.instance.guestOnBridge();
 			return null;

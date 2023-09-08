@@ -1,10 +1,8 @@
 local secPerBeat=0
 
-
 function onCreate()
 	setProperty("skipCountdown", true)
 	doTweenAlpha("HUDAlpha","camHUD",0,0.00001)
-
 end
 
 function onCreatePost()
@@ -16,12 +14,18 @@ function onCreatePost()
 	setProperty('isCameraOnForcedPos',true)
 	setProperty('cameraSpeed',.6)
 
+	makePexParticle("paola_glow",-1200,1200,2,"camGame")
 	secPerBeat = 60/curBpm
+	
 end
 
 
 function onBeatHit( ... )
 
+	if curBeat == 4 then
+		cameraFlash('camGame','FFFFFF',secPerBeat*2)
+	end
+	
 	if curBeat == 5 then
 	doTweenAlpha("HUDAlpha","camHUD",1,secPerBeat*2,'cubeOut')
 	setProperty('cameraSpeed',1)
@@ -43,6 +47,8 @@ function onBeatHit( ... )
 	if curBeat == 88 then
 		doTweenZoom('camGameZ', 'camGame', .4, secPerBeat*1.5, 'quadOut')
 		triggerEvent('Manage Cam Dir Position Lock', '', '')
+		playParticle("paola_glow",false,0.15)
+		cameraFlash('camGame','FFFFFF',secPerBeat)
 	end
 	--------------------------------------
 	--2nd Zoom
@@ -59,6 +65,7 @@ function onBeatHit( ... )
 	if curBeat == 156 then
 		doTweenZoom('camGameZ', 'camGame', .4, secPerBeat*1.5, 'quadOut')
 		triggerEvent('Manage Cam Dir Position Lock', '', '')
+		playParticle("paola_glow",false,0.08)
 	end
 	--------------------------------------
 	--Final

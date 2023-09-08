@@ -62,6 +62,7 @@ import DialogueBoxPsych;
 import Conductor.Rating;
 
 //Other shit
+import flixel.addons.editors.pex.FlxPexParser;
 import flixel.addons.display.FlxBackdrop; 
 import flixel.util.FlxAxes;
 
@@ -110,7 +111,8 @@ class PlayState extends MusicBeatState
 	public var modchartSounds:Map<String, FlxSound> = new Map<String, FlxSound>();
 	public var modchartTexts:Map<String, ModchartText> = new Map<String, ModchartText>();
 	public var modchartSaves:Map<String, FlxSave> = new Map<String, FlxSave>();
-
+	public var particles:Map<String, FlxEmitter> = new Map<String, FlxEmitter>();
+	
 	//event variables
 	private var isCameraOnForcedPos:Bool = false;
 	#if (haxe >= "4.0.0")
@@ -4545,5 +4547,24 @@ class PlayState extends MusicBeatState
 
 		isGuestAppear = false;
 		guestYOffset = 0;
+	}
+
+	//----------------------------------------------------------------
+	//PexParticle
+	public function createPexParticle(name:String,x:Float,y:Float,size:Float,camera:FlxCamera){
+		var emitter = new FlxEmitter(x, y);
+		FlxPexParser.parse("shared:assets/shared/images/particles/"+name+"/particle.pex","shared:assets/shared/images/particles/"+name+"/texture.png",
+		emitter, size);
+		add(emitter);
+		emitter.cameras = [camera];
+		particles.set(name,emitter);
+	}
+
+	public function playParticle(name:String,explode:Bool = true, frequency:Float = 0.1, quantity:Int = 0){
+		particles.get(name).start(explode,frequency,quantity);
+	}
+
+	public function stopParticle(name:String){
+		particles.get(name).emitting = false;
 	}
 }
