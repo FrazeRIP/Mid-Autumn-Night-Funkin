@@ -34,7 +34,7 @@ function onCreate()
 			setPropertyFromGroup('unspawnNotes', i, 'hitHealth', '0'); --Default value is: 0.023, health gained on hit
 			setPropertyFromGroup('unspawnNotes', i, 'missHealth', '0'); --Default value is: 0.0475, health lost on miss
 			setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
-			
+			setPropertyFromGroup('unspawnNotes', i, 'noteSplashDisabled', true);
 		end
 	end
 	--debugPrint('Script started!')
@@ -46,10 +46,17 @@ function onCreatePost( ... )
 end
 
 
+function onStepHit( ... )
+	if curStep == 1 then
+	makePexParticle("ropry_star",defaultPlayerStrumX2+50,defaultPlayerStrumY2+50,1,"camHUD")
+end
+end
+
 function goodNoteHit(id, noteData, noteType, isSustainNote)
 	if noteType == noteName then
 		triggerEvent("Play Animation", 'hey', 'bf')
 		setProperty("dad.heyTimer",3)
+		playParticle("ropry_star",true)
 	end
 end
 

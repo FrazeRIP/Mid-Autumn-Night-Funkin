@@ -66,6 +66,7 @@ function onBeatHit( ... )
 		doTweenZoom('camGameZ', 'camGame', .4, secPerBeat*1.5, 'quadOut')
 		triggerEvent('Manage Cam Dir Position Lock', '', '')
 		playParticle("paola_glow",false,0.08)
+		cameraFlash('camGame','FFFFFF',secPerBeat)
 	end
 	--------------------------------------
 	--Final

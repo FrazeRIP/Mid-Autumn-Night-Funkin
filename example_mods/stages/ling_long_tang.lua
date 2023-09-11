@@ -3,6 +3,14 @@ local xOffset = -750
 local yOffset = -170
 local scale = .65
 
+local lightColor = 'FFFFFF'
+local defaultColor = 'D9B7A7'
+local darkColor = 'B08F7F'
+
+local bgSprites = {}
+
+local secPerBeat
+
 function onCreate()
 	makeLuaSprite('sky', 'stages/lord_rabbit/RopryLayer0',xOffset+ 0, yOffset+0);
 	setScrollFactor('sky', 0.8, 0.8);
@@ -50,20 +58,73 @@ function onCreate()
 	scaleObject('guest4', scale, scale);
 
 	addLuaSprite('sky', false);
+	table.insert(bgSprites, 'sky')
+
 	addLuaSprite('bg', false);
+	table.insert(bgSprites, 'bg')
+
 	addLuaSprite('window', false);
+	table.insert(bgSprites,'window')
+
 	addLuaSprite('guest0', false);
+	table.insert(bgSprites,'guest0')
+
 	addLuaSprite('guest1', false);
+	table.insert(bgSprites,'guest1')
+
 	addLuaSprite('guest2', false);
+	table.insert(bgSprites,'guest2')
+
 	addLuaSprite('guest3', false);
+	table.insert(bgSprites,'guest3')
+
 	addLuaSprite('rabbit', false);
+	table.insert(bgSprites,'rabbit')
+	
 	addLuaSprite('lantern', true);
+	table.insert(bgSprites,'lantern')
+
+
 	addLuaSprite('light', true);
+	
+	makeLuaSprite('blackGame', '', -1000, -500)
+	makeGraphic('blackGame', 2300, 2000, '000000')
+	addLuaSprite('blackGame', true);
+	doTweenAlpha("blackA", 'blackGame', 0.95,0.0001)
+
 	addLuaSprite('curtain', true);
 	addLuaSprite('guest4', true);
-end
 
+	
+	changeBGColor(defaultColor,0.001)
+end
+ 
 function onBeatHit()
+
+	if curBeat == 112 then
+		changeBGColor(darkColor,secPerBeat*16)
+	end
+
+	if curBeat == 144 then
+		changeBGColor(lightColor,.25)
+	end
+
+	if curBeat == 208 then
+		changeBGColor(defaultColor,secPerBeat*16)
+	end
+
+	---2nd
+	if curBeat == 336 then
+		changeBGColor(darkColor,secPerBeat*16)
+	end
+	if curBeat == 368 then
+		changeBGColor(lightColor,.25)
+	end
+	
+	if curBeat == 432 then
+		changeBGColor(defaultColor,secPerBeat*16)
+	end
+
 	-- triggered 4 times per section
 	if curBeat % 2 == 0 then
 
@@ -87,4 +148,13 @@ function onCreatePost( ... )
 	
 	doTweenX('bfScaleX', 'boyfriend.scale', .5, 0.0001)
 	doTweenY('bfScaley', 'boyfriend.scale', .5, 0.0001)
+	
+	secPerBeat = 60/curBpm
+end
+
+
+function changeBGColor(color,time)
+		for key,value in pairs(bgSprites) do 
+			doTweenColor(value..'C1', value, color,time,'cubeOut')
+		end
 end
