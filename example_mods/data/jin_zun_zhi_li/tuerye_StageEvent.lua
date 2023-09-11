@@ -49,10 +49,10 @@ function onBeatHit( ... )
 	
 	--2st climax-----------------------------------------
 	if curBeat == 336 then
-		isCamSwing = true
 		doTweenZoom('camGameZ', 'camGame', .9, secPerBeat*32)
 	end
 	if curBeat == 368 then
+		isCamSwing = true
 		cameraFlash('camGame','FFFFFF',secPerBeat*2)
 		doTweenZoom('camGameZ', 'camGame', .75, secPerBeat*4, 'quadOut')
 	end
