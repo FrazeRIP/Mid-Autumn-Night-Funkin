@@ -1487,7 +1487,7 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('intro3' + introSoundsSuffix), 0.6);
 					case 1:
 						countdownReady = new FlxSprite().loadGraphic(Paths.image(introAlts[0]));
-						countdownReady.cameras = [camHUD];
+						countdownReady.cameras = [camOther];
 						countdownReady.scrollFactor.set();
 						countdownReady.updateHitbox();
 
@@ -1508,7 +1508,7 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('intro2' + introSoundsSuffix), 0.6);
 					case 2:
 						countdownSet = new FlxSprite().loadGraphic(Paths.image(introAlts[1]));
-						countdownSet.cameras = [camHUD];
+						countdownSet.cameras = [camOther];
 						countdownSet.scrollFactor.set();
 
 						if (PlayState.isPixelStage)
@@ -1528,7 +1528,7 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('intro1' + introSoundsSuffix), 0.6);
 					case 3:
 						countdownGo = new FlxSprite().loadGraphic(Paths.image(introAlts[2]));
-						countdownGo.cameras = [camHUD];
+						countdownGo.cameras = [camOther];
 						countdownGo.scrollFactor.set();
 
 						if (PlayState.isPixelStage)
@@ -4552,12 +4552,14 @@ class PlayState extends MusicBeatState
 	//----------------------------------------------------------------
 	//PexParticle
 	public function createPexParticle(name:String,x:Float,y:Float,size:Float,camera:FlxCamera){
+		trace("Creating created:" +name);
 		var emitter = new FlxEmitter(x, y);
 		FlxPexParser.parse("shared:assets/shared/images/particles/"+name+"/particle.pex","shared:assets/shared/images/particles/"+name+"/texture.png",
 		emitter, size);
 		add(emitter);
 		emitter.cameras = [camera];
 		particles.set(name,emitter);
+		trace("Partice created:" +name);
 	}
 
 	public function playParticle(name:String,explode:Bool = true, frequency:Float = 0.1, quantity:Int = 0){
