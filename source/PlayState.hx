@@ -4566,6 +4566,24 @@ class PlayState extends MusicBeatState
 		particles.get(name).start(explode,frequency,quantity);
 	}
 
+	public function setParticleBlendMode(name:String,blendmode:BlendMode){
+		particles.get(name).blend = blendmode;
+	}
+
+	public function setParticleAcc(name:String,factorX:Int,factorY:Int){
+		var particle = particles.get(name);
+		particle.acceleration.set(
+			particle.acceleration.start.min.x*factorX,
+			particle.acceleration.start.min.y*factorX,
+			particle.acceleration.start.max.x*factorY,
+			particle.acceleration.start.max.y*factorY,
+			particle.acceleration.end.min.x*factorX,
+			particle.acceleration.end.min.y*factorX,
+			particle.acceleration.end.max.x*factorY,
+			particle.acceleration.end.max.y*factorY
+			);
+	}
+
 	public function stopParticle(name:String){
 		particles.get(name).emitting = false;
 	}
