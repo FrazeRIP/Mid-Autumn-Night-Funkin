@@ -2100,6 +2100,7 @@ class FunkinLua {
 				return true;
 			}
 
+
 			var killMe:Array<String> = obj.split('.');
 			var spr:FlxSprite = getObjectDirectly(killMe[0]);
 			if(killMe.length > 1) {
@@ -2113,6 +2114,17 @@ class FunkinLua {
 			luaTrace("Object " + obj + " doesn't exist!", false, false, FlxColor.RED);
 			return false;
 		});
+		
+		Lua_helper.add_callback(lua, "setParticleBlendMode", function(obj:String, blend:String = '') {
+			PlayState.instance.setParticleBlendMode(obj,blendModeFromString(blend));
+			return true;
+		});
+
+		Lua_helper.add_callback(lua, "setParticleAcc", function(name:String, factorX:Int, factorY:Int){
+			PlayState.instance.setParticleAcc(name,factorX,factorY);
+			return true;
+		});
+
 		Lua_helper.add_callback(lua, "screenCenter", function(obj:String, pos:String = 'xy') {
 			var spr:FlxSprite = PlayState.instance.getLuaObject(obj);
 

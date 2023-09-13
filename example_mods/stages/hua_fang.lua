@@ -60,14 +60,19 @@ function onCreate()
 	addLuaSprite('guest1', false);
 	addLuaSprite('bush_front', false);
 	addLuaSprite('branch', false);
+	
+	makePexParticle("nico_petal",-1200,100,1,"camGame")
+	setParticleBlendMode("nico_petal",'normal')
 	addLuaSprite('guest2', true);
 end
 
 function onBeatHit()
 	-- triggered 4 times per section
+	if curBeat % 2 == 0 then
 	objectPlayAnimation('guest0','idle',true);
 	objectPlayAnimation('guest1','idle',true);
 	objectPlayAnimation('guest2','idle',true);
+	end
 end
 
 
