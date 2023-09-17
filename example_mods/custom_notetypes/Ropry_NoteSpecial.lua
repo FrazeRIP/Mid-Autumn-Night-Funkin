@@ -49,7 +49,7 @@ end
 function onStepHit( ... )
 	if curStep == 1 then
 	makePexParticle("ropry_star",defaultPlayerStrumX2+50,defaultPlayerStrumY2+50,1,"camHUD")
-end
+	end
 end
 
 function goodNoteHit(id, noteData, noteType, isSustainNote)
@@ -57,6 +57,7 @@ function goodNoteHit(id, noteData, noteType, isSustainNote)
 		triggerEvent("Play Animation", 'hey', 'bf')
 		setProperty("dad.heyTimer",3)
 		playParticle("ropry_star",true)
+		playSound('damage',.5)
 	end
 end
 
