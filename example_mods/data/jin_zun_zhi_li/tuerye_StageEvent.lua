@@ -1,5 +1,3 @@
-
-
 function onCreate()
 	doTweenAlpha("HUDAlpha","camHUD",0,0.00001)
 end
@@ -22,7 +20,6 @@ function onCreatePost()
 end
 
 function onBeatHit( ... )
-
 	if curBeat == 14 then
 		doTweenAlpha("HUDAlpha","camHUD",1,secPerBeat*2)
 		setProperty('isCameraOnForcedPos',false)

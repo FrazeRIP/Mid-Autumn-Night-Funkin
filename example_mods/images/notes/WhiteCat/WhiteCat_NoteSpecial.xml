@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="WhiteCat_NoteSpecial.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="blue0000" x="10" y="10" width="165" height="151"/>
+	<SubTexture name="green0000" x="10" y="10" width="165" height="151"/>
+	<SubTexture name="purple0000" x="10" y="10" width="165" height="151"/>
+	<SubTexture name="red0000" x="10" y="10" width="165" height="151"/>
+</TextureAtlas>
