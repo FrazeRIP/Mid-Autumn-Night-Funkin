@@ -4,6 +4,11 @@ function onCreatePost()
 	setProperty('camZooming',false)
 end
 
+function onUpdate( elapsed)
+	secPerBeat = 60/curBpm
+end
+
+
 function onEvent(name, value1, value2)
     if name == 'GameHop' then
         defaultZoom = getProperty('camGame.zoom')

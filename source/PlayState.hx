@@ -684,14 +684,14 @@ class PlayState extends MusicBeatState
 
 			var bg:ModchartSprite = new ModchartSprite(0, 0);
 			bg.loadGraphic(Paths.image('stages/ying_he_xi/BG'));
-			bg.antialiasing = ClientPrefs.globalAntialiasing;
+			bg.antialiasing = false;
 			bg.active = true;
 			bgGroup.add(bg);
 			modchartSprites.set("BG", bg);
 			
 			var bgl:ModchartSprite = new ModchartSprite(0, 0);
 			bgl.loadGraphic(Paths.image('stages/ying_he_xi/BG_Light'));
-			bgl.antialiasing = ClientPrefs.globalAntialiasing;
+			bgl.antialiasing = false;
 			modchartSprites.set("BGLight", bgl);
 			bgGroup.add(bgl);
 			bgl.active = true;
@@ -897,6 +897,7 @@ class PlayState extends MusicBeatState
 		moveCameraSection();
 		if(curStage == 'ying_he_xi'){
 			healthBarBG2 = new AttachedSprite('healthBar3');
+			healthBarBG2.antialiasing = false;
 		}else{
 			healthBarBG2 = new AttachedSprite('healthBar2');
 		}
