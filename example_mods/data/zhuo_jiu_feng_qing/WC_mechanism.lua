@@ -47,7 +47,6 @@ function onCreatePost()
 		setObjectCamera('icon'..itemsArray[i], 'camHUD') 
 		addLuaSprite('icon'..itemsArray[i], true)
 		
-		makePexParticle("wc_"..itemsArray[i],itemPosArray[i] +30, downScollUIItemY +30,1,"camHUD")
 		
 		doTweenColor('icon'..itemsArray[i].."C",'icon'..itemsArray[i],'2C2C2C',.0001)
 		doTweenAlpha('icon'..itemsArray[i].."A", 'icon'..itemsArray[i], 0,0.0001)
@@ -57,11 +56,13 @@ function onCreatePost()
 		doTweenY('inventory01Y', 'inventory01', downScollY, 0.0001)
 		for i = 1, #itemsArray do
 			doTweenY('icon'..itemsArray[i].."Y", 'icon'..itemsArray[i], downScollUIItemY, 0.0001)
+			makePexParticle("wc_"..itemsArray[i],itemPosArray[i] +30, downScollUIItemY +30,1,"camHUD")
 		end
 	else
 		doTweenY('inventory01Y', 'inventory01', upScollY, 0.0001)
 		for i = 1, #itemsArray do
 			doTweenY('icon'..itemsArray[i].."Y", 'icon'..itemsArray[i], upScollUIItemY, 0.0001)
+			makePexParticle("wc_"..itemsArray[i],itemPosArray[i] +30, upScollUIItemY +30,1,"camHUD")
 		end
 	end
 	

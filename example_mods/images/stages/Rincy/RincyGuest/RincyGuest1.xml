@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="RincyGuest1.png">
-	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="RincyGuest10000" x="10" y="10" width="270" height="328"/>
-	<SubTexture name="RincyGuest10001" x="300" y="10" width="270" height="328"/>
-	<SubTexture name="RincyGuest10002" x="590" y="10" width="270" height="328"/>
-	<SubTexture name="RincyGuest10003" x="10" y="358" width="270" height="328"/>
-	<SubTexture name="RincyGuest10004" x="300" y="358" width="270" height="328"/>
-	<SubTexture name="RincyGuest10005" x="590" y="358" width="270" height="328"/>
-	<SubTexture name="RincyGuest10006" x="590" y="358" width="270" height="328"/>
+	<SubTexture name="RincyGuest10000" x="0" y="0" width="551" height="450"/>
+	<SubTexture name="RincyGuest10001" x="551" y="0" width="551" height="450"/>
+	<SubTexture name="RincyGuest10002" x="1102" y="0" width="551" height="450"/>
+	<SubTexture name="RincyGuest10003" x="0" y="450" width="551" height="450"/>
+	<SubTexture name="RincyGuest10004" x="551" y="0" width="551" height="450"/>
+	<SubTexture name="RincyGuest10005" x="551" y="0" width="551" height="450"/>
 </TextureAtlas>

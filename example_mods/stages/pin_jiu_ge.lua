@@ -22,6 +22,8 @@ function onCreate()
 	makeLuaSprite('Layer3', 'stages/pin_jiu_ge/WhitecatLayer3',0 +Xoffset, 0 + Yoffset)
 	scaleObject('Layer3', ScaleOffset, ScaleOffset);
 	doTweenAlpha("Layer3A", 'Layer3', 0,0.001)
+	makeLuaSprite('Layer4', 'stages/pin_jiu_ge/WhitecatLayer4',0 +Xoffset, 0 + Yoffset)
+	scaleObject('Layer4', ScaleOffset, ScaleOffset);
 
 	makeAnimatedLuaSprite('guest0','stages/pin_jiu_ge/WhitecatGuest/WhitecatGuest0', -850 , 230 )
 	scaleObject('guest0', ScaleOffset-.4, ScaleOffset-.4);
@@ -42,6 +44,7 @@ function onCreate()
 	addLuaSprite('Layer0', false);
 	addLuaSprite('Layer1', false);
 	addLuaSprite('Layer2', false);
+	addLuaSprite('Layer4', false);
 
 	addLuaSprite('guest0', false);
 	addLuaSprite('guest1', false);

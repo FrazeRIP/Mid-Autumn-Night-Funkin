@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="RincyHenshin.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="RincyHenshinA0000" x="10" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0001" x="1161" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0002" x="2312" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0003" x="3463" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0004" x="4614" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0005" x="5765" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0006" x="6916" y="10" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0007" x="10" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0008" x="1161" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0009" x="2312" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0010" x="3463" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0011" x="4614" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0012" x="5765" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0013" x="6916" y="1313" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0014" x="10" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0015" x="1161" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0016" x="2312" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinA0017" x="3463" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0000" x="4634" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0001" x="5785" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0002" x="6936" y="2616" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0003" x="10" y="3919" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0004" x="1161" y="3919" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0005" x="2312" y="3919" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0006" x="3463" y="3919" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0007" x="4614" y="3919" width="1131" height="1283"/>
+	<SubTexture name="RincyHenshinB0008" x="5765" y="3919" width="1131" height="1283"/>
+</TextureAtlas>

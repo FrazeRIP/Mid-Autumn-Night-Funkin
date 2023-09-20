@@ -8,22 +8,19 @@ local scale = .65
 function onCreate()
 	local path = folderName..'/'..stageName..'/'
 
-
-	
 	makeAnimatedLuaSprite('bg0', path..'RincyLayer0', xOffset+420, yOffset-80);
 	addAnimationByPrefix('bg0','RincyLayer0','RincyLayer0',48,true);
 	setScrollFactor('bg0', .3, .3);
 	scaleObject('bg0', scale, scale);
 	addLuaSprite('bg0', false);
 
-	
-	makeAnimatedLuaSprite('guest1', path..'/RincyGuest/'..'RincyGuest1',  875+30, 220);
+	makeAnimatedLuaSprite('guest1', path..'/RincyGuest/'..'RincyGuest1',  850, 220);
 	addAnimationByPrefix('guest1','RincyGuest1','RincyGuest1',24,false);
 	setScrollFactor('guest1', .6, .5);
 	scaleObject('guest1', scale, scale);
 	addLuaSprite('guest1', false);
 	
-	makeAnimatedLuaSprite('guest2', path..'/RincyGuest/'..'RincyGuest2', 875+50, -30);
+	makeAnimatedLuaSprite('guest2', path..'/RincyGuest/'..'RincyGuest2', 875, -80);
 	addAnimationByPrefix('guest2','RincyGuest2','RincyGuest2',24,false);	
 	setScrollFactor('guest2', .6, .5);
 	scaleObject('guest2', scale, scale);	
@@ -33,7 +30,12 @@ function onCreate()
 	setScrollFactor('bg7', .6, .5);
 	scaleObject('bg7', scale-0.1, scale-0.1);
 	addLuaSprite('bg7', false);
-
+	
+	makeLuaSprite('whiteFade2','mechanism/Rincy/Ink/whiteFade', -1000,-150);
+	scaleObject('whiteFade2', 2, 1.5);
+	addLuaSprite('whiteFade2', false);
+	setBlendMode('whiteFade2', 'add')
+	doTweenAlpha("whiteFade2A","whiteFade2",0, 0.0001)
 
 	makeLuaSprite('bg1', path..'RincyLayer1', xOffset+180, yOffset+0);
 	setScrollFactor('bg1', 1, 1);
@@ -44,8 +46,6 @@ function onCreate()
 	setScrollFactor('bg2', 1, 1);
 	scaleObject('bg2', scale, scale);
 	addLuaSprite('bg2', false);
-
-	
 
 	makeLuaSprite('bg3', path..'RincyLayer3', xOffset+110, yOffset+0);
 	setScrollFactor('bg3', 1, 1);
@@ -75,32 +75,30 @@ function onCreate()
 
 
 	
-	makeAnimatedLuaSprite('guest0', path..'/RincyGuest/'..'RincyGuest0', 440, 280);
+	makeAnimatedLuaSprite('guest0', path..'/RincyGuest/'..'RincyGuest0', 380, 200);
 	addAnimationByPrefix('guest0','RincyGuest0','RincyGuest0',24,false);
 	setScrollFactor('guest0', .9, .9);
 	scaleObject('guest0', scale, scale);
 	addLuaSprite('guest0', false);
 	
 	
-	makeAnimatedLuaSprite('guest3', path..'/RincyGuest/'..'RincyGuest3', xOffset-110, 600);
+	makeAnimatedLuaSprite('guest3', path..'/RincyGuest/'..'RincyGuest3', xOffset-50, 600);
 	addAnimationByPrefix('guest3','RincyGuest3','RincyGuest3',24,false);
-	setScrollFactor('guest3', 1.5, 1);
-	scaleObject('guest3', scale, scale);
+	setScrollFactor('guest3', 1.25, 1);
+	scaleObject('guest3', scale+.05, scale+.05);
 	addLuaSprite('guest3', true);
 	
-	makeAnimatedLuaSprite('guest4', path..'/RincyGuest/'..'RincyGuest4', -650, 250);
+	makeAnimatedLuaSprite('guest4', path..'/RincyGuest/'..'RincyGuest4', -850, -50);
 	addAnimationByPrefix('guest4','RincyGuest4','RincyGuest4',24,false);
 	setScrollFactor('guest4', 1, 1);
 	scaleObject('guest4', scale, scale);
 	addLuaSprite('guest4', false);
 	
-	makeAnimatedLuaSprite('guest5', path..'/RincyGuest/'..'RincyGuest5', 800, 220);
+	makeAnimatedLuaSprite('guest5', path..'/RincyGuest/'..'RincyGuest5',-650, -110);
 	addAnimationByPrefix('guest5','RincyGuest5','RincyGuest5',24,false);
 	setScrollFactor('guest5', 1, 1);
 	scaleObject('guest5',  scale, scale);
 	addLuaSprite('guest5', false);
-
-
 end
 
 
@@ -114,10 +112,12 @@ end
 
 
 function onBeatHit()
-	objectPlayAnimation('guest0','RincyGuest0',true);
-	objectPlayAnimation('guest1','RincyGuest1',true);
-	objectPlayAnimation('guest2','RincyGuest2',true);
-	objectPlayAnimation('guest3','RincyGuest3',true);
-	objectPlayAnimation('guest4','RincyGuest4',true);
-	objectPlayAnimation('guest5','RincyGuest5',true);
+	if curBeat % 2 == 0 then
+		objectPlayAnimation('guest0','RincyGuest0',true);
+		objectPlayAnimation('guest1','RincyGuest1',true);
+		objectPlayAnimation('guest2','RincyGuest2',true);
+		objectPlayAnimation('guest3','RincyGuest3',true);
+		objectPlayAnimation('guest4','RincyGuest4',true);
+		objectPlayAnimation('guest5','RincyGuest5',true);
+	end
 end
