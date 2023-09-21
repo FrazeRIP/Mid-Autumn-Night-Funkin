@@ -76,11 +76,15 @@ function onBeatHit( ... )
 		doTweenX('fogX', 'fog', -500,secPerBeat*32)
 	end
 
+	if curBeat == 116 then
+		setProperty('camFollow.x', 100)
+		doTweenZoom('camGameZ', 'camGame', .8, secPerBeat*2,'cubeOut')
+	end
+
 	if curBeat == 118 then
 	    for i = 0,3 do
 			noteTweenAlpha('NoteA'..i, i, 1, secPerBeat*2, 'cubeOut')
 		end
-		
 	end
 
 	if curBeat == 119 then

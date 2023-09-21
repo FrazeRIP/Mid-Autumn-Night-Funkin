@@ -47,6 +47,50 @@
 		{
 			"loop": false,
 			"offsets": [
+				31,
+				0
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "RincyA singLEFT",
+			"indices": [ 1, 2, 3 ]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				5
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "RincyA singUP",
+			"indices": [ 1, 2, 3 ]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-22,
+				-1
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "RincyA singRIGHT",
+			"indices": [ 1, 2, 3 ]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-4
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "RincyA singDOWN",
+			"indices": [1,2,3]
+		},
+		{
+			"loop": false,
+			"offsets": [
 				0,
 				0
 			],

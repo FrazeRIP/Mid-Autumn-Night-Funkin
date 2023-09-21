@@ -14,13 +14,13 @@ function onCreate()
 	scaleObject('bg0', scale, scale);
 	addLuaSprite('bg0', false);
 
-	makeAnimatedLuaSprite('guest1', path..'/RincyGuest/'..'RincyGuest1',  850, 220);
+	makeAnimatedLuaSprite('guest1', path..'/RincyGuest/'..'RincyGuest1',  820, 190);
 	addAnimationByPrefix('guest1','RincyGuest1','RincyGuest1',24,false);
 	setScrollFactor('guest1', .6, .5);
 	scaleObject('guest1', scale, scale);
 	addLuaSprite('guest1', false);
 	
-	makeAnimatedLuaSprite('guest2', path..'/RincyGuest/'..'RincyGuest2', 875, -80);
+	makeAnimatedLuaSprite('guest2', path..'/RincyGuest/'..'RincyGuest2', 830, -100);
 	addAnimationByPrefix('guest2','RincyGuest2','RincyGuest2',24,false);	
 	setScrollFactor('guest2', .6, .5);
 	scaleObject('guest2', scale, scale);	
@@ -75,26 +75,26 @@ function onCreate()
 
 
 	
-	makeAnimatedLuaSprite('guest0', path..'/RincyGuest/'..'RincyGuest0', 380, 200);
+	makeAnimatedLuaSprite('guest0', path..'/RincyGuest/'..'RincyGuest0', 380, 180);
 	addAnimationByPrefix('guest0','RincyGuest0','RincyGuest0',24,false);
 	setScrollFactor('guest0', .9, .9);
 	scaleObject('guest0', scale, scale);
 	addLuaSprite('guest0', false);
 	
 	
-	makeAnimatedLuaSprite('guest3', path..'/RincyGuest/'..'RincyGuest3', xOffset-50, 600);
+	makeAnimatedLuaSprite('guest3', path..'/RincyGuest/'..'RincyGuest3', xOffset-50, 530);
 	addAnimationByPrefix('guest3','RincyGuest3','RincyGuest3',24,false);
 	setScrollFactor('guest3', 1.25, 1);
 	scaleObject('guest3', scale+.05, scale+.05);
 	addLuaSprite('guest3', true);
 	
-	makeAnimatedLuaSprite('guest4', path..'/RincyGuest/'..'RincyGuest4', -850, -50);
+	makeAnimatedLuaSprite('guest4', path..'/RincyGuest/'..'RincyGuest4', -850, -80);
 	addAnimationByPrefix('guest4','RincyGuest4','RincyGuest4',24,false);
 	setScrollFactor('guest4', 1, 1);
 	scaleObject('guest4', scale, scale);
 	addLuaSprite('guest4', false);
 	
-	makeAnimatedLuaSprite('guest5', path..'/RincyGuest/'..'RincyGuest5',-650, -110);
+	makeAnimatedLuaSprite('guest5', path..'/RincyGuest/'..'RincyGuest5',-600, -130);
 	addAnimationByPrefix('guest5','RincyGuest5','RincyGuest5',24,false);
 	setScrollFactor('guest5', 1, 1);
 	scaleObject('guest5',  scale, scale);

@@ -23,8 +23,7 @@ end
 function onBeatHit( ... )
 	if curBeat == 116 then
 		playSound('rc_transformation',1)
-		setProperty('dad.visible', 'false')
-		doTweenAlpha("RincyHenshinA","RincyHenshin",1,0.00001,'cubeOut')
+		doTweenAlpha("RincyHenshinA33","RincyHenshin",1,0.00001,'cubeOut')
 		objectPlayAnimation('RincyHenshin', 'RincyHenshinA',true)
 		doTweenY('RincyHenshinY', 'RincyHenshin', defaultOpponentY -60 , secPerBeat*4, 'quadIn')
 	end
@@ -39,5 +38,11 @@ function onBeatHit( ... )
 		doTweenAlpha("boyfriendA","boyfriend",1,0.00001,'cubeOut')
 		doTweenAlpha("RincyHenshinA","RincyHenshin",0,0.00001,'cubeOut')
 		triggerEvent('Manage Cam Dir Properties','0,50','opponent')
+	end
+end
+
+function onTweenCompleted( tag )
+	if tag == "RincyHenshinA33" then
+		setProperty('dad.visible', 'false')
 	end
 end
