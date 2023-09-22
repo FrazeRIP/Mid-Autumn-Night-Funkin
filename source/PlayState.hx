@@ -93,16 +93,16 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['You Suck!', 0.2], //From 0% to 19%
-		['Shit', 0.4], //From 20% to 39%
-		['Bad', 0.5], //From 40% to 49%
-		['Bruh', 0.6], //From 50% to 59%
-		['Meh', 0.69], //From 60% to 68%
-		['Nice', 0.7], //69%
-		['Good', 0.8], //From 70% to 79%
-		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['月黑风高', 0.2], //From 0% to 19%
+		['残月当空', 0.4], //From 20% to 39%
+		['月色恬淡', 0.5], //From 40% to 49%
+		['月平风静', 0.6], //From 50% to 59%
+		['月明星稀', 0.69], //From 60% to 68%
+		['清风明月', 0.7], //69%
+		['星月交辉', 0.8], //From 70% to 79%
+		['闭月羞花', 0.9], //From 80% to 89%
+		['皓月千里', 1], //From 90% to 99%
+		['皎月无暇', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
 	public var modchartSprites:Map<String, ModchartSprite> = new Map<String, ModchartSprite>();
@@ -2197,8 +2197,12 @@ class PlayState extends MusicBeatState
 	var canPause:Bool = true;
 	var limoSpeed:Float = 0;
 
+	public var forceAnimTimer:Float = 0;
+
 	override public function update(elapsed:Float)
 	{
+		forceAnimTimer = forceAnimTimer - elapsed;
+
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
@@ -3764,7 +3768,9 @@ class PlayState extends MusicBeatState
 			});*/
 
 			if(boyfriend.hasMissAnimations) {
-				boyfriend.playAnim(singAnimations[Std.int(Math.abs(direction))] + 'miss', true);
+				if(forceAnimTimer <=0){
+					boyfriend.playAnim(singAnimations[Std.int(Math.abs(direction))] + 'miss', true);
+				}
 			}
 			vocals.volume = 0;
 		}
@@ -3890,8 +3896,10 @@ class PlayState extends MusicBeatState
 				}
 				else
 				{
-					boyfriend.playAnim(animToPlay + note.animSuffix, true);
-					boyfriend.holdTimer = 0;
+					if(forceAnimTimer<=0){
+						boyfriend.playAnim(animToPlay + note.animSuffix, true);
+						boyfriend.holdTimer = 0;
+					}
 				}
 
 				if(note.noteType == 'Hey!') {
@@ -3907,6 +3915,7 @@ class PlayState extends MusicBeatState
 						gf.heyTimer = 0.6;
 					}
 				}
+
 			}
 
 			if(cpuControlled) {

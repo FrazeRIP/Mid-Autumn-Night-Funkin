@@ -11,7 +11,7 @@ function onCreate()
 	setScrollFactor('sky', 0.9, 0.9);
 	scaleObject('sky', scale, scale);	
 
-	makeAnimatedLuaSprite('bg','stages/calligraphy/SproutLayer1', xOffset+10, yOffset+436);
+	makeAnimatedLuaSprite('bg','stages/calligraphy/SproutLayer1', xOffset-40, yOffset+436);
 	addAnimationByPrefix('bg','idle','SproutLayer1',24,false);
 	scaleObject('bg', scale, scale);	
 
@@ -25,17 +25,18 @@ function onCreate()
 	addAnimationByPrefix('guest0','idle','SproutGuest0',24,false);
 	scaleObject('guest0', scale, scale);	
 
-	makeAnimatedLuaSprite('guest1','stages/calligraphy/SproutGuest/SproutGuest1',  xOffset+1200, yOffset+700);
+	makeAnimatedLuaSprite('guest1','stages/calligraphy/SproutGuest/SproutGuest1',  xOffset+1165, yOffset+700);
 	addAnimationByPrefix('guest1','idle','SproutGuest1',24,false);
 	scaleObject('guest1', scale+.2, scale+.2);	
 
-	makeAnimatedLuaSprite('guest2','stages/calligraphy/SproutGuest/SproutGuest2',  xOffset+1525, yOffset+650);
+	makeAnimatedLuaSprite('guest2','stages/calligraphy/SproutGuest/SproutGuest2',  xOffset+1500, yOffset+650);
 	addAnimationByPrefix('guest2','idle','SproutGuest2',24,false);
 	scaleObject('guest2', scale+.2, scale+.2);		
 	
-	makeAnimatedLuaSprite('guest3','stages/calligraphy/SproutGuest/SproutGuest3',  xOffset+0, yOffset+1230);
+	makeAnimatedLuaSprite('guest3','stages/calligraphy/SproutGuest/SproutGuest3',  xOffset+0, yOffset+1160);
 	addAnimationByPrefix('guest3','idle','SproutGuest3',24,false);
 	scaleObject('guest3', scale, scale);	
+	setScrollFactor('guest3', 1, 0.3);
 
 	addLuaSprite('sky', false);
 	addLuaSprite('bg', false);
@@ -49,11 +50,13 @@ end
 
 function onBeatHit()
 	-- triggered 4 times per section
+	if curBeat % 2 == 0 then
 	objectPlayAnimation('bg','idle',true);
 	objectPlayAnimation('guest0','idle',true);
 	objectPlayAnimation('guest1','idle',true);
 	objectPlayAnimation('guest2','idle',true);
 	objectPlayAnimation('guest3','idle',true);
+	end
 end
 
 function onCreatePost( ... )

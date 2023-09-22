@@ -265,7 +265,7 @@ class Character extends FlxSprite
 				heyTimer -= elapsed;
 				if(heyTimer <= 0)
 				{
-					if(specialAnim && animation.curAnim.name == 'hey' || animation.curAnim.name == 'cheer')
+					if(specialAnim && animation.curAnim.name == 'hey' || animation.curAnim.name == 'cheer'|| animation.curAnim.name == 'dodge')
 					{
 						specialAnim = false;
 						dance();
