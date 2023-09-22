@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="Sprout_NoteSpecial.png">
-	<!-- Created with Adobe Animate version 20.0.2.22168 -->
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="down SHOOSH note0000" x="100" y="100" width="244" height="240"/>
-	<SubTexture name="left SHOOSH note0000" x="100" y="440" width="240" height="244"/>
-	<SubTexture name="right SHOOSH note0000" x="444" y="100" width="240" height="244"/>
-	<SubTexture name="up SHOOSH note0000" x="440" y="444" width="244" height="239"/>
+	<SubTexture name="blue0000" x="0" y="0" width="154" height="154"/>
+	<SubTexture name="green0000" x="0" y="154" width="154" height="154"/>
+	<SubTexture name="purple0000" x="0" y="308" width="154" height="154"/>
+	<SubTexture name="red0000" x="154" y="0" width="154" height="154"/>
 </TextureAtlas>
