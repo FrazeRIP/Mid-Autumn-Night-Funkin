@@ -7,7 +7,9 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxSubState;
 import flixel.addons.transition.FlxTransitionableState;
+import flixel.input.mouse.FlxMouseEventManager;
 import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.group.FlxGroup;
 import flixel.math.FlxMath;
@@ -25,7 +27,6 @@ class StoryMenuState extends MusicBeatState
 {
 	public static var weekCompleted:Map<String, Bool> = new Map<String, Bool>();
 
-
 	// var scoreText:FlxText;
 
 	private static var lastDifficultyName:String = '';
@@ -33,6 +34,9 @@ class StoryMenuState extends MusicBeatState
 
 	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
+
+	var puzzleButton:PuzzleStartButton;
+	var puzzleButtonEnable:Bool=true;
 
 	public static var curWeek:Int = 0;
 
@@ -54,12 +58,22 @@ class StoryMenuState extends MusicBeatState
 	var weekIndicators:FlxTypedGroup<FlxSprite>;
 
 	var loadedWeeks:Array<WeekData> = [];
-
+	var mouseSprite:FlxSprite;
 	override function create()
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
+
+		SaveData.LoadUnLock();
+
+		if(SaveData.STORY_UNLOCK_SAVE[0]==0)
+		SaveData.StoryStateUpdate('tutorial',1);
 		
+		SaveData.StoryStateUpdate("hua_deng_chu_shang",1);
+		
+		trace(SaveData.levelName);
+		trace(SaveData.STORY_UNLOCK_SAVE);
+
 		var mouseSprite=new FlxSprite().loadGraphic(Paths.image('UI/Mouse0',"mid-autumn"));
 		FlxG.mouse.load(mouseSprite.pixels);
 
@@ -83,14 +97,27 @@ class StoryMenuState extends MusicBeatState
 		for (i in 0...WeekData.weeksList.length)
 		{
 			var weekFile:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[i]);
-			var isLocked:Bool = weekIsLocked(WeekData.weeksList[i]);
-			if(!isLocked || !weekFile.hiddenUntilUnlocked)
+			// var isLocked:Bool = weekIsLocked(WeekData.weeksList[i]);
+			var isLocked:Bool=false;
+			if(SaveData.STORY_UNLOCK_SAVE[i]==0)
+				isLocked = true;
+			else
+				isLocked = false;
+			loadedWeeks.push(weekFile);
+			WeekData.setDirectoryFromWeek(weekFile);
+			num++;
+			var weekIndicator:FlxSprite=new FlxSprite(390+i*13,580+(i%2*13)).loadGraphic(Paths.image('storystate/WeekIndicator','mid-autumn'));
+			weekIndicator.antialiasing = ClientPrefs.globalAntialiasing;
+			if(isLocked)
 			{
-				loadedWeeks.push(weekFile);
-				WeekData.setDirectoryFromWeek(weekFile);
-				num++;
+				weekIndicator.color=0xFFF10000;
 			}
-			var weekIndicator:FlxSprite=new FlxSprite(390+i*15,640+(i%2*15)).loadGraphic(Paths.image('storystate/WeekIndicator','mid-autumn'));
+			else
+			{
+				weekIndicator.color=0xFF3F3F3F;
+			}
+			weekIndicator.setGraphicSize(20,20);
+			weekIndicator.updateHitbox();
 			weekIndicators.add(weekIndicator);
 		}
 		add(weekIndicators);
@@ -101,6 +128,23 @@ class StoryMenuState extends MusicBeatState
 		selectionSprite.updateHitbox();
 		add(selectionSprite);
 
+		puzzleButton=new PuzzleStartButton(-400,560);
+		puzzleButton.loadGraphic(Paths.image("storystate/puzzle/StartButton","mid-autumn"));
+		puzzleButton.antialiasing = ClientPrefs.globalAntialiasing;
+
+		puzzleButton.onMouseDownCallback=function () {
+			persistentUpdate = false;
+			FlxG.sound.play(Paths.sound('storystate/paper','mid-autumn'));
+			PuzzleSubStateOpen();
+		};
+		puzzleButton.onMouseOverCallback=function () {
+			FlxTween.tween(puzzleButton,{angle:10},0.2,{type:ONESHOT});
+		}
+
+		puzzleButton.onMouseOutCallback=function () {
+			FlxTween.tween(puzzleButton,{angle:0},0.2,{type:ONESHOT});
+		}
+		add(puzzleButton);
 		changeWeek();
 		changeDifficulty();
 
@@ -110,8 +154,16 @@ class StoryMenuState extends MusicBeatState
 
 	override function closeSubState() {
 		persistentUpdate = true;
+		FlxTween.tween(puzzleButton,{x:-400},0.5);
+		puzzleButton.startEvnet();
 		changeWeek();
 		super.closeSubState();
+	}
+
+	override function openSubState(SubState:FlxSubState) {
+		puzzleButton.stopEvnet();
+		puzzleButton.setPosition(-600,560);
+		super.openSubState(SubState);
 	}
 
 	override function update(elapsed:Float)
@@ -150,8 +202,7 @@ class StoryMenuState extends MusicBeatState
 			if(FlxG.keys.justPressed.F1)
 			{
 				persistentUpdate = false;
-				FlxG.sound.play(Paths.sound('storystate/paper','mid-autumn'));
-				openSubState(new PuzzleSubState());
+				PuzzleSubStateOpen();
 			}
 			else if(controls.RESET)
 			{
@@ -163,6 +214,7 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
+
 		}
 
 		if (controls.BACK && !movedBack && !selectedWeek)
@@ -172,6 +224,16 @@ class StoryMenuState extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
+		if(curWeek>11)
+		{
+			puzzleButton.color=0x75272727;
+			puzzleButton.stopEvnet();
+		}
+		else
+		{
+			puzzleButton.color=0x00FFFFFF;
+			puzzleButton.startEvnet();
+		}
 		super.update(elapsed);
 
 	}
@@ -179,6 +241,14 @@ class StoryMenuState extends MusicBeatState
 	var movedBack:Bool = false;
 	var selectedWeek:Bool = false;
 	var stopspamming:Bool = false;
+
+	function PuzzleSubStateOpen() {
+
+		FlxG.sound.play(Paths.sound('storystate/paper','mid-autumn'));
+		FlxTween.tween(puzzleButton,{x:-600,y:520},0.5,{type: ONESHOT,onComplete: function(twn:FlxTween) {
+			openSubState(new PuzzleSubState());
+		}});
+	}
 
 	function selectWeek()
 	{
@@ -240,7 +310,7 @@ class StoryMenuState extends MusicBeatState
 
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
-
+	var tween:FlxTween;
 	function changeWeek(change:Int = 0):Void
 	{
 		curWeek += change;
@@ -250,7 +320,36 @@ class StoryMenuState extends MusicBeatState
 		if (curWeek < 0)
 			curWeek = loadedWeeks.length - 1;
 
+		if(tween!=null)
+		tween.cancel();
+		selectionSprite.alpha=0;
 		selectionSprite.loadGraphic(Paths.image("storystate/"+loadedWeeks[curWeek].storyName,"mid-autumn"));
+		tween=FlxTween.tween(selectionSprite,{alpha:1},0.5);
+
+		for (i in 0...WeekData.weeksList.length)
+		{
+			// var isLocked:Bool = weekIsLocked(WeekData.weeksList[i]);
+			var isLocked:Bool=false;
+			if(SaveData.STORY_UNLOCK_SAVE[i]==0)
+				isLocked = true;
+			else
+				isLocked = false;
+
+			if(isLocked)
+			{
+				weekIndicators.members[i].color=0xFFFF0000;
+			}
+			else
+			{
+				weekIndicators.members[i].color=0xFF3F3F3F;
+			}
+		}
+		trace(curWeek);
+		trace(SaveData.STORY_UNLOCK_SAVE[curWeek]==1);
+		if(SaveData.STORY_UNLOCK_SAVE[curWeek]==0)
+		weekIndicators.members[curWeek].color = 0xFFB1B1B1;
+		else
+		weekIndicators.members[curWeek].color =0xFFFFFFFF;
 
 		var leWeek:WeekData = loadedWeeks[curWeek];
 		WeekData.setDirectoryFromWeek(leWeek);
@@ -286,7 +385,7 @@ class StoryMenuState extends MusicBeatState
 				CoolUtil.difficulties = diffs;
 			}
 		}
-		
+
 		if(CoolUtil.difficulties.contains(CoolUtil.defaultDifficulty))
 		{
 			curDifficulty = Math.round(Math.max(0, CoolUtil.defaultDifficulties.indexOf(CoolUtil.defaultDifficulty)));
@@ -323,5 +422,51 @@ class StoryMenuState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getWeekScore(loadedWeeks[curWeek].fileName, curDifficulty);
 		#end
+	}
+}
+class PuzzleStartButton extends FlxSprite
+{
+	public var onMouseDownCallback:Void->Void;
+	public var onMouseOverCallback:Void->Void;
+	public var onMouseOutCallback:Void->Void;
+
+	public override function new(x:Int,y:Int)
+	{
+		super(x,y);
+		FlxMouseEventManager.add(this, onMouseDown, null, onMouseOver, onMouseOut);
+	}
+
+	public function stopEvnet()
+	{
+		FlxMouseEventManager.setObjectMouseEnabled(this,false);
+	}
+
+	public function startEvnet()
+	{
+		FlxMouseEventManager.setObjectMouseEnabled(this,true);
+	}
+	function onMouseDown(_)
+	{
+		if(onMouseDownCallback != null)
+		{
+			onMouseDownCallback();
+		}
+	}
+
+	function onMouseOver(_)
+	{
+		if(onMouseOverCallback != null)
+			{
+				onMouseOverCallback();
+				updateHitbox();
+			}
+	}
+	function onMouseOut(_)
+	{
+		if(onMouseOutCallback != null)
+			{
+				onMouseOutCallback();
+				updateHitbox();
+			}
 	}
 }
