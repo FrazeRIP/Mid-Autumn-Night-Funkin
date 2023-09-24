@@ -17,6 +17,7 @@ import flixel.input.mouse.FlxMouse;
 import flixel.group.FlxSpriteGroup;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxTimer;
+import WeekData;
 
 
 class PuzzleMember extends FlxSpriteGroup
@@ -24,6 +25,8 @@ class PuzzleMember extends FlxSpriteGroup
     public var memberText:FlxText;
     public var isAnswer:Bool;
     public var bgSprite:FlxSprite;
+    public var tokenTimer:FlxTimer;
+    public var tokenTween:FlxTween;
 
     public override function new(word:String,x:Float,y:Float) {
         super();
@@ -80,9 +83,14 @@ class PuzzleMember extends FlxSpriteGroup
             add(ROWToken);
             FlxG.sound.play(Paths.sound('storystate/correct','mid-autumn'));
             PuzzleSubState.seletedAnswer=true;
-            new FlxTimer().start(1.0,function(tmr:FlxTimer){ 
-                FlxTween.tween(ROWToken,{alpha:0},1,{onComplete:function(twn:FlxTween) {
-                remove(ROWToken);
+            
+            var weekFile:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[StoryMenuState.curWeek+1]);
+            SaveData.StoryStateUpdate(weekFile.songs[0][0],1);            
+            SaveData.SaveStory();
+
+            tokenTimer=new FlxTimer().start(1.0,function(tmr:FlxTimer){ 
+                tokenTween=FlxTween.tween(ROWToken,{alpha:0},0.7,{onComplete:function(twn:FlxTween) {
+                    remove(ROWToken);
                 }});});
         }
         else 
@@ -90,25 +98,33 @@ class PuzzleMember extends FlxSpriteGroup
             ROWToken.animation.play("wrong");
             add(ROWToken);
             FlxG.sound.play(Paths.sound('storystate/error','mid-autumn'));
-            new FlxTimer().start(1.0,function(tmr:FlxTimer){ 
-            FlxTween.tween(ROWToken,{alpha:0},1,{onComplete:function(twn:FlxTween) {
-            remove(ROWToken);
+            tokenTimer=new FlxTimer().start(1.0,function(tmr:FlxTimer){ 
+            tokenTween=FlxTween.tween(ROWToken,{alpha:0},0.7,{onComplete:function(twn:FlxTween) {
             }});});
         }
     }
 
     function onMouseOver(_)
     {
+        if(memberText!=null)
         memberText.color=0xFFBA7F48;
     }
 
     function onMouseOut(_)
     {
+        if(memberText!=null)
         memberText.color=0xFF000000;
     }
     override function destroy() {
-        PuzzleSubState.seletedAnswer=false;
-        startEvnet();
         super.destroy();
+        if(tokenTimer!=null)
+        {
+        tokenTimer.cancel();
+        tokenTimer.destroy();
+        }
+        if(tokenTween!=null)
+            tokenTween.cancel();
+        PuzzleSubState.seletedAnswer=false;
+        stopEvnet();
     }
 }

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Tips.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Tips0000" x="10" y="10" width="106" height="107"/>
+	<SubTexture name="TipsAfterSelection0000" x="136" y="10" width="106" height="107"/>
+	<SubTexture name="TipsAfterSelection0001" x="262" y="10" width="106" height="107"/>
+	<SubTexture name="TipsAfterSelection0002" x="388" y="10" width="106" height="107"/>
+	<SubTexture name="TipsAfterSelection0003" x="10" y="137" width="106" height="107"/>
+	<SubTexture name="TipsAfterSelection0004" x="136" y="137" width="106" height="107"/>
+	<SubTexture name="TipsAfterSelection0005" x="262" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0000" x="262" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0001" x="262" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0002" x="388" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0003" x="388" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0004" x="10" y="264" width="106" height="107"/>
+	<SubTexture name="TipsSelection0005" x="10" y="264" width="106" height="107"/>
+	<SubTexture name="TipsSelection0006" x="136" y="264" width="106" height="107"/>
+	<SubTexture name="TipsSelection0007" x="136" y="264" width="106" height="107"/>
+	<SubTexture name="TipsSelection0008" x="10" y="264" width="106" height="107"/>
+	<SubTexture name="TipsSelection0009" x="10" y="264" width="106" height="107"/>
+	<SubTexture name="TipsSelection0010" x="388" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0011" x="388" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0012" x="262" y="137" width="106" height="107"/>
+	<SubTexture name="TipsSelection0013" x="262" y="137" width="106" height="107"/>
+</TextureAtlas>
