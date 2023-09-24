@@ -21,7 +21,7 @@ end
 
 function onCreatePost( ... )
 	secPerBeat = 60/curBpm
-	for i = 1,9 do
+	for i = 1,7 do
 		precacheImage('mechanism/Sprout/ink'..tostring(i))
 	end
 	
@@ -141,7 +141,7 @@ function generateInkText()
 		doTweenAlpha(name..'A1', name, .8,0.0001,'quadIn')
 		doTweenAlpha(name..'A2', name, 0,5,'quadIn')
 		setObjectCamera(name, 'camHUD') 
-		addLuaSprite(name, false)
+		addLuaSprite(name, true)
 		--scaleObject('item'..tostring(i), 0.75, 0.75)  
 		spawnCount = spawnCount +1
 end
