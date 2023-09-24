@@ -59,6 +59,9 @@ class StoryMenuState extends MusicBeatState
 
 	var loadedWeeks:Array<WeekData> = [];
 	var mouseSprite:FlxSprite;
+
+	public static var comeFromStage:Bool = false;
+
 	override function create()
 	{
 		Paths.clearStoredMemory();
@@ -147,6 +150,49 @@ class StoryMenuState extends MusicBeatState
 		add(puzzleButton);
 		changeWeek();
 		changeDifficulty();
+
+		if (comeFromStage)
+		{
+			//FlxKeyManager.enabled = false;
+
+			var white = new FlxSprite(0, 8).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
+			white.scrollFactor.set();
+			add(white);
+
+			var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+			left.setGraphicSize(Std.int(left.width * 0.67));
+			left.updateHitbox();
+			left.antialiasing = ClientPrefs.globalAntialiasing;
+			left.scrollFactor.set();
+	
+			var right = new FlxSprite(638, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+			right.setGraphicSize(Std.int(right.width * 0.67));
+			right.updateHitbox();
+			right.antialiasing = ClientPrefs.globalAntialiasing;
+			right.scrollFactor.set();
+	
+			add(right);
+			add(left);
+	
+			FlxTween.linearMotion(left, 0, 0, -644, 0, 1.2, true, {
+				ease: FlxEase.quadOut
+			});
+
+			FlxTween.tween(white, {alpha:0}, 1, {ease: FlxEase.sineInOut, onComplete:function (twn:FlxTween){
+				remove(white);
+
+			FlxTween.linearMotion(right, 638, 0, 1280, 0, 1.2, true, {
+				ease: FlxEase.quadOut,onComplete:
+				function(twn:FlxTween) 
+				{
+					remove(left);
+					remove(right);
+	
+					//	FlxKeyManager.enabled = true;
+						comeFromStage = false;
+					}});
+				}});
+		}
 
 		super.create();
 

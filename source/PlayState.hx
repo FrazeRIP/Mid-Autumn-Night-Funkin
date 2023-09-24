@@ -112,7 +112,7 @@ class PlayState extends MusicBeatState
 	public var modchartTexts:Map<String, ModchartText> = new Map<String, ModchartText>();
 	public var modchartSaves:Map<String, FlxSave> = new Map<String, FlxSave>();
 	public var particles:Map<String, FlxEmitter> = new Map<String, FlxEmitter>();
-	
+
 	//event variables
 	private var isCameraOnForcedPos:Bool = false;
 	#if (haxe >= "4.0.0")
@@ -684,14 +684,14 @@ class PlayState extends MusicBeatState
 
 			var bg:ModchartSprite = new ModchartSprite(0, 0);
 			bg.loadGraphic(Paths.image('stages/ying_he_xi/BG'));
-			bg.antialiasing = false;
+			bg.antialiasing = ClientPrefs.globalAntialiasing;
 			bg.active = true;
 			bgGroup.add(bg);
 			modchartSprites.set("BG", bg);
 			
 			var bgl:ModchartSprite = new ModchartSprite(0, 0);
 			bgl.loadGraphic(Paths.image('stages/ying_he_xi/BG_Light'));
-			bgl.antialiasing = false;
+			bgl.antialiasing = ClientPrefs.globalAntialiasing;
 			modchartSprites.set("BGLight", bgl);
 			bgGroup.add(bgl);
 			bgl.active = true;
@@ -897,7 +897,6 @@ class PlayState extends MusicBeatState
 		moveCameraSection();
 		if(curStage == 'ying_he_xi'){
 			healthBarBG2 = new AttachedSprite('healthBar3');
-			healthBarBG2.antialiasing = false;
 		}else{
 			healthBarBG2 = new AttachedSprite('healthBar2');
 		}
@@ -1013,6 +1012,11 @@ class PlayState extends MusicBeatState
 		#end
 		var daSong:String = Paths.formatToSongPath(curSong);
 
+		var white = new FlxSprite(0, 8).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
+		white.cameras = [camOther];
+		white.scrollFactor.set();
+		add(white);
+
 		var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
 		left.setGraphicSize(Std.int(left.width * 0.67));
 		left.updateHitbox();
@@ -1034,11 +1038,18 @@ class PlayState extends MusicBeatState
 			ease: FlxEase.quadOut
 		});
 
+		FlxTween.tween(white, {alpha:0}, 1.6, {ease: FlxEase.sineInOut, onComplete:function (twn:FlxTween){
+			remove(white);
+		}});
+
 		FlxTween.linearMotion(right, 638, 0, 1280, 0, 1.2, true, {
 			ease: FlxEase.quadOut,onComplete:
 			function(twn:FlxTween) 
 			{
-				new FlxTimer().start(0.2, function(tmr:FlxTimer)
+				remove(left);
+				remove(right);
+					
+				new FlxTimer().start(1, function(tmr:FlxTimer)
 					{
 						if (isStoryMode && !seenCutscene)
 							{
@@ -2201,8 +2212,7 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		forceAnimTimer = forceAnimTimer - elapsed;
-
+		forceAnimTimer = forceAnimTimer - elapsed;	
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
@@ -3170,10 +3180,22 @@ class PlayState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
 					cancelMusicFadeTween();
+
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxTransitionableState.skipNextTransOut = true;
+
+					startLoading();
+						
 					if(FlxTransitionableState.skipNextTransIn) {
 						CustomFadeTransition.nextCamera = null;
 					}
-					MusicBeatState.switchState(new StoryMenuState());
+
+					StoryMenuState.comeFromStage = true;
+
+					new FlxTimer().start(1.8, function(tmr:FlxTimer)
+					{
+						MusicBeatState.switchState(new StoryMenuState());
+					});	
 
 					// if ()
 					if(!ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false)) {
@@ -3208,7 +3230,7 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('Lights_Shut_off'));
 					}
 
-					FlxTransitionableState.skipNextTransIn = true;
+				//	FlxTransitionableState.skipNextTransIn = true;
 					FlxTransitionableState.skipNextTransOut = true;
 
 					prevCamFollow = camFollow;
@@ -3233,11 +3255,24 @@ class PlayState extends MusicBeatState
 				trace('WENT BACK TO FREEPLAY??');
 				WeekData.loadTheFirstEnabledMod();
 				cancelMusicFadeTween();
+
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
+
+				startLoading();
+	
 				if(FlxTransitionableState.skipNextTransIn) {
 					CustomFadeTransition.nextCamera = null;
 				}
-				MusicBeatState.switchState(new FreeplayState());
-				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+
+				FreeplayState.comeFromStage = true;
+				
+				new FlxTimer().start(1.8, function(tmr:FlxTimer)
+				{
+					MusicBeatState.switchState(new FreeplayState());
+					FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				});	
+					
 				changedDifficulty = false;
 			}
 			transitioning = true;
@@ -3915,7 +3950,6 @@ class PlayState extends MusicBeatState
 						gf.heyTimer = 0.6;
 					}
 				}
-
 			}
 
 			if(cpuControlled) {
@@ -4596,5 +4630,35 @@ class PlayState extends MusicBeatState
 
 	public function stopParticle(name:String){
 		particles.get(name).emitting = false;
+	}
+
+	function startLoading()
+	{
+		var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+		left.setGraphicSize(Std.int(left.width * 0.67));
+		left.updateHitbox();
+		left.x = -644;
+		left.antialiasing = ClientPrefs.globalAntialiasing;
+		left.cameras = [camOther];
+		left.scrollFactor.set();
+
+		var right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+		right.setGraphicSize(Std.int(right.width * 0.67));
+		right.updateHitbox();
+		right.x = 1280;
+		right.antialiasing = ClientPrefs.globalAntialiasing;
+		right.cameras = [camOther];
+		right.scrollFactor.set();
+
+		add(right);
+		add(left);
+
+		FlxTween.linearMotion(left, -644, 0, 0, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+		});
+
+		FlxTween.linearMotion(right, 1280, 0, 638, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+			});
 	}
 }
