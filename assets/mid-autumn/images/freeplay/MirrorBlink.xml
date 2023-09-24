@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MirrorBlink.png">
+	<!-- Created with Adobe Animate version 16.5.1.104 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MirrorBlink0000" x="10" y="10" width="920" height="920"/>
+	<SubTexture name="MirrorBlink0001" x="950" y="10" width="920" height="920"/>
+	<SubTexture name="MirrorBlink0002" x="10" y="950" width="920" height="920"/>
+	<SubTexture name="MirrorBlink0003" x="950" y="950" width="920" height="920"/>
+	<SubTexture name="MirrorBlink0004" x="10" y="1890" width="920" height="920"/>
+</TextureAtlas>

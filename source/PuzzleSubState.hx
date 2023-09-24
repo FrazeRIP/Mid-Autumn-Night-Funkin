@@ -1,5 +1,11 @@
 package;
 
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.addons.ui.FlxMultiGamepadAnalogStick.XY;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import openfl.display.Sprite;
+import flixel.tweens.FlxTween.FlxTweenManager;
 import haxe.io.Path;
 import flixel.util.FlxColor;
 import flixel.FlxBasic;
@@ -14,6 +20,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.input.mouse.FlxMouseEventManager;
 import flixel.text.FlxText;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.group.FlxSpriteGroup;
 import haxe.Json;
 import haxe.format.JsonParser;
 import openfl.utils.Assets;
@@ -26,82 +33,100 @@ typedef PuzzleDataFile =
     var riddle:String;
     var iconName:String;
     var answers:String;
+    
 }
 
 class PuzzleSubState extends MusicBeatSubstate 
 {
     public static var seletedAnswer:Bool=false;
-    public var puzzleMembers:FlxTypedGroup<PuzzleMember>;
-    public var puzzleData:PuzzleDataFile;
     public var backgroundColor:FlxSprite;
+    public var puzzleMain:PuzzleMain;
     public var BG:FlxSprite;
-    public var mainBG:FlxSprite;
-    public var icon:HealthIcon;
-    public var testSpirte:FlxSprite;
-    public var titleText:FlxText;
-    public var puzzleText:FlxText;
-    public var weekNames:Array<String>=
-    [ 'hua_deng_chu_shang',
-        'jin_zun_zhi_li',
-        'hua_qian_yue_xia',
-        'qing_xi_yin_yue',
-        'zhuo_jiu_feng_qing',
-        'ji_yue_tan_ming',
-        'ru_yuan_xing_ke',
-        'yi_zai_bi_xian',
-        'qi_yun_ding_dang'];
-    
-    public function new() {       
+    public var isTweening:Bool=true;
+
+    public function new() {   
+
         super();
     }
 
-    override function create() {
+    override function create() {     
 
-        loadDataJson('hua_deng_chu_shang');
-        
-        backgroundColor=new FlxSprite(0, 56).makeGraphic(FlxG.width, FlxG.height, 0x83000000);
+        backgroundColor=new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0x83000000);
+        backgroundColor.alpha=0;
         add(backgroundColor);
 
-        puzzleMembers=new FlxTypedGroup<PuzzleMember>();
-        add(puzzleMembers);
-        
-        
-        BG=new FlxSprite();
+        //380 30
+        BG=new FlxSprite(-600,30);
         BG.loadGraphic(Paths.image('storystate/puzzle/BackGround','mid-autumn'));
-        BG.screenCenter(XY);
+        BG.angle=180;
+        BG.antialiasing = ClientPrefs.globalAntialiasing;
         add(BG);
 
-        mainBG=new FlxSprite();
-        mainBG.loadGraphic(Paths.image('storystate/puzzle/PuzzleMain','mid-autumn'));
-        mainBG.screenCenter(XY);
-        add(mainBG);
+        //430 65
+        puzzleMain=new PuzzleMain();
+        puzzleMain.setPosition(-600,65);
+        puzzleMain.angle=90;
+        add(puzzleMain);
 
-        titleText=new FlxText(615,120,0,"字 谜",28);
-        titleText.setFormat("assets/fonts/ZhengDaoCuShuTi.ttf",titleText.size);
-        titleText.color=0xFF3F3F3F;
-        add(titleText);
+        for(member in puzzleMain.puzzleMembers)
+        {
+            member.alpha=0;
+        }
 
-        puzzleText=new FlxText(585,190,0,puzzleData.riddle,34);
-        puzzleText.setFormat("assets/fonts/ZhengDaoCuShuTi.ttf",puzzleText.size);
-        puzzleText.color=0xFF000000;
-        add(puzzleText);
-        MemberCreate();
+        puzzleMain.icon.alpha=0;
+        puzzleMain.titleText.alpha=0;
+        puzzleMain.puzzleText.alpha=0;
+        FlxTween.tween(BG,{x:380,angle:0},0.5,{ease: FlxEase.backOut});
+        FlxTween.tween(backgroundColor,{alpha:1},0.5,{ease: FlxEase.backOut});
+        FlxTween.tween(puzzleMain,{x:430,angle:0},0.5,{ease: FlxEase.backOut,onComplete: function(twn:FlxTween) {
+            for(member in puzzleMain.puzzleMembers)
+                {
+                    FlxTween.tween(member,{alpha:1},0.2);
+                    FlxTween.tween(member.bgSprite,{alpha:0.1},0.2);
+                }
+                FlxTween.tween(puzzleMain.icon,{alpha:1},0.2);
+                FlxTween.tween(puzzleMain.titleText,{alpha:1},0.2);
+                FlxTween.tween(puzzleMain.puzzleText,{alpha:1},0.2,{onComplete: function(twn:FlxTween) {
+                    isTweening=false;
+                }});
+        }});
 
-        icon=new HealthIcon(puzzleData.iconName);
-        icon.setPosition(435,100);
-        icon.setGraphicSize(100,100);
-        add(icon);
         super.create();
     }
+    public function PuzzleMainOut() {
 
-    override function update(elapsed:Float) {
-        if(controls.BACK||FlxG.mouse.justPressedRight)
+        if(!isTweening)
+        isTweening=true;
+        
+        for(member in puzzleMain.puzzleMembers)
         {
-            close();
+            member.stopEvnet();
+            puzzleMain.tweenManager.cancelTweensOf(member);
+            if(member.tokenTween!=null)
+            member.tokenTween.cancel();
+            FlxTween.tween(member.memberText,{alpha:0},0.2);
+            FlxTween.tween(member.bgSprite,{alpha:0},0.2);
         }
-        if(seletedAnswer)
+        FlxTween.tween(puzzleMain.icon,{alpha:0},0.2);
+        FlxTween.tween(puzzleMain.titleText,{alpha:0},0.2);
+        FlxTween.tween(puzzleMain.puzzleText,{alpha:0},0.2);
+        FlxTween.tween(BG,{x:-600,angle:180},0.5,{ease: FlxEase.backIn});
+        FlxTween.tween(backgroundColor,{alpha:0},0.5,{ease: FlxEase.backIn});
+        FlxTween.tween(puzzleMain,{x:-600,angle:90},0.5,{ease: FlxEase.backIn,onComplete: function(twn:FlxTween) {
+        close();
+        }});
+    }
+    override function update(elapsed:Float) {
+        if((controls.BACK||FlxG.mouse.justPressedRight)&&!seletedAnswer&&!isTweening)
         {
-            new FlxTimer().start(2.0,function(tmr:FlxTimer){close();});
+            PuzzleMainOut();
+        }
+        if(seletedAnswer&&!isTweening)
+        {   
+            isTweening=true;
+            new FlxTimer().start(2.0,function(tmr:FlxTimer){  
+                    PuzzleMainOut();
+            });
         }
         super.update(elapsed);
     }
@@ -109,13 +134,73 @@ class PuzzleSubState extends MusicBeatSubstate
         FlxG.sound.play(Paths.sound('storystate/paper','mid-autumn'));
         super.close();
     }
+}
+
+class PuzzleMain extends FlxSpriteGroup
+{
+    public var mainBG:FlxSprite;
+    public var icon:HealthIcon;
+    public var titleText:FlxText;
+    public var puzzleText:FlxText;
+    public var puzzleMembers:FlxTypedGroup<PuzzleMember>;
+    public var puzzleData:PuzzleDataFile;
+    public var tweenManager:FlxTweenManager;
+    public var weekNames:Array<String>=
+    [    'hua_deng_chu_shang',
+        'jin_zun_zhi_li',
+        'hua_qian_yue_xia',
+        'qing_xi_yin_yue',
+        'zhuo_jiu_feng_qing',
+        'hua_hao_yue_yuan',
+        'ji_yue_tan_ming',
+        'xin_qi_chao_ting',
+        'zhan_yan_zhou_tong',
+        'ru_yuan_xing_ke',
+        'yi_zai_bi_xian',
+        'qi_yun_ding_dang'];
+
+
+    public override function new() {
+        super();
+
+        mainBG=new FlxSprite(0,0);
+        mainBG.loadGraphic(Paths.image('storystate/puzzle/PuzzleMain','mid-autumn'));
+        mainBG.antialiasing = ClientPrefs.globalAntialiasing;
+        add(mainBG);
+
+        loadDataJson(weekNames[StoryMenuState.curWeek+1]);
+        
+
+        puzzleMembers=new FlxTypedGroup<PuzzleMember>();
+        MemberCreate();
+        
+        tweenManager=new FlxTweenManager();
+
+ 
+         titleText=new FlxText(190,67,0,"字 谜",28);
+         titleText.setFormat("assets/fonts/ZhengDaoCuShuTi.ttf",titleText.size);
+         titleText.color=0xFF3F3F3F;
+         add(titleText);
+ 
+         puzzleText=new FlxText(155,142,0,puzzleData.riddle,34);
+         puzzleText.setFormat("assets/fonts/ZhengDaoCuShuTi.ttf",puzzleText.size);
+         puzzleText.color=0xFF000000;
+         add(puzzleText);
+       
+         icon=new HealthIcon(puzzleData.iconName);
+         icon.setPosition(15,40);
+         icon.setGraphicSize(100,100);
+         add(icon);
+         
+    }
+
     public function MemberCreate() {
         var arrayNum:Int=0;
         for(i in 0...6)
         {
             for(j in 0...5)
             {
-                puzzleMembers.members[arrayNum] = new PuzzleMember(puzzleData.options[arrayNum],500+(50)*i,305+(50)*j);
+                puzzleMembers.members[arrayNum] = new PuzzleMember(puzzleData.options[arrayNum],75+(50)*i,250+(50)*j);
                 if(puzzleData.options[arrayNum]==puzzleData.answers)
                 {
                     puzzleMembers.members[arrayNum].isAnswer=true;
