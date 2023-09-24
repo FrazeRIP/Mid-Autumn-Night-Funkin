@@ -7,12 +7,12 @@ function onCreate()
 	makeLuaSprite('cover', 'stages/moon_cake_betting/PinkGhostLayer2', 0, 0);
 
 	makeAnimatedLuaSprite('guest0','stages/moon_cake_betting/PinkGhostGuest/PinkGhostGuest2', 200, 370);
-	addAnimationByPrefix('guest0','idle','backdrop6',24,false);
+	addAnimationByPrefix('guest0','idle','backdrop6',36,false);
 	makeAnimatedLuaSprite('guest1','stages/moon_cake_betting/PinkGhostGuest/PinkGhostGuest3', 2100, 416);
-	addAnimationByPrefix('guest1','idle','backdrop7',24,false);
+	addAnimationByPrefix('guest1','idle','backdrop7',36,false);
 	
 	makeAnimatedLuaSprite('guestFront','stages/moon_cake_betting/PinkGhostGuest/PinkGhostGuest1', -140, 900);
-	addAnimationByPrefix('guestFront','idle','backdrop5',24,false);
+	addAnimationByPrefix('guestFront','idle','backdrop5',36,false);
 	setScrollFactor('guestFront', .8, .8);
 
 	addLuaSprite('sky', false);
