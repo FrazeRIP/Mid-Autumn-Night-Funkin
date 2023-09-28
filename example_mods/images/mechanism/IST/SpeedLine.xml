@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="SpeedLine.png">
+<SubTexture name="SpeedLine0000" x="0" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1280" frameHeight="720" />
+<SubTexture name="SpeedLine0001" x="1284" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1280" frameHeight="720" />
+<SubTexture name="SpeedLine0002" x="0" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1280" frameHeight="720" />
+<SubTexture name="SpeedLine0003" x="1284" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

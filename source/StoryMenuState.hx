@@ -19,6 +19,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
+import flixel.tweens.FlxEase;
 import WeekData;
 
 using StringTools;

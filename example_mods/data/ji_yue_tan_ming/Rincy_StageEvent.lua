@@ -8,7 +8,6 @@ function onCreate()
 	doTweenAlpha("HUDAlpha","camHUD",0,0.00001)
 
 	makeLuaSprite('solidB', '', -1000, -500);
-	makeGraphic('solidB', '4000','2000', 'FFFFFF')
 	makeGraphic('solidB', '4000','2000', '000000')
 	addLuaSprite('solidB')
 	doTweenAlpha("solidBA","solidB",0.0,0.00001,'cubeOut')
