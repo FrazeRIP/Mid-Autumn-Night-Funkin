@@ -1012,7 +1012,7 @@ class PlayState extends MusicBeatState
 		#end
 		var daSong:String = Paths.formatToSongPath(curSong);
 
-		var white = new FlxSprite(0, 8).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
+		var white = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
 		white.cameras = [camOther];
 		white.scrollFactor.set();
 		add(white);

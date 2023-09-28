@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lantern.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="deng0000" x="0" y="0" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0001" x="380" y="0" width="397" height="398" frameX="-2" frameY="-1" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0002" x="380" y="0" width="397" height="398" frameX="-2" frameY="-1" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0003" x="777" y="0" width="399" height="399" frameX="0" frameY="0" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0004" x="777" y="0" width="399" height="399" frameX="0" frameY="0" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0005" x="1176" y="0" width="399" height="399" frameX="0" frameY="0" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0006" x="1176" y="0" width="399" height="399" frameX="0" frameY="0" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0007" x="1575" y="0" width="395" height="394" frameX="-4" frameY="-3" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0008" x="1970" y="0" width="382" height="383" frameX="-18" frameY="-9" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0009" x="1970" y="0" width="382" height="383" frameX="-18" frameY="-9" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0010" x="2352" y="0" width="385" height="385" frameX="-17" frameY="-7" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0011" x="2352" y="0" width="385" height="385" frameX="-17" frameY="-7" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0012" x="2737" y="0" width="388" height="388" frameX="-17" frameY="-6" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0013" x="2737" y="0" width="388" height="388" frameX="-17" frameY="-6" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0014" x="3125" y="0" width="385" height="385" frameX="-17" frameY="-7" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0015" x="3125" y="0" width="385" height="385" frameX="-17" frameY="-7" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0016" x="3510" y="0" width="382" height="382" frameX="-18" frameY="-9" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0017" x="3510" y="0" width="382" height="382" frameX="-18" frameY="-9" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0018" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0019" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0020" x="380" y="399" width="382" height="382" frameX="-18" frameY="-9" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0021" x="380" y="399" width="382" height="382" frameX="-18" frameY="-9" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0022" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0023" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0024" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0025" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0026" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0027" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0028" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng0029" x="0" y="399" width="380" height="380" frameX="-18" frameY="-10" frameWidth="405" frameHeight="399"/>
+	<SubTexture name="deng20000" x="762" y="399" width="582" height="612" frameX="-35" frameY="-14" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20001" x="1344" y="399" width="587" height="619" frameX="-28" frameY="-14" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20002" x="1344" y="399" width="587" height="619" frameX="-28" frameY="-14" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20003" x="1931" y="399" width="610" height="637" frameX="-3" frameY="-9" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20004" x="1931" y="399" width="610" height="637" frameX="-3" frameY="-9" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20005" x="2541" y="399" width="615" height="642" frameX="0" frameY="-6" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20006" x="2541" y="399" width="615" height="642" frameX="0" frameY="-6" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20007" x="3156" y="399" width="608" height="636" frameX="-18" frameY="-2" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20008" x="3156" y="399" width="608" height="636" frameX="-18" frameY="-2" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20009" x="0" y="1041" width="611" height="626" frameX="-19" frameY="0" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20010" x="611" y="1041" width="594" height="628" frameX="-33" frameY="-9" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20011" x="611" y="1041" width="594" height="628" frameX="-33" frameY="-9" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20012" x="1205" y="1041" width="595" height="625" frameX="-37" frameY="-15" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20013" x="1205" y="1041" width="595" height="625" frameX="-37" frameY="-15" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20014" x="1800" y="1041" width="601" height="631" frameX="-30" frameY="-5" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20015" x="1800" y="1041" width="601" height="631" frameX="-30" frameY="-5" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20016" x="2401" y="1041" width="604" height="624" frameX="-28" frameY="-4" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20017" x="2401" y="1041" width="604" height="624" frameX="-28" frameY="-4" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20018" x="3005" y="1041" width="597" height="620" frameX="-30" frameY="-7" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20019" x="3005" y="1041" width="597" height="620" frameX="-30" frameY="-7" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20020" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20021" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20022" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20023" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20024" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20025" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20026" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20027" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20028" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+	<SubTexture name="deng20029" x="0" y="1672" width="588" height="614" frameX="-35" frameY="-12" frameWidth="632" frameHeight="648"/>
+</TextureAtlas>
