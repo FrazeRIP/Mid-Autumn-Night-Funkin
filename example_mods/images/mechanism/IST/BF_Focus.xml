@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="BF_Focus.png">
+<SubTexture name="Idle0000" x="0" y="194" width="868" height="191" frameX="-6" frameY="0" frameWidth="870" frameHeight="190" />
+<SubTexture name="Idle0001" x="0" y="385" width="868" height="191" frameX="-6" frameY="0" frameWidth="870" frameHeight="190" />
+<SubTexture name="Idle0002" x="0" y="576" width="868" height="191" frameX="-6" frameY="0" frameWidth="870" frameHeight="190" />
+<SubTexture name="Idle0003" x="874" y="0" width="868" height="191" frameX="-6" frameY="0" frameWidth="870" frameHeight="190" />
+<SubTexture name="Idle0004" x="874" y="191" width="868" height="191" frameX="-6" frameY="0" frameWidth="870" frameHeight="190" />
+<SubTexture name="Exit0000" x="874" y="382" width="868" height="191" frameX="-6" frameY="0" frameWidth="870" frameHeight="190" />
+<SubTexture name="Exit0001" x="874" y="573" width="868" height="172" frameX="-6" frameY="-9" frameWidth="870" frameHeight="190" />
+<SubTexture name="Exit0002" x="0" y="767" width="868" height="128" frameX="-6" frameY="-31" frameWidth="870" frameHeight="190" />
+<SubTexture name="Exit0003" x="868" y="767" width="868" height="73" frameX="-6" frameY="-59" frameWidth="870" frameHeight="190" />
+<SubTexture name="Exit0004" x="868" y="840" width="868" height="29" frameX="-6" frameY="-81" frameWidth="870" frameHeight="190" />
+<SubTexture name="Exit0005" x="0" y="0" width="874" height="194" frameX="0" frameY="0" frameWidth="870" frameHeight="190" />
+</TextureAtlas>

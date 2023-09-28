@@ -3,6 +3,7 @@ local Xoffset = -2500
 local Yoffset = -1000
 local ScaleOffset = 1
 
+local factor = 8
 	
 function onCreate()
 	
@@ -50,20 +51,32 @@ function onCreate()
 	addLuaSprite('Layer2', false);
 	addLuaSprite('Layer3', false);
 
+	makeLuaSprite('solidB', '', -2000, -1000);
+	makeGraphic('solidB', '4000','3000', '000000')
+	addLuaSprite('solidB')
 end
 
-function onBeatHit()
-	if curBeat % 2 == 0 then
-	objectPlayAnimation('guest0','idle',true);
-	objectPlayAnimation('guest1','idle',true);
-	objectPlayAnimation('guest2','idle',true);
-	objectPlayAnimation('guest3','idle',true);
+function onStepHit()
+	
+	if curStep == 608 then
+		factor = 4
+	end
+	
+	
+	if curStep == 1120 then
+		factor = 8
+	end
+
+	if curStep % factor == 0 then
+		objectPlayAnimation('guest0','idle',true);
+		objectPlayAnimation('guest1','idle',true);
+		objectPlayAnimation('guest2','idle',true);
+		objectPlayAnimation('guest3','idle',true);
 	end
 end
 
 
 function onCreatePost( ... )
-
 	doTweenX('SX', 'dad.scale', 1, .00001)
 	doTweenY('SY', 'dad.scale', 1, .00001)
 	doTweenX('bfSX', 'boyfriend.scale', .8, .00001)
