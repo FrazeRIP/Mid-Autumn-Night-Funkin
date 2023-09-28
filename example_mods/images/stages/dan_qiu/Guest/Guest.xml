@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Guest.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="oilnkris0000" x="0" y="0" width="1342" height="886" frameX="0" frameY="-22" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0001" x="0" y="0" width="1342" height="886" frameX="0" frameY="-22" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0002" x="1342" y="0" width="1296" height="907" frameX="-27" frameY="-3" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0003" x="1342" y="0" width="1296" height="907" frameX="-27" frameY="-3" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0004" x="2638" y="0" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0005" x="2638" y="0" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0006" x="0" y="911" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0007" x="0" y="911" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0008" x="1280" y="911" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0009" x="1280" y="911" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0010" x="2560" y="911" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0011" x="2560" y="911" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0012" x="0" y="1822" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0013" x="0" y="1822" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0014" x="1280" y="1822" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="oilnkris0015" x="1280" y="1822" width="1280" height="911" frameX="-40" frameY="0" frameWidth="1342" frameHeight="911"/>
+	<SubTexture name="peoples0000" x="2560" y="1822" width="1280" height="309"/>
+	<SubTexture name="peoples0001" x="2560" y="1822" width="1280" height="309"/>
+	<SubTexture name="peoples0002" x="0" y="2733" width="1280" height="301" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0003" x="0" y="2733" width="1280" height="301" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0004" x="1280" y="2733" width="1280" height="299" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0005" x="1280" y="2733" width="1280" height="299" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0006" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0007" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0008" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0009" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0010" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0011" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0012" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0013" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0014" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0015" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0016" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0017" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0018" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples0019" x="2560" y="2733" width="1280" height="298" frameX="0" frameY="0" frameWidth="1280" frameHeight="309"/>
+	<SubTexture name="peoples comes out0000" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0001" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0002" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0003" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0004" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0005" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0006" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0007" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0008" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0009" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0010" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0011" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0012" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0013" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0014" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0015" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0016" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0017" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0018" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0019" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0020" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0021" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0022" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0023" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0024" x="0" y="3034" width="1280" height="408"/>
+	<SubTexture name="peoples comes out0025" x="0" y="3034" width="1280" height="408"/>
+</TextureAtlas>

@@ -234,7 +234,7 @@ class FreeplayState extends MusicBeatState
 			{
 				//FlxKeyManager.enabled = false;
 	
-				var white = new FlxSprite(0, 8).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
+				var white = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
 				white.scrollFactor.set();
 				add(white);
 	
