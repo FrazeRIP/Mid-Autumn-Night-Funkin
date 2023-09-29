@@ -10,6 +10,14 @@ local width = 650
 local isFlashing = false
 
 
+local healthbarY = 0
+local healthbarBG2Y = 0
+local iconY = 0
+
+local isDrainHealth = false
+
+local lol = false
+
 function onCreate( ... )
 	
 	makeAnimatedLuaSprite('SpeedLine', 'mechanism/IST/SpeedLine', 0, 0);
@@ -20,7 +28,7 @@ function onCreate( ... )
 	doTweenAlpha("SpeedLineA","SpeedLine",0,0.00001,'cubeOut')
 	
 	makeLuaSprite('halfWhiteFrame', 'common/whiteFrame', 0, 0);
-	setObjectCamera('halfWhiteFrame','camHUD')
+	setObjectCamera('halfWhiteFrame','camOther')
 	doTweenColor('halfWhiteFrameC','halfWhiteFrame','FFFFFF',.00001)
 	doTweenAlpha("halfWhiteFrameOK","halfWhiteFrame",0,0.00001,'cubeOut')
 	setBlendMode('halfWhiteFrame', 'add')
@@ -42,6 +50,15 @@ function onCreate( ... )
 	setProperty('blackButtom.alpha', 1)
 	setObjectCamera('blackButtom','hud')
     addLuaSprite('blackButtom', false)
+
+	
+	makeAnimatedLuaSprite('press_space', 'mechanism/Common/press_space', 520, 530);
+	addAnimationByPrefix('press_space', 'press_space', 'press_space',36, true);
+	scaleObject('press_space',.85, .85)
+	addLuaSprite('press_space', true);
+	setObjectCamera('press_space','camHUD')
+	objectPlayAnimation('press_space', 'press_space', true)
+	doTweenAlpha("press_spaceA","press_space",0,0.00001,'cubeOut')
 	
 	Hide(0.0001,'cubeOut')
 end
@@ -55,6 +72,35 @@ function Show(duration,tween)
 	doTweenY('top-Show','blackTop',width,duration,tween)
 	doTweenY('down-Show','blackButtom',-width,duration,tween)
 end
+
+function onUpdate(elapsed)
+	-- body
+	if isDrainHealth then
+
+		if not botPlay then
+			health = getProperty('health')
+			setProperty('health', health- elapsed*0.3)
+		else
+			lol = not lol
+			health = getProperty('health')
+			if lol then
+				setProperty('health', 1.01)
+			else
+				setProperty('health', 0.99)
+			end
+		end
+		
+		if not botPlay then
+			local isSpacePressed = keyJustPressed('space')
+			if isSpacePressed then
+				health = getProperty('health')
+				setProperty('health', health +0.05)
+			end
+		end
+	end
+	
+end
+
 
 function onCreatePost()
 	secPerBeat = 60/curBpm
@@ -88,9 +134,10 @@ function onCreatePost()
 	setObjectCamera('solidF','camOther')
 	doTweenAlpha("solidFA","solidF",0.0,0.00001,'cubeOut')
 
-	
-	setProperty('healthBar.y',200)
-	setProperty('healthBarBG2.y',200)
+
+	healthbarY= getProperty('healthBar.y')
+	healthbarBG2Y = getProperty('healthBarBG2.y')
+	iconY = getProperty('iconP1.y')
 
 end
 
@@ -101,9 +148,53 @@ function onBeatHit( ... )
 	end
 
 	if curBeat == 248 then
-		cameraFlash('camGame','FFFFFF',secPerBeat)	
+		cameraFlash('camHUD','FFFFFF',secPerBeat*2)	
+
 	    for i = 0,7 do
 			noteTweenAlpha('NoteA'..i, i, 0, secPerBeat*2, 'cubeOut')
+		end
+		
+		setProperty('scoreTxt.alpha', 0)
+		setProperty('healthBar.y',360)
+		setProperty('healthBarBG2.y',344)
+		setProperty('iconP1.y',290)
+		setProperty('iconP2.y',290)
+
+		objectPlayAnimation('BF_Focus', 'Idle', true)
+		objectPlayAnimation('IS_Focus', 'Idle', true)
+		doTweenX('BF_FocusX1', 'BF_Focus', BFX+offset, 0.0001, 'quadOut')
+		doTweenX('IS_FocusX1', 'IS_Focus', ISX-offset, 0.0001, 'quadOut')
+
+		doTweenX('BF_FocusX2', 'BF_Focus', BFX, secPerBeat*1.5, 'cubeOut')
+		doTweenX('IS_FocusX2', 'IS_Focus', ISX, secPerBeat*1.5, 'cubeOut')
+
+		doTweenAlpha("press_spaceA","press_space",1,0.00001,'cubeOut')
+
+		isDrainHealth = true;
+		setProperty('health', 1.01)
+	end
+
+	if curBeat == 278 then
+		doTweenAlpha("solidFA","solidF",1.0,secPerBeat*2)
+	end
+
+	if curBeat == 281 then
+		isDrainHealth = false;
+		isFlashing = false;
+		setProperty('healthBar.y',healthbarY)
+		setProperty('healthBarBG2.y',healthbarBG2Y)
+		setProperty('iconP1.y',iconY)
+		setProperty('iconP2.y',iconY)
+		doTweenX('BF_FocusX1', 'BF_Focus', BFX+offset, 0.0001, 'quadOut')
+		doTweenX('IS_FocusX1', 'IS_Focus', ISX-offset, 0.0001, 'quadOut')
+		doTweenAlpha("press_spaceA","press_space",0,0.00001,'cubeOut')
+		doTweenAlpha("solidFA","solidF",0,secPerBeat*2)
+		Hide(0.0001,'cubeOut')
+		setProperty('scoreTxt.alpha',1)
+		doTweenAlpha("SpeedLineA","SpeedLine",0,0.00001,'cubeOut')
+		
+	    for i = 0,7 do
+			noteTweenAlpha('NoteA'..i, i, 1, secPerBeat*2, 'cubeOut')
 		end
 	end
 end
@@ -148,7 +239,7 @@ function popOut( ... )
 	runTimer('FocusExit',secPerBeat*2)
 	runTimer('Beginnn',secPerBeat*.5)
 
-	Show('2','cubeOut')
+	Show('4','cubeOut')
 	playSound('court_start',.7)
 	doTweenAlpha("SpeedLineA","SpeedLine",0.4,0.00001,'cubeOut')
 end

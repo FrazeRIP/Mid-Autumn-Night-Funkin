@@ -2,7 +2,7 @@
 local secPerBeat=0
 
 function onCreate()
-	--doTweenAlpha("HUDAlpha","camHUD",0,0.00001)
+	doTweenAlpha("HUDAlpha","camHUD",0,0.00001)
 end
 
 function onCreatePost()
@@ -13,7 +13,7 @@ function onCreatePost()
 	setProperty('camFollowPos.x', 200)
 	setProperty('camFollowPos.y', 150)
 
-	--setProperty('isCameraOnForcedPos',true)
+	setProperty('isCameraOnForcedPos',true)
 
 	doTweenAlpha("solidBA","solidB",0.0,0.00001,'cubeOut')
 end

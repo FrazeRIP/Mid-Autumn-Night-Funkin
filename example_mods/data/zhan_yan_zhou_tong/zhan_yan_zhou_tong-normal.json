@@ -7705,12 +7705,12 @@
       }
     ],
     "events": [],
-    "player2": "Kris",
+    "player2": "dad",
     "song": "zhan_yan_zhou_tong",
     "needsVoices": true,
     "arrowSkin": "notes/Kris/Kris_NoteAssets",
     "splashSkin": "notes/Kris/Kris_NoteSplashes",
-    "stage": "dan_qiu",
+    "stage": "stage",
     "validScore": true,
     "bpm": 187,
     "speed": 3.2

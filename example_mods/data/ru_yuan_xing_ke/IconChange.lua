@@ -42,6 +42,11 @@ function onStepHit( ... )
 	if curStep == 928 then
 		GA()
 	end
+
+	if curStep == 992 then
+		IS()
+	end
+
 	if curStep == 1196 then
 		Zella()
 	end

@@ -13,12 +13,6 @@ function onCreate()
 			setPropertyFromGroup('unspawnNotes', i, 'missHealth', hurtAmount); --Default value is: 0.0475, health lost on miss
 			setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
 
-			if getPropertyFromGroup('unspawnNotes', i, 'mustPress') then --Doesn't let Dad/Opponent notes get ignored
-				if not botPlay then
-					setPropertyFromGroup('unspawnNotes', i, 'ignoreNote', true); --Miss has no penalties
-				end
-			end
-
 		end
 	end
 	--debugPrint('Script started!')
@@ -45,6 +39,9 @@ end
 
 function noteMiss(id, noteData, noteType, isSustainNote)
 	if noteType == noteName then
+		triggerEvent("Play Animation", 'singRIGHTmiss', 'bf')
+		playSound('damage',.7)
+		cameraShake('camGame', .01, .45)
 	end
 end
 
