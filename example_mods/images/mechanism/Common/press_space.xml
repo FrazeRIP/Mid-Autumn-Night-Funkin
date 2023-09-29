@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="press_space.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="press_space0000" x="0" y="0" width="282" height="162"/>
+	<SubTexture name="press_space0001" x="0" y="0" width="282" height="162"/>
+	<SubTexture name="press_space0002" x="0" y="0" width="282" height="162"/>
+	<SubTexture name="press_space0003" x="0" y="162" width="282" height="162"/>
+	<SubTexture name="press_space0004" x="0" y="162" width="282" height="162"/>
+	<SubTexture name="press_space0005" x="0" y="162" width="282" height="162"/>
+</TextureAtlas>
