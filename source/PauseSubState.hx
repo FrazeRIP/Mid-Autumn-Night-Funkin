@@ -14,6 +14,7 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.FlxCamera;
 import flixel.util.FlxStringUtil;
+import flixel.util.FlxTimer;
 
 class PauseSubState extends MusicBeatSubstate
 {
@@ -291,13 +292,32 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.seenCutscene = false;
 
 					WeekData.loadTheFirstEnabledMod();
-					if(PlayState.isStoryMode) {
-						MusicBeatState.switchState(new StoryMenuState());
-					} else {
-						MusicBeatState.switchState(new FreeplayState());
+
+					FreeplayState.comeFromStage = true;
+
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxTransitionableState.skipNextTransOut = true;
+
+					startLoading();
+	
+					if(FlxTransitionableState.skipNextTransIn) {
+					CustomFadeTransition.nextCamera = null;
 					}
-					PlayState.cancelMusicFadeTween();
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
+
+					new FlxTimer().start(1.8, function(tmr:FlxTimer)
+					{
+						if(PlayState.isStoryMode) 
+						{
+							MusicBeatState.switchState(new StoryMenuState());
+						} 
+						else 
+						{
+							MusicBeatState.switchState(new FreeplayState());
+						}
+						FlxG.sound.playMusic(Paths.music('freakyMenu'));
+					});
+					
+					PlayState.cancelMusicFadeTween();			
 					PlayState.changedDifficulty = false;
 					PlayState.chartingMode = false;
 			}
@@ -442,5 +462,33 @@ class PauseSubState extends MusicBeatSubstate
 	function updateSkipTimeText()
 	{
 		skipTimeText.text = FlxStringUtil.formatTime(Math.max(0, Math.floor(curTime / 1000)), false) + ' / ' + FlxStringUtil.formatTime(Math.max(0, Math.floor(FlxG.sound.music.length / 1000)), false);
+	}
+
+	function startLoading()
+	{
+		var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+		left.setGraphicSize(Std.int(left.width * 0.67));
+		left.updateHitbox();
+		left.x = -644;
+		left.antialiasing = ClientPrefs.globalAntialiasing;
+		left.scrollFactor.set();
+
+		var right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+		right.setGraphicSize(Std.int(right.width * 0.67));
+		right.updateHitbox();
+		right.x = 1280;
+		right.antialiasing = ClientPrefs.globalAntialiasing;
+		right.scrollFactor.set();
+
+		add(right);
+		add(left);
+
+		FlxTween.linearMotion(left, -644, 0, 0, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+		});
+
+		FlxTween.linearMotion(right, 1280, 0, 638, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+			});
 	}
 }
