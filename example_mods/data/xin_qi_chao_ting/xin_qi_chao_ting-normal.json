@@ -1,7 +1,7 @@
 {
   "song": {
-    "player1": "MA_BF",
-    "player2": "Sarah",
+    "player1": "BF_Sarah",
+    "player2": "Sarah_Dark",
     "notes": [
       {
         "typeOfSection": 0,
@@ -3262,7 +3262,7 @@
     "needsVoices": true,
     "sections": 0,
     "uiType": "normal",
-    "stage": "stage",
+    "stage": "yu_long_mei",
     "bpm": 100,
     "gf": "MA_GF"
   }

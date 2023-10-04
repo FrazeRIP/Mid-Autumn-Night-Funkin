@@ -7,7 +7,7 @@ function onCreatePost( ... )
 	doTweenX('gfSX', 'gf.scale', .7, .00001)
 	doTweenY('gfSY', 'gf.scale', .7, .00001)
 	
-	doTweenY('bfPY', 'boyfriend',300, .00001)
+	--doTweenY('bfPY', 'boyfriend',300, .00001)
 
 	setProperty('gf.visible',false)
 end
