@@ -322,10 +322,20 @@ class StoryMenuState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
 			PlayState.campaignScore = 0;
 			PlayState.campaignMisses = 0;
-			new FlxTimer().start(1, function(tmr:FlxTimer)
+
+			new FlxTimer().start(0.5, function(tmr:FlxTimer)
 			{
-				LoadingState.loadAndSwitchState(new PlayState(), true);
-				FreeplayState.destroyFreeplayVocals();
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
+	
+				startLoading();
+
+				new FlxTimer().start(1.22, function(tmr:FlxTimer)
+				{
+					LoadingState.loadAndSwitchState(new PlayState(), true);
+					FreeplayState.destroyFreeplayVocals();
+				});	
+				
 			});
 		} else {
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -467,6 +477,33 @@ class StoryMenuState extends MusicBeatState
 		intendedScore = Highscore.getWeekScore(loadedWeeks[curWeek].fileName, curDifficulty);
 		#end
 	}
+
+	function startLoading()
+	{
+		var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+		left.setGraphicSize(Std.int(left.width * 0.67));
+		left.updateHitbox();
+		left.x = -644;
+		left.antialiasing = ClientPrefs.globalAntialiasing;
+		left.scrollFactor.set();
+	
+		var right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+		right.setGraphicSize(Std.int(right.width * 0.67));
+		right.updateHitbox();
+		right.x = 1280;
+		right.antialiasing = ClientPrefs.globalAntialiasing;
+		add(right);
+		add(left);
+		right.scrollFactor.set();
+	
+		FlxTween.linearMotion(left, -644, 0, 0, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+		});
+	
+		FlxTween.linearMotion(right, 1280, 0, 638, 0, 1.2, true, {
+			ease: FlxEase.quadOut
+			});
+	}
 }
 class PuzzleStartButton extends FlxSprite
 {
@@ -513,4 +550,6 @@ class PuzzleStartButton extends FlxSprite
 				updateHitbox();
 			}
 	}
+
+	
 }
