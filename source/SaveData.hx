@@ -31,8 +31,8 @@ class SaveData
     //0=未解锁 1=已解锁
     public static var HIGH_SCORE:Array<Int>=
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0];//最高分【看情况要不要，不要直接删了也行
-    public static var COLLECTIONS_UNLOCK:Array<Bool>=
-    [false,false,false,false,false,false,false,false,false,false,false,false];//信物解锁情况
+    public static var COLLECTIONS_UNLOCK:Array<Int>=
+    [0,0,0,0,0,0,0,0,0,0,0,0];//信物解锁情况
     public static var COLLECTIONS_SPECIAL:Bool=false;//特殊信物解锁情况
 
     public static function InitLevelName()
@@ -60,7 +60,7 @@ class SaveData
         SavePuzzle();
     }
     public static function CollectionsUnlocked(storyName:String){
-        COLLECTIONS_UNLOCK[levelName[storyName]]=true;
+        COLLECTIONS_UNLOCK[levelName[storyName]]=1;
         SaveCollectionUnlock();
     }
     public static function SpecialCollectionUnlocked()
@@ -102,10 +102,43 @@ class SaveData
         }
     }
     public static function LoadAll(){
+        if(FlxG.save.data.puzzleSave!=null)
         STORYMODE_PUZZLE_SAVE = FlxG.save.data.puzzleSave;
+        else
+        {
+            STORYMODE_PUZZLE_SAVE=[0,0,0,0,0,0,0,0,0,0,0,0];
+            FlxG.save.data.puzzleSave=STORYMODE_PUZZLE_SAVE;
+        }
+
+        if(FlxG.save.data.storySave!=null)
         STORY_UNLOCK_SAVE=FlxG.save.data.storySave;
+        else
+        {
+            STORY_UNLOCK_SAVE=[1,0,0,0,0,0,0,0,0,0,0,0,0,0];
+            FlxG.save.data.storySave=STORY_UNLOCK_SAVE;
+        }
+        
+        if(FlxG.save.data.collectionUnlock!=null)
         COLLECTIONS_UNLOCK=FlxG.save.data.collectionUnlock;
+        else
+        {
+            COLLECTIONS_UNLOCK=[0,0,0,0,0,0,0,0,0,0,0,0];
+            FlxG.save.data.collectionUnlock=COLLECTIONS_UNLOCK;
+        }
+
+        if(FlxG.save.data.HighScore!=null)
+            HIGH_SCORE=FlxG.save.data.HighScore;
+        else
+        {
+            HIGH_SCORE= [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+            FlxG.save.data.HighScore=HIGH_SCORE;
+        }
+        if(FlxG.save.data.collectionSpecial!=null)
         COLLECTIONS_SPECIAL=FlxG.save.data.collectionSpecial;
-        HIGH_SCORE=FlxG.save.data.HighScore;
+        else
+        {
+            COLLECTIONS_SPECIAL=false;
+            FlxG.save.data.collectionSpecial=COLLECTIONS_SPECIAL;
+        }
     }
 }

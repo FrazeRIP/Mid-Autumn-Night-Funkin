@@ -231,6 +231,7 @@ class TitleState extends MusicBeatState
 				});
 			}
 		}
+		SaveData.LoadAll();
 		#end
 	}
 

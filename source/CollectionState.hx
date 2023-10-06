@@ -463,14 +463,20 @@ class CollectionState extends MusicBeatState
         {
             for(i in 0...8)
             {
-                // colles[i].unlocked=SaveData.COLLECTIONS_UNLOCK[i];
+                if(SaveData.COLLECTIONS_UNLOCK[i]==1)
+                    colles[i].unlocked=true;
+                else 
+                    colles[i].unlocked=false;
             }
         }
         else
         {
             for(collection in colles)
             {
-                collection.unlocked=SaveData.COLLECTIONS_UNLOCK[collection.ID];
+                if(SaveData.COLLECTIONS_UNLOCK[collection.ID]==1)
+                collection.unlocked=true;
+                else 
+                collection.unlocked=false;
             }
         }
     }
