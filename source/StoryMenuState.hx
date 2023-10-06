@@ -20,6 +20,7 @@ import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
 import flixel.tweens.FlxEase;
+
 import WeekData;
 
 using StringTools;
@@ -60,7 +61,6 @@ class StoryMenuState extends MusicBeatState
 
 	var loadedWeeks:Array<WeekData> = [];
 	var mouseSprite:FlxSprite;
-
 	public static var comeFromStage:Bool = false;
 
 	override function create()
@@ -72,9 +72,7 @@ class StoryMenuState extends MusicBeatState
 
 		if(SaveData.STORY_UNLOCK_SAVE[0]==0)
 		SaveData.StoryStateUpdate('tutorial',1);
-		
-		SaveData.StoryStateUpdate("hua_deng_chu_shang",1);
-		
+				
 		trace(SaveData.levelName);
 		trace(SaveData.STORY_UNLOCK_SAVE);
 
@@ -151,49 +149,48 @@ class StoryMenuState extends MusicBeatState
 		add(puzzleButton);
 		changeWeek();
 		changeDifficulty();
-
 		if (comeFromStage)
-		{
-			//FlxKeyManager.enabled = false;
-
-			var white = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
-			white.scrollFactor.set();
-			add(white);
-
-			var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
-			left.setGraphicSize(Std.int(left.width * 0.67));
-			left.updateHitbox();
-			left.antialiasing = ClientPrefs.globalAntialiasing;
-			left.scrollFactor.set();
+			{
+				//FlxKeyManager.enabled = false;
 	
-			var right = new FlxSprite(638, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
-			right.setGraphicSize(Std.int(right.width * 0.67));
-			right.updateHitbox();
-			right.antialiasing = ClientPrefs.globalAntialiasing;
-			right.scrollFactor.set();
+				var white = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
+				white.scrollFactor.set();
+				add(white);
 	
-			add(right);
-			add(left);
+				var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
+				left.setGraphicSize(Std.int(left.width * 0.67));
+				left.updateHitbox();
+				left.antialiasing = ClientPrefs.globalAntialiasing;
+				left.scrollFactor.set();
+		
+				var right = new FlxSprite(638, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
+				right.setGraphicSize(Std.int(right.width * 0.67));
+				right.updateHitbox();
+				right.antialiasing = ClientPrefs.globalAntialiasing;
+				right.scrollFactor.set();
+		
+				add(right);
+				add(left);
+		
+				FlxTween.linearMotion(left, 0, 0, -644, 0, 1.2, true, {
+					ease: FlxEase.quadOut
+				});
 	
-			FlxTween.linearMotion(left, 0, 0, -644, 0, 1.2, true, {
-				ease: FlxEase.quadOut
-			});
-
-			FlxTween.tween(white, {alpha:0}, 1, {ease: FlxEase.sineInOut, onComplete:function (twn:FlxTween){
-				remove(white);
-
-			FlxTween.linearMotion(right, 638, 0, 1280, 0, 1.2, true, {
-				ease: FlxEase.quadOut,onComplete:
-				function(twn:FlxTween) 
-				{
-					remove(left);
-					remove(right);
+				FlxTween.tween(white, {alpha:0}, 1, {ease: FlxEase.sineInOut, onComplete:function (twn:FlxTween){
+					remove(white);
 	
-					//	FlxKeyManager.enabled = true;
-						comeFromStage = false;
+				FlxTween.linearMotion(right, 638, 0, 1280, 0, 1.2, true, {
+					ease: FlxEase.quadOut,onComplete:
+					function(twn:FlxTween) 
+					{
+						remove(left);
+						remove(right);
+		
+						//	FlxKeyManager.enabled = true;
+							comeFromStage = false;
+						}});
 					}});
-				}});
-		}
+			}
 
 		super.create();
 
@@ -271,7 +268,7 @@ class StoryMenuState extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
-		if(curWeek>11)
+		if(curWeek==0||curWeek==13)
 		{
 			puzzleButton.color=0x75272727;
 			puzzleButton.stopEvnet();
