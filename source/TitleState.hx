@@ -231,8 +231,8 @@ class TitleState extends MusicBeatState
 				});
 			}
 		}
-		SaveData.LoadAll();
 		#end
+		SaveData.LoadAll();
 	}
 
 	var logoBl:FlxSprite;
