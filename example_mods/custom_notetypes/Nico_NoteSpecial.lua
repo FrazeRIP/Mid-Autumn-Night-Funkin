@@ -54,12 +54,17 @@ function goodNoteHit(id, noteData, noteType, isSustainNote)
 		doTweenAlpha("halfWhiteFrameOK2","whatever",0,.0001)
 		doTweenAlpha("halfWhiteFrameOK1","halfWhiteFrame",.7,1,'cubeOut')
 		playSound('nico_note',.7)
+		setProperty('forceSick',true);
 	end
 end
 
 function onTweenCompleted( tag )
 	if tag == "halfWhiteFrameOK1" then
 		doTweenAlpha("halfWhiteFrameOK2","halfWhiteFrame",0,4,'quadIn')
+	end
+
+	if tag == 'halfWhiteFrameOK2' then
+		setProperty('forceSick',false);
 	end
 end
 
@@ -71,9 +76,9 @@ end
 
 function onStepHit( ... )
 	if curStep == 1 then
-	makePexParticle("nico_note0",defaultPlayerStrumX0+62,defaultPlayerStrumY0+50,1,"camHUD")
-	makePexParticle("nico_note1",defaultPlayerStrumX1+62,defaultPlayerStrumY1+50,1,"camHUD")
-	makePexParticle("nico_note2",defaultPlayerStrumX2+62,defaultPlayerStrumY2+50,1,"camHUD")
-	makePexParticle("nico_note3",defaultPlayerStrumX3+62,defaultPlayerStrumY3+50,1,"camHUD")
+		makePexParticle("nico_note0",defaultPlayerStrumX0+62,defaultPlayerStrumY0+50,1,"camHUD")
+		makePexParticle("nico_note1",defaultPlayerStrumX1+62,defaultPlayerStrumY1+50,1,"camHUD")
+		makePexParticle("nico_note2",defaultPlayerStrumX2+62,defaultPlayerStrumY2+50,1,"camHUD")
+		makePexParticle("nico_note3",defaultPlayerStrumX3+62,defaultPlayerStrumY3+50,1,"camHUD")
 	end
 end

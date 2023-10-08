@@ -65,7 +65,6 @@ end
 function onDialogueFinished()
 	doTweenAlpha("dialogueBackA3","camDialogueBack",0,.2,'cubeOut')
 	doTweenAlpha("dialogueA3","camDialogue",0,.2,'cubeOut')
-	doTweenAlpha("camHUDA","camHUD",1,.2,'cubeOut')
 
 	for key,value in pairs(sprites) do 
 		removeLuaSprite(value)

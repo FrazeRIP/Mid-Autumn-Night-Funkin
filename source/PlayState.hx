@@ -349,6 +349,9 @@ class PlayState extends MusicBeatState
 	public var isGuestAppear:Bool = false;
 	public var guestYOffset:Float = 0;
 	//--------------------------------------------------------------------------------------------------
+	//Nico
+	public var forceSick:Bool = false;
+	//--------------------------------------------------------------------------------------------------
 	override public function create()
 	{
 
@@ -3874,6 +3877,10 @@ class PlayState extends MusicBeatState
 
 	function goodNoteHit(note:Note):Void
 	{
+		if(forceSick){
+			note.ratingMod = 1;
+		}
+		
 		if (!note.wasGoodHit)
 		{
 			if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
