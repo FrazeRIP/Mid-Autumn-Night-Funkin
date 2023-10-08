@@ -154,6 +154,8 @@ class FreeplayState extends MusicBeatState
 		grpSongs.cameras=[rollingCamera];
 		add(grpSongs);
 
+		SaveData.LoadUnLock();
+
 		for (i in 0...songs.length)
 
 		{
