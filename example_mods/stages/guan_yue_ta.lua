@@ -1,5 +1,5 @@
 local folderName = 'stages'
-local stageName = 'Rincy'
+local stageName = 'guan_yue_ta'
 
 local xOffset = -870
 local yOffset = -140
