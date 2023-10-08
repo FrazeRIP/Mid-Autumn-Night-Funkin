@@ -293,7 +293,10 @@ class PauseSubState extends MusicBeatSubstate
 
 					WeekData.loadTheFirstEnabledMod();
 
-					FreeplayState.comeFromStage = true;
+					if (PlayState.isStoryMode)
+						StoryMenuState.comeFromStage = true;
+					else
+						FreeplayState.comeFromStage = true;
 
 					FlxTransitionableState.skipNextTransIn = true;
 					FlxTransitionableState.skipNextTransOut = true;

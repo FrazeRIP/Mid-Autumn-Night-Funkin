@@ -181,18 +181,18 @@ class StoryMenuState extends MusicBeatState
 	
 				FlxTween.tween(white, {alpha:0}, 1, {ease: FlxEase.sineInOut, onComplete:function (twn:FlxTween){
 					remove(white);
-	
+				}});
+
 				FlxTween.linearMotion(right, 638, 0, 1280, 0, 1.2, true, {
 					ease: FlxEase.quadOut,onComplete:
 					function(twn:FlxTween) 
 					{
 						remove(left);
 						remove(right);
-		
+
 						//	FlxKeyManager.enabled = true;
 							comeFromStage = false;
 						}});
-					}});
 			}
 
 		super.create();
