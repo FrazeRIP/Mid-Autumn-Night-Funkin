@@ -12,47 +12,47 @@ local bgSprites = {}
 local secPerBeat
 
 function onCreate()
-	makeLuaSprite('sky', 'stages/lord_rabbit/RopryLayer0',xOffset+ 0, yOffset+0);
+	makeLuaSprite('sky', 'stages/ling_long_tang/RopryLayer0',xOffset+ 0, yOffset+0);
 	setScrollFactor('sky', 0.8, 0.8);
 	scaleObject('sky', scale, scale);
 
-	makeLuaSprite('bg', 'stages/lord_rabbit/RopryLayer1', xOffset+ 0, yOffset+0);
+	makeLuaSprite('bg', 'stages/ling_long_tang/RopryLayer1', xOffset+ 0, yOffset+0);
 	scaleObject('bg', scale, scale);
 
-	makeLuaSprite('window', 'stages/lord_rabbit/RopryLayer2', xOffset+ 0, yOffset+0);
+	makeLuaSprite('window', 'stages/ling_long_tang/RopryLayer2', xOffset+ 0, yOffset+0);
 	scaleObject('window', scale, scale);
 
-	makeAnimatedLuaSprite('guest0','stages/lord_rabbit/RopryGuest/RopryGuest0',xOffset+ 150, yOffset+250);
+	makeAnimatedLuaSprite('guest0','stages/ling_long_tang/RopryGuest/RopryGuest0',xOffset+ 150, yOffset+250);
 	addAnimationByPrefix('guest0','idle','RopryGuest0',24,false);
 	scaleObject('guest0', scale, scale);
 
-	makeAnimatedLuaSprite('guest1','stages/lord_rabbit/RopryGuest/RopryGuest1',xOffset+ 1250, yOffset+250);
+	makeAnimatedLuaSprite('guest1','stages/ling_long_tang/RopryGuest/RopryGuest1',xOffset+ 1250, yOffset+250);
 	addAnimationByPrefix('guest1','idle','RopryGuest1',24,false);
 	scaleObject('guest1', scale, scale);
 
-	makeAnimatedLuaSprite('guest2','stages/lord_rabbit/RopryGuest/RopryGuest2',xOffset+ 580, yOffset+185);
+	makeAnimatedLuaSprite('guest2','stages/ling_long_tang/RopryGuest/RopryGuest2',xOffset+ 580, yOffset+185);
 	addAnimationByPrefix('guest2','idle','RopryGuest2',24,false);
 	scaleObject('guest2', scale, scale);
 	
-	makeAnimatedLuaSprite('guest3','stages/lord_rabbit/RopryGuest/RopryGuest3', xOffset+950, yOffset+185);
+	makeAnimatedLuaSprite('guest3','stages/ling_long_tang/RopryGuest/RopryGuest3', xOffset+950, yOffset+185);
 	addAnimationByPrefix('guest3','idle','Ropry_Guest3',24,false);
 	scaleObject('guest3', scale, scale);
 
-	makeLuaSprite('rabbit', 'stages/lord_rabbit/RopryLayer3', xOffset- 237, yOffset+0);
+	makeLuaSprite('rabbit', 'stages/ling_long_tang/RopryLayer3', xOffset- 237, yOffset+0);
 	scaleObject('rabbit', scale, scale);
 
-	makeAnimatedLuaSprite('lantern','stages/lord_rabbit/RopryLayer4', xOffset-130, yOffset+0);
+	makeAnimatedLuaSprite('lantern','stages/ling_long_tang/RopryLayer4', xOffset-130, yOffset+0);
 	addAnimationByPrefix('lantern','idle','RopryLayer4',24,true);
 	objectPlayAnimation('lantern','idle',true);
 	scaleObject('lantern', scale, scale);
 
-	makeLuaSprite('light', 'stages/lord_rabbit/RopryLayer5', xOffset+ 0, yOffset+0);
+	makeLuaSprite('light', 'stages/ling_long_tang/RopryLayer5', xOffset+ 0, yOffset+0);
 	scaleObject('light', scale, scale);
 
-	makeLuaSprite('curtain', 'stages/lord_rabbit/RopryLayer6', xOffset+ 0, yOffset+0);
+	makeLuaSprite('curtain', 'stages/ling_long_tang/RopryLayer6', xOffset+ 0, yOffset+0);
 	scaleObject('curtain', scale, scale);
 
-	makeAnimatedLuaSprite('guest4','stages/lord_rabbit/RopryGuest/RopryGuest4',  xOffset-100, yOffset+600);
+	makeAnimatedLuaSprite('guest4','stages/ling_long_tang/RopryGuest/RopryGuest4',  xOffset-100, yOffset+600);
 	addAnimationByPrefix('guest4','idle','Ropry_Guest4',24,false);
 	setScrollFactor('guest4', 1.2, 0.5);
 	scaleObject('guest4', scale, scale);

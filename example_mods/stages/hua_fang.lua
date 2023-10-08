@@ -1,6 +1,6 @@
 
 local folderName = 'stages'
-local stageName = 'flower'
+local stageName = 'hua_fang'
 
 local xOffset = -790
 local yOffset = -140
@@ -9,43 +9,43 @@ local scale = .75
 
 
 function onCreate()
-	makeLuaSprite('sky', 'stages/flower/NicoLayer0', xOffset+0, yOffset+0);
+	makeLuaSprite('sky', 'stages/hua_fang/NicoLayer0', xOffset+0, yOffset+0);
 	setScrollFactor('sky', 0.9, 0.9);
 	scaleObject('sky', scale, scale);
 
-	makeLuaSprite('archway', 'stages/flower/NicoLayer1', xOffset+0, yOffset+0);
+	makeLuaSprite('archway', 'stages/hua_fang/NicoLayer1', xOffset+0, yOffset+0);
 	scaleObject('archway', scale, scale);
 
-	makeLuaSprite('bush_back', 'stages/flower/NicoLayer2', xOffset+0, yOffset+0);
+	makeLuaSprite('bush_back', 'stages/hua_fang/NicoLayer2', xOffset+0, yOffset+0);
 	scaleObject('bush_back', scale, scale);
 
-	makeLuaSprite('ground', 'stages/flower/NicoLayer3', xOffset+0, yOffset+0);
+	makeLuaSprite('ground', 'stages/hua_fang/NicoLayer3', xOffset+0, yOffset+0);
 	scaleObject('ground', scale, scale);
 
-	makeLuaSprite('tree', 'stages/flower/NicoLayer4', xOffset+0, yOffset+0);
+	makeLuaSprite('tree', 'stages/hua_fang/NicoLayer4', xOffset+0, yOffset+0);
 	scaleObject('tree', scale, scale);
 
-	makeLuaSprite('decorated_archway', 'stages/flower/NicoLayer5', xOffset+0, yOffset+0);
+	makeLuaSprite('decorated_archway', 'stages/hua_fang/NicoLayer5', xOffset+0, yOffset+0);
 	scaleObject('decorated_archway', scale, scale);
 
-	makeLuaSprite('light', 'stages/flower/NicoLayer6', xOffset+0, yOffset+0);
+	makeLuaSprite('light', 'stages/hua_fang/NicoLayer6', xOffset+0, yOffset+0);
 	scaleObject('light', scale, scale);
 
-	makeAnimatedLuaSprite('guest0','stages/flower/NicoGuest/NicoGuest0', -700, 300);
+	makeAnimatedLuaSprite('guest0','stages/hua_fang/NicoGuest/NicoGuest0', -700, 300);
 	addAnimationByPrefix('guest0','idle','NicoGuest0',24,false);
 	scaleObject('guest0', scale, scale);
 
-	makeAnimatedLuaSprite('guest1','stages/flower/NicoGuest/NicoGuest1', 550, 300);
+	makeAnimatedLuaSprite('guest1','stages/hua_fang/NicoGuest/NicoGuest1', 550, 300);
 	addAnimationByPrefix('guest1','idle','NicoGuest1',24,false);
 	scaleObject('guest1', scale, scale);
 
-	makeLuaSprite('bush_front', 'stages/flower/NicoLayer7', xOffset+0, yOffset+0);
+	makeLuaSprite('bush_front', 'stages/hua_fang/NicoLayer7', xOffset+0, yOffset+0);
 	scaleObject('bush_front', scale, scale);
 
-	makeLuaSprite('branch', 'stages/flower/NicoLayer8',xOffset+0, yOffset+0);
+	makeLuaSprite('branch', 'stages/hua_fang/NicoLayer8',xOffset+0, yOffset+0);
 	scaleObject('branch', scale, scale);
 
-	makeAnimatedLuaSprite('guest2','stages/flower/NicoGuest/NicoGuest2', -750, 850);
+	makeAnimatedLuaSprite('guest2','stages/hua_fang/NicoGuest/NicoGuest2', -750, 850);
 	addAnimationByPrefix('guest2','idle','NicoGuest2',24,false);
 	scaleObject('guest2', scale, scale);
 	

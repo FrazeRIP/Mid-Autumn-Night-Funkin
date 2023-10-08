@@ -7,33 +7,33 @@ local scale = .72
 
 function onCreate()
 	
-	makeLuaSprite('sky', 'stages/calligraphy/SproutLayer0', xOffset+0, yOffset+0);
+	makeLuaSprite('sky', 'stages/miao_hui_xiao_xiang/SproutLayer0', xOffset+0, yOffset+0);
 	setScrollFactor('sky', 0.9, 0.9);
 	scaleObject('sky', scale, scale);	
 
-	makeAnimatedLuaSprite('bg','stages/calligraphy/SproutLayer1', xOffset-40, yOffset+436);
+	makeAnimatedLuaSprite('bg','stages/miao_hui_xiao_xiang/SproutLayer1', xOffset-40, yOffset+436);
 	addAnimationByPrefix('bg','idle','SproutLayer1',24,false);
 	scaleObject('bg', scale, scale);	
 
-	makeLuaSprite('lantern', 'stages/calligraphy/SproutLayer2', xOffset+0, yOffset+0);
+	makeLuaSprite('lantern', 'stages/miao_hui_xiao_xiang/SproutLayer2', xOffset+0, yOffset+0);
 	scaleObject('lantern', scale, scale);	
 
-	makeLuaSprite('eaves', 'stages/calligraphy/SproutLayer3',  xOffset+0, yOffset+0);
+	makeLuaSprite('eaves', 'stages/miao_hui_xiao_xiang/SproutLayer3',  xOffset+0, yOffset+0);
 	scaleObject('eaves', scale, scale);	
 
-	makeAnimatedLuaSprite('guest0','stages/calligraphy/SproutGuest/SproutGuest0',  xOffset+110, yOffset+950);
+	makeAnimatedLuaSprite('guest0','stages/miao_hui_xiao_xiang/SproutGuest/SproutGuest0',  xOffset+110, yOffset+950);
 	addAnimationByPrefix('guest0','idle','SproutGuest0',24,false);
 	scaleObject('guest0', scale, scale);	
 
-	makeAnimatedLuaSprite('guest1','stages/calligraphy/SproutGuest/SproutGuest1',  xOffset+1165, yOffset+700);
+	makeAnimatedLuaSprite('guest1','stages/miao_hui_xiao_xiang/SproutGuest/SproutGuest1',  xOffset+1165, yOffset+700);
 	addAnimationByPrefix('guest1','idle','SproutGuest1',24,false);
 	scaleObject('guest1', scale+.2, scale+.2);	
 
-	makeAnimatedLuaSprite('guest2','stages/calligraphy/SproutGuest/SproutGuest2',  xOffset+1500, yOffset+650);
+	makeAnimatedLuaSprite('guest2','stages/miao_hui_xiao_xiang/SproutGuest/SproutGuest2',  xOffset+1500, yOffset+650);
 	addAnimationByPrefix('guest2','idle','SproutGuest2',24,false);
 	scaleObject('guest2', scale+.2, scale+.2);		
 	
-	makeAnimatedLuaSprite('guest3','stages/calligraphy/SproutGuest/SproutGuest3',  xOffset+0, yOffset+1160);
+	makeAnimatedLuaSprite('guest3','stages/miao_hui_xiao_xiang/SproutGuest/SproutGuest3',  xOffset+0, yOffset+1160);
 	addAnimationByPrefix('guest3','idle','SproutGuest3',24,false);
 	scaleObject('guest3', scale, scale);	
 	setScrollFactor('guest3', 1, 0.3);
