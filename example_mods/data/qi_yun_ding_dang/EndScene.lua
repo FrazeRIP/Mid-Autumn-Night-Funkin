@@ -4,7 +4,7 @@ function onCreatePost( ... )
 	addLuaSprite("U0-ending",true)
 	setObjectCamera("U0-ending","camOther")
 	
-	doTweenAlpha("U0-endingA","U0-ending",0,0.0001,'cubeOut')
+	--doTweenAlpha("U0-endingA","U0-ending",0,0.0001,'cubeOut')
 end
 
 

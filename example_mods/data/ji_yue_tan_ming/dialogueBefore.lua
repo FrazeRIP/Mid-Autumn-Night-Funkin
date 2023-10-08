@@ -19,7 +19,6 @@ end
 
 function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'startDialogue' then -- Timer completed, play dialogue
-	
 		loadBlack()
 		doTweenAlpha("camHUDA","camHUD",0,.2,'cubeOut')
 		startDialogue('dialogueBefore', 'breakfast');
@@ -52,7 +51,6 @@ end
 function onDialogueFinished()
 	doTweenAlpha("dialogueBackA3","camDialogueBack",0,.2,'cubeOut')
 	doTweenAlpha("dialogueA3","camDialogue",0,.2,'cubeOut')
-	doTweenAlpha("camHUDA","camHUD",1,.2,'cubeOut')
 
 	for key,value in pairs(sprites) do 
 		removeLuaSprite(value)

@@ -155,7 +155,7 @@ end
 
 
 function generateLightSprite(tag,x,y,size,scrollFactor)
-	makeLuaSprite(tag, 'stages/deng_yun_tai/lightfunc', x , y )
+	makeLuaSprite(tag, 'stages/deng_yun_tai/light', x , y )
 	scaleObject(tag, size, size);
 	setScrollFactor(tag, 1, scrollFactor);
 	table.insert(lightSprites, tag)
