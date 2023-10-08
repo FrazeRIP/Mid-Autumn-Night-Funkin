@@ -27,7 +27,7 @@ class SaveData
     public static var STORYMODE_PUZZLE_SAVE:Array<Int>=
     [0,0,0,0,0,0,0,0,0,0,0,0];//字谜
     public static var STORY_UNLOCK_SAVE:Array<Int>=
-    [1,0,0,0,0,0,0,0,0,0,0,0,0,0];//关卡
+    [1,1,0,0,0,0,0,0,0,0,0,0,0,0];//关卡
     //0=未解锁 1=已解锁
     public static var HIGH_SCORE:Array<Int>=
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0];//最高分【看情况要不要，不要直接删了也行
