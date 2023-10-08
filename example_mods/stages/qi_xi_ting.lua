@@ -1,17 +1,17 @@
 function onCreate()
-	makeLuaSprite('sky', 'stages/moon_cake_betting/PinkGhostLayer0', -50, 0);
+	makeLuaSprite('sky', 'stages/qi_xi_ting/PinkGhostLayer0', -50, 0);
 	setScrollFactor('sky', 0.95, 0.95);
 
-	makeLuaSprite('stage', 'stages/moon_cake_betting/PinkGhostLayer1', 0, 0);
+	makeLuaSprite('stage', 'stages/qi_xi_ting/PinkGhostLayer1', 0, 0);
 
-	makeLuaSprite('cover', 'stages/moon_cake_betting/PinkGhostLayer2', 0, 0);
+	makeLuaSprite('cover', 'stages/qi_xi_ting/PinkGhostLayer2', 0, 0);
 
-	makeAnimatedLuaSprite('guest0','stages/moon_cake_betting/PinkGhostGuest/PinkGhostGuest2', 200, 370);
+	makeAnimatedLuaSprite('guest0','stages/qi_xi_ting/PinkGhostGuest/PinkGhostGuest2', 200, 370);
 	addAnimationByPrefix('guest0','idle','backdrop6',36,false);
-	makeAnimatedLuaSprite('guest1','stages/moon_cake_betting/PinkGhostGuest/PinkGhostGuest3', 2100, 416);
+	makeAnimatedLuaSprite('guest1','stages/qi_xi_ting/PinkGhostGuest/PinkGhostGuest3', 2100, 416);
 	addAnimationByPrefix('guest1','idle','backdrop7',36,false);
 	
-	makeAnimatedLuaSprite('guestFront','stages/moon_cake_betting/PinkGhostGuest/PinkGhostGuest1', -140, 900);
+	makeAnimatedLuaSprite('guestFront','stages/qi_xi_ting/PinkGhostGuest/PinkGhostGuest1', -140, 900);
 	addAnimationByPrefix('guestFront','idle','backdrop5',36,false);
 	setScrollFactor('guestFront', .8, .8);
 
