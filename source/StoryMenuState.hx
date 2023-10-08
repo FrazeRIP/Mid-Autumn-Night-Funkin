@@ -72,6 +72,9 @@ class StoryMenuState extends MusicBeatState
 
 		if(SaveData.STORY_UNLOCK_SAVE[0]==0)
 		SaveData.StoryStateUpdate('tutorial',1);
+
+		if(SaveData.STORY_UNLOCK_SAVE[1]==0)
+		SaveData.StoryStateUpdate('hua_deng_chu_shang',1);
 				
 		trace(SaveData.levelName);
 		trace(SaveData.STORY_UNLOCK_SAVE);

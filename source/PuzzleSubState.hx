@@ -168,7 +168,7 @@ class PuzzleMain extends FlxSpriteGroup
         mainBG.antialiasing = ClientPrefs.globalAntialiasing;
         add(mainBG);
 
-        loadDataJson(weekNames[StoryMenuState.curWeek+1]);
+        loadDataJson(weekNames[StoryMenuState.curWeek]);
         
 
         puzzleMembers=new FlxTypedGroup<PuzzleMember>();
