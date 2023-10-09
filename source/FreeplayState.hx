@@ -293,6 +293,7 @@ class FreeplayState extends MusicBeatState
 	
 				var white = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffffffff);
 				white.scrollFactor.set();
+				white.cameras=[uiCamera];
 				add(white);
 	
 				var left = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/left','mid-autumn'));
@@ -300,12 +301,14 @@ class FreeplayState extends MusicBeatState
 				left.updateHitbox();
 				left.antialiasing = ClientPrefs.globalAntialiasing;
 				left.scrollFactor.set();
+				left.cameras=[uiCamera];
 		
 				var right = new FlxSprite(638, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
 				right.setGraphicSize(Std.int(right.width * 0.67));
 				right.updateHitbox();
 				right.antialiasing = ClientPrefs.globalAntialiasing;
 				right.scrollFactor.set();
+				right.cameras=[uiCamera];
 		
 				add(right);
 				add(left);
