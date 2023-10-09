@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="WhitecatGuest2.png">
-	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="WhitecatGuest20000" x="0" y="0" width="4000" height="1200"/>
-	<SubTexture name="WhitecatGuest20001" x="0" y="1200" width="4000" height="1200"/>
-	<SubTexture name="WhitecatGuest20002" x="0" y="2400" width="4000" height="1200"/>
-	<SubTexture name="WhitecatGuest20003" x="0" y="3600" width="4000" height="1200"/>
-	<SubTexture name="WhitecatGuest20004" x="0" y="4800" width="4000" height="1200"/>
-	<SubTexture name="WhitecatGuest20005" x="0" y="4800" width="4000" height="1200"/>
+	<SubTexture name="WhitecatGuest20000" x="10" y="10" width="4096" height="1200"/>
+	<SubTexture name="WhitecatGuest20001" x="10" y="1230" width="4096" height="1200"/>
+	<SubTexture name="WhitecatGuest20002" x="10" y="2450" width="4096" height="1200"/>
+	<SubTexture name="WhitecatGuest20003" x="10" y="3670" width="4096" height="1200"/>
+	<SubTexture name="WhitecatGuest20004" x="10" y="4890" width="4096" height="1200"/>
+	<SubTexture name="WhitecatGuest20005" x="10" y="4890" width="4096" height="1200"/>
 </TextureAtlas>

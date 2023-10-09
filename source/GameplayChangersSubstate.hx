@@ -23,6 +23,7 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxTimer;
 import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
+import flixel.FlxCamera;
 import Controls;
 
 using StringTools;
@@ -36,6 +37,8 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 	private var grpOptions:FlxTypedGroup<OptionItem>;
 	private var checkboxGroup:FlxTypedGroup<CheckboxThingie>;
 	private var grpTexts:FlxTypedGroup<AttachedValueText>;
+
+	private var subCamera:FlxCamera;
 
 	function getOptions()
 	{
@@ -106,6 +109,11 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 	public function new()
 	{
 		super();
+
+		subCamera=new FlxCamera();
+		subCamera.bgColor.alpha = 0;
+		FlxG.cameras.add(subCamera, false);
+		cameras = [subCamera];
 		
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		bg.alpha = 0.6;

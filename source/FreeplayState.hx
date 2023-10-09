@@ -35,8 +35,9 @@ class FreeplayState extends MusicBeatState
 {
 	var songs:Array<SongMetadata> = [];
 
-	var rollingCamera:FlxCamera;
 	var mainCamera:FlxCamera;
+	var rollingCamera:FlxCamera;
+	var uiCamera:FlxCamera;
 	
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
@@ -76,13 +77,16 @@ class FreeplayState extends MusicBeatState
 
 		mainCamera=new FlxCamera();
 		rollingCamera=new FlxCamera(105,97,295,548);
+		uiCamera=new FlxCamera();
 
         rollingCamera.bgColor=FlxColor.BLACK;
+		uiCamera.bgColor.alpha = 0;
 
 		
 
 		FlxG.cameras.reset(mainCamera);
 		FlxG.cameras.add(rollingCamera, false);
+		FlxG.cameras.add(uiCamera, false);
 
 
 		#if desktop
@@ -678,6 +682,7 @@ class FreeplayState extends MusicBeatState
 			left.x = -644;
 			left.antialiasing = ClientPrefs.globalAntialiasing;
 			left.scrollFactor.set();
+			left.cameras=[uiCamera];
 	
 			var right = new FlxSprite(0, 0).loadGraphic(Paths.image('loadingmenu/right','mid-autumn'));
 			right.setGraphicSize(Std.int(right.width * 0.67));
@@ -687,6 +692,7 @@ class FreeplayState extends MusicBeatState
 			add(right);
 			add(left);
 			right.scrollFactor.set();
+			right.cameras=[uiCamera];
 	
 			FlxTween.linearMotion(left, -644, 0, 0, 0, 1.2, true, {
 				ease: FlxEase.quadOut
