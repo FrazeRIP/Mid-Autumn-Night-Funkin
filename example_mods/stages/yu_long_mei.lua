@@ -33,7 +33,7 @@ end
 
 
 function onCreatePost( ... )
-	secPerBeat = 60/curBpm
+	
 end
 
 

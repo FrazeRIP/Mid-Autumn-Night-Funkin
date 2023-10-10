@@ -1,77 +1,88 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "Nico idle"
-		},
-		{
-			"offsets": [
-				15,
-				-2
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "Nico singLEFT"
-		},
-		{
-			"offsets": [
-				0,
-				-6
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "Nico singDOWN"
-		},
-		{
-			"offsets": [
-				-5,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Nico singRIGHT"
-		},
-		{
-			"offsets": [
-				-7,
-				-1
-			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Nico singUP"
+			"fps": 24,
+			"name": "nico up",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-1,
+				4,
+				-10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "nico right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				1
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "nico down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				8
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "nico left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
 				0
 			],
-			"anim": "HEY",
+			"anim": "idle",
 			"fps": 24,
-			"name": "Nico HEY",
+			"name": "nico idle",
 			"indices": []
+		},
+		{
+			"offsets": [
+				18,
+				-11
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "specialA",
+			"loop": false,
+			"name": "nico special 1"
+		},
+		{
+			"offsets": [
+				33,
+				-10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "specialB",
+			"loop": false,
+			"name": "nico special 2"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Nico",
+	"image": "characters/nico",
 	"position": [
-		-140,
-		-150
+		-100,
+		30
 	],
 	"healthicon": "Nico",
 	"flip_x": false,
@@ -81,9 +92,9 @@
 		197
 	],
 	"camera_position": [
-		110,
-		140
+		60,
+		70
 	],
-	"sing_duration": 6.1,
-	"scale": 0.6
+	"sing_duration": 6.09999999999999,
+	"scale": 1
 }

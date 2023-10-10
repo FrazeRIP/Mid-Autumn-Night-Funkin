@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sarah_NoteSpecial.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrow static0000" x="154" y="0" width="154" height="154"/>
+	<SubTexture name="arrowspacebar0000" x="308" y="0" width="155" height="154"/>
+	<SubTexture name="spacebar0000" x="0" y="0" width="154" height="154"/>
+	<SubTexture name="spacebar confirm0000" x="463" y="0" width="300" height="300"/>
+	<SubTexture name="spacebar confirm0001" x="463" y="0" width="300" height="300"/>
+	<SubTexture name="spacebar confirm0002" x="0" y="300" width="300" height="300"/>
+	<SubTexture name="spacebar confirm0003" x="0" y="300" width="300" height="300"/>
+	<SubTexture name="spacebar hold end0000" x="900" y="300" width="50" height="64"/>
+	<SubTexture name="spacebar hold piece0000" x="950" y="300" width="50" height="44"/>
+	<SubTexture name="spacebar press0000" x="300" y="300" width="300" height="300"/>
+	<SubTexture name="spacebar press0001" x="300" y="300" width="300" height="300"/>
+	<SubTexture name="spacebar press0002" x="600" y="300" width="300" height="300"/>
+	<SubTexture name="spacebar press0003" x="600" y="300" width="300" height="300"/>
+</TextureAtlas>
