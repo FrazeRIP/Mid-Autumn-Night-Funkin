@@ -5,9 +5,9 @@
 
   "boyfriend": [ 1100, 350 ],
   "girlfriend": [ 800, 150],
-  "opponent": [ 200, 200 ],
+  "opponent": [ 230, 230 ],
 
-  "camera_boyfriend": [ 120, -80 ],
-  "camera_opponent": [ 350, 0 ],
+  "camera_boyfriend": [ 80, -80 ],
+  "camera_opponent": [ 400, -20 ],
   "camera_girlfriend": [ 0, -272 ]
 }

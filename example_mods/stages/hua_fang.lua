@@ -81,6 +81,6 @@ function onCreatePost( ... )
 	doTweenX('gfScaleX', 'gf.scale', .53, 0.0001)
 	doTweenY('gfScaley', 'gf.scale', .53, 0.0001)
 	
-	doTweenX('dadScaleX', 'dad.scale', .65, 0.0001)
-	doTweenY('dadScaley', 'dad.scale', .65, 0.0001)
+	doTweenX('dadScaleX', 'dad.scale', 1, 0.0001)
+	doTweenY('dadScaley', 'dad.scale', 1, 0.0001)
 end
