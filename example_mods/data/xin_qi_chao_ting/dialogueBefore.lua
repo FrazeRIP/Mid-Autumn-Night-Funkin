@@ -14,6 +14,7 @@ function onStartCountdown()
 	return Function_Stop;
 	end
 
+	doTweenAlpha("camHUDA","camHUD",1,.2,'cubeOut');
 	return Function_Continue;
 end
 
