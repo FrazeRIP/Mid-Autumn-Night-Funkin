@@ -3655,7 +3655,6 @@ class PlayState extends MusicBeatState
 	{
 		// HOLDING
 		var parsedHoldArray:Array<Bool> = parseKeys();
-
 		// TO DO: Find a better way to handle controller inputs, this should work for now
 		if(ClientPrefs.controllerMode)
 		{
@@ -3676,6 +3675,12 @@ class PlayState extends MusicBeatState
 			// rewritten inputs???
 			notes.forEachAlive(function(daNote:Note)
 			{
+				//FK Haxe input system
+				if(daNote.noteType == "Sarah_NoteSpecial" &&FlxG.keys.pressed.SPACE &&daNote.isSustainNote 
+					&& daNote.canBeHit && daNote.mustPress && !daNote.tooLate && !daNote.wasGoodHit && !daNote.blockHit){
+						goodNoteHit(daNote);
+					}
+
 				// hold note functions
 				if (strumsBlocked[daNote.noteData] != true && daNote.isSustainNote && parsedHoldArray[daNote.noteData] && daNote.canBeHit
 				&& daNote.mustPress && !daNote.tooLate && !daNote.wasGoodHit && !daNote.blockHit) {
