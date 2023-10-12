@@ -36,7 +36,11 @@ function onCreate()
 			setPropertyFromGroup('unspawnNotes', i, 'noteData', '4'); 
 			setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
 			setPropertyFromGroup('unspawnNotes', i, 'noAnimation', true);
-			setPropertyFromGroup('unspawnNotes', i, 'offsetX', -170);
+			if getPropertyFromGroup('unspawnNotes', i, 'isSustainNote') then
+				setPropertyFromGroup('unspawnNotes', i, 'offsetX', -180);
+			else
+				setPropertyFromGroup('unspawnNotes', i, 'offsetX', -220);
+			end
 		end
 	end
 end
