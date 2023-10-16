@@ -1,78 +1,78 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				30,
+				-60
+			],
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
-		},
-		{
-			"offsets": [
-				57,
-				4
-			],
-			"loop": false,
 			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "LEFT"
+			"name": "idle",
+			"indices": []
 		},
 		{
-			"offsets": [
-				69,
-				-29
-			],
 			"loop": false,
+			"offsets": [
+				-31,
+				-57
+			],
+			"anim": "singRIGHT",
 			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "DOWN"
+			"name": "right",
+			"indices": []
 		},
 		{
 			"offsets": [
-				0,
-				38
+				-16,
+				-56
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "UP"
+			"name": "up"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				-37,
+				-58
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singRIGHT",
+			"anim": "singDOWN",
 			"indices": [],
-			"name": "right"
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-34,
+				-56
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
 		}
 	],
-	"no_antialiasing": true,
-	"image": "characters/Kris",
+	"no_antialiasing": false,
+	"image": "characters/kris_assets_mid",
 	"position": [
-		-90,
-		-120
+		-160,
+		-170
 	],
 	"healthicon": "kris",
 	"flip_x": false,
 	"healthbar_colors": [
-		55,
-		30,
-		78
+		255,
+		255,
+		255
 	],
 	"camera_position": [
-		-160,
-		-200
+		0,
+		70
 	],
-	"sing_duration": 7,
-	"scale": 0.9
+	"sing_duration": 6,
+	"scale": 1.1
 }

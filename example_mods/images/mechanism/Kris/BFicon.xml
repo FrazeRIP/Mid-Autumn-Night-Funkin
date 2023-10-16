@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BFicon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="danger0000" x="0" y="0" width="129" height="127"/>
+	<SubTexture name="normal0000" x="139" y="0" width="128" height="127"/>
+</TextureAtlas>

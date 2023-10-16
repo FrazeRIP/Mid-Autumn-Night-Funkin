@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="death_firework.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="death_firework0000" x="0" y="0" width="550" height="550"/>
+	<SubTexture name="death_firework0001" x="0" y="560" width="550" height="550"/>
+	<SubTexture name="death_firework0002" x="0" y="1120" width="550" height="550"/>
+	<SubTexture name="death_firework0003" x="560" y="0" width="550" height="550"/>
+	<SubTexture name="death_firework0004" x="560" y="560" width="550" height="550"/>
+	<SubTexture name="death_firework0005" x="560" y="1120" width="550" height="550"/>
+	<SubTexture name="death_firework0006" x="1120" y="0" width="550" height="550"/>
+	<SubTexture name="death_firework0007" x="1120" y="560" width="550" height="550"/>
+	<SubTexture name="death_firework0008" x="1120" y="1120" width="550" height="550"/>
+	<SubTexture name="death_firework0009" x="1680" y="0" width="550" height="550"/>
+	<SubTexture name="death_firework0010" x="1680" y="560" width="550" height="550"/>
+	<SubTexture name="death_firework0011" x="1680" y="560" width="550" height="550"/>
+</TextureAtlas>
