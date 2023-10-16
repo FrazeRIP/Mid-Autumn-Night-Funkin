@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="HeatUI.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Lvl10000" x="1456" y="784" width="354" height="382"/>
+	<SubTexture name="Lvl20000" x="0" y="0" width="354" height="382"/>
+	<SubTexture name="Lvl30000" x="364" y="0" width="354" height="382"/>
+	<SubTexture name="Lvl40000" x="728" y="0" width="354" height="382"/>
+	<SubTexture name="Lvl50000" x="1092" y="0" width="354" height="382"/>
+	<SubTexture name="Lvl60000" x="1456" y="0" width="354" height="382"/>
+	<SubTexture name="Lvl60001" x="0" y="392" width="354" height="382"/>
+	<SubTexture name="Lvl60002" x="364" y="392" width="354" height="382"/>
+	<SubTexture name="Lvl60003" x="728" y="392" width="354" height="382"/>
+	<SubTexture name="Lvl60004" x="1092" y="392" width="354" height="382"/>
+	<SubTexture name="Lvl60005" x="1456" y="392" width="354" height="382"/>
+	<SubTexture name="Lvl60006" x="0" y="784" width="354" height="382"/>
+	<SubTexture name="Lvl60007" x="364" y="784" width="354" height="382"/>
+	<SubTexture name="Lvl60008" x="728" y="784" width="354" height="382"/>
+	<SubTexture name="Lvl60009" x="1092" y="784" width="354" height="382"/>
+</TextureAtlas>

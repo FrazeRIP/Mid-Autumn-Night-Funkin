@@ -14,6 +14,10 @@ function onCreate()
 	setScrollFactor('moon', 0.6, 0.6);
 	scaleObject('moon', scale, scale);
 
+	makeLuaSprite('cloud', 'stages/dan_qiu/cloud', xOffset+ 0, yOffset+0);
+	setScrollFactor('moon', 0.6, 0.6);
+	scaleObject('cloud', scale, scale);
+
 	makeLuaSprite('mountain', 'stages/dan_qiu/mountain', xOffset+ 0, yOffset+0);
 	setScrollFactor('moon', 0.8, 0.8);
 	scaleObject('mountain', scale, scale);
@@ -54,9 +58,9 @@ function onCreate()
 	setProperty('lantern5.flipX',true);
 	scaleObject('lantern5', scale, scale);
 
-	makeAnimatedLuaSprite('guest0','stages/dan_qiu/Guest/Guest',xOffset-40, yOffset-5);
+	makeAnimatedLuaSprite('guest0','stages/dan_qiu/Guest/Guest',xOffset+72, yOffset+145);
 	addAnimationByPrefix('guest0','idle','oilnkris',24,false);
-	scaleObject('guest0', scale, scale);
+	scaleObject('guest0', 0.8, 0.8);
 
 	makeAnimatedLuaSprite('guest1','stages/dan_qiu/Guest/Guest',xOffset+0, yOffset+610);
 	addAnimationByPrefix('guest1','idle','peoples0',24,false);
@@ -66,6 +70,7 @@ function onCreate()
 
 	addLuaSprite('sky', false);
 	addLuaSprite('moon', false);
+	addLuaSprite('cloud', false);
 	addLuaSprite('mountain', false);	
 	addLuaSprite('floor', false);
 	addLuaSprite('lantern0', false);

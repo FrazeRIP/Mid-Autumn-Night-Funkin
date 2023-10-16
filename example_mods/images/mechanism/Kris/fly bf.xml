@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fly bf.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fly bf0000" x="1143" y="2950" width="381" height="234" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0001" x="381" y="2455" width="381" height="285" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0002" x="1143" y="2097" width="381" height="333" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0003" x="1143" y="1345" width="381" height="385" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0004" x="381" y="934" width="381" height="441" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0005" x="0" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0006" x="381" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0007" x="381" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0008" x="0" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0009" x="0" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0010" x="381" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0011" x="762" y="0" width="381" height="492"/>
+	<SubTexture name="fly bf0012" x="1143" y="0" width="381" height="482" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0013" x="1143" y="482" width="381" height="472" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0014" x="0" y="492" width="381" height="458" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0015" x="0" y="950" width="381" height="448" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0016" x="381" y="492" width="381" height="442" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0017" x="762" y="954" width="381" height="432" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0018" x="762" y="492" width="381" height="418" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0019" x="381" y="1375" width="381" height="408" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0020" x="0" y="1398" width="381" height="401" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0021" x="1143" y="954" width="381" height="391" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0022" x="762" y="1386" width="381" height="377" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0023" x="1143" y="1730" width="381" height="367" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0024" x="0" y="1799" width="381" height="361" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0025" x="381" y="1783" width="381" height="351" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0026" x="762" y="1763" width="381" height="337" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0027" x="0" y="2160" width="381" height="327" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0028" x="381" y="2134" width="381" height="321" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0029" x="762" y="2100" width="381" height="310" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0030" x="762" y="2410" width="381" height="296" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0031" x="0" y="2487" width="381" height="286" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0032" x="1143" y="2430" width="381" height="280" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0033" x="762" y="2706" width="381" height="273" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0034" x="0" y="2773" width="381" height="269" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0035" x="381" y="2740" width="381" height="269" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0036" x="1143" y="2710" width="381" height="240" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0037" x="0" y="3042" width="381" height="230" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0038" x="381" y="3009" width="381" height="215" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0039" x="762" y="2979" width="381" height="205" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0040" x="762" y="3184" width="381" height="199" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0041" x="0" y="3272" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0042" x="1143" y="3184" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0043" x="1143" y="3372" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0044" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0045" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0046" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0047" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0048" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0049" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0050" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0051" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0052" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0053" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0054" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0055" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0056" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0057" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0058" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0059" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0060" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0061" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0062" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0063" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0064" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0065" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0066" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0067" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0068" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0069" x="381" y="3224" width="381" height="195" frameX="0" frameY="0" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0070" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+	<SubTexture name="fly bf0071" x="381" y="3419" width="381" height="188" frameX="0" frameY="-4" frameWidth="381" frameHeight="492"/>
+</TextureAtlas>
