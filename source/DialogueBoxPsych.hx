@@ -240,7 +240,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		this.dialogueList = dialogueList;
 		spawnCharacters();
 
-		box = new FlxSprite(70, 370);
+		box = new FlxSprite(20, 390);
 		box.frames = Paths.getSparrowAtlas('speech_bubble');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
@@ -615,7 +615,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		{
 			box.animation.play(centerPrefix + boxType + 'Open', true);
 			updateBoxOffsets(box);
-			box.flipX = (lePosition == 'left');
+			//box.flipX = (lePosition == 'left');
 		}
 		else if (boxType != lastBoxType)
 		{

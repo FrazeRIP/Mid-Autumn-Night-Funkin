@@ -307,6 +307,7 @@ class StoryMenuState extends MusicBeatState
 
 			}
 
+
 			var songArray:Array<String> = [];
 			var leWeek:Array<Dynamic> = loadedWeeks[curWeek].songs;
 			for (i in 0...leWeek.length) {
@@ -326,6 +327,8 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			PlayState.campaignMisses = 0;
 
+			FlxG.camera.flash();
+			
 			new FlxTimer().start(0.5, function(tmr:FlxTimer)
 			{
 				FlxTransitionableState.skipNextTransIn = true;
