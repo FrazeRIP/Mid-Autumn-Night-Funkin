@@ -27,9 +27,12 @@ function onBeatHit( ... )
 	end
 	
 	if curBeat == 5 then
-	doTweenAlpha("HUDAlpha","camHUD",1,secPerBeat*2,'cubeOut')
 	setProperty('cameraSpeed',1)
 	setProperty('isCameraOnForcedPos',false)
+	end
+
+	if curBeat == 18 then
+		doTweenAlpha("HUDAlpha","camHUD",1,secPerBeat*2,'cubeOut')
 	end
 
 	--------------------------------------

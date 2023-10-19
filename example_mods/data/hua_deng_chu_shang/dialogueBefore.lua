@@ -1,6 +1,20 @@
 local allowCountdown = false
 local sprites = {}
 
+
+stageName = "deng_yun_tai"
+function onCreatePost( ... )
+	if not allowCountdown and isStoryMode and not seenCutscene then
+		makeLuaSprite('dialogueBG', 'dialogueBG/'..stageName, 0, 0);
+		setObjectCamera('dialogueBG','camDialogueBack')
+		--setScrollFactor(tag, 1, 1)
+		addLuaSprite('dialogueBG', true);
+		doTweenColor('dialogueBGC','dialogueBG', 'C7C7C7',2, 'cubeOut')
+	end
+end
+
+
+
 function onStartCountdown()
 	-- Block the first countdown and start a timer of 0.8 seconds to play the dialogue
 	if not allowCountdown and isStoryMode and not seenCutscene then
@@ -57,7 +71,7 @@ end
 
 --Setting---------------------------------------------------------
 folderName  = "Paola/"
-
+stageName = "deng_yun_tai"
 
 function loadBlack()
 	makeLuaSprite('black', '', 0, 0);
@@ -71,7 +85,7 @@ end
 function addCG( tag, filename )
 	makeLuaSprite(tag, 'cgs/'..filename, 0, 0);
 	setObjectCamera(tag,'camDialogueBack')
-	setScrollFactor(tag, 1, 1)
+	--setScrollFactor(tag, 1, 1)
 	addLuaSprite(tag, true);
 	scaleObject(tag,1,1)
 	table.insert(sprites, tag)

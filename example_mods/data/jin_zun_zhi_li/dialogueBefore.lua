@@ -1,6 +1,16 @@
 local allowCountdown = false
 local sprites = {}
 
+stageName = "ling_long_tang"
+function onCreatePost( ... )
+	if not allowCountdown and isStoryMode and not seenCutscene then
+		makeLuaSprite('dialogueBG', 'dialogueBG/'..stageName, 0, 0);
+		setObjectCamera('dialogueBG','camDialogueBack')
+		--setScrollFactor(tag, 1, 1)
+		addLuaSprite('dialogueBG', true);
+		doTweenColor('dialogueBGC','dialogueBG', 'C7C7C7',2, 'cubeOut')
+	end
+end
 function onStartCountdown()
 	-- Block the first countdown and start a timer of 0.8 seconds to play the dialogue
 	if not allowCountdown and isStoryMode and not seenCutscene then
