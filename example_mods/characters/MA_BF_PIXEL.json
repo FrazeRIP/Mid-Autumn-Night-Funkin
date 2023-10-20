@@ -2,7 +2,7 @@
 	"animations": [
 		{
 			"offsets": [
-				7,
+				0,
 				0
 			],
 			"loop": false,
@@ -41,7 +41,10 @@
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT-loop",
-			"indices": [14],
+			"indices": [
+				0,
+				1
+			],
 			"name": "BF LEFT NOTE"
 		},
 		{
@@ -74,7 +77,10 @@
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP-loop",
-			"indices": [ 14 ],
+			"indices": [
+				0,
+				1
+			],
 			"name": "BF UP NOTE"
 		},
 		{
@@ -85,7 +91,10 @@
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT-loop",
-			"indices": [ 14 ],
+			"indices": [
+				0,
+				1
+			],
 			"name": "BF RIGHT NOTE"
 		},
 		{
@@ -129,7 +138,10 @@
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN-loop",
-			"indices": [ 14 ],
+			"indices": [
+				0,
+				1
+			],
 			"name": "BF DOWN NOTE"
 		},
 		{
@@ -147,8 +159,8 @@
 	"no_antialiasing": true,
 	"image": "characters/MA_BF_PIXEL",
 	"position": [
-		-0,
-		0
+		70,
+		370
 	],
 	"healthicon": "bf-pixel",
 	"flip_x": true,
@@ -159,7 +171,7 @@
 	],
 	"camera_position": [
 		0,
-		-0
+		0
 	],
 	"sing_duration": 4,
 	"scale": 6

@@ -28,6 +28,7 @@ local appliedMoveForce = { -- `table` which has the applied `moviesOffset` force
 	{0,0}
 }
 
+
 -- Checks if a variable is `nil`.
 ---@param variable any The `variable` you want to check if `nil`.
 ---@param ifNil any What should be returned if the `variable` is `nil`.
@@ -35,6 +36,16 @@ local appliedMoveForce = { -- `table` which has the applied `moviesOffset` force
 local function checkifNil(variable, ifNil)
 	return variable == nil and ifNil or variable
 end
+
+function onCreatePost( ... )
+	ooo = getProperty("isPixelStage")
+	if ooo then
+		debugPrint("Pixel")
+		moviesOffset = {x = 2, y = 2}
+		whosActive = {oppo = false, play = false}
+	end
+end
+
 
 function onSongStart()
 	-- fake cam pos stuff for "Manage Cam Dir Position Lock"

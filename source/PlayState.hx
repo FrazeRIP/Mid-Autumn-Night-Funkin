@@ -683,34 +683,34 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		if(curStage == 'ying_he_xi'){
+		// if(curStage == 'ying_he_xi'){
 
-			var bg:ModchartSprite = new ModchartSprite(0, 0);
-			bg.loadGraphic(Paths.image('stages/ying_he_xi/BG'));
-			bg.antialiasing = ClientPrefs.globalAntialiasing;
-			bg.active = true;
-			bgGroup.add(bg);
-			modchartSprites.set("BG", bg);
+		// 	var bg:ModchartSprite = new ModchartSprite(0, 0);
+		// 	bg.loadGraphic(Paths.image('stages/ying_he_xi/BG'));
+		// 	bg.antialiasing = ClientPrefs.globalAntialiasing;
+		// 	bg.active = true;
+		// 	bgGroup.add(bg);
+		// 	modchartSprites.set("BG", bg);
 			
-			var bgl:ModchartSprite = new ModchartSprite(0, 0);
-			bgl.loadGraphic(Paths.image('stages/ying_he_xi/BG_Light'));
-			bgl.antialiasing = ClientPrefs.globalAntialiasing;
-			modchartSprites.set("BGLight", bgl);
-			bgGroup.add(bgl);
-			bgl.active = true;
+		// 	var bgl:ModchartSprite = new ModchartSprite(0, 0);
+		// 	bgl.loadGraphic(Paths.image('stages/ying_he_xi/BG_Light'));
+		// 	bgl.antialiasing = ClientPrefs.globalAntialiasing;
+		// 	modchartSprites.set("BGLight", bgl);
+		// 	bgGroup.add(bgl);
+		// 	bgl.active = true;
 
-			for (i in 1...8) {
-				var guest:ModchartSprite = new ModchartSprite(0, 0);
-				guest.loadGraphic(Paths.image('stages/ying_he_xi/Guest/'+i));
-				guest.antialiasing = false;
-				guest.active = true;
-				bgGroup.add(guest);
-				modchartSprites.set("Guest"+i, guest);
-				guestList.push(guest);
-			}
+		// 	for (i in 1...8) {
+		// 		var guest:ModchartSprite = new ModchartSprite(0, 0);
+		// 		guest.loadGraphic(Paths.image('stages/ying_he_xi/Guest/'+i));
+		// 		guest.antialiasing = false;
+		// 		guest.active = true;
+		// 		bgGroup.add(guest);
+		// 		modchartSprites.set("Guest"+i, guest);
+		// 		guestList.push(guest);
+		// 	}
 
-			createBackdrop('stages/ying_he_xi/layer',1,20);
-		}
+		// 	createBackdrop('stages/ying_he_xi/layer',1,20);
+		// }
 
 		dad = new Character(0, 0, SONG.player2);
 		startCharacterPos(dad, true);
